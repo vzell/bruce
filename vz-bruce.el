@@ -765,7 +765,7 @@ Version 2015-05-07"
 			(insert (concat "[" (car tw) "|" (cdr tw) "]"))
 			)
 		    (progn
-		      (if (> titlenumber 1)		  
+		      (if (> titlenumber 1)
 			  (insert " / "))
 		      (insert title)
 		      ))
@@ -809,7 +809,7 @@ Version 2015-05-07"
 			(insert (concat "[" (car tw) "|" (cdr tw) "]"))
 			)
 		    (progn
-		      (if (> titlenumber 1)		  
+		      (if (> titlenumber 1)
 			  (insert " / "))
 		      (insert title)
 		      ))
