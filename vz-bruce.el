@@ -1440,7 +1440,7 @@ Version 2015-05-07"
 
 (global-set-key (kbd "<f9>") 'musicbrainz-surrond-event)
 
-;;; Bruce Springsteen
+;;; Bruce Springsteen songs
 ;; Jeannie Needs a Shooter
 ;; Jesse James
 ;; Light of Day / Just Around the Corner to the Light of Day
