@@ -1783,7 +1783,7 @@ Version 2015-05-07"
 ("eb6c37d4-86b4-4517-a526-4e8f44807f87" . "I’m Going Back")
 ("b3f81f4f-072c-4cbb-bc8d-1e9dbcca5ed1" . "I’m Gonna Rock (All Night Long)")
 ("b39b9a9d-e0f3-4176-918d-c1cee27c613b" . "I’m Not Sleeping")
-("b42e5873-5acf-4436-b825-e9076dbcce77" . "Wild Kisses (I’m Gonna Treat You Right)")
+("b42e5873-5acf-4436-b825-e9076dbcce77" . "I’m Gonna Treat You Right (Wild Kisses)")
 ("bd5de48e-be11-4a36-977f-555cd38455f1" . "I’m Gonna Be There Tonight")
 ("a6c092f1-c62c-4729-b0cc-dc2a3f23f51b" . "I’m the One")
 ("b852d9d6-2d4f-46b1-a92e-7e09251e1492" . "Jack of All Trades")
