@@ -1822,7 +1822,7 @@ Version 2015-05-07"
 ("60066353-3264-4163-86dd-5c6666576b68" . "Killers Paradise (The Violent Ones)")
 ("b0b8e03d-ff63-402a-8b4c-5bb25c5be9ec" . "Kingdom of Days")
 ("6edff037-8c34-4112-a51e-330d73aa1446" . "King’s Highway")
-("fdb63bfc-2429-474a-816d-281d1d33ceb3" . "King’s Big Chance")
+("fdb63bfc-2429-474a-816d-281d1d33ceb3" . "King’s Rock (King’s Big Chance)")
 ("d58d3dce-36cd-4962-aaed-d78037b50b91" . "Kitty’s Back")
 ("ee682c29-c368-4106-a2d0-b54fde6378e6" . "Knife in the Back")
 ("1460d409-c3dd-4102-b9a8-1da4d24659ed" . "Lady Walking Down by the River")
