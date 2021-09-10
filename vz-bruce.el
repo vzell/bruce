@@ -2600,6 +2600,7 @@ Version 2015-05-07"
 ("f61ac0ce-01a9-38f4-870f-9f2cad167650" . "I Wanna Be Sedated")
 ("549b28ab-60aa-4ec5-8203-4f3e94661846" . "I Want You")
 ("518bb151-fe46-417c-bf92-3d89c5b246a4" . "I Was Born to Rock")
+("4d8b8e01-20f8-38d4-b149-addfef1d7b7b" . "I’ll Feel a Whole Lot Better")
 ("67d273f2-be0f-3183-933f-77b2743be3f9" . "I’m Bad, I’m Nationwide")
 ("b39b9a9d-e0f3-4176-918d-c1cee27c613b" . "I’m Not Sleeping")
 ("57fa769a-2036-3a18-905c-b423eb805894" . "I’m Ready")
