@@ -509,7 +509,7 @@ Version 2015-05-07"
 	      ))))))
 
 (defun brucebase-download-songlist ()
-  "Download studio sessions from http://brucebase.wikispaces.com/Songlist"
+  "Download studio sessions from http://brucebase.wikidot.com/Songlist"
   (interactive)
   (progn
     (setq brucebase-songlist-url "Songlist")
@@ -864,7 +864,7 @@ Version 2015-05-07"
                             (or download-name
                                 (car (last (split-string url "/" t))))))))))
 
-(setq brucebase-url "http://brucebase.wikispaces.com")
+(setq brucebase-url "http://brucebase.wikidot.com/")
 (setq brucebase-download-folder "/tmp/brucebase/")
 (setq brucebase-file-title "BruceBase")
 
@@ -883,7 +883,7 @@ Version 2015-05-07"
   (kill-buffer springsteenlyrics-file-title))
 
 (defun brucebase-download-studio-sessions ()
-  "Download studio sessions from http://brucebase.wikispaces.com"
+  "Download studio sessions from http://brucebase.wikidot.com"
   (interactive)
   (setq brucebase-studio-sessions brucebase-studio-sessions-list)
   (while brucebase-studio-sessions
@@ -896,7 +896,7 @@ Version 2015-05-07"
       (kill-buffer brucebase-session-name))))
 
 (defun brucebase-titelize-studio-sessions ()
-  "Titelize studio sessions from http://brucebase.wikispaces.com"
+  "Titelize studio sessions from http://brucebase.wikidot.com"
   (interactive)
   (if (file-exists-p (concat brucebase-download-folder brucebase-file-title))
       (delete-file (concat brucebase-download-folder brucebase-file-title)))
