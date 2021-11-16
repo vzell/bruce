@@ -3242,7 +3242,7 @@ Version 2015-05-07"
 ("4f05041d-0780-3e97-a92d-c922fa3e78c3" . "Pipeline")
 ))
 
-;; SpringsteenLyrics works
+;; SpringsteenLyrics (Eddys site) works
 (setq mb-springsteenlyrics-works '(
 ("4c2f991b-c71d-4bfb-9290-37031f65906d" . "Can’t Teach an Old Dog New Tricks")
 ))
