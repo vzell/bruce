@@ -1453,10 +1453,10 @@ Version 2015-05-07"
 ;; ("528c846b-e3fb-4db0-b591-bb507bf95706" . "Leah")
 ;; ("368c59f5-a20c-4da9-af41-8e0977a86824" . "Paradise")
 ;; ("e2ebbad2-7eb6-4a5e-828a-6b52eba45cec" . "Party Lights")
-;;("af5094b5-ebf6-4f22-bc23-2d2f82899345" . "Angel Eyes")
+;; ("af5094b5-ebf6-4f22-bc23-2d2f82899345" . "Angel Eyes")
 ;; Frank Sinatra version
-;;("6c0edf2e-3df6-31c2-855d-eb0cd62e184f" . "Angel Eyes")
-;;("c323f194-6477-4746-b4e7-a2476433a267" . "I’m in Love Again") ;; [unknown]
+;; ("6c0edf2e-3df6-31c2-855d-eb0cd62e184f" . "Angel Eyes")
+;; ("c323f194-6477-4746-b4e7-a2476433a267" . "I’m in Love Again") ;; [unknown]
 ;; ))
 
 ;; Bruce Springsteen works
