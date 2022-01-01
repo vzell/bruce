@@ -2291,7 +2291,7 @@ Version 2015-05-07"
 ("f5838306-a92b-33b7-9b87-b30228265c79" . "Heat Wave")
 ("a033abbb-5c02-3d23-9990-b3c9ca363375" . "(What’s So Funny ’Bout) Peace, Love and Understanding")
 ("d2ba3e86-ab3f-3984-a34d-aaaa964c7508" . "(Your Love Keeps Lifting Me) Higher and Higher")
-("f44d3b21-8947-34f1-b701-46ed1cc0eb15" . "634-5789 (Soulsville, U.S.A.)")
+("f44d3b21-8947-34f1-b701-46ed1cc0eb15" . "634‒5789 (Soulsville, U.S.A.)")
 ("b4782f4b-5316-34a9-b261-60a295fb398c" . "A Change Is Gonna Come")
 ("9ff3f54e-ea6c-3a57-a928-22f0b3087db7" . "A Teenager in Love")
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Boy")
