@@ -1270,6 +1270,18 @@ Version 2015-05-07"
 ;; @ [c10f955a-fb44-4733-a828-c1842af110c2|Dennis Orlock]
 ;; @ [eda4b070-ab02-42e5-8578-9c39fa2a7f22|Steve Paraczky]
 
+;;; 2003 - The Reunion Tour (-10)
+;; # &
+;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+;; # with
+;; @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+;; @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+;; @ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+;; @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+;; @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+;; @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+;; @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+
 
 ;;; 2003 - The Rising Tour (-12)
 ;; # &
@@ -1292,7 +1304,7 @@ Version 2015-05-07"
 ;; @ [9a214f8b-f606-47d7-803f-f1b96854ae14|Kevin Buell]
 
 
-;;; 2006 - Seeger Sessions tour (-3)
+;;; 2006 - Seeger Sessions Tour (-3)
 ;; # with
 ;; @ [64a3f3a8-afbf-4658-84f4-5c5136732c76|Marc Anthony Thompson]
 ;; @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
@@ -1315,7 +1327,7 @@ Version 2015-05-07"
 ;; @ [9b303c28-f0a0-4c76-8293-c97272f6e32c|Clark Gayton]
 
 
-;;; 2007 "Magic" tour - (-13)
+;;; 2007 "Magic" Tour (-13)
 ;; # &
 ;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 ;; # with
@@ -1331,7 +1343,7 @@ Version 2015-05-07"
 ;; @ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
 
 
-;;; 2009 Working On A Dream Tour - (-14)
+;;; 2009 Working On A Dream Tour (-14)
 ;; # &
 ;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 ;; # with
@@ -1350,7 +1362,7 @@ Version 2015-05-07"
 ;; @ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
 
 
-;;; 2014 High Hopes Tour - (-14)
+;;; 2014 High Hopes Tour (-14)
 ;; # &
 ;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 ;; # with
@@ -1374,7 +1386,7 @@ Version 2015-05-07"
 ;; @ [42a636a0-dbe4-4d0c-abe2-1590fad9531b|Tom Morello]
 
 
-;;; 2016 The River Tour 2016 - (-12)
+;;; 2016 The River Tour 2016 (-12)
 ;; # &
 ;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 ;; # with
@@ -1389,7 +1401,7 @@ Version 2015-05-07"
 ;; @ [5c64226c-d673-4d23-a612-2bfb704edd66|Jake Clemons]
 
 
-;;; Vote For Change Tour - (-10)
+;;; Vote For Change Tour (-10)
 ;; # &
 ;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 ;; # with
