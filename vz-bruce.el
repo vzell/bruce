@@ -1,5 +1,5 @@
 ;; Splitting setlists from Brucebase
-(vz-require 'rect)
+(require 'rect)
 
 (defun vz-split-setlist (ξstring &optional ξfrom ξto)
   "Split Springsteen setlists.
