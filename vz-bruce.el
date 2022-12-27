@@ -1416,7 +1416,10 @@ Version 2015-05-07"
 ;; @ [c3649208-0ebe-449b-b1d7-4bd6c560f109|John Fogerty]
 
 
-(defun musicbrainz-surrond-event ()
+;;; Springsteen On Broadway (-1)
+
+
+(defun musicbrainz-surround-event-band ()
   "Surround event with artists and line"
   (interactive)
   (progn
@@ -1450,7 +1453,30 @@ Version 2015-05-07"
     (forward-line -12)
     ))
 
-(global-set-key (kbd "<f9>") 'musicbrainz-surrond-event)
+(defun musicbrainz-surround-event-springsteen-on-broadway ()
+  "Surround event with artists and line"
+  (interactive)
+  (progn
+    (insert 
+"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+
+"
+)
+    (re-search-forward "^$")
+    (insert 
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    (forward-line -1)
+    ))
+
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
 
 ;;; Bruce Springsteen songs
 ;; Jeannie Needs a Shooter
@@ -3363,12 +3389,14 @@ Version 2015-05-07"
 ("710c7ffa-977e-4431-9f00-c8d4eddf6808" . "Irma Thomas")
 ("a35294cc-95b3-4fe7-8530-22de8b178bea" . "Iron City Houserockers")
 ("88527d26-7496-47c5-8358-ebdb1868a90f" . "Jackson Browne")
+("6ffcc727-833e-4afb-83b3-9b1357e30b7e" . "Jackson Smith")
 ("107d0c22-d051-4d98-8206-4e14de02132a" . "James Taylor")
 ("bf257f0b-c221-4d25-b090-7c35040ad3b4" . "Jane Scarpantoni")
 ("ec30619b-713c-4f8a-9b2a-da4c7e4b15a7" . "Jeff Garrison")
 ("b8eb9721-5b9d-4207-99e9-75abaf26555c" . "Jeff Lubin Band")
 ("db0fc330-1fa1-43f8-a33f-33eaf6a97d78" . "Jesse Malin")
 ("bde64de3-01d4-4ed9-afe9-88b7d9db922d" . "Jessye Norman")
+("f0882d14-446e-4172-9736-98fbc1395fce" . "Jesse Paris Smith")
 ("620a9ca2-b254-403f-9b03-7601b039c010" . "Jimmy Vivino")
 ("4250835c-5cf8-4db4-95b6-6ba0001f7db7" . "JoBonanno & The Godsons of Soul")
 ("f376828a-b438-4fda-bb2e-dcd5fbe81f83" . "Joan Jett")
@@ -3453,6 +3481,7 @@ Version 2015-05-07"
 ("e3c5fab4-caa0-4201-897a-46f8255b1695" . "Timepiece")
 ("59798d85-df1b-4cc5-91f8-f266eadb9ccb" . "Tom \"Bones\" Malone")
 ("979acd47-df26-4863-943d-8c44f52cddc0" . "Tom Chapin")
+("850054f3-11ce-437b-a82b-5917719c78dd" . "Tony Shanahan")
 ("f6365088-96ba-441d-9524-ebd4cc5b467f" . "Treves Blues Band")
 ("a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432" . "U2")
 ("8e434ed7-69a7-489b-905c-6735870befcb" . "Victorious Gospel Choir")
