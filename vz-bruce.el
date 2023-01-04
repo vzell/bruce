@@ -1458,7 +1458,9 @@ Version 2015-05-07"
   (interactive)
   (progn
     (insert 
-"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa] (guest)
 
 "
 )
@@ -1472,7 +1474,7 @@ Version 2015-05-07"
     (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
     (beginning-of-line)
     (recenter-top-bottom)
-    (forward-line -1)
+    (forward-line -3)
     ))
 
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
