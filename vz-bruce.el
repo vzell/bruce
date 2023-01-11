@@ -18,7 +18,7 @@ If ξstring nil, change the text in the region between positions ξfrom ξto."
       (modify-syntax-entry ?’ "w" ξtemp-syn-table)
       (modify-syntax-entry ?' "w" ξtemp-syn-table)
       (with-syntax-table ξtemp-syn-table
- 
+
 	(let (workOnStringP inputStr outputStr)
 	  (setq workOnStringP (if ξstring t nil))
 	  (capitalize-region ξfrom ξto)
@@ -27,7 +27,7 @@ If ξstring nil, change the text in the region between positions ξfrom ξto."
 	  (setq outputStr
 		(let ((case-fold-search t))
 		  (replace-regexp-in-string " / " "\n" inputStr)))
-	  
+
 	  (if workOnStringP
 	      outputStr
 	    (save-excursion
@@ -61,7 +61,7 @@ If ξstring nil, change the text in the region between positions ξfrom ξto."
       (modify-syntax-entry ?’ "w" ξtemp-syn-table)
       (modify-syntax-entry ?' "w" ξtemp-syn-table)
       (with-syntax-table ξtemp-syn-table
- 
+
 	(let (workOnStringP inputStr outputStr)
 	  (setq workOnStringP (if ξstring t nil))
 	  (capitalize-region ξfrom ξto)
@@ -70,7 +70,7 @@ If ξstring nil, change the text in the region between positions ξfrom ξto."
 	  (setq outputStr
 		(let ((case-fold-search t))
 		  (replace-regexp-in-string " / " "\n" inputStr)))
-	  
+
 	  (if workOnStringP
 	      outputStr
 	    (save-excursion
@@ -392,7 +392,7 @@ Version 2015-05-07"
 		    ["Jam Improvisation #2" "[jam improvisation #2]"]
 		    ["..." "[...]"]
 		    ]))
-    (save-excursion 
+    (save-excursion
       (save-restriction
         (narrow-to-region begin end)
         (upcase-initials-region (point-min) (point-max))
@@ -1058,7 +1058,7 @@ Version 2015-05-07"
 (defun vz-mb-extract-from-studiosessions ()
   "Extract titlelist from studio sessions"
   (interactive)
-  (save-excursion  
+  (save-excursion
     (progn
       (beginning-of-buffer)
       (let ((beg (point))
@@ -1423,25 +1423,60 @@ Version 2015-05-07"
   "Surround event with artists and line"
   (interactive)
   (progn
-    (insert 
+    (insert
 "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
 @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 # with
-@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
-@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
-@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
 @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
-@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
 @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
-@ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+# and
 @ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
+@ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
 
 "
 )
     (re-search-forward "^$")
-    (insert 
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    (forward-line -12)
+    ))
+
+(defun musicbrainz-surround-event-2023-international-tour ()
+  "Surround event with artists and line"
+  (interactive)
+  (progn
+    (insert
+"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+# and
+@ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
+@ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+
+"
+)
+    (re-search-forward "^$")
+    (insert
 "
 --------------------------------------------------------------------------------
 
@@ -1457,7 +1492,7 @@ Version 2015-05-07"
   "Surround event with artists and line"
   (interactive)
   (progn
-    (insert 
+    (insert
      "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 
 @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa] (guest)
@@ -1465,7 +1500,7 @@ Version 2015-05-07"
 "
 )
     (re-search-forward "^$")
-    (insert 
+    (insert
 "
 --------------------------------------------------------------------------------
 
@@ -1477,8 +1512,32 @@ Version 2015-05-07"
     (forward-line -3)
     ))
 
+(defun musicbrainz-surround-event-bruce ()
+  "Surround event with artists and line"
+  (interactive)
+  (progn
+    (insert
+     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    (forward-line -1)
+    ))
+
+
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
 
 ;;; Bruce Springsteen songs
 ;; Jeannie Needs a Shooter
@@ -1687,6 +1746,7 @@ Version 2015-05-07"
 ("511de63f-d586-364d-b62a-0919941a41d7" . "Dry Lightning")
 ("36a3f8e2-c990-4e39-8171-bd6dec340c23" . "Duel")
 ("b4420454-02f7-40fa-b051-fa9179bd4dfd" . "Easy Money")
+("4786bdf4-74b6-4ae5-8d80-0e69652848a3" . "Elijah Ford")
 ("615ef301-84be-43f2-86ac-7563afc78568" . "Eloise")
 ("177be7ce-9e92-48ff-80e7-24a9597a777b" . "Elvis Style")
 ("ab2abbae-9ac9-4167-8219-6cc4d785ff0b" . "Empty Sky")
@@ -1725,6 +1785,7 @@ Version 2015-05-07"
 ("c454c4dc-9024-3d41-a288-637e958dd45c" . "Further On (up the Road)")
 ("0af60b56-55d3-374d-87ce-7463abcd7943" . "Galveston Bay")
 ("ad93a59c-bf70-4a9d-b290-1d0fa5e2a0ff" . "Garden State Parkway Blues")
+("c733c4e6-22a2-499d-ace7-17b832356aff" . "Gary Clark Jr.")
 ("37d9330e-ec71-4c12-a12d-52d20384ddcd" . "Gave It a Name")
 ("834c62a1-d89d-4dcc-8caf-f313dc2664ca" . "Georgia")
 ("b129bcb5-dbb7-48b6-be70-74c0800505c3" . "Girls in Their Summer Clothes")
@@ -1853,6 +1914,8 @@ Version 2015-05-07"
 ("08c7a345-7ade-471f-aa67-78285ed64e19" . "Jesse")
 ("7fedf591-419c-4fc7-8d40-c493ead85b8c" . "Jesus Mary and Joseph...")
 ("add94de9-7c0d-42a8-93f5-b9b2b1c45670" . "Jesus Was an Only Son")
+("f4c81776-18d1-4722-8e1c-aab2be63ca47" . "JJ Johnson")
+("6f2477ad-8ebb-4ca8-a3e0-e0b17ba5fdce" . "Jon Deas")
 ("8d03bb1c-5ae8-47e5-b06d-6a4a64921dbc" . "John Henry")
 ("1a6227c1-c287-4ea5-9d22-3b71eba56bac" . "Johnny Go Down")
 ("d49f9a8f-11bb-4471-90dc-6516a47b7ffd" . "Johnny Bye Bye")
@@ -1867,6 +1930,7 @@ Version 2015-05-07"
 ("b0b8e03d-ff63-402a-8b4c-5bb25c5be9ec" . "Kingdom of Days")
 ("6edff037-8c34-4112-a51e-330d73aa1446" . "King’s Highway")
 ("fdb63bfc-2429-474a-816d-281d1d33ceb3" . "King’s Rock (King’s Big Chance)")
+("9537f0b5-19f4-4a41-980a-0f9de1aac56b" . "King Zapata")
 ("d58d3dce-36cd-4962-aaed-d78037b50b91" . "Kitty’s Back")
 ("ee682c29-c368-4106-a2d0-b54fde6378e6" . "Knife in the Back")
 ("1460d409-c3dd-4102-b9a8-1da4d24659ed" . "Lady Walking Down by the River")
@@ -2335,7 +2399,7 @@ Version 2015-05-07"
 ;; Other writers
 (setq mb-bruce-other-works '(
 ("9828a873-3969-4823-a5d6-a6d7b0d38e48" . "500 Miles")
-("d3e5f2dd-dc91-35bf-9367-a53130b756fa" . "7 Rooms of Gloom")			     
+("d3e5f2dd-dc91-35bf-9367-a53130b756fa" . "7 Rooms of Gloom")
 ("84f986f6-9145-3d62-80d5-5e729652ca52" . "(Get Your Kicks on) Route 66")
 ("b8aeb29b-6c42-38da-a179-12e1fdb97ad3" . "(I Can’t Get No) Satisfaction")
 ("f5838306-a92b-33b7-9b87-b30228265c79" . "Heat Wave")
@@ -2607,6 +2671,7 @@ Version 2015-05-07"
 ("f8069a6e-1bc5-3623-b522-17dc41cbe665" . "Heartbreak Hotel")
 ("c2896dcb-74f1-41e3-a120-9b55604949b5" . "Heaven Help the Lonely")
 ("265b03f1-4aad-4ae3-a6fb-8b1ba5b4ea93" . "Heavy Bertha") ;; [unknown]
+("92180ca4-4c6b-341f-8ed4-1cbd87432774" . "Heigh‐Ho")
 ("3a15b53b-8b87-4f40-946f-728dd70542e4" . "Help Me")
 ("295f4446-1cf8-3e2b-8c28-dcf2765bc78a" . "Helpless")
 ("864ec2e6-0aa8-36a6-9b46-8e3843665702" . "Here Comes the Night")
@@ -2659,6 +2724,7 @@ Version 2015-05-07"
 ("1f50b407-8928-43b7-8709-1e28d840186a" . "I Understand (Just How You Feel)")
 ("ba883522-bf5a-37b5-b6b8-7572e139c6d7" . "I Walk the Line")
 ("f61ac0ce-01a9-38f4-870f-9f2cad167650" . "I Wanna Be Sedated")
+("24e04462-eb1a-337f-b20e-8ed8fee09d61" . "I Wanna Be Your Man")
 ("549b28ab-60aa-4ec5-8203-4f3e94661846" . "I Want You")
 ("518bb151-fe46-417c-bf92-3d89c5b246a4" . "I Was Born to Rock")
 ("bdab6595-3f44-3403-8eff-b1ecabda9530" . "I Wish It Would Rain")
@@ -3363,7 +3429,11 @@ Version 2015-05-07"
 ("615e4dea-7f8e-469d-a455-dc9461c1387d" . "Alexa Ray Joel")
 ("6b064ead-91a4-4ac8-8076-b1febe4f4aac" . "Alison Krauss")
 ("a6410e63-8056-4447-837d-2fbf5c504979" . "Alliance Singers")
+("71853da7-d1e3-4649-b9e2-a74d5700badf" . "Anna Maxwell Martin")
+("40dfc5cb-158f-41a5-8013-f2bda59dde9a" . "Anthony Mason")
 ("9111dc59-5ccd-4bd5-a8ec-3b19fee9d9b7" . "Antoine de Caunes")
+("2d46f205-9f6c-444c-89da-80b4ffa98b7a" . "Anya Taylor‐Joy")
+("7ae16953-3a0a-4a95-8446-2b3e04c2dba3" . "Audie Cornish")
 ("0881daf1-20df-4a3e-a84f-6476a84bb172" . "Badly Drawn Boy")
 ("0de4d19f-05c8-4562-a3c0-7abdc144f1d5" . "Barack Obama")
 ("3435011c-c0d1-433b-9049-333d54b4af00" . "Bart Haynes")
@@ -3381,8 +3451,11 @@ Version 2015-05-07"
 ("137e3419-13b5-46d6-8e0a-a9231de584b4" . "Boccigalupe & The Badboys")
 ("5dcdb5eb-cb72-4e6e-9e63-b7bace604965" . "Bon Jovi")
 ("0f0da09c-3940-4cb5-879f-4cea28907810" . "Bonnie Raitt")
+("3575336b-07c0-4efb-860b-3482dc5e1124" . "Boss Bill")
 ("7f347782-eb14-40c3-98e2-17b6e1bfe56c" . "Bono")
+("9a3d4dfa-ba58-4f01-b5e9-6ecb1c6f7996" . "Brad Pemberton")
 ("5b9dc76b-8574-4cb5-9496-ab1bc0d35c29" . "Brandon Flowers")
+("df8b4131-e876-43a9-ab11-8d505bc94ebf" . "Brendan O’Connor")
 ("e2259e9d-ab86-4e5a-8054-d0e3464616eb" . "Brian Kirk & The Jirks")
 ("634fe78e-fc6b-4b2a-ba83-c8c66e13a8aa" . "Brian Wilson")
 ("e60dbba7-6f55-429a-bd22-5e9c6a87ae70" . "Bruce Hornsby")
@@ -3396,10 +3469,12 @@ Version 2015-05-07"
 ("a5ab77f2-da3b-454c-aa5f-239f5c8ea096" . "Chris Anderson")
 ("479497d4-e7c2-4e78-972e-56e78fac3995" . "Chris Isaak")
 ("fde0d322-1493-4087-a6cb-73e5d8d4461b" . "Chris Jordan")
+("f6ef6771-591c-4782-b03e-f3fe6101dcd8" . "Chris Masterson")
 ("8d6aa484-ca76-4535-9cc6-a5777e7a8438" . "Chris Phillips")
 ("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Clarence Clemons")
 ("e070d092-5bd5-4379-ac55-b3534832e2a5" . "Clarence Clemons & The Red Bank Rockers")
 ("8f45e863-c2c8-4f10-b9bf-4d36774bb0b5" . "Clive Davis")
+("cc197bad-dc9c-440d-a5b5-d52ba2e14234" . "Coldplay")
 ("210c1047-0e88-4b73-81ac-13a026cefb01" . "Conan O’Brien")
 ("a0327dc2-dc76-44d5-aec6-47cd2dff1469" . "Counting Crows")
 ("6a62a034-cee3-490c-a2ad-621eca2f25a4" . "Craig Finn")
@@ -3421,9 +3496,10 @@ Version 2015-05-07"
 ("fe0e1895-aa84-47d9-8e5b-7930fc20709b" . "Dr. John")
 ("b66771cc-45fa-4a32-b14f-5337d7223d7a" . "D’Angelo")
 ("4f29fd17-613e-46f3-94e9-f8f508033ab0" . "Earth")
-("6a3394ba-6888-4dd0-93f3-06c1e35749d8" . "Eddie Manion")
+("6a3394ba-6888-4dd0-93f3-06c1e35749d8" . "Ed Manion")
 ("1a60d6dd-9d3e-40fc-a66d-3184f9ee0d61" . "Eddie Vedder")
 ("d46897c5-f814-4efc-bd94-8e72b2ecd06b" . "Edith Bowman")
+("ab4bf5ea-4225-4b31-b0db-f630da0b737c" . "Eleanor Whitmore")
 ("8a338e06-d182-46f2-bd16-30a09bc840ba" . "Elvis Costello")
 ("1350f186-0fbf-4ea7-896a-340d52a29f40" . "Elysian Fields")
 ("35ef61ca-43db-4772-ba27-0489e9ebcb69" . "Emmylou Harris")
@@ -3431,6 +3507,8 @@ Version 2015-05-07"
 ("15856215-cc51-4423-879c-9ac955ccb11a" . "Eric Church")
 ("a5dcab6e-0c18-4237-9f8d-1f207430237a" . "Exit 105")
 ("df64ba7e-957d-4873-b195-7e08ba039a1d" . "Felix Cavalieri")
+("b9ad1f8f-0dad-4e76-9de5-48076d533959" . "Fernando González González")
+("88798869-338b-418e-9c47-97365444b734" . "Florence Welch")
 ("6eb1eda0-25af-4154-a560-1995a8c30e93" . "Frank Marziotti")
 ("c904e534-acda-4ad0-8b6b-7a047f586e5c" . "Fredrik Skavlan")
 ("3b7c9a50-2e5b-4350-a39a-fd7b6ef3274f" . "Gayle King")
@@ -3438,6 +3516,7 @@ Version 2015-05-07"
 ("42b42dd1-9263-4eae-91cd-4014a5b5d39f" . "Garry Tallent")
 ("0f1083d8-fca9-40e3-b7bb-6cca7f15eff0" . "Gary “U.S.” Bonds")
 ("eb0cd72f-0235-47ec-9d0b-f244a2afc3b7" . "Geoffrey Oryema")
+("ed30e048-a8fb-47f0-8ad1-3e9b3ededaaa" . "George Stroumboulopoulos")
 ("3dfbd1e7-c9d7-4a1f-850a-87a0e594d0a0" . "George Theiss")
 ("87b1c4d4-b144-4ed2-8c55-334e3b72f23e" . "Gerard Ekdom")
 ("d5c51c36-ac67-4727-91ed-ee9f0df81a2d" . "Gloria Gaynor")
@@ -3446,17 +3525,23 @@ Version 2015-05-07"
 ("360f2e5e-e321-402a-b33a-3e0d6b07ce79" . "Highway 9")
 ("9e047ced-bb57-4554-a756-5f528d72723a" . "Hoda Kotb")
 ("40d9d880-f976-4879-ab1f-83c93cffa871" . "Holiday Express")
+("e2714df1-4613-4dee-8e0e-f4f333200914" . "Howard Stern")
+("11982f70-7b8c-4009-b27c-395c17ecf379" . "Humberto Tan")
+("bfa8dc1f-7f94-4c82-a88e-d41d67d42ee8" . "Ingo Zamperoni")
 ("710c7ffa-977e-4431-9f00-c8d4eddf6808" . "Irma Thomas")
 ("a35294cc-95b3-4fe7-8530-22de8b178bea" . "Iron City Houserockers")
 ("1155a7a9-a7b4-46ba-ba27-6b6c98be487e" . "Jack Antonoff")
 ("bac82cac-a752-4a4e-9ad6-fe3395e924f5" . "Jack Daley")
 ("88527d26-7496-47c5-8358-ebdb1868a90f" . "Jackson Browne")
 ("6ffcc727-833e-4afb-83b3-9b1357e30b7e" . "Jackson Smith")
+("d4ec3315-ddff-422a-9efd-73eb29f1bbbb" . "Jake Blanton")
 ("5c64226c-d673-4d23-a612-2bfb704edd66" . "Jake Clemons")
 ("ebee61b4-bbdd-4087-9bcb-d5aa099088ec" . "James Blunt")
 ("107d0c22-d051-4d98-8206-4e14de02132a" . "James Taylor")
+("a7ff504b-bbca-49f9-950b-ad02f2a2b092" . "Jann Wenner")
 ("bf257f0b-c221-4d25-b090-7c35040ad3b4" . "Jane Scarpantoni")
 ("ec30619b-713c-4f8a-9b2a-da4c7e4b15a7" . "Jeff Garrison")
+("681e7510-d6bf-4515-942a-7443d967b46e" . "Jeff Hill")
 ("b8eb9721-5b9d-4207-99e9-75abaf26555c" . "Jeff Lubin Band")
 ("db0fc330-1fa1-43f8-a33f-33eaf6a97d78" . "Jesse Malin")
 ("bde64de3-01d4-4ed9-afe9-88b7d9db922d" . "Jessye Norman")
@@ -3480,7 +3565,9 @@ Version 2015-05-07"
 ("3e045881-56a5-4b62-8f99-cb3982cab577" . "John Eddie")
 ("db9023d4-d836-4983-befb-ebed46de8159" . "John Eddie and The Front Street Runners")
 ("c3649208-0ebe-449b-b1d7-4bd6c560f109" . "John Fogerty")
+("4530bdd0-9707-442e-b37e-578def6a0926" . "Jon Landau")
 ("75a72702-a5ef-4513-bca5-c5b944903546" . "John Legend")
+("685ec09c-79ee-43eb-b197-aa102fca0adc" . "John Leventhal")
 ("0aad6b52-fd93-4ea4-9c5d-1f66e1bc9f0a" . "John Mellencamp")
 ("e86492c1-0376-4df0-8042-8ba058c83960" . "John Prine")
 ("7f139e42-8426-42c2-ba7c-66e4f365f48c" . "John Scarpulla")
@@ -3494,6 +3581,7 @@ Version 2015-05-07"
 ("4d5299ce-9223-45c0-a1c5-83ac7bfe8813" . "Lance Larson")
 ("62db200f-a5ff-4451-8a0d-dc26b7d70f0e" . "Lauren Onkey")
 ("e8414012-4a1c-4ad4-be5e-fc55294e28cc" . "Lauryn Hill")
+("486b576c-56a6-481b-ad8d-84a7457fc901" . "Laiya St. Clair")
 ("236fca70-1195-4842-a1a0-0e8a0aff98fc" . "Layonne Holmes")
 ("3cb25fb2-5547-4b05-adec-1a5e37830d46" . "Lionel Richie")
 ("59d77428-bf32-4c9f-bc4c-7c03ec882c59" . "Lisa Lowell")
@@ -3503,6 +3591,8 @@ Version 2015-05-07"
 ("ed7e8db7-749e-460b-bd28-eb1de46dccda" . "Marah")
 ("8e3a27d7-9ba2-4670-bb11-10550870762c" . "Mark Radcliffe")
 ("7962d3cd-83e7-46ea-8352-531a65cf2d29" . "Martin Scorsese")
+("f1bc3b70-000a-4d50-b6c8-ac8acd25a24d" . "Massimo Cotto")
+("1ec61857-c0a8-41f2-959c-a05df5d465c5" . "Matt Savage")
 ("6c7d78f6-afb2-4784-b236-bccee5278839" . "Matthew McConaughey")
 ("2566ca73-1dfd-49e7-ab20-dfa5697b360e" . "Max Weinberg")
 ("b3ae82c2-e60b-4551-a76d-6620f1b456aa" . "Melissa Etheridge")
@@ -3510,7 +3600,9 @@ Version 2015-05-07"
 ("cf11ca6d-fc48-4cd5-aa0c-d8c51d50ecb0" . "Michael J. Fox")
 ("078e680d-6d6c-46ce-8134-0bddeb9e5e35" . "Mike Mancini")
 ("45d7e6e8-c5bf-4c59-a79e-c7bb2e9b2cc9" . "Mike Ness")
+("346f8e40-4be4-4dc8-9b8b-d4896324d1af" . "Mo Gilligan")
 ("0e073997-d11b-43f2-84e1-1675201e9896" . "Muddy Shews")
+("23b3c1dc-7334-4deb-be55-3ed978ead05c" . "Nicole Lawrence")
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils Lofgren")
 ("93784fe1-8b8a-47ab-b00a-e54ca9f224be" . "No Spring Chickens")
 ("af78c8ec-0d33-4082-98f5-23281b65b109" . "Nona Hendryx")
@@ -3523,19 +3615,28 @@ Version 2015-05-07"
 ("e6acd6a9-95b0-4492-8f87-15f45afa341b" . "Paul Rudd")
 ("83701bad-b130-4c19-9783-59061ca79aa0" . "Peter Wolf")
 ("d3986756-f1dd-4635-9510-2d116c0deddd" . "Phoebe Snow")
+("136986bb-6e39-4e79-9945-cf9aa37a4a0b" . "Phonte")
 ("3599a39e-4e10-4cb5-90d4-c8a015ebc73b" . "Portugal. The Man")
 ("f5f40219-8929-485a-aeb1-1f8093ee1c24" . "Purpul Dyneste")
+("9436fbf8-5498-43e9-9a8d-eccbe53df6ad" . "Questlove")
+("1c09b9e6-a12a-4cea-b80b-97415d19381b" . "Raina Douris")
 ("2e59d801-d364-4ef6-9f8d-02d069251247" . "Ralph Lauren")
 ("14440b07-0e02-49b1-9b0f-feb730d9c070" . "Randy Moore")
+("072fc124-6f78-4ecc-9cc5-9ce82c2acf3f" . "Rebecca Manzoni")
 ("07aebfa0-55d6-47e0-a284-12330e3eae0d" . "Rick Rubin")
+("473c0979-030a-4524-8ff0-7b84aa733fd0" . "Ricky Ray Jackson")
 ("a0920ae6-2968-4f92-ac14-67448452bd18" . "Robbie Robertson")
 ("5cc59119-95ca-415a-8a14-3eac45670afe" . "Robert De Niro")
 ("5613f03b-10a9-4556-b02c-27ef89be4e36" . "Robert Santelli")
+("6b96e1da-02c0-4426-937e-3898e615455b" . "Robin Quivers")
 ("536e8e61-8040-40a1-8b35-a2c6996dc44f" . "Robin Williams")
+("89729b97-90a3-4f84-9e88-e16f96cab350" . "Ron Aniello")
+("5ff6f6eb-31ad-4903-a3c3-4c9283fcde8b" . "Rosanne Cash")
 ("11d2fcfe-669d-4596-8921-e07dbdae311f" . "Roy Bittan")
 ("5870003e-ce01-45cc-8e1c-53709407685b" . "Ryan Tubridy")
 ("868114f1-906b-4926-9daa-3bb046d0ea06" . "Sam Moore")
 ("fedf79de-ca39-47a7-bbce-b14f15e4a305" . "Sarina Bellissimo")
+("3bcbedbf-f835-4d8a-af91-627c17c7fd39" . "Seth Meyers")
 ("80ccfede-c258-4575-a7ad-c982e9932e0f" . "Sheryl Crow")
 ("3fa031e3-0d93-4bb1-b3b2-14e06b147a0f" . "Sienna Miller")
 ("a9100753-f539-43cf-bcc9-579566fb512e" . "Simply Red")
@@ -3548,12 +3649,16 @@ Version 2015-05-07"
 ("f826b4d1-2dc3-4c4f-ba70-69b472320338" . "Southside Johnny")
 ("d7bc97fb-4bd3-453b-98a1-9081f89c52f0" . "Southside Johnny & The Asbury Jukes")
 ("cd9053ff-7870-4c7e-a03c-d7aa8f6fa9f3" . "Steel Mill")
+("ec863030-7c13-45a3-a025-a69195d3a020" . "Steve Earle")
+("59e1d123-844c-4e92-8a8f-94d4e058314e" . "Steve Earle & the Dukes")
 ("bc7ceac9-a524-42bd-996a-380d2f1eb567" . "Steve Shews")
 ("7dd40d4f-7af2-4233-8b87-785254646bbe" . "Steve Hargrave")
 ("5b7c47b7-fcad-450f-bf63-48e2c43fc4e2" . "Stephen Colbert")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Steven Van Zandt")
 ("7944ed53-2a58-4035-9b93-140a71e41c34" . "Sting")
 ("0e763b87-f3cd-4a63-986f-bebc4189f1f0" . "Stray Cats")
+("059e03e3-e426-4ac0-b4df-68118cc2ac8f" . "Suga Steve")
+("7bef92eb-f2b1-4790-935a-6e411eff406e" . "The 1992–93 World Tour Band")
 ("e4d62b29-a67e-4700-ba16-35c436cc1f84" . "The Alliance Choir")
 ("1607e961-c4a7-4602-ac22-d0d87833eee3" . "The Bruce Springsteen Band")
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "The Castiles")
@@ -3565,32 +3670,40 @@ Version 2015-05-07"
 ("1adfbbca-340a-46dd-a47a-8ba0b879cb68" . "The Max Weinberg 7")
 ("c7589842-71c8-460a-a0ae-7833b8a76fe0" . "The Miami Horns")
 ("3072c9d3-3787-407c-ae2f-69e7f9846b49" . "The Rogues")
+("80b3cf5e-18fe-4c59-98c7-e5bb87210710" . "The Roots")
 ("7d5c39ac-5d48-4fdb-81df-6212e38353b3" . "The Sessions Band")
 ("3d49e36a-cc9e-411e-93c6-d1646ba5bd3a" . "The Staple Singers")
 ("91037ad4-4ee5-4d8b-98aa-41df93ddd92e" . "The Tangiers Blues Band")
 ("15fa2639-cea9-4f13-8ed7-88ad594fdfb9" . "The Van Jets")
 ("3cf1bde9-1191-4220-9ce0-15413361e89f" . "Thom Powers")
+("bd78fa2d-24f5-4c4b-a756-dcd793b2d390" . "Torsten Groß")
 ("7e5cfc9a-e9e1-46f1-b81a-861b12049488" . "Tim McGraw")
 ("288baac9-20b0-47ea-ac18-3feba612aeea" . "Tim McLoone and the Shirleys")
 ("e3c5fab4-caa0-4201-897a-46f8255b1695" . "Timepiece")
 ("c78fe0c7-70d7-4c21-af77-ae1caa2f7af2" . "Toby Emmerich")
 ("59798d85-df1b-4cc5-91f8-f266eadb9ccb" . "Tom \"Bones\" Malone")
 ("979acd47-df26-4863-943d-8c44f52cddc0" . "Tom Chapin")
+("e7d49e3f-2bc0-421f-ae55-bd710155b1ab" . "Tom Power")
 ("eea2b7c6-443c-49ae-8643-1210ccac6831" . "Thom Zimny")
 ("850054f3-11ce-437b-a82b-5917719c78dd" . "Tony Shanahan")
 ("f6365088-96ba-441d-9524-ebd4cc5b467f" . "Treves Blues Band")
 ("c27296f1-857c-4555-9e81-2c6f1cb1baf4" . "Trevor Noah")
 ("a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432" . "U2")
 ("8e434ed7-69a7-489b-905c-6735870befcb" . "Victorious Gospel Choir")
+("98c852f0-4938-43db-ba5d-7a945ad43f89" . "Waleed Aly")
 ("970fb29f-e288-403e-a388-d2a7889bfa47" . "Warren Zevon")
 ("40fb02de-afc3-441c-a6ec-21fee861d478" . "Willie Nile")
 ("fc6214b3-6d82-4803-be74-01ece1723e42" . "Wilson Pickett")
+("507226f4-0842-4f43-950e-81a7017230ec" . "Zac Brown Band")
+("64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56" . "Zack Alford") ;; "Zachary Alford" on MB
 ("60c693ce-2121-47c5-bc20-975e43137e48" . "Zane Lowe")
+("84212e42-f154-4dbd-becd-8ddd7549b6ee" . "Zem Audu")
+("b9d71e60-f447-4bb5-b46c-58e89781bacb" . "Zoe Ball")
 ))
 
 (setq fixworks '(
 ;; special work titles to fix
-("(What’s So Funny ’bout) Peace, Love and Understanding" . "(What’s So Funny ’Bout) Peace, Love and Understanding")		 
+("(What’s So Funny ’bout) Peace, Love and Understanding" . "(What’s So Funny ’Bout) Peace, Love and Understanding")
 ("57 Channels (And Nothin’ On)" . "57 Channels (and Nothin’ On)")
 ("A Winter’s Revelation (In 9 Illusions)" . "A Winter’s Revelation (in 9 Illusions)")
 ("Armed &Amp; Dangerous (with Love)" . "Armed & Dangerous (with Love)")
