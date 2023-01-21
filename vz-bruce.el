@@ -321,6 +321,7 @@ Version 2015-05-07"
 		    ["(With Pete Seeger and All Performers" "(with Pete Seeger and all performers"]
 		    ["(With All" "(with all"]
 		    ["(With Strings" "(with strings"]
+		    ["(With Bongos" "(with bongos"]
 		    ["(With the Miami Horns" "(with The Miami Horns"]
 		    ["(With the Roots" "(with The Roots"]
 		    ["(With Paul Mccartney" "(with Paul McCartney"]
@@ -373,6 +374,7 @@ Version 2015-05-07"
 		    ["(Several Run-Throughs" "(several run-throughs"]
 		    ["(Small Snippet" "(small snippet"]
 		    ["(Multiple Takes" "(multiple takes"]
+		    ["(Multiple Times" "(multiple times"]
 		    ["(4 Takes" "(4 takes"]
 		    ["(Vocal Ad-Lib" "(vocal ad-lib"]
 		    ["String Section" "string section"]
@@ -431,6 +433,8 @@ Version 2015-05-07"
 						"harmonies"
 						"\\|"
 						"band"
+						"\\|"
+						"bongos"
 						"\\|"
 						"edit"
 						"\\|"
@@ -3430,6 +3434,7 @@ Version 2015-05-07"
 ("6b064ead-91a4-4ac8-8076-b1febe4f4aac" . "Alison Krauss")
 ("a6410e63-8056-4447-837d-2fbf5c504979" . "Alliance Singers")
 ("71853da7-d1e3-4649-b9e2-a74d5700badf" . "Anna Maxwell Martin")
+("b0ab3979-4165-4e3e-b125-2d77f14080bd" . "Anthony Almonte")
 ("40dfc5cb-158f-41a5-8013-f2bda59dde9a" . "Anthony Mason")
 ("9111dc59-5ccd-4bd5-a8ec-3b19fee9d9b7" . "Antoine de Caunes")
 ("2d46f205-9f6c-444c-89da-80b4ffa98b7a" . "Anya Taylor‐Joy")
@@ -3479,6 +3484,8 @@ Version 2015-05-07"
 ("a0327dc2-dc76-44d5-aec6-47cd2dff1469" . "Counting Crows")
 ("6a62a034-cee3-490c-a2ad-621eca2f25a4" . "Craig Finn")
 ("b36e1a45-2f2c-44a5-b8d8-9dc12159fab5" . "Craig Werner")
+("028fd996-fe8f-41b6-a6ed-1cb4b06a23d2" . "Curt Ramm")
+("7b18698b-33fb-4865-b158-e74f3457eeb7" . "Curtis King")
 ("cb914df3-0925-4078-bc0e-c23c864898af" . "D.J. Fontana")
 ("2efbcc42-4438-4594-a4b6-99214d82e35a" . "Danny Alexander")
 ("a1979995-66bc-4e61-9880-2e9f0484b29a" . "Danny Clinch")
@@ -3598,6 +3605,7 @@ Version 2015-05-07"
 ("b3ae82c2-e60b-4551-a76d-6620f1b456aa" . "Melissa Etheridge")
 ("92fbcd5d-3a3e-4653-b4ff-0bd99ee61d4f" . "Michael Blyth")
 ("cf11ca6d-fc48-4cd5-aa0c-d8c51d50ecb0" . "Michael J. Fox")
+("e67ac344-ce0a-4a27-b4ad-9502dab57a82" . "Michelle Moore")
 ("078e680d-6d6c-46ce-8134-0bddeb9e5e35" . "Mike Mancini")
 ("45d7e6e8-c5bf-4c59-a79e-c7bb2e9b2cc9" . "Mike Ness")
 ("346f8e40-4be4-4dc8-9b8b-d4896324d1af" . "Mo Gilligan")
@@ -3665,6 +3673,8 @@ Version 2015-05-07"
 ("c99af15d-d3fb-4845-840f-4c85cac987c0" . "The Dogs")
 ("4fa97aab-aa25-4d12-ba0d-37b49e714cbc" . "The Danny White Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The E Street Band")
+("ad2232c5-2b11-4699-80c2-e5f83c56c8e4" . "The E Street Choir")
+("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "The E Street Horns")
 ("9df6e393-da6b-4e65-9f50-6e4df5624e63" . "The Bobby Bandiera Band")
 ("a94e530f-4e9f-40e6-b44b-ebec06f7900e" . "The Edge")
 ("1adfbbca-340a-46dd-a47a-8ba0b879cb68" . "The Max Weinberg 7")
