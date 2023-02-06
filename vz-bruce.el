@@ -1,5 +1,12 @@
+;;; vz-bruce --- Springsteen helpers for Musicbrainz
+
+;;; Commentary:
+; Springsteen helpers for Musicbrainz
+
 ;; Splitting setlists from Brucebase
 (require 'rect)
+
+;;; Code:
 
 (defun vz-split-setlist (ξstring &optional ξfrom ξto)
   "Split Springsteen setlists.
@@ -1469,13 +1476,28 @@ Version 2015-05-07"
 # with
 @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
 @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
-@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
 @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
 @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
 # and
 @ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
 @ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+# and
+@ [61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e|The E Street Horns]
+# with
+@ [5c64226c-d673-4d23-a612-2bfb704edd66|Jake Clemons]
+@ [092ae7a4-0ea2-407a-a200-d1ee09383537|Barry Danielian]
+@ [6a3394ba-6888-4dd0-93f3-06c1e35749d8|Ed Manion]
+@ [ef011392-7eee-4090-ad83-660c48e9b1c1|Ozzie Melendez]
+@ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
+# and
+@ [ad2232c5-2b11-4699-80c2-e5f83c56c8e4|The E Street Choir]
+# with
+@ [b0ab3979-4165-4e3e-b125-2d77f14080bd|Anthony Almonte]
+@ [1ca07311-cbfe-4ae8-a518-aa76c8579802|Ada Dyer]
+@ [7b18698b-33fb-4865-b158-e74f3457eeb7|Curtis King]
+@ [59d77428-bf32-4c9f-bc4c-7c03ec882c59|Lisa Lowell]
+@ [e67ac344-ce0a-4a27-b4ad-9502dab57a82|Michelle Moore]
 
 "
 )
@@ -1489,7 +1511,7 @@ Version 2015-05-07"
     (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
     (beginning-of-line)
     (recenter-top-bottom)
-    (forward-line -12)
+    (forward-line -28)
     ))
 
 (defun musicbrainz-surround-event-springsteen-on-broadway ()
@@ -3429,6 +3451,7 @@ Version 2015-05-07"
 
 ;; Brucebase artists
 (setq  mb-artists '(
+("1ca07311-cbfe-4ae8-a518-aa76c8579802" . "Ada Dyer")
 ("09381e15-32ed-447c-ad06-475baf3b4496" . "Al Chez")
 ("615e4dea-7f8e-469d-a455-dc9461c1387d" . "Alexa Ray Joel")
 ("6b064ead-91a4-4ac8-8076-b1febe4f4aac" . "Alison Krauss")
@@ -3442,6 +3465,7 @@ Version 2015-05-07"
 ("0881daf1-20df-4a3e-a84f-6476a84bb172" . "Badly Drawn Boy")
 ("0de4d19f-05c8-4562-a3c0-7abdc144f1d5" . "Barack Obama")
 ("3435011c-c0d1-433b-9049-333d54b4af00" . "Bart Haynes")
+("092ae7a4-0ea2-407a-a200-d1ee09383537" . "Barry Danielian")
 ("3f0b02ae-bc83-4417-ab1d-055b23d829fe" . "Beaver Brown")
 ("6a849bbc-e2cc-422d-95ca-d3230d802a47" . "Ben Jaffe")
 ("aee70c97-96b1-4d6e-a53f-a4f539bf1fa2" . "Ben Mankiewicz")
@@ -3789,3 +3813,4 @@ Version 2015-05-07"
 (setq brucebase-well-known-titles "^* \\(Loose End\\|Song Title\\|The Mark\\|Waitin’ for an Angel\\|Do (You) Want Me to Say All Right\\|The Glory of Love\\)")
 
 (provide 'vz-bruce)
+;;; vz-bruce.el ends here
