@@ -846,7 +846,7 @@ Version 2015-05-07"
 	       (end (match-end 0))
 	       (track (buffer-substring (+ beg 1) (+ end -1))))
 	  (progn
-	    (setq tw (rassoc track mb-bruce-works))
+	    (setq tw (rassoc track works))
 	    (if tw
 		(progn
 		  (kill-region beg end)
