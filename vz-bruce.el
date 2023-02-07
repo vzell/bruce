@@ -320,6 +320,8 @@ Version 2015-05-07"
 		    [" Qua " " qua "]
 		    [" Re " " re "]
 		    [" Via " " via "]
+		    ;; I'll at the beginning
+		    ["Ll " "ll "]
 		    ;; specials
 		    ["'" "’"]
 		    ["(With All Including" "(with all including"]
@@ -844,6 +846,7 @@ Version 2015-05-07"
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
 	       (track (buffer-substring (+ beg 1) (+ end -1))))
 	  (progn
 	    (setq tw (rassoc track works))
