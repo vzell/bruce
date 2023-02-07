@@ -830,6 +830,29 @@ Version 2015-05-07"
 		(forward-line 1)
 		))))))))
 
+;; "\"[^\"]*\""
+;; "“[^”]*”"
+(defun vz-mb-urlify-gignote ()
+  "Search for work."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
+	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (track (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc track mb-bruce-works))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-capitalize-first-char (&optional string)
   "Capitalize only the first character of the input STRING."
   (if (and string (> (length string) 0))
