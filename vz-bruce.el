@@ -853,9 +853,9 @@ Version 2015-05-07"
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
 	       (cased (vz-title-case-region-or-line beg end))
-	       (track (buffer-substring (+ beg 1) (+ end -1))))
+	       (work (buffer-substring (+ beg 1) (+ end -1))))
 	  (progn
-	    (setq tw (rassoc track mb-works))
+	    (setq tw (rassoc work mb-works))
 	    (if tw
 		(progn
 		  (kill-region beg end)
