@@ -501,7 +501,7 @@ Version 2015-05-07"
 						"\\))$"))
 
 (defun vz-capitalize-first-and-last-word ()
-  "Capitalize first and last word in a line ALWAYS, except for the above exceptions"
+  "Capitalize first and last word in a line ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (let ((ξtemp-syn-table (make-syntax-table)))
@@ -522,7 +522,7 @@ Version 2015-05-07"
 	      ))))))
 
 (defun brucebase-download-songlist ()
-  "Download studio sessions from http://brucebase.wikidot.com/Songlist"
+  "Download studio sessions from http://brucebase.wikidot.com/Songlist."
   (interactive)
   (progn
     (setq brucebase-songlist-url "Songlist")
@@ -557,7 +557,7 @@ Version 2015-05-07"
 	(write-file (concat brucebase-download-folder brucebase-songlist-url ".missing"))))))
 
 (defun brucebase-extract-titles-from-songlist ()
-  "Extract titles from HTML songlist page"
+  "Extract titles from HTML songlist page."
   (interactive)
   (let
       (
@@ -598,7 +598,7 @@ Version 2015-05-07"
 	(forward-line 1))))))
 
 (defun vz-mb-catchup ()
-  "Remove titles from list which have been confirmed to exist in Muscibrainz"
+  "Remove titles from list which have been confirmed to exist in Muscibrainz."
   (interactive)
   (progn
     (save-excursion
@@ -611,7 +611,7 @@ Version 2015-05-07"
 	  (delete-matching-lines "^* \\["))))))
 
 (defun vz-mb-fixup-titles ()
-  "Fix special title cases"
+  "Fix special title cases."
   (interactive)
   (save-excursion
     (while (looking-at "[#*] ")
@@ -866,7 +866,7 @@ Version 2015-05-07"
     string))
 
 (defun vz-download-all-songlists ()
-  "Download songlists from Brucebase and Springsteenlyrics.com"
+  "Download songlists from Brucebase and Springsteenlyrics.com."
   (interactive)
   (progn
     (if (file-exists-p "/tmp/brucebase")
@@ -914,13 +914,13 @@ Version 2015-05-07"
 (setq springsteenlyrics-file-title "SpringsteenLyrics")
 
 (defun springsteenlyrics-download-titles ()
-  "Download lyrics page from http://www.springsteenlyrics.com"
+  "Download lyrics page from http://www.springsteenlyrics.com."
   (interactive)
   (download-file springsteenlyrics-url springsteenlyrics-download-folder springsteenlyrics-file-title)
   (kill-buffer springsteenlyrics-file-title))
 
 (defun brucebase-download-studio-sessions ()
-  "Download studio sessions from http://brucebase.wikidot.com"
+  "Download studio sessions from http://brucebase.wikidot.com."
   (interactive)
   (setq brucebase-studio-sessions brucebase-studio-sessions-list)
   (while brucebase-studio-sessions
@@ -933,7 +933,7 @@ Version 2015-05-07"
       (kill-buffer brucebase-session-name))))
 
 (defun brucebase-titelize-studio-sessions ()
-  "Titelize studio sessions from http://brucebase.wikidot.com"
+  "Titelize studio sessions from http://brucebase.wikidot.com."
   (interactive)
   (if (file-exists-p (concat brucebase-download-folder brucebase-file-title))
       (delete-file (concat brucebase-download-folder brucebase-file-title)))
@@ -1001,7 +1001,7 @@ Version 2015-05-07"
 	))))
 
 (defun brucebase-delete-wellknown-titles ()
-  "Delete wellknown titles. All are a.k.a's except the dummy: Song Title"
+  "Delete wellknown titles. All are a.k.a's except the dummy: Song Title."
   (interactive)
   (save-excursion
     (beginning-of-buffer)
@@ -1011,7 +1011,7 @@ Version 2015-05-07"
       (forward-line))))
 
 (defun brucebase-trim-versions ()
-  "Trim - Vx from end of titles and also get rid of (songwriter)"
+  "Trim - Vx from end of titles and also get rid of (songwriter)."
   (interactive)
   (beginning-of-buffer)
   (while (re-search-forward (concat "\\("
@@ -1024,7 +1024,7 @@ Version 2015-05-07"
     (replace-match "")))
 
 (defun springsteenlyrics-extract-titles ()
-  "Extract titlelist from springsteenlyrics.com"
+  "Extract titlelist from springsteenlyrics.com."
   (interactive)
   (progn
     (find-file (concat springsteenlyrics-download-folder springsteenlyrics-file-title))
@@ -1093,7 +1093,7 @@ Version 2015-05-07"
 	    (kill-buffer (concat springsteenlyrics-file-title ".missing"))))))))
 
 (defun vz-mb-extract-from-studiosessions ()
-  "Extract titlelist from studio sessions"
+  "Extract titlelist from studio sessions."
   (interactive)
   (save-excursion
     (progn
@@ -1132,13 +1132,13 @@ Version 2015-05-07"
 		      (newline)))))))))))
 
 (defun musicbrainz-download-titles ()
-  "Download lyrics page from http://www.springsteenlyrics.com"
+  "Download lyrics page from http://www.springsteenlyrics.com."
   (interactive)
   (download-file musicbrainz-titles-url musicbrainz-download-folder musicbrainz-title-filename)
   (kill-buffer musicbrainz-title-filename))
 
 (defun musicbrainz-extract-songlist ()
-  "Extract songlist from http://musicbrainz.org/ws/2/artist/70248960-cb53-4ea4-943a-edb18f7d336f?inc=work-rels&fmt=xml"
+  "Extract songlist from http://musicbrainz.org/ws/2/artist/70248960-cb53-4ea4-943a-edb18f7d336f?inc=work-rels&fmt=xml."
   (interactive)
   (find-file (concat musicbrainz-download-folder musicbrainz-title-filename))
   (progn
@@ -1189,7 +1189,7 @@ Version 2015-05-07"
   (kill-buffer))
 
 (defun brucebase-extract-soundcheck ()
-  "Extract songs from soundcheck"
+  "Extract songs from soundcheck."
   (interactive)
   (find-file "~/bruce/mb.setlist")
   (goto-char (point-min))
@@ -1202,7 +1202,7 @@ Version 2015-05-07"
       (append-to-file beg end "~/bruce/songlist.soundcheck"))))
 
 (defun brucebase-extract-concert ()
-  "Extract songs from concerts"
+  "Extract songs from concerts."
   (interactive)
   (find-file "~/bruce/mb.setlist")
   (goto-char (point-min))
@@ -1229,7 +1229,7 @@ Version 2015-05-07"
     (append-to-file beg end "~/bruce/songlist.concert")))
 
 (defun brucebase-extract-songs-from-songlist (songlist)
-  "Extract songs from songlist"
+  "Extract songs from songlist."
   (interactive)
   (find-file songlist)
 ;;  (find-file "~/bruce/songlist.concert")
@@ -1277,7 +1277,7 @@ Version 2015-05-07"
     )
 
 (defun brucebase-extract-event-songs ()
-  "Extract songs from all events"
+  "Extract songs from all events."
   (interactive)
   (brucebase-extract-soundcheck)
   (brucebase-extract-concert)
