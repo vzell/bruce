@@ -885,6 +885,38 @@ Version 2015-05-07"
 		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-artist-aliases ()
+  "Search for artist aliases in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
+;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
+	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (artist-alias (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc artist-alias mb-artist-aliases))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
+(defun vz-mb-urlify-gignote ()
+  "Search for works and artists in gignote and URLify."
+  (interactive)
+  (progn
+    (vz-mb-urlify-gignote-works)
+    (vz-mb-urlify-gignote-artists)
+    (vz-mb-urlify-gignote-artist-aliases)
+    ))
+
 (defun vz-capitalize-first-char (&optional string)
   "Capitalize only the first character of the input STRING."
   (if (and string (> (length string) 0))
@@ -3783,6 +3815,12 @@ Version 2015-05-07"
 ("60c693ce-2121-47c5-bc20-975e43137e48" . "Zane Lowe")
 ("84212e42-f154-4dbd-becd-8ddd7549b6ee" . "Zem Audu")
 ("b9d71e60-f447-4bb5-b46c-58e89781bacb" . "Zoe Ball")
+))
+
+;; Brucebase artist aliases
+(setq  mb-artist-aliases '(
+;; The Castiles
+("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ))
 
 (setq fixworks '(
