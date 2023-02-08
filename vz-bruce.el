@@ -1455,11 +1455,10 @@ Version 2015-05-07"
 
 ;;; Springsteen On Broadway (-1)
 
-
 (defun musicbrainz-surround-event-band ()
-  "Surround event with artists and line"
+  "Surround event with artists and line."
   (interactive)
-  (progn
+  (save-excursion
     (insert
 "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
@@ -1488,13 +1487,55 @@ Version 2015-05-07"
     (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
     (beginning-of-line)
     (recenter-top-bottom)
-    (forward-line -12)
+    ))
+
+(defun musicbrainz-surround-event-springsteen-on-broadway ()
+  "Surround event with artists and line."
+  (interactive)
+  (save-excursion
+    (insert
+     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa] (guest)
+
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
+(defun musicbrainz-surround-event-bruce ()
+  "Surround event with artists and line."
+  (interactive)
+  (save-excursion
+    (insert
+     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
     ))
 
 (defun musicbrainz-surround-event-2023-international-tour ()
-  "Surround event with artists and line"
+  "Surround event with artists and line."
   (interactive)
-  (progn
+  (save-excursion
     (insert
 "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
@@ -1502,6 +1543,7 @@ Version 2015-05-07"
 # with
 @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
 @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
 @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
 @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
@@ -1537,54 +1579,7 @@ Version 2015-05-07"
     (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
     (beginning-of-line)
     (recenter-top-bottom)
-    (forward-line -28)
     ))
-
-(defun musicbrainz-surround-event-springsteen-on-broadway ()
-  "Surround event with artists and line"
-  (interactive)
-  (progn
-    (insert
-     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
-
-@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa] (guest)
-
-"
-)
-    (re-search-forward "^$")
-    (insert
-"
---------------------------------------------------------------------------------
-
-"
-)
-    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
-    (beginning-of-line)
-    (recenter-top-bottom)
-    (forward-line -3)
-    ))
-
-(defun musicbrainz-surround-event-bruce ()
-  "Surround event with artists and line"
-  (interactive)
-  (progn
-    (insert
-     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
-"
-)
-    (re-search-forward "^$")
-    (insert
-"
---------------------------------------------------------------------------------
-
-"
-)
-    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
-    (beginning-of-line)
-    (recenter-top-bottom)
-    (forward-line -1)
-    ))
-
 
 (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
