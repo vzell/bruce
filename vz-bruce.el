@@ -320,8 +320,13 @@ Version 2015-05-07"
 		    [" Qua " " qua "]
 		    [" Re " " re "]
 		    [" Via " " via "]
-		    ;; I'll at the beginning
-		    ["Ll " "ll "]
+		    ;; apastrophe problem like "What'd", "I'll", "I'm", "She's", "Don't", "We've" etc.
+		    ["’Ll " "’ll "]
+		    ["’D " "’d "]
+		    ["’M " "’m "]
+		    ["’S " "’s "]
+		    ["’T " "’t "]
+		    ["’Ve " "’ve "]
 		    ;; specials
 		    ["'" "’"]
 		    ["(With All Including" "(with all including"]
@@ -843,6 +848,7 @@ Version 2015-05-07"
       (while
 ;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
 	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
+;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
