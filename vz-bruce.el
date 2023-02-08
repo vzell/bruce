@@ -775,7 +775,7 @@ Version 2015-05-07"
 		  ;; Make sure first character of title is always uppercase
 		  (setq title (vz-capitalize-first-char (car titlelist)))
 		  (setq titlenumber (+ titlenumber 1))
-		  (setq tw (rassoc title works))
+		  (setq tw (rassoc title mb-works))
 		  (if tw
 		      (progn
 			(if (> titlenumber 1)
@@ -839,27 +839,50 @@ Version 2015-05-07"
 
 ;; "\"[^\"]*\""
 ;; "“[^”]*”"
-(defun vz-mb-urlify-gignote ()
-  "Search for work."
+(defun vz-mb-urlify-gignote-works ()
+  "Search for works in gignote and URLify."
   (interactive)
   (progn
     (beginning-of-line)
     (save-excursion
       (while
+;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
 ;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
 	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
-;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
 	       (cased (vz-title-case-region-or-line beg end))
 	       (track (buffer-substring (+ beg 1) (+ end -1))))
 	  (progn
-	    (setq tw (rassoc track works))
+	    (setq tw (rassoc track mb-works))
 	    (if tw
 		(progn
 		  (kill-region beg end)
 		  (insert (concat "[https://musicbrainz.org/work/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
+(defun vz-mb-urlify-gignote-artists ()
+  "Search for artists in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
+;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
+	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (artist (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc artist mb-artists))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
 (defun vz-capitalize-first-char (&optional string)
@@ -3464,17 +3487,17 @@ Version 2015-05-07"
 					  ("15875086-77a1-3e37-b125-75252d9d6bef" . "Rockin’ Around the Christmas Tree")
 ))
 
-(setq works (append
-	     mb-bruce-works
-	     mb-bruce-other-works
-	     mb-brucebase-works
-	     mb-brucebase-studio-sessions-bruce-works
-	     mb-brucebase-studio-sessions-bruce-others-works
-	     mb-springsteenlyrics-works
-	     mb-brucebase-songlist-missing-works
-	     mb-brucebase-steelmill-works
-	     mb-brucebase-songlist-other-works
-	     ))
+(setq mb-works (append
+		mb-bruce-works
+		mb-bruce-other-works
+		mb-brucebase-works
+		mb-brucebase-studio-sessions-bruce-works
+		mb-brucebase-studio-sessions-bruce-others-works
+		mb-springsteenlyrics-works
+		mb-brucebase-songlist-missing-works
+		mb-brucebase-steelmill-works
+		mb-brucebase-songlist-other-works
+		))
 
 ;; Brucebase artists
 (setq  mb-artists '(
