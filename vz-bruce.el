@@ -853,7 +853,7 @@ Version 2015-05-07"
 	    (if tw
 		(progn
 		  (kill-region beg end)
-		  (insert (concat "[" (car tw) "|" (cdr tw) "]"))))
+		  (insert (concat "[https://musicbrainz.org/work/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
 (defun vz-capitalize-first-char (&optional string)
