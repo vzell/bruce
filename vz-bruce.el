@@ -3821,6 +3821,7 @@ Version 2015-05-07"
 (setq  mb-artist-aliases '(
 ;; The Castiles
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
+("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
 ))
 
 (setq fixworks '(
