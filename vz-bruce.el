@@ -848,7 +848,7 @@ Version 2015-05-07"
       (while
 ;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
 ;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
-	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
@@ -871,7 +871,7 @@ Version 2015-05-07"
       (while
 ;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
 ;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
-	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
@@ -894,7 +894,7 @@ Version 2015-05-07"
       (while
 ;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
 ;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
-	  (re-search-forward "“[^”]*”" (point-at-eol) nil)
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
