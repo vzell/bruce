@@ -8,6 +8,18 @@
 
 ;;; Code:
 
+(defun vz-surround-with-quotes (ξstring &optional ξfrom ξto)
+  "Surround region with quotes."
+  (interactive
+   (if (use-region-p)
+       (list nil (region-beginning) (region-end))))
+  (kill-region ξfrom ξto)
+  (insert "“")
+  (yank)
+  (insert "”"))
+
+(global-set-key (kbd "<f8>") 'vz-surround-with-quotes)
+
 (defun vz-split-setlist (ξstring &optional ξfrom ξto)
   "Split Springsteen setlists.
 
