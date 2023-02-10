@@ -965,6 +965,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (defun download-file (&optional url download-dir download-name)
+  "Download URL under DOWNLOAD-DIR with DOWNLOAD-NAME."
   (interactive)
   (let ((url (or url
                  (read-string "Enter download URL: "))))
@@ -981,17 +982,17 @@ Do this ALWAYS, except for the above exceptions."
                             (or download-name
                                 (car (last (split-string url "/" t))))))))))
 
-(setq brucebase-url "http://brucebase.wikidot.com/")
-(setq brucebase-download-folder "/tmp/brucebase/")
-(setq brucebase-file-title "BruceBase")
+(defvar brucebase-url "http://brucebase.wikidot.com/")
+(defvar brucebase-download-folder "/tmp/brucebase/")
+(defvar brucebase-file-title "BruceBase")
 
-(setq musicbrainz-titles-url "http://musicbrainz.org/ws/2/artist/70248960-cb53-4ea4-943a-edb18f7d336f?inc=work-rels&fmt=xml")
-(setq musicbrainz-download-folder "/tmp/brucebase/")
-(setq musicbrainz-title-filename "MusicBrainzTitles")
+(defvar musicbrainz-titles-url "http://musicbrainz.org/ws/2/artist/70248960-cb53-4ea4-943a-edb18f7d336f?inc=work-rels&fmt=xml")
+(defvar musicbrainz-download-folder "/tmp/brucebase/")
+(defvar musicbrainz-title-filename "MusicBrainzTitles")
 
-(setq springsteenlyrics-url "http://www.springsteenlyrics.com/lyrics.php?cmd=list")
-(setq springsteenlyrics-download-folder "/tmp/brucebase/")
-(setq springsteenlyrics-file-title "SpringsteenLyrics")
+(defvar springsteenlyrics-url "http://www.springsteenlyrics.com/lyrics.php?cmd=list")
+(defvar springsteenlyrics-download-folder "/tmp/brucebase/")
+(defvar springsteenlyrics-file-title "SpringsteenLyrics")
 
 (defun springsteenlyrics-download-titles ()
   "Download lyrics page from http://www.springsteenlyrics.com."
