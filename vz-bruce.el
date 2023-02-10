@@ -447,7 +447,7 @@ word in a line ALWAYS."
 	 (insert "* ")))
    beg end))
 
-(setq vz-capitalize-first-word-exception (concat
+(defvar vz-capitalize-first-word-exception (concat
 						 "\\("
 						 "SWLABR"
 						 "\\|"
@@ -457,9 +457,10 @@ word in a line ALWAYS."
 						 "\\|"
 						 "instrumental]"
 						 "\\)"
-						 "$"))
+						 "$")
+  "Words which are exceptions for capitalization of first word.")
 
-(setq vz-capitalize-last-word-exception (concat "\\("
+(defvar vz-capitalize-last-word-exception (concat "\\("
 						"harmonies"
 						"\\|"
 						"band"
@@ -519,7 +520,8 @@ word in a line ALWAYS."
 						"all"
 						"\\|"
 						"al\\."
-						"\\))$"))
+						"\\))$")
+  "Words which are exceptions for capitalization of last word.")
 
 (defun vz-capitalize-first-and-last-word ()
   "Capitalize first and last word in a line.
@@ -638,7 +640,7 @@ Do this ALWAYS, except for the above exceptions."
   (save-excursion
     (while (looking-at "[#*] ")
       (progn
-	(setq temp-fixworks fixworks)
+	(setq temp-fixworks mb-fixworks)
 	(if (string= (string (char-after (point))) "#")
 	    (forward-line 1)
 	  (progn
@@ -651,10 +653,9 @@ Do this ALWAYS, except for the above exceptions."
 		  (replace-match (cdr fixwork))
 		))))
 	(forward-line 1)
-	(setq temp-fixworks fixworks)))))
+	(setq temp-fixworks mb-fixworks)))))
 
-;; Trackinfo after title name which should NOT be changed in capitalization and NOT be part of the title hyperlink
-(setq vz-mb-trackinfo-regexp (concat
+(defvar vz-mb-trackinfo-regexp (concat
 			      ;; beginning of optional title info in brackets
 			      " (\\("
 			      "acoustic and electric"
@@ -754,10 +755,11 @@ Do this ALWAYS, except for the above exceptions."
 			      "\\|"
 			      "\\(full band \\)?intro\\( only\\)?\\(, x[[:digit:]]\\)?"
 			      ;; end of optional title info in brackets (at end of line)
-			      "\\))\\'"))
+			      "\\))\\'")
+  "Trackinfo after title name which should NOT be changed in capitalization and NOT be part of the title hyperlink.")
 
 ;; Artistinfo after artist name which should NOT be changed in capitalization and NOT be part of the artist hyperlink
-(setq vz-mb-artistinfo-regexp (concat
+(defvar vz-mb-artistinfo-regexp (concat
 			      ;; beginning of optional title info in brackets
 			      " (\\("
 			      "Guest"
@@ -767,7 +769,7 @@ Do this ALWAYS, except for the above exceptions."
 			      "\\))\\'"))
 
 (defun vz-mb-urlify ()
-  "URLify song titles according to Musicbrainz setlist standard. [mbid|name] allows linking to artists and works."
+  "URLify song titles according to Musicbrainz setlist standard.  [mbid|name] allows linking to artists and works."
   (interactive)
   (save-excursion
     (while (looking-at "[#*] ")
@@ -811,7 +813,7 @@ Do this ALWAYS, except for the above exceptions."
 		))))))))
 
 (defun vz-mb-urlify-artists ()
-  "URLify artists according to Musicbrainz standard. [mbid|name] allows linking to artists and works."
+  "URLify artists according to Musicbrainz standard.  [mbid|name] allows linking to artists and works."
   (interactive)
   (save-excursion
     (while (looking-at "[#@] ")
@@ -1079,7 +1081,7 @@ Do this ALWAYS, except for the above exceptions."
 	))))
 
 (defun brucebase-delete-wellknown-titles ()
-  "Delete wellknown titles. All are a.k.a's except the dummy: Song Title."
+  "Delete wellknown titles.  All are a.k.a's except the dummy: Song Title."
   (interactive)
   (save-excursion
     (beginning-of-buffer)
@@ -1307,7 +1309,7 @@ Do this ALWAYS, except for the above exceptions."
     (append-to-file beg end "~/bruce/songlist.concert")))
 
 (defun brucebase-extract-songs-from-songlist (songlist)
-  "Extract songs from songlist."
+  "Extract songs from SONGLIST."
   (interactive)
   (find-file songlist)
 ;;  (find-file "~/bruce/songlist.concert")
@@ -1684,7 +1686,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; ))
 
 ;; Bruce Springsteen works
-(setq mb-bruce-works '(
+(defvar mb-bruce-works '(
 ("772a6a04-2f9f-46e1-bafb-08f47c1c0753" . "“BBC Blues”")
 ("2f383d48-d0d5-4c58-bd78-288d3c284836" . "(I Love) Everything About You")
 ("ce36dc59-1a07-4376-8156-7b4396980692" . "(She’s a) Rocker")
@@ -2522,7 +2524,7 @@ Do this ALWAYS, except for the above exceptions."
 ))
 
 ;; Other writers
-(setq mb-bruce-other-works '(
+(defvar mb-bruce-other-works '(
 ("9828a873-3969-4823-a5d6-a6d7b0d38e48" . "500 Miles")
 ("d3e5f2dd-dc91-35bf-9367-a53130b756fa" . "7 Rooms of Gloom")
 ("84f986f6-9145-3d62-80d5-5e729652ca52" . "(Get Your Kicks on) Route 66")
@@ -3379,7 +3381,7 @@ Do this ALWAYS, except for the above exceptions."
 ))
 
 ;; Brucebase works
-(setq mb-brucebase-works '(
+(defvar mb-brucebase-works '(
 ("10112466-be5e-4e61-b277-f40800926696" . "(Today I Met) the Boy I’m Gonna Marry")
 ("78282243-c9f9-352d-a2a1-36c8567a05bc" . "96 Tears")
 ("c6b4dbfd-233c-422b-ae85-cf775cef9d89" . "A Good Life")
@@ -3479,7 +3481,7 @@ Do this ALWAYS, except for the above exceptions."
 ))
 
 ;; Brucebase studio sessions written by Bruce
-(setq mb-brucebase-studio-sessions-bruce-works '(
+(defvar mb-brucebase-studio-sessions-bruce-works '(
 ("a782a20b-3860-4419-aa06-8e434cbaf15e" . "A Winter’s Revelation (in 9 Illusions)")
 ("2936e983-537b-4e52-b1a7-90260a5b5f79" . "Armed & Dangerous (with Love)")
 ("162e2293-5b69-42cf-aa6e-8a0aec9ed4b1" . "Boppin")
@@ -3500,7 +3502,7 @@ Do this ALWAYS, except for the above exceptions."
 ))
 					;
 ;; Brucebase studio sessions NOT written by Bruce
-(setq mb-brucebase-studio-sessions-bruce-others-works '(
+(defvar mb-brucebase-studio-sessions-bruce-others-works '(
 ("9ae304e9-be3c-4d69-86f5-606bdee360fb" . "I Come and Stand at Every Door")
 ;; Called "C’era una volta il west: C'era una volta il west" on MusicBrainz
 ("fd958b05-8fa8-4279-b660-77cd4fb1e323" . "Once Upon a Time in the West")
@@ -3508,17 +3510,17 @@ Do this ALWAYS, except for the above exceptions."
 ))
 
 ;; SpringsteenLyrics works
-(setq mb-springsteenlyrics-works '(
+(defvar mb-springsteenlyrics-works '(
 ("4c2f991b-c71d-4bfb-9290-37031f65906d" . "Can’t Teach an Old Dog New Tricks")
 ))
 
 ;; Brucebase songs not in songlist, i.e.: played in rehearsals
-(setq mb-brucebase-songlist-missing-works '(
+(defvar mb-brucebase-songlist-missing-works '(
 ("0637c000-ea81-3c2d-8e52-64d28e16c1c2" . "Changes")
 ))
 
 ;; The Bruce Springsteen Band / Steel Mill
-(setq mb-brucebase-steelmill-works '(
+(defvar mb-brucebase-steelmill-works '(
 				     ("f8388fdf-389c-482a-8758-6e81b51decaa" . "Full of Love")
 				     ("8cd71cd0-af74-4578-a514-d6c1a6a06bfb" . "Gypsy Rider")
 				     ("57b3b489-edc2-4a1c-9708-d074462c141e" . "I Hope I’m True")
@@ -3532,11 +3534,11 @@ Do this ALWAYS, except for the above exceptions."
 ))
 
 ;; Songs NOT performed by Bruce, but Bruce present
-(setq mb-brucebase-songlist-other-works '(
+(defvar mb-brucebase-songlist-other-works '(
 					  ("15875086-77a1-3e37-b125-75252d9d6bef" . "Rockin’ Around the Christmas Tree")
 ))
 
-(setq mb-works (append
+(defvar mb-works (append
 		mb-bruce-works
 		mb-bruce-other-works
 		mb-brucebase-works
@@ -3548,8 +3550,7 @@ Do this ALWAYS, except for the above exceptions."
 		mb-brucebase-songlist-other-works
 		))
 
-;; Brucebase artists
-(setq  mb-artists '(
+(defvar mb-artists '(
 ("1ca07311-cbfe-4ae8-a518-aa76c8579802" . "Ada Dyer")
 ("09381e15-32ed-447c-ad06-475baf3b4496" . "Al Chez")
 ("615e4dea-7f8e-469d-a455-dc9461c1387d" . "Alexa Ray Joel")
@@ -3832,19 +3833,20 @@ Do this ALWAYS, except for the above exceptions."
 ("60c693ce-2121-47c5-bc20-975e43137e48" . "Zane Lowe")
 ("84212e42-f154-4dbd-becd-8ddd7549b6ee" . "Zem Audu")
 ("b9d71e60-f447-4bb5-b46c-58e89781bacb" . "Zoe Ball")
-))
+)
+  "Brucebase artists.")
 
-;; Brucebase artist aliases
-(setq  mb-artist-aliases '(
+(defvar mb-artist-aliases '(
 ;; The Castiles
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ;; Charles Giordano
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
-))
+)
+  "Brucebase artist aliases.")
 
-(setq fixworks '(
+(defvar mb-fixworks '(
 ;; special work titles to fix
 ("(What’s So Funny ’bout) Peace, Love and Understanding" . "(What’s So Funny ’Bout) Peace, Love and Understanding")
 ("57 Channels (And Nothin’ On)" . "57 Channels (and Nothin’ On)")
@@ -3884,7 +3886,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Zip-A-Dee-Doo-Dah" . "Zip-a-Dee-Doo-Dah")
 ))
 
-(setq brucebase-studio-sessions-list '(
+(defvar brucebase-studio-sessions-list '(
 ("Castiles-SteelMill-BruceSpringsteenBand" . "/Castiles%2C+Steel+Mill%2C+BS+Band+-+Studio+Sessions")
 ("Demo" . "/Demo+-+Studio+Sessions")
 ("GreetingsFromAsburyPark" . "/Greetings+From+Asbury+Park+-+Studio+Sessions")
@@ -3919,7 +3921,7 @@ Do this ALWAYS, except for the above exceptions."
 ;"Alist of Springsteen studio session pages at Brucebase"
 )
 
-(setq brucebase-well-known-titles "^* \\(Loose End\\|Song Title\\|The Mark\\|Waitin’ for an Angel\\|Do (You) Want Me to Say All Right\\|The Glory of Love\\)")
+(defvar brucebase-well-known-titles "^* \\(Loose End\\|Song Title\\|The Mark\\|Waitin’ for an Angel\\|Do (You) Want Me to Say All Right\\|The Glory of Love\\)")
 
 (provide 'vz-bruce)
 ;;; vz-bruce.el ends here
