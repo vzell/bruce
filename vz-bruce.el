@@ -9,7 +9,7 @@
 ;;; Code:
 
 (defun vz-surround-with-quotes (ξstring &optional ξfrom ξto)
-  "Surround region with quotes."
+  "Surround ΞSTRING region between ΞFROM and ΞTO with quotes."
   (interactive
    (if (use-region-p)
        (list nil (region-beginning) (region-end))))
@@ -25,8 +25,8 @@
 
 When called interactively, work on current paragraph or text selection.
 
-When called in lisp code, if ξstring is non-nil, returns a changed string.
-If ξstring nil, change the text in the region between positions ξfrom ξto."
+When called in Lisp code, if ΞSTRING is non-nil, returns a changed string.
+If ΞSTRING nil, change the text in the region between positions ΞFROM ΞTO."
   (interactive
    (if (use-region-p)
        (list nil (region-beginning) (region-end))
@@ -68,8 +68,8 @@ If ξstring nil, change the text in the region between positions ξfrom ξto."
 
 When called interactively, work on current paragraph or text selection.
 
-When called in lisp code, if ξstring is non-nil, returns a changed string.
-If ξstring nil, change the text in the region between positions ξfrom ξto."
+When called in Lisp code, if ΞSTRING is non-nil, returns a changed string.
+If ΞSTRING nil, change the text in the region between positions ΞFROM ΞTO."
   (interactive
    (if (use-region-p)
        (list nil (region-beginning) (region-end))
@@ -268,7 +268,8 @@ If ξstring nil, change the text in the region between positions ξfrom ξto."
 	 (forward-line))))
 
 (defun vz-split-setlist-and-urlify (ξstring &optional ξfrom ξto)
-  "Split Springsteen setlists and URLify for MusicBrainz usage in events"
+  "Split Springsteen setlists and URLify for MusicBrainz usage in events.
+ΞSTRING is the region between ΞFROM and ΞTO."
   (interactive
    (if (use-region-p)
        (list nil (region-beginning) (region-end))
@@ -285,10 +286,11 @@ If ξstring nil, change the text in the region between positions ξfrom ξto."
 
 (defun vz-title-case-region-or-line (begin end)
   "Title case text between nearest brackets, or current line, or text selection.
-Capitalize first letter of each word, except words like {to, of, the, a, in, or, and, …}.
-If a word already contains cap letters such as HTTP, URL, they are left as is.
+Capitalize first letter of each word, except words like {to, of,
+the, a, in, or, and, …}.  If a word already contains cap letters
+such as HTTP, URL, they are left as is.
 
-When called in a elisp program, begin end are region boundaries.
+When called in a Lisp program, BEGIN END are region boundaries.
 URL `http://ergoemacs.org/emacs/elisp_title_case_text.html'
 Version 2015-05-07"
   (interactive
@@ -434,7 +436,9 @@ Version 2015-05-07"
            strPairs))))))
 
 (defun vz-prepend-to-region-if-not-exists (beg end)
-  "Prepend string to every line in region if not already there and capitalize first and last word in a line ALWAYS."
+  "Prepend string to every line in region between BEG and END.
+Prepend only if not already there and capitalize first and last
+word in a line ALWAYS."
   (interactive "r")
   (apply-on-rectangle
    (lambda (beg end)
@@ -518,7 +522,8 @@ Version 2015-05-07"
 						"\\))$"))
 
 (defun vz-capitalize-first-and-last-word ()
-  "Capitalize first and last word in a line ALWAYS, except for the above exceptions."
+  "Capitalize first and last word in a line.
+Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (let ((ξtemp-syn-table (make-syntax-table)))
