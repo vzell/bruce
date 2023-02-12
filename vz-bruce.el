@@ -18,8 +18,6 @@
   (yank)
   (insert "”"))
 
-(global-set-key (kbd "<f8>") 'vz-surround-with-quotes)
-
 (defun vz-split-setlist (ξstring &optional ξfrom ξto)
   "Split Springsteen setlists.
 
@@ -888,8 +886,6 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (save-excursion
       (while
-;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
-;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
 	  (re-search-forward "“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
@@ -911,8 +907,6 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (save-excursion
       (while
-;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
-;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
 	  (re-search-forward "“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
@@ -927,6 +921,48 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-release-groups ()
+  "Search for release groups in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (release-group (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc release-group mb-release-groups))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/release-group/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
+(defun vz-mb-urlify-gignote-areas ()
+  "Search for release groups in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (area (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc area mb-areas))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/area/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-mb-urlify-gignote ()
   "Search for works and artists in gignote and URLify."
   (interactive)
@@ -934,6 +970,8 @@ Do this ALWAYS, except for the above exceptions."
     (vz-mb-urlify-gignote-works)
     (vz-mb-urlify-gignote-artists)
     (vz-mb-urlify-gignote-artist-aliases)
+    (vz-mb-urlify-gignote-release-groups)
+    (vz-mb-urlify-gignote-areas)
     ))
 
 (defun vz-capitalize-first-char (&optional string)
@@ -3570,6 +3608,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3f0b02ae-bc83-4417-ab1d-055b23d829fe" . "Beaver Brown")
 ("6a849bbc-e2cc-422d-95ca-d3230d802a47" . "Ben Jaffe")
 ("aee70c97-96b1-4d6e-a53f-a4f539bf1fa2" . "Ben Mankiewicz")
+("0e316a48-d924-47ac-a506-bcc438e30e5f" . "Bernard Fowler")
 ("0d65b949-fb80-4fb5-aab8-75a77700dece" . "Billy Chinnock")
 ("64b94289-9474-4d43-8c93-918ccc1920d1" . "Billy Joel")
 ("58e235fc-f6ea-4614-9ed4-9855a5665ae1" . "Bleachers")
@@ -3577,6 +3616,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4382b934-64c3-47ac-98db-65f26d845c48" . "Bob Seeger")
 ("358d8fde-ad5b-4df1-bcd8-193bada6edd5" . "Bobby Bandiera")
 ("9df6e393-da6b-4e65-9f50-6e4df5624e63" . "Bobby Bandiera Band")
+("bac9f82f-8c72-48a8-9b04-6e46ce8d4e77" . "Bobby Keys")
 ("5818ebc1-c87d-451e-92da-ee8422f6c149" . "Boccigalupe")
 ("137e3419-13b5-46d6-8e0a-a9231de584b4" . "Boccigalupe & The Badboys")
 ("5dcdb5eb-cb72-4e6e-9e63-b7bace604965" . "Bon Jovi")
@@ -3595,12 +3635,14 @@ Do this ALWAYS, except for the above exceptions."
 ("e737612d-3e51-4741-80d5-00a31d979413" . "CC Smugglers")
 ("8893617e-e3c2-406c-afc3-ec390e040ed2" . "Cats on a Smooth Surface")
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charles Giordano")
+("f581a3dc-3319-4656-8b97-66d560482f4a" . "Charlie Watts")
 ("bb5e019b-a9e6-4ee7-96c3-226c40a0627e" . "Charlotte Ryan")
 ("a5ab77f2-da3b-454c-aa5f-239f5c8ea096" . "Chris Anderson")
 ("479497d4-e7c2-4e78-972e-56e78fac3995" . "Chris Isaak")
 ("fde0d322-1493-4087-a6cb-73e5d8d4461b" . "Chris Jordan")
 ("f6ef6771-591c-4782-b03e-f3fe6101dcd8" . "Chris Masterson")
 ("8d6aa484-ca76-4535-9cc6-a5777e7a8438" . "Chris Phillips")
+("c77c62d3-f025-429c-bcae-91e83dd3f516" . "Chuck Leavell")
 ("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Clarence Clemons")
 ("e070d092-5bd5-4379-ac55-b3534832e2a5" . "Clarence Clemons & The Red Bank Rockers")
 ("8f45e863-c2c8-4f10-b9bf-4d36774bb0b5" . "Clive Davis")
@@ -3618,6 +3660,7 @@ Do this ALWAYS, except for the above exceptions."
 ("06f587e2-79ca-455d-a06a-64691a04a786" . "Danny Gochnour")
 ("18442b0a-e156-4cb2-a1b1-f894d9bc8d17" . "Danny Hyland")
 ("af953ba2-283b-41ef-93bc-b4cfc5feeebc" . "Darlene Love")
+("b5b6880b-9c35-44be-ba09-acb3df6dc8fd" . "Darryl Jones")
 ("4d5f891d-9bce-45ae-ad86-912dd27252fa" . "Dave Grohl")
 ("029c91a5-8e46-4c96-a4e8-3878417fb599" . "Dave Marsh")
 ("a3940ff8-c898-4747-b7a4-58ed3c251a14" . "Dee Holmes")
@@ -3708,6 +3751,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4530bdd0-9707-442e-b37e-578def6a0926" . "Jon Landau")
 ("3c3ebf04-68b7-4140-bef3-7ed0aeda07f0" . "Jon Stewart")
 ("23c1c76d-17d7-473a-b352-630977af574d" . "Kevin Kavanaugh")
+("f0ed72a3-ae8f-4cf7-b51d-2696a2330230" . "Keith Richards")
 ("dcaf7d3d-fc8d-43b4-b54e-4af75bdbc27a" . "La Bamba and the Hubcaps")
 ("b7539c32-53e7-4908-bda3-81449c367da6" . "Lana Del Rey")
 ("4d5299ce-9223-45c0-a1c5-83ac7bfe8813" . "Lance Larson")
@@ -3716,6 +3760,7 @@ Do this ALWAYS, except for the above exceptions."
 ("486b576c-56a6-481b-ad8d-84a7457fc901" . "Laiya St. Clair")
 ("236fca70-1195-4842-a1a0-0e8a0aff98fc" . "Layonne Holmes")
 ("3cb25fb2-5547-4b05-adec-1a5e37830d46" . "Lionel Richie")
+("f887110a-ddd9-4a4e-b9ea-e567523ef6e2" . "Lisa Fischer")
 ("59d77428-bf32-4c9f-bc4c-7c03ec882c59" . "Lisa Lowell")
 ("9659f4dc-358c-4eb3-8a16-27fb983a9650" . "Little Steven")
 ("21685b15-3074-446e-aa1d-ff7157014f53" . "Lucinda Williams")
@@ -3731,6 +3776,7 @@ Do this ALWAYS, except for the above exceptions."
 ("92fbcd5d-3a3e-4653-b4ff-0bd99ee61d4f" . "Michael Blyth")
 ("cf11ca6d-fc48-4cd5-aa0c-d8c51d50ecb0" . "Michael J. Fox")
 ("e67ac344-ce0a-4a27-b4ad-9502dab57a82" . "Michelle Moore")
+("b5ffc3aa-b868-4b88-905f-d73d51dbe51c" . "Mick Jagger")
 ("078e680d-6d6c-46ce-8134-0bddeb9e5e35" . "Mike Mancini")
 ("45d7e6e8-c5bf-4c59-a79e-c7bb2e9b2cc9" . "Mike Ness")
 ("346f8e40-4be4-4dc8-9b8b-d4896324d1af" . "Mo Gilligan")
@@ -3764,6 +3810,7 @@ Do this ALWAYS, except for the above exceptions."
 ("6b96e1da-02c0-4426-937e-3898e615455b" . "Robin Quivers")
 ("536e8e61-8040-40a1-8b35-a2c6996dc44f" . "Robin Williams")
 ("89729b97-90a3-4f84-9e88-e16f96cab350" . "Ron Aniello")
+("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ron Wood")
 ("5ff6f6eb-31ad-4903-a3c3-4c9283fcde8b" . "Rosanne Cash")
 ("11d2fcfe-669d-4596-8921-e07dbdae311f" . "Roy Bittan")
 ("5870003e-ce01-45cc-8e1c-53709407685b" . "Ryan Tubridy")
@@ -3805,12 +3852,14 @@ Do this ALWAYS, except for the above exceptions."
 ("1adfbbca-340a-46dd-a47a-8ba0b879cb68" . "The Max Weinberg 7")
 ("c7589842-71c8-460a-a0ae-7833b8a76fe0" . "The Miami Horns")
 ("3072c9d3-3787-407c-ae2f-69e7f9846b49" . "The Rogues")
+("b071f9fa-14b0-4217-8e97-eb41da73f598" . "The Rolling Stones")
 ("80b3cf5e-18fe-4c59-98c7-e5bb87210710" . "The Roots")
 ("7d5c39ac-5d48-4fdb-81df-6212e38353b3" . "The Sessions Band")
 ("3d49e36a-cc9e-411e-93c6-d1646ba5bd3a" . "The Staple Singers")
 ("91037ad4-4ee5-4d8b-98aa-41df93ddd92e" . "The Tangiers Blues Band")
 ("15fa2639-cea9-4f13-8ed7-88ad594fdfb9" . "The Van Jets")
 ("3cf1bde9-1191-4220-9ce0-15413361e89f" . "Thom Powers")
+("08ebf27c-3057-461f-b8fe-8d3ec6619816" . "Tim Ries")
 ("bd78fa2d-24f5-4c4b-a756-dcd793b2d390" . "Torsten Groß")
 ("7e5cfc9a-e9e1-46f1-b81a-861b12049488" . "Tim McGraw")
 ("288baac9-20b0-47ea-ac18-3feba612aeea" . "Tim McLoone and the Shirleys")
@@ -3844,8 +3893,22 @@ Do this ALWAYS, except for the above exceptions."
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
+;; Ron Wood
+("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
 )
   "Brucebase artist aliases.")
+
+(defvar mb-release-groups '(
+;; The Rolling Stones
+("4838a3c9-fd2b-30a5-83eb-e32545b5d7fc" . "Exile on Main St.")
+)
+  "Musicbrains release groups.")
+
+(defvar mb-areas '(
+;; The Rolling Stones
+("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
+)
+  "Musicbrains areas.")
 
 (defvar mb-fixworks '(
 ;; special work titles to fix
@@ -3923,6 +3986,9 @@ Do this ALWAYS, except for the above exceptions."
 )
 
 (defvar brucebase-well-known-titles "^* \\(Loose End\\|Song Title\\|The Mark\\|Waitin’ for an Angel\\|Do (You) Want Me to Say All Right\\|The Glory of Love\\)")
+
+(global-set-key (kbd "<f7>") 'vz-mb-urlify-gignote)
+(global-set-key (kbd "<f8>") 'vz-surround-with-quotes)
 
 (provide 'vz-bruce)
 ;;; vz-bruce.el ends here
