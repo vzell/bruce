@@ -18,6 +18,16 @@
   (yank)
   (insert "”"))
 
+(defun vz-surround-with-quotes-italic (ξstring &optional ξfrom ξto)
+  "Surround ΞSTRING region between ΞFROM and ΞTO with italic quotes."
+  (interactive
+   (if (use-region-p)
+       (list nil (region-beginning) (region-end))))
+  (kill-region ξfrom ξto)
+  (insert "''")
+  (yank)
+  (insert "''"))
+
 (defun vz-split-setlist (ξstring &optional ξfrom ξto)
   "Split Springsteen setlists.
 
@@ -900,27 +910,6 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
-(defun vz-mb-urlify-gignote-artist-aliases ()
-  "Search for artist aliases in gignote and URLify."
-  (interactive)
-  (progn
-    (beginning-of-line)
-    (save-excursion
-      (while
-	  (re-search-forward "“[^”]*”" (point-at-eol) t)
-	(let* (
-	       (beg (match-beginning 0))
-	       (end (match-end 0))
-	       (cased (vz-title-case-region-or-line beg end))
-	       (artist-alias (buffer-substring (+ beg 1) (+ end -1))))
-	  (progn
-	    (setq tw (rassoc artist-alias mb-artist-aliases))
-	    (if tw
-		(progn
-		  (kill-region beg end)
-		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
-            ))))))
-
 (defun vz-mb-urlify-gignote-release-groups ()
   "Search for release groups in gignote and URLify."
   (interactive)
@@ -963,15 +952,36 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/area/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-series ()
+  "Search for series in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (serie (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc serie mb-series-tours))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/series/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-mb-urlify-gignote ()
   "Search for works and artists in gignote and URLify."
   (interactive)
   (progn
     (vz-mb-urlify-gignote-works)
     (vz-mb-urlify-gignote-artists)
-    (vz-mb-urlify-gignote-artist-aliases)
     (vz-mb-urlify-gignote-release-groups)
     (vz-mb-urlify-gignote-areas)
+    (vz-mb-urlify-gignote-series)
     ))
 
 (defun vz-capitalize-first-char (&optional string)
@@ -1744,6 +1754,7 @@ Do this ALWAYS, except for the above exceptions."
 ("483abf96-6154-32e2-982f-5f7bab0a39a7" . "Across the Border")
 ("329a8fe5-b455-4bee-8ce0-6aa155187957" . "Action in the Streets")
 ("27f570c6-0051-3047-b230-ead9e0ab9792" . "Adam Raised a Cain")
+("391ad067-8ae0-4439-98f0-b989f61263c8" . "Addicted to Romance")
 ("087378a0-cd25-4bc8-8c31-f07a7aec05e8" . "After Dinner")
 ("0e89d406-ed2c-495f-a656-dc23b3bd4ccb" . "Ain’t Gonna Lose It This Time")
 ("560fe5b1-22ee-410d-83b1-f64464b3dcea" . "Ain’t Good Enough for You")
@@ -3589,7 +3600,7 @@ Do this ALWAYS, except for the above exceptions."
 		mb-brucebase-songlist-other-works
 		))
 
-(defvar mb-artists '(
+(defvar mb-artists-relation '(
 ("1ca07311-cbfe-4ae8-a518-aa76c8579802" . "Ada Dyer")
 ("09381e15-32ed-447c-ad06-475baf3b4496" . "Al Chez")
 ("615e4dea-7f8e-469d-a455-dc9461c1387d" . "Alexa Ray Joel")
@@ -3884,7 +3895,13 @@ Do this ALWAYS, except for the above exceptions."
 ("84212e42-f154-4dbd-becd-8ddd7549b6ee" . "Zem Audu")
 ("b9d71e60-f447-4bb5-b46c-58e89781bacb" . "Zoe Ball")
 )
-  "Brucebase artists.")
+  "Brucebase artists with a relation to Bruce Springsteen.")
+
+(defvar mb-artists-mentioned '(
+("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
+("9d3889fb-c6b7-47a8-a325-d22ea54292e3" . "Greil Marcus")
+)
+  "Brucebase artists mentioned in gignotes.")
 
 (defvar mb-artist-aliases '(
 ;; The Castiles
@@ -3895,20 +3912,37 @@ Do this ALWAYS, except for the above exceptions."
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
 ;; Ron Wood
 ("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
+;; The E Street Band
+("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 )
   "Brucebase artist aliases.")
 
+(defvar mb-artists
+  (append
+   mb-artists-relation
+   mb-artists-mentioned
+   mb-artist-aliases
+   ))
+
 (defvar mb-release-groups '(
+;; Bruce Springsteen
+("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
+("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
 ;; The Rolling Stones
 ("4838a3c9-fd2b-30a5-83eb-e32545b5d7fc" . "Exile on Main St.")
 )
-  "Musicbrains release groups.")
+  "Musicbrainz release groups.")
+
+(defvar mb-series-tours '(
+;; Bruce Springsteen & The E Street Band
+("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
+)
+  "Musicbrainz tour series.")
 
 (defvar mb-areas '(
-;; The Rolling Stones
 ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 )
-  "Musicbrains areas.")
+  "Musicbrainz areas.")
 
 (defvar mb-fixworks '(
 ;; special work titles to fix
@@ -3987,6 +4021,7 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar brucebase-well-known-titles "^* \\(Loose End\\|Song Title\\|The Mark\\|Waitin’ for an Angel\\|Do (You) Want Me to Say All Right\\|The Glory of Love\\)")
 
+(global-set-key (kbd "<f6>") 'vz-surround-with-quotes-italic)
 (global-set-key (kbd "<f7>") 'vz-mb-urlify-gignote)
 (global-set-key (kbd "<f8>") 'vz-surround-with-quotes)
 
