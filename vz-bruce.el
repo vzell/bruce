@@ -3916,6 +3916,8 @@ Do this ALWAYS, except for the above exceptions."
 ("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti")
 ;; Ron Wood
 ("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
+;; Soozie Tyrell
+("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 )
