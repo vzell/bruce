@@ -3910,6 +3910,8 @@ Do this ALWAYS, except for the above exceptions."
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
+;; Patti Scialfa
+("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti")
 ;; Ron Wood
 ("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
 ;; The E Street Band
