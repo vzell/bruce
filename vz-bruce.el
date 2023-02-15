@@ -1226,7 +1226,8 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (progn
-      (beginning-of-buffer)
+      ;; (beginning-of-buffer)
+      (goto-char (point-min))
       (let ((beg (point))
 	    (end (progn
 		   (re-search-forward "<table class=\"wiki_table")
@@ -1242,7 +1243,8 @@ Do this ALWAYS, except for the above exceptions."
 		     (if (re-search-forward "<td><tt><strong>" nil t)
 			 (point)
 		       (progn
-			 (end-of-buffer)
+			 ;; (end-of-buffer)
+			 (goto-char (point-max))
 			 (point))))))
 	  (progn
 	    (delete-region beg end)
