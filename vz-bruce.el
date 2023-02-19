@@ -3900,12 +3900,20 @@ Do this ALWAYS, except for the above exceptions."
   "Brucebase artists with a relation to Bruce Springsteen.")
 
 (defvar mb-artists-mentioned '(
+("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
 ("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
+("5ab2cf34-517e-48eb-b3a5-34e1cbcd600a" . "George Strait")
 ("9d3889fb-c6b7-47a8-a325-d22ea54292e3" . "Greil Marcus")
+("144ef525-85e9-40c3-8335-02c32d0861f3" . "John Mayer")
+("650e7db6-b795-4eb5-a702-5ea2fc46c848" . "Lady Gaga")
+("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
+("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
 )
   "Brucebase artists mentioned in gignotes.")
 
 (defvar mb-artist-aliases '(
+;; Bruce Springsteen
+("70248960-cb53-4ea4-943a-edb18f7d336f" . "Bruce")
 ;; The Castiles
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ;; Charles Giordano
@@ -3940,9 +3948,12 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz release groups.")
 
 (defvar mb-series-tours '(
-;; Bruce Springsteen & The E Street Band
-("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
-)
+			  ;; Bruce Springsteen & The E Street Band
+			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
+			  ;; The Rolling Stones
+			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
+			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
+			  )
   "Musicbrainz tour series.")
 
 (defvar mb-areas '(
