@@ -3918,6 +3918,8 @@ Do this ALWAYS, except for the above exceptions."
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ;; Charles Giordano
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
+;; Jake Clemons
+("5c64226c-d673-4d23-a612-2bfb704edd66" . "Jake")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
 ;; Patti Scialfa
