@@ -3944,6 +3944,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; Bruce Springsteen
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
+("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
 ;; The Rolling Stones
 ("4838a3c9-fd2b-30a5-83eb-e32545b5d7fc" . "Exile on Main St.")
 )
