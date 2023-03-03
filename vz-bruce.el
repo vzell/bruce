@@ -1606,6 +1606,7 @@ Do this ALWAYS, except for the above exceptions."
 @ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
 @ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
 
+Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1629,6 +1630,7 @@ Do this ALWAYS, except for the above exceptions."
 
 @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa] (guest)
 
+Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1649,6 +1651,8 @@ Do this ALWAYS, except for the above exceptions."
   (save-excursion
     (insert
      "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+
+Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1698,6 +1702,7 @@ Do this ALWAYS, except for the above exceptions."
 @ [59d77428-bf32-4c9f-bc4c-7c03ec882c59|Lisa Lowell]
 @ [e67ac344-ce0a-4a27-b4ad-9502dab57a82|Michelle Moore]
 
+Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
