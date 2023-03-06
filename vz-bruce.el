@@ -1586,6 +1586,34 @@ Do this ALWAYS, except for the above exceptions."
 
 ;;; Springsteen On Broadway (-1)
 
+(defun musicbrainz-surround-event-the-rogues ()
+  "Surround event with artists and line, The Rogues."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [3072c9d3-3787-407c-ae2f-69e7f9846b49|The Rogues]
+# with
+@ [8abedd53-89d9-4a64-929a-ecddf453ed94|Craig Caprioni]
+@ [a069df35-4865-40c9-b31a-c00c4b4f13e8|Jay Gibson]
+@ [023cd435-dfa8-4d6b-bb24-b55fc0a99ba7|Jimmy McGuire]
+@ [33d2abad-fd92-4374-929c-886c884d2ee5|Donnie Powell]
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+
+Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band ()
   "Surround event with artists and line."
   (interactive)
@@ -1717,7 +1745,8 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
     (recenter-top-bottom)
     ))
 
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
@@ -3667,6 +3696,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("cc197bad-dc9c-440d-a5b5-d52ba2e14234" . "Coldplay")
 ("210c1047-0e88-4b73-81ac-13a026cefb01" . "Conan O’Brien")
 ("a0327dc2-dc76-44d5-aec6-47cd2dff1469" . "Counting Crows")
+("8abedd53-89d9-4a64-929a-ecddf453ed94" . "Craig Caprioni")
 ("6a62a034-cee3-490c-a2ad-621eca2f25a4" . "Craig Finn")
 ("b36e1a45-2f2c-44a5-b8d8-9dc12159fab5" . "Craig Werner")
 ("028fd996-fe8f-41b6-a6ed-1cb4b06a23d2" . "Curt Ramm")
@@ -3685,6 +3715,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("8686d765-bd89-4448-81e2-2cd73a07eb27" . "Dermot O’Leary")
 ("89efeadd-8080-4cf9-af33-2e68a173df02" . "Dion")
 ("b60527cc-54f3-4bbe-a01b-dcf34c95ae14" . "Donna Summer")
+("33d2abad-fd92-4374-929c-886c884d2ee5" . "Donnie Powell")
 ("e8374874-4178-4869-b92e-fef6bf30dc04" . "Dropkick Murphys")
 ("fe0e1895-aa84-47d9-8e5b-7930fc20709b" . "Dr. John")
 ("b66771cc-45fa-4a32-b14f-5337d7223d7a" . "D’Angelo")
@@ -3733,6 +3764,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("107d0c22-d051-4d98-8206-4e14de02132a" . "James Taylor")
 ("a7ff504b-bbca-49f9-950b-ad02f2a2b092" . "Jann Wenner")
 ("bf257f0b-c221-4d25-b090-7c35040ad3b4" . "Jane Scarpantoni")
+("a069df35-4865-40c9-b31a-c00c4b4f13e8" . "Jay Gibson")
 ("ec30619b-713c-4f8a-9b2a-da4c7e4b15a7" . "Jeff Garrison")
 ("681e7510-d6bf-4515-942a-7443d967b46e" . "Jeff Hill")
 ("b8eb9721-5b9d-4207-99e9-75abaf26555c" . "Jeff Lubin Band")
@@ -3741,6 +3773,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("f0882d14-446e-4172-9736-98fbc1395fce" . "Jesse Paris Smith")
 ("4f39dcff-2128-48b2-b00d-9020625ada95" . "Jim Rotolo")
 ("78b7c31c-97cb-4f06-be5c-5c2e5a7c87bc" . "Jimmy Fallon")
+("023cd435-dfa8-4d6b-bb24-b55fc0a99ba7" . "Jimmy McGuire")
 ("f970e8eb-42ea-4cfc-bdb3-e007cf9c4dba" . "Jimmy Iovine")
 ("3c41ccec-2a7c-4928-a21d-15201218d18a" . "Jimmy Kimmel")
 ("620a9ca2-b254-403f-9b03-7601b039c010" . "Jimmy Vivino")
