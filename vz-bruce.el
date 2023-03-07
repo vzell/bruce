@@ -3817,6 +3817,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("21685b15-3074-446e-aa1d-ff7157014f53" . "Lucinda Williams")
 ("a8950eed-e308-4588-bd76-3b74752e93c2" . "Malcolm Gladwell")
 ("ed7e8db7-749e-460b-bd28-eb1de46dccda" . "Marah")
+("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion Vinyard")
 ("8e3a27d7-9ba2-4670-bb11-10550870762c" . "Mark Radcliffe")
 ("7962d3cd-83e7-46ea-8352-531a65cf2d29" . "Martin Scorsese")
 ("f1bc3b70-000a-4d50-b6c8-ac8acd25a24d" . "Massimo Cotto")
@@ -3889,6 +3890,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("7944ed53-2a58-4035-9b93-140a71e41c34" . "Sting")
 ("0e763b87-f3cd-4a63-986f-bebc4189f1f0" . "Stray Cats")
 ("059e03e3-e426-4ac0-b4df-68118cc2ac8f" . "Suga Steve")
+("14472e26-9503-4c62-92a9-9bea28d4508c" . "Tex Vinyard")
 ("7bef92eb-f2b1-4790-935a-6e411eff406e" . "The 1992–93 World Tour Band")
 ("e4d62b29-a67e-4700-ba16-35c436cc1f84" . "The Alliance Choir")
 ("1607e961-c4a7-4602-ac22-d0d87833eee3" . "The Bruce Springsteen Band")
@@ -3952,6 +3954,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 (defvar mb-artist-aliases '(
 ;; Bruce Springsteen
 ("70248960-cb53-4ea4-943a-edb18f7d336f" . "Bruce")
+("70248960-cb53-4ea4-943a-edb18f7d336f" . "Springsteen")
 ;; The Castiles
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ;; Charles Giordano
