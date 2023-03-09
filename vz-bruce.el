@@ -1745,8 +1745,8 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
     (recenter-top-bottom)
     ))
 
-;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
@@ -3890,7 +3890,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("7944ed53-2a58-4035-9b93-140a71e41c34" . "Sting")
 ("0e763b87-f3cd-4a63-986f-bebc4189f1f0" . "Stray Cats")
 ("059e03e3-e426-4ac0-b4df-68118cc2ac8f" . "Suga Steve")
-("14472e26-9503-4c62-92a9-9bea28d4508c" . "Tex Vinyard")
+("14472e26-9503-4c62-92a9-9bea28d4508c" . "Gordon Vinyard")
 ("7bef92eb-f2b1-4790-935a-6e411eff406e" . "The 1992–93 World Tour Band")
 ("e4d62b29-a67e-4700-ba16-35c436cc1f84" . "The Alliance Choir")
 ("1607e961-c4a7-4602-ac22-d0d87833eee3" . "The Bruce Springsteen Band")
@@ -3948,6 +3948,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("650e7db6-b795-4eb5-a702-5ea2fc46c848" . "Lady Gaga")
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
+("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legends")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -3959,8 +3960,14 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ;; Charles Giordano
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
+;; Gordon Vinyard
+("14472e26-9503-4c62-92a9-9bea28d4508c" . "Tex Vinyard")
+("14472e26-9503-4c62-92a9-9bea28d4508c" . "Gordon \"Tex\" Vinyard")
 ;; Jake Clemons
 ("5c64226c-d673-4d23-a612-2bfb704edd66" . "Jake")
+;; Marion Vinyard
+("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion")
+("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion Joy Vinyard")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
 ;; Patti Scialfa
