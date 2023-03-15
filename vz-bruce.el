@@ -1599,7 +1599,9 @@ Do this ALWAYS, except for the above exceptions."
 @ [33d2abad-fd92-4374-929c-886c884d2ee5|Donnie Powell]
 @ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 
-Local Start Time ??:?? / End Time ??:??
+# Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
 "
 )
     (re-search-forward "^$")
@@ -1634,7 +1636,7 @@ Local Start Time ??:?? / End Time ??:??
 @ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
 @ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
 
-Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1658,7 +1660,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 
 @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa] (guest)
 
-Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1680,7 +1682,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
     (insert
      "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 
-Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1745,8 +1747,8 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
     (recenter-top-bottom)
     ))
 
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
-;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
