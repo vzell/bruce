@@ -1732,7 +1732,7 @@ Do this ALWAYS, except for the above exceptions."
 @ [59d77428-bf32-4c9f-bc4c-7c03ec882c59|Lisa Lowell]
 @ [e67ac344-ce0a-4a27-b4ad-9502dab57a82|Michelle Moore]
 
-Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1747,8 +1747,8 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
     (recenter-top-bottom)
     ))
 
-;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
@@ -3980,6 +3980,7 @@ Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 ("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
+("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
 )
   "Brucebase artist aliases.")
 
