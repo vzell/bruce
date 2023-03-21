@@ -931,8 +931,29 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/release-group/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-places ()
+  "Search for places in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (place (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc place mb-places))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/place/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-mb-urlify-gignote-areas ()
-  "Search for release groups in gignote and URLify."
+  "Search for areas in gignote and URLify."
   (interactive)
   (progn
     (beginning-of-line)
@@ -980,6 +1001,7 @@ Do this ALWAYS, except for the above exceptions."
     (vz-mb-urlify-gignote-works)
     (vz-mb-urlify-gignote-artists)
     (vz-mb-urlify-gignote-release-groups)
+    (vz-mb-urlify-gignote-places)
     (vz-mb-urlify-gignote-areas)
     (vz-mb-urlify-gignote-series)
     ))
@@ -3644,6 +3666,7 @@ Do this ALWAYS, except for the above exceptions."
 ("615e4dea-7f8e-469d-a455-dc9461c1387d" . "Alexa Ray Joel")
 ("6b064ead-91a4-4ac8-8076-b1febe4f4aac" . "Alison Krauss")
 ("a6410e63-8056-4447-837d-2fbf5c504979" . "Alliance Singers")
+("73671c52-02f7-46b9-970b-88122367a1d8" . "Amy Tan")
 ("71853da7-d1e3-4649-b9e2-a74d5700badf" . "Anna Maxwell Martin")
 ("b0ab3979-4165-4e3e-b125-2d77f14080bd" . "Anthony Almonte")
 ("40dfc5cb-158f-41a5-8013-f2bda59dde9a" . "Anthony Mason")
@@ -3945,8 +3968,11 @@ Do this ALWAYS, except for the above exceptions."
 ("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
 ("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
 ("5ab2cf34-517e-48eb-b3a5-34e1cbcd600a" . "George Strait")
+("68f644b2-42ed-4d11-8bc7-633d5250721b" . "Gladys Knight")
 ("9d3889fb-c6b7-47a8-a325-d22ea54292e3" . "Greil Marcus")
+("6098314f-75ce-4a61-9db3-81f725e1bed0" . "Joe Biden")
 ("144ef525-85e9-40c3-8335-02c32d0861f3" . "John Mayer")
+("3c004c98-aab6-4b63-a2df-e07c98e73b0a" . "José Feliciano")
 ("650e7db6-b795-4eb5-a702-5ea2fc46c848" . "Lady Gaga")
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
@@ -4014,6 +4040,12 @@ Do this ALWAYS, except for the above exceptions."
 ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 )
   "Musicbrainz areas.")
+
+(defvar mb-places '(
+("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
+("5df4ac64-d016-4ecf-96b6-13c91aabaa00" . "White House")
+)
+  "Musicbrainz places.")
 
 (defvar mb-fixworks '(
 ;; special work titles to fix
