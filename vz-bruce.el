@@ -1638,6 +1638,35 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-band-1973 ()
+  "Surround event with artists and line."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+
+# Scheduled: 20:00 Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band ()
   "Surround event with artists and line."
   (interactive)
@@ -3952,6 +3981,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c27296f1-857c-4555-9e81-2c6f1cb1baf4" . "Trevor Noah")
 ("a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432" . "U2")
 ("8e434ed7-69a7-489b-905c-6735870befcb" . "Victorious Gospel Choir")
+("3e2b6ee0-6ec7-4622-b039-1cbed5f55288" . "Vini Lopez")
 ("98c852f0-4938-43db-ba5d-7a945ad43f89" . "Waleed Aly")
 ("970fb29f-e288-403e-a388-d2a7889bfa47" . "Warren Zevon")
 ("40fb02de-afc3-441c-a6ec-21fee861d478" . "Willie Nile")
@@ -3965,6 +3995,8 @@ Do this ALWAYS, except for the above exceptions."
   "Brucebase artists with a relation to Bruce Springsteen.")
 
 (defvar mb-artists-mentioned '(
+("6c7e61bd-ee82-4bef-b7fc-59461011afcf" . "Bill Graham")
+("f81d592c-993f-4693-b53a-57db5a6257b9" . "Blood, Sweat & Tears")
 ("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
 ("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
 ("5ab2cf34-517e-48eb-b3a5-34e1cbcd600a" . "George Strait")
