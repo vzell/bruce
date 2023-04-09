@@ -3893,6 +3893,7 @@ Do this ALWAYS, except for the above exceptions."
 ("af78c8ec-0d33-4082-98f5-23281b65b109" . "Nona Hendryx")
 ("8bdaad41-5c6e-4165-97d2-44599c828e3e" . "Nora Guthrie")
 ("ef011392-7eee-4090-ad83-660c48e9b1c1" . "Ozzie Melendez")
+("23a3f71a-d1ce-424d-80c1-27598585f9fd" . "Pamela Springsteen")
 ("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti Scialfa")
 ("2944725e-3dcb-432e-b575-0bed5cef3504" . "Paul Shaffer")
 ("05517043-ff78-4988-9c22-88c68588ebb9" . "Paul Simon")
@@ -3982,6 +3983,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432" . "U2")
 ("8e434ed7-69a7-489b-905c-6735870befcb" . "Victorious Gospel Choir")
 ("3e2b6ee0-6ec7-4622-b039-1cbed5f55288" . "Vini Lopez")
+("06fc0de7-1647-4c0d-94bf-a6580ad0643b" . "Virginia Springsteen")
 ("98c852f0-4938-43db-ba5d-7a945ad43f89" . "Waleed Aly")
 ("970fb29f-e288-403e-a388-d2a7889bfa47" . "Warren Zevon")
 ("40fb02de-afc3-441c-a6ec-21fee861d478" . "Willie Nile")
@@ -4030,6 +4032,8 @@ Do this ALWAYS, except for the above exceptions."
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion Joy Vinyard")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
+;; Pamela Springsteen
+("23a3f71a-d1ce-424d-80c1-27598585f9fd" . "Pamela")
 ;; Patti Scialfa
 ("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti")
 ;; Ron Wood
@@ -4039,6 +4043,8 @@ Do this ALWAYS, except for the above exceptions."
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
+;; Virginia Springsteen
+("06fc0de7-1647-4c0d-94bf-a6580ad0643b" . "Virginia")
 )
   "Brucebase artist aliases.")
 
