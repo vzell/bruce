@@ -4081,8 +4081,9 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-places '(
 ("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
-("5df4ac64-d016-4ecf-96b6-13c91aabaa00" . "White House")
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
+("655fae6c-d5c1-42ba-926f-b81977b8f7d6" . "UBS Arena")
+("5df4ac64-d016-4ecf-96b6-13c91aabaa00" . "White House")
 )
   "Musicbrainz places.")
 
