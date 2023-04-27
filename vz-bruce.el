@@ -4000,6 +4000,7 @@ Do this ALWAYS, except for the above exceptions."
 ("6c7e61bd-ee82-4bef-b7fc-59461011afcf" . "Bill Graham")
 ("f81d592c-993f-4693-b53a-57db5a6257b9" . "Blood, Sweat & Tears")
 ("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
+("9b29b47f-5004-4863-92c0-058b621dcea8" . "Disciples of Soul")
 ("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
 ("5ab2cf34-517e-48eb-b3a5-34e1cbcd600a" . "George Strait")
 ("68f644b2-42ed-4d11-8bc7-633d5250721b" . "Gladys Knight")
@@ -4040,6 +4041,8 @@ Do this ALWAYS, except for the above exceptions."
 ("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
 ;; Soozie Tyrell
 ("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
+;; Steven van Zandt
+("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie Van Zandt")
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
@@ -4084,6 +4087,7 @@ Do this ALWAYS, except for the above exceptions."
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
 ("655fae6c-d5c1-42ba-926f-b81977b8f7d6" . "UBS Arena")
 ("5df4ac64-d016-4ecf-96b6-13c91aabaa00" . "White House")
+("573aa838-074a-434a-870d-56b748751e97" . "Monmouth University")
 )
   "Musicbrainz places.")
 
