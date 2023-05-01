@@ -4014,6 +4014,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
 ("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legends")
+("065d44ce-48cf-4b1c-85ad-555d0345ba6e" . "Tom Hanks")
 )
   "Brucebase artists mentioned in gignotes.")
 
