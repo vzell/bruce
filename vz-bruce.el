@@ -3694,6 +3694,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-artists-relation '(
 ("1ca07311-cbfe-4ae8-a518-aa76c8579802" . "Ada Dyer")
 ("09381e15-32ed-447c-ad06-475baf3b4496" . "Al Chez")
+("73bac1b2-69fc-4dff-b428-9f24ef552341" . "Albee Tellone")
 ("615e4dea-7f8e-469d-a455-dc9461c1387d" . "Alexa Ray Joel")
 ("6b064ead-91a4-4ac8-8076-b1febe4f4aac" . "Alison Krauss")
 ("a6410e63-8056-4447-837d-2fbf5c504979" . "Alliance Singers")
@@ -4003,11 +4004,13 @@ Do this ALWAYS, except for the above exceptions."
   "Brucebase artists with a relation to Bruce Springsteen.")
 
 (defvar mb-artists-mentioned '(
+("ed2ac1e9-d51d-4eff-a2c2-85e81abd6360" . "Bob Marley")
 ("6c7e61bd-ee82-4bef-b7fc-59461011afcf" . "Bill Graham")
 ("f81d592c-993f-4693-b53a-57db5a6257b9" . "Blood, Sweat & Tears")
 ("7e9dde4a-7d17-4995-818a-fe08704924b4" . "Charlie Bird")
 ("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
 ("9b29b47f-5004-4863-92c0-058b621dcea8" . "Disciples of Soul")
+("b463a3e3-9af7-4f1b-9097-0a4e242eee0a" . "Douglas Sutphin")
 ("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
 ("5ab2cf34-517e-48eb-b3a5-34e1cbcd600a" . "George Strait")
 ("68f644b2-42ed-4d11-8bc7-633d5250721b" . "Gladys Knight")
@@ -4021,6 +4024,7 @@ Do this ALWAYS, except for the above exceptions."
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
 ("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legends")
 ("d41a6875-b626-4c0f-89a1-aecb643d29ff" . "The Pogues")
+("c9e99d40-4a2c-4ca7-ac5b-e842264ee271" . "The Wailers")
 ("065d44ce-48cf-4b1c-85ad-555d0345ba6e" . "Tom Hanks")
 ("f1f82bfb-3464-44fc-b3d5-f225ace2d982" . "Warren Zanes")
 )
@@ -4061,6 +4065,8 @@ Do this ALWAYS, except for the above exceptions."
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
+;; The Wailers
+("c9e99d40-4a2c-4ca7-ac5b-e842264ee271" . "Wailers")
 ;; Virginia Springsteen
 ("06fc0de7-1647-4c0d-94bf-a6580ad0643b" . "Virginia")
 )
@@ -4078,6 +4084,8 @@ Do this ALWAYS, except for the above exceptions."
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("324aee0c-36ec-35c1-9c93-b67a1d428037" . "Nebraska")
 ("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
+("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters XVI: Hollywood Hills Garage Tapes (Unreleased Masters, Volume I)")
+("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters Hollywood Hills Garage Sessions")
 ("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
 ;; The Rolling Stones
 ("4838a3c9-fd2b-30a5-83eb-e32545b5d7fc" . "Exile on Main St.")
@@ -4086,6 +4094,7 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-series-tours '(
 			  ;; Bruce Springsteen & The E Street Band
+			  ("d83e44e6-758f-4a0c-87fe-e30a7240a47e" . "Born in the U.S.A. Tour")
 			  ("64f3e25f-bfac-48bc-a79d-6acd33a031af" . "The River Tour")
 			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
 			  ;; The Rolling Stones
@@ -4095,9 +4104,11 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz tour series.")
 
 (defvar mb-areas '(
+		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 		   ("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
+		   ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
 )
   "Musicbrainz areas.")
 
@@ -4105,7 +4116,11 @@ Do this ALWAYS, except for the above exceptions."
 ("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
 ("573aa838-074a-434a-870d-56b748751e97" . "Monmouth University")
+;; Springsteen Residence (Swimming River Reservoir)
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "Colts Neck, NJ Farmhouse")
+("47967a50-425b-4abf-95cf-e4746a1000d5" . "Colts Neck Home")
+("bd2bddd6-c1a2-44a7-b4f9-ff7ce03cde94" . "Hollywood Hills Residence")
+("362e1557-bf27-495e-982f-783a0faaf2c7" . "Max’s Kansas City")
 ("8aedc195-5495-4dab-a876-368ab4796c8b" . "Residence")
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "The Ranch House")
 ("b28cdc4f-a531-480d-a6c4-3794fddd9d98" . "The Burrow")
