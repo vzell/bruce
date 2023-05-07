@@ -4020,6 +4020,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3c004c98-aab6-4b63-a2df-e07c98e73b0a" . "José Feliciano")
 ("650e7db6-b795-4eb5-a702-5ea2fc46c848" . "Lady Gaga")
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
+("beb68abb-51b4-41d1-9645-d0c8306cf588" . "Rita Wilson")
 ("29bec046-e58b-4b9e-9853-c0bdeb84a5c7" . "Shane MacGowan")
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
 ("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legends")
@@ -4097,6 +4098,7 @@ Do this ALWAYS, except for the above exceptions."
 			  ("d83e44e6-758f-4a0c-87fe-e30a7240a47e" . "Born in the U.S.A. Tour")
 			  ("64f3e25f-bfac-48bc-a79d-6acd33a031af" . "The River Tour")
 			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
+			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023")
 			  ;; The Rolling Stones
 			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
 			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
