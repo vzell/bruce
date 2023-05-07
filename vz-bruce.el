@@ -3825,6 +3825,7 @@ Do this ALWAYS, except for the above exceptions."
 ("db0fc330-1fa1-43f8-a33f-33eaf6a97d78" . "Jesse Malin")
 ("bde64de3-01d4-4ed9-afe9-88b7d9db922d" . "Jessye Norman")
 ("f0882d14-446e-4172-9736-98fbc1395fce" . "Jesse Paris Smith")
+("22ab1efe-2d1e-494f-af04-09abad060a03" . "Jim Axelrod")
 ("4f39dcff-2128-48b2-b00d-9020625ada95" . "Jim Rotolo")
 ("78b7c31c-97cb-4f06-be5c-5c2e5a7c87bc" . "Jimmy Fallon")
 ("023cd435-dfa8-4d6b-bb24-b55fc0a99ba7" . "Jimmy McGuire")
@@ -3885,6 +3886,7 @@ Do this ALWAYS, except for the above exceptions."
 ("e67ac344-ce0a-4a27-b4ad-9502dab57a82" . "Michelle Moore")
 ("c19b8adb-734e-4e2f-948b-f97e01741e79" . "Michelle Obama")
 ("b5ffc3aa-b868-4b88-905f-d73d51dbe51c" . "Mick Jagger")
+("9dd447fe-6c6b-4f27-b2ef-6f97550d0fad" . "Mike Batlan")
 ("078e680d-6d6c-46ce-8134-0bddeb9e5e35" . "Mike Mancini")
 ("45d7e6e8-c5bf-4c59-a79e-c7bb2e9b2cc9" . "Mike Ness")
 ("346f8e40-4be4-4dc8-9b8b-d4896324d1af" . "Mo Gilligan")
@@ -4001,6 +4003,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-artists-mentioned '(
 ("6c7e61bd-ee82-4bef-b7fc-59461011afcf" . "Bill Graham")
 ("f81d592c-993f-4693-b53a-57db5a6257b9" . "Blood, Sweat & Tears")
+("7e9dde4a-7d17-4995-818a-fe08704924b4" . "Charlie Bird")
 ("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
 ("9b29b47f-5004-4863-92c0-058b621dcea8" . "Disciples of Soul")
 ("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
@@ -4012,9 +4015,12 @@ Do this ALWAYS, except for the above exceptions."
 ("3c004c98-aab6-4b63-a2df-e07c98e73b0a" . "José Feliciano")
 ("650e7db6-b795-4eb5-a702-5ea2fc46c848" . "Lady Gaga")
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
+("29bec046-e58b-4b9e-9853-c0bdeb84a5c7" . "Shane MacGowan")
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
 ("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legends")
+("d41a6875-b626-4c0f-89a1-aecb643d29ff" . "The Pogues")
 ("065d44ce-48cf-4b1c-85ad-555d0345ba6e" . "Tom Hanks")
+("f1f82bfb-3464-44fc-b3d5-f225ace2d982" . "Warren Zanes")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -4034,12 +4040,16 @@ Do this ALWAYS, except for the above exceptions."
 ;; Marion Vinyard
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion")
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion Joy Vinyard")
+;; Mike Batlan
+("9dd447fe-6c6b-4f27-b2ef-6f97550d0fad" . "Michael Mike Rasta Batlan")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
 ;; Pamela Springsteen
 ("23a3f71a-d1ce-424d-80c1-27598585f9fd" . "Pamela")
 ;; Patti Scialfa
 ("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti")
+;; The Pogues
+("d41a6875-b626-4c0f-89a1-aecb643d29ff" . "Pogues")
 ;; Ron Wood
 ("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
 ;; Soozie Tyrell
@@ -4064,6 +4074,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-release-groups '(
 ;; Bruce Springsteen
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
+("324aee0c-36ec-35c1-9c93-b67a1d428037" . "Nebraska")
 ("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
 ("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
 ;; The Rolling Stones
@@ -4073,6 +4084,7 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-series-tours '(
 			  ;; Bruce Springsteen & The E Street Band
+			  ("64f3e25f-bfac-48bc-a79d-6acd33a031af" . "The River Tour")
 			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
 			  ;; The Rolling Stones
 			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
@@ -4081,16 +4093,23 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz tour series.")
 
 (defvar mb-areas '(
-("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
+		   ("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
+		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
+		   ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
 )
   "Musicbrainz areas.")
 
 (defvar mb-places '(
 ("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
+("573aa838-074a-434a-870d-56b748751e97" . "Monmouth University")
+("47967a50-425b-4abf-95cf-e4746a1000d5" . "Colts Neck, NJ Farmhouse")
+("8aedc195-5495-4dab-a876-368ab4796c8b" . "Residence")
+("47967a50-425b-4abf-95cf-e4746a1000d5" . "The Ranch House")
+("b28cdc4f-a531-480d-a6c4-3794fddd9d98" . "The Burrow")
 ("655fae6c-d5c1-42ba-926f-b81977b8f7d6" . "UBS Arena")
 ("5df4ac64-d016-4ecf-96b6-13c91aabaa00" . "White House")
-("573aa838-074a-434a-870d-56b748751e97" . "Monmouth University")
+("9bcf265f-5b31-4a2c-b31e-482c97c5e155" . "Windmill Lane Recording Studios")
 )
   "Musicbrainz places.")
 
