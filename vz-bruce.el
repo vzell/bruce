@@ -4039,6 +4039,8 @@ Do this ALWAYS, except for the above exceptions."
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ;; Charles Giordano
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
+;; Garry Tallent
+("42b42dd1-9263-4eae-91cd-4014a5b5d39f" . "Garry")
 ;; Gordon Vinyard
 ("14472e26-9503-4c62-92a9-9bea28d4508c" . "Tex Vinyard")
 ("14472e26-9503-4c62-92a9-9bea28d4508c" . "Gordon \"Tex\" Vinyard")
