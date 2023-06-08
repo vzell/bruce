@@ -4116,11 +4116,13 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz tour series.")
 
 (defvar mb-areas '(
-		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 		   ("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
+		   ("6658f787-692d-417f-852c-dcca728d5849" . "Edinburgh")
+		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
+		   ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
 )
