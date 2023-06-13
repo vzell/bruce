@@ -4118,6 +4118,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-areas '(
 		   ("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
 		   ("6658f787-692d-417f-852c-dcca728d5849" . "Edinburgh")
+		   ("89a675c2-3e37-3518-b83c-418bad59a85a" . "Europe")
 		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
