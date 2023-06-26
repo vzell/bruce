@@ -4130,6 +4130,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 		   ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
+		   ("23d10872-f5ae-3f0c-bf55-332788a16ecb" . "Sweden")
 		   ("1333ff06-8e3d-3c8e-9f3a-13a2a38b41df" . "Switzerland")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
