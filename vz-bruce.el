@@ -4026,6 +4026,7 @@ Do this ALWAYS, except for the above exceptions."
 ("65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab" . "Metallica")
 ("4aae17a7-9f0c-487b-b60e-f8eafb410b1d" . "Nick Cave")
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
+("8e66ea2b-b57b-47d9-8df0-df4630aeb8e5" . "Peter Gabriel")
 ("beb68abb-51b4-41d1-9645-d0c8306cf588" . "Rita Wilson")
 ("3478a5d1-bd96-4584-aa54-4d6e0a329658" . "Sam Fender")
 ("29bec046-e58b-4b9e-9853-c0bdeb84a5c7" . "Shane MacGowan")
