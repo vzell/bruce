@@ -4126,6 +4126,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("89a675c2-3e37-3518-b83c-418bad59a85a" . "Europe")
 		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 		   ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
+		   ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
