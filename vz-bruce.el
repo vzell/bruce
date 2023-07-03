@@ -3658,6 +3658,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; Brucebase songs not in songlist, i.e.: played in rehearsals
 (defvar mb-brucebase-songlist-missing-works '(
 ("0637c000-ea81-3c2d-8e52-64d28e16c1c2" . "Changes")
+("0009262c-a842-4463-9ca2-1e08563193bf" . "Here Comes the Bride")
 ))
 
 ;; The Bruce Springsteen Band / Steel Mill
@@ -4087,6 +4088,8 @@ Do this ALWAYS, except for the above exceptions."
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
+;; The E Street Horns
+("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "Horn Section")
 ;; The Wailers
 ("c9e99d40-4a2c-4ca7-ac5b-e842264ee271" . "Wailers")
 ;; Virginia Springsteen
@@ -4102,7 +4105,8 @@ Do this ALWAYS, except for the above exceptions."
    ))
 
 (defvar mb-release-groups '(
-;; Bruce Springsteen
+			    ;; Bruce Springsteen
+("3c39a076-8e52-38f2-8076-260d0672fb23" . "Born in the U.S.A.")
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("324aee0c-36ec-35c1-9c93-b67a1d428037" . "Nebraska")
 ("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
