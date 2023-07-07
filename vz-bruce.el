@@ -4033,6 +4033,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
 ("8e66ea2b-b57b-47d9-8df0-df4630aeb8e5" . "Peter Gabriel")
 ("beb68abb-51b4-41d1-9645-d0c8306cf588" . "Rita Wilson")
+("91892ad6-e645-441b-bab0-12f17f447161" . "Roger Federer")
 ("3478a5d1-bd96-4584-aa54-4d6e0a329658" . "Sam Fender")
 ("29bec046-e58b-4b9e-9853-c0bdeb84a5c7" . "Shane MacGowan")
 ("b3adc16a-abdb-4668-9b05-baabbf942db6" . "Tash Sultana")
