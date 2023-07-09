@@ -4009,6 +4009,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ed2ac1e9-d51d-4eff-a2c2-85e81abd6360" . "Bob Marley")
 ("6c7e61bd-ee82-4bef-b7fc-59461011afcf" . "Bill Graham")
 ("f81d592c-993f-4693-b53a-57db5a6257b9" . "Blood, Sweat & Tears")
+("8e66081a-58f8-4537-b15b-c645b184142d" . "Brittney Spencer")
 ("7e9dde4a-7d17-4995-818a-fe08704924b4" . "Charlie Bird")
 ("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
 ("172805a7-6f84-4bb3-8b3b-6dc5bc33b103" . "Chris Rock")
