@@ -1672,7 +1672,9 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
 @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 # with
@@ -1707,7 +1709,9 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 
 @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa] (guest)
 
@@ -1731,7 +1735,9 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-     "@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 
 # Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
@@ -1753,7 +1759,9 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
 @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 # with
@@ -4136,6 +4144,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-areas '(
 		   ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
 		   ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
+		   ("4757b525-2a60-324a-b060-578765d2c993" . "Denmark")
 		   ("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
 		   ("6658f787-692d-417f-852c-dcca728d5849" . "Edinburgh")
 		   ("9d5dd675-3cf4-4296-9e39-67865ebee758" . "England")
