@@ -4142,6 +4142,7 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz tour series.")
 
 (defvar mb-areas '(
+		   ("caac77d1-a5c8-3e6e-8e27-90b44dcc1446" . "Austria")
 		   ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
 		   ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
 		   ("4757b525-2a60-324a-b060-578765d2c993" . "Denmark")
