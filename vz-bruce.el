@@ -4153,6 +4153,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 		   ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
 		   ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
+		   ("11a44e18-a2e5-43a9-bee9-aa4f7c83f967" . "Hamburg")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
@@ -4162,6 +4163,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("1333ff06-8e3d-3c8e-9f3a-13a2a38b41df" . "Switzerland")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
+		   ("afff1a94-a98b-4322-8874-3148139ab6da" . "Vienna")
 )
   "Musicbrainz areas.")
 
