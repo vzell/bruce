@@ -4145,6 +4145,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("caac77d1-a5c8-3e6e-8e27-90b44dcc1446" . "Austria")
 		   ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
 		   ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
+		   ("e0e3c82a-aea8-48d3-beda-9e587db0b969" . "Copenhagen")
 		   ("4757b525-2a60-324a-b060-578765d2c993" . "Denmark")
 		   ("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
 		   ("6658f787-692d-417f-852c-dcca728d5849" . "Edinburgh")
