@@ -4095,6 +4095,7 @@ Do this ALWAYS, except for the above exceptions."
 ("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
 ;; Steven van Zandt
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie Van Zandt")
+("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Steve")
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
@@ -4151,6 +4152,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("6658f787-692d-417f-852c-dcca728d5849" . "Edinburgh")
 		   ("9d5dd675-3cf4-4296-9e39-67865ebee758" . "England")
 		   ("89a675c2-3e37-3518-b83c-418bad59a85a" . "Europe")
+		   ("89a675c2-3e37-3518-b83c-418bad59a85a" . "European")
 		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 		   ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
 		   ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
