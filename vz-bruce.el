@@ -3740,6 +3740,7 @@ Do this ALWAYS, except for the above exceptions."
 ("5b9dc76b-8574-4cb5-9496-ab1bc0d35c29" . "Brandon Flowers")
 ("df8b4131-e876-43a9-ab11-8d505bc94ebf" . "Brendan O’Connor")
 ("e2259e9d-ab86-4e5a-8054-d0e3464616eb" . "Brian Kirk & The Jirks")
+("20d7beef-118f-493c-99f9-3931835cb658" . "Brian Fallon")
 ("634fe78e-fc6b-4b2a-ba83-c8c66e13a8aa" . "Brian Wilson")
 ("e60dbba7-6f55-429a-bd22-5e9c6a87ae70" . "Bruce Hornsby")
 ("ef4242fd-b938-442d-8aff-2c989a568419" . "Bruce Kapler")
@@ -4124,6 +4125,8 @@ Do this ALWAYS, except for the above exceptions."
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters XVI: Hollywood Hills Garage Tapes (Unreleased Masters, Volume I)")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters Hollywood Hills Garage Sessions")
 ("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
+;; The Gaslight Anthem
+("88e34862-743e-4d48-bdc0-0399c2b20f73" . "History Books")
 ;; The Rolling Stones
 ("4838a3c9-fd2b-30a5-83eb-e32545b5d7fc" . "Exile on Main St.")
 )
@@ -4162,6 +4165,8 @@ Do this ALWAYS, except for the above exceptions."
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 		   ("6743d351-6f37-3049-9724-5041161fff4d" . "Norway")
 		   ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
+		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spain")
+		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spanish")
 		   ("23d10872-f5ae-3f0c-bf55-332788a16ecb" . "Sweden")
 		   ("1333ff06-8e3d-3c8e-9f3a-13a2a38b41df" . "Switzerland")
 		   ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
