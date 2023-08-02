@@ -3883,6 +3883,8 @@ Do this ALWAYS, except for the above exceptions."
 ("f887110a-ddd9-4a4e-b9ea-e567523ef6e2" . "Lisa Fischer")
 ("59d77428-bf32-4c9f-bc4c-7c03ec882c59" . "Lisa Lowell")
 ("9659f4dc-358c-4eb3-8a16-27fb983a9650" . "Little Steven")
+;; לואי להב
+("b81c5f3a-4659-469c-bbf4-3d2a3488d3ec" . "Louis Lahav")
 ("21685b15-3074-446e-aa1d-ff7157014f53" . "Lucinda Williams")
 ("a8950eed-e308-4588-bd76-3b74752e93c2" . "Malcolm Gladwell")
 ("ed7e8db7-749e-460b-bd28-eb1de46dccda" . "Marah")
@@ -4160,6 +4162,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
 		   ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
 		   ("11a44e18-a2e5-43a9-bee9-aa4f7c83f967" . "Hamburg")
+		   ("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
