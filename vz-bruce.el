@@ -994,6 +994,27 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/series/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-labels ()
+  "Search for labels in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (label (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc label mb-labels))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/labels/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-mb-urlify-gignote ()
   "Search for works and artists in gignote and URLify."
   (interactive)
@@ -1004,6 +1025,7 @@ Do this ALWAYS, except for the above exceptions."
     (vz-mb-urlify-gignote-places)
     (vz-mb-urlify-gignote-areas)
     (vz-mb-urlify-gignote-series)
+    (vz-mb-urlify-gignote-labels)
     ))
 
 (defun vz-capitalize-first-char (&optional string)
@@ -4061,6 +4083,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b3e73938-5249-4d47-9db4-5edabbbb8c95" . "Triggerfinger")
 ("f1f82bfb-3464-44fc-b3d5-f225ace2d982" . "Warren Zanes")
 ("19857f51-ef8b-4455-9e67-a066ae340034" . "Woody Harrelson")
+("fd1020c5-1dce-4e0e-9aba-7e728c143753" . "Yair Nitzani")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -4179,6 +4202,7 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz areas.")
 
 (defvar mb-places '(
+("5db3a73d-246f-41fe-8dfa-2e7bdf4fc0ea" . "Cinema City Hall")
 ("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
 ("573aa838-074a-434a-870d-56b748751e97" . "Monmouth University")
@@ -4195,6 +4219,12 @@ Do this ALWAYS, except for the above exceptions."
 ("9bcf265f-5b31-4a2c-b31e-482c97c5e155" . "Windmill Lane Recording Studios")
 )
   "Musicbrainz places.")
+
+(defvar mb-labels '(
+			  ;; Israeli rights society
+			  ("1a4ef578-2416-4275-aa7f-bbce0861dc8f" . "ACUM")
+			  )
+  "Musicbrainz labels.")
 
 (defvar mb-fixworks '(
 ;; special work titles to fix
