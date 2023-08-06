@@ -2373,6 +2373,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c999ecd6-fdef-3f03-b79c-58a41492566f" . "Part Man, Part Monkey")
 ("2283c5d2-15cb-4f4f-9d1e-c48b7d8d1b97" . "Party Lights")
 ("122ceb3a-3990-3caf-b873-74ccf7e89daa" . "Pay Me My Money Down")
+("71d2251b-7bfc-4d63-8d09-e9210964ddb2" . "Perfect World")
 ("c52d60d9-fca8-465e-ac11-51ce55164baf" . "Phantoms")
 ("8506885d-3efa-45db-bc9f-c2d9330bb635" . "Pilgrim in the Temple of Love")
 ("b656ff9a-9b07-347e-b318-7bfbc5ac008e" . "Pink Cadillac")
