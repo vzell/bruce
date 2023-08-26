@@ -4210,6 +4210,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-places '(
 ("5db3a73d-246f-41fe-8dfa-2e7bdf4fc0ea" . "Cinema City Hall")
 ("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
+("bc5d4673-bff2-4f9a-867c-38317e4dc9ed" . "Electric Lady Studios")
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
 ("573aa838-074a-434a-870d-56b748751e97" . "Monmouth University")
 ;; Springsteen Residence (Swimming River Reservoir)
