@@ -4045,6 +4045,7 @@ Do this ALWAYS, except for the above exceptions."
   "Brucebase artists with a relation to Bruce Springsteen.")
 
 (defvar mb-artists-mentioned '(
+("72c536dc-7137-4477-a521-567eeb840fa8" . "Bob Dylan")
 ("ed2ac1e9-d51d-4eff-a2c2-85e81abd6360" . "Bob Marley")
 ("6c7e61bd-ee82-4bef-b7fc-59461011afcf" . "Bill Graham")
 ("f81d592c-993f-4693-b53a-57db5a6257b9" . "Blood, Sweat & Tears")
@@ -4054,6 +4055,7 @@ Do this ALWAYS, except for the above exceptions."
 ("172805a7-6f84-4bb3-8b3b-6dc5bc33b103" . "Chris Rock")
 ("9b29b47f-5004-4863-92c0-058b621dcea8" . "Disciples of Soul")
 ("b463a3e3-9af7-4f1b-9097-0a4e242eee0a" . "Douglas Sutphin")
+("1c893468-37a9-4fb7-909f-929751a8ebed" . "Dr. Hook & the Medicine Show")
 ("5314f352-9e3d-47dd-8829-099284e283a3" . "Emily Rose Marcus")
 ("b7be8029-5ebe-4e4b-bc0c-a4d4756463c7" . "Fantastic Negrito")
 ("aca5718f-4f49-4439-b8f6-209db3f11757" . "Frank Turner")
@@ -4071,6 +4073,7 @@ Do this ALWAYS, except for the above exceptions."
 ("65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab" . "Metallica")
 ("4aae17a7-9f0c-487b-b60e-f8eafb410b1d" . "Nick Cave")
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
+("64c8fe79-1f93-483f-aace-b6a6e379e7d2" . "New Riders of the Purple Sage")
 ("8e66ea2b-b57b-47d9-8df0-df4630aeb8e5" . "Peter Gabriel")
 ("beb68abb-51b4-41d1-9645-d0c8306cf588" . "Rita Wilson")
 ("91892ad6-e645-441b-bab0-12f17f447161" . "Roger Federer")
@@ -4087,6 +4090,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b6dd3d6e-54e4-43e3-b952-98cc9a046733" . "Thomas Raggi")
 ("065d44ce-48cf-4b1c-85ad-555d0345ba6e" . "Tom Hanks")
 ("b3e73938-5249-4d47-9db4-5edabbbb8c95" . "Triggerfinger")
+("a41ac10f-0a56-4672-9161-b83f9b223559" . "Van Morrison")
 ("f1f82bfb-3464-44fc-b3d5-f225ace2d982" . "Warren Zanes")
 ("19857f51-ef8b-4455-9e67-a066ae340034" . "Woody Harrelson")
 ("fd1020c5-1dce-4e0e-9aba-7e728c143753" . "Yair Nitzani")
@@ -4131,6 +4135,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
+("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "Band")
 ;; The E Street Horns
 ("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "Horn Section")
 ;; The Wailers
@@ -4208,6 +4213,7 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz areas.")
 
 (defvar mb-places '(
+("12a15aee-de37-48e2-b83b-3fb4b198f822" . "Ahmanson Theatre")
 ("5db3a73d-246f-41fe-8dfa-2e7bdf4fc0ea" . "Cinema City Hall")
 ("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
 ("bc5d4673-bff2-4f9a-867c-38317e4dc9ed" . "Electric Lady Studios")
@@ -4228,9 +4234,10 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz places.")
 
 (defvar mb-labels '(
-			  ;; Israeli rights society
-			  ("1a4ef578-2416-4275-aa7f-bbce0861dc8f" . "ACUM")
-			  )
+		    ("b8d33bec-92cc-40d9-bd92-4eb089b401a9" . "CBS")
+		    ;; Israeli rights society
+		    ("1a4ef578-2416-4275-aa7f-bbce0861dc8f" . "ACUM")
+		    )
   "Musicbrainz labels.")
 
 (defvar mb-fixworks '(
