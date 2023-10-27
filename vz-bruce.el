@@ -1482,6 +1482,18 @@ Do this ALWAYS, except for the above exceptions."
 ;; @ [c10f955a-fb44-4733-a828-c1842af110c2|Dennis Orlock]
 ;; @ [eda4b070-ab02-42e5-8578-9c39fa2a7f22|Steve Paraczky]
 
+;;; 1984 - Born In The U.S.A. (-10)
+;; # &
+;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+;; # with
+;; @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+;; @ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+;; @ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+;; @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+;; @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+;; @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+;; @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+
 ;;; 2003 - The Reunion Tour (-10)
 ;; # &
 ;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
@@ -1493,7 +1505,6 @@ Do this ALWAYS, except for the above exceptions."
 ;; @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 ;; @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
 ;; @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
-
 
 ;;; 2003 - The Rising Tour (-12)
 ;; # &
@@ -1828,7 +1839,42 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-1984-born-in-the-usa-tour ()
+  "Surround event with artists and line."
+  (interactive)
+  (save-excursion
+    (insert
+"== [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1984-born-in-the-usa-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
