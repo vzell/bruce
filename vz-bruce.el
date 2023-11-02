@@ -1700,6 +1700,37 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-band-1975 ()
+  "Surround event with artists and line."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+
+# Scheduled: 20:00 Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band ()
   "Surround event with artists and line."
   (interactive)
@@ -1873,7 +1904,10 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;; (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;; (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+;; (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1973)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1975)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1984-born-in-the-usa-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
@@ -3788,6 +3822,7 @@ Do this ALWAYS, except for the above exceptions."
 ("0de4d19f-05c8-4562-a3c0-7abdc144f1d5" . "Barack Obama")
 ("3435011c-c0d1-433b-9049-333d54b4af00" . "Bart Haynes")
 ("092ae7a4-0ea2-407a-a200-d1ee09383537" . "Barry Danielian")
+("a391d4db-14eb-417f-9ca9-912eeed9fbee" . "Benjamin Lanz")
 ("3f0b02ae-bc83-4417-ab1d-055b23d829fe" . "Beaver Brown")
 ("6a849bbc-e2cc-422d-95ca-d3230d802a47" . "Ben Jaffe")
 ("aee70c97-96b1-4d6e-a53f-a4f539bf1fa2" . "Ben Mankiewicz")
@@ -3943,6 +3978,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c58d9270-d021-4755-b1dd-4106e6cc5ef0" . "Kate Capshaw")
 ("23c1c76d-17d7-473a-b352-630977af574d" . "Kevin Kavanaugh")
 ("f0ed72a3-ae8f-4cf7-b51d-2696a2330230" . "Keith Richards")
+("d56d92ef-c60e-4aad-bb17-88e5a67334ab" . "Kyle Resnick")
 ("dcaf7d3d-fc8d-43b4-b54e-4af75bdbc27a" . "La Bamba and the Hubcaps")
 ("b7539c32-53e7-4908-bda3-81449c367da6" . "Lana Del Rey")
 ("4d5299ce-9223-45c0-a1c5-83ac7bfe8813" . "Lance Larson")
@@ -4247,6 +4283,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 		   ("6743d351-6f37-3049-9724-5041161fff4d" . "Norway")
+		   ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
 		   ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
 		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spain")
 		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spanish")
@@ -4271,6 +4308,7 @@ Do this ALWAYS, except for the above exceptions."
 ("bd2bddd6-c1a2-44a7-b4f9-ff7ce03cde94" . "Hollywood Hills Residence")
 ("362e1557-bf27-495e-982f-783a0faaf2c7" . "Max’s Kansas City")
 ("8aedc195-5495-4dab-a876-368ab4796c8b" . "Residence")
+("2f7a7e06-5d72-4a02-884f-58893c47f0cb" . "Studio Ferber")
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "The Ranch House")
 ("b28cdc4f-a531-480d-a6c4-3794fddd9d98" . "The Burrow")
 ("655fae6c-d5c1-42ba-926f-b81977b8f7d6" . "UBS Arena")
