@@ -1685,7 +1685,7 @@ Do this ALWAYS, except for the above exceptions."
 @ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
 @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
 
-# Scheduled: 20:00 Local Start Time ??:?? / End Time ??:??
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -1716,7 +1716,7 @@ Do this ALWAYS, except for the above exceptions."
 @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
 
-# Scheduled: 20:00 Local Start Time ??:?? / End Time ??:??
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -4209,6 +4209,8 @@ Do this ALWAYS, except for the above exceptions."
 ("d41a6875-b626-4c0f-89a1-aecb643d29ff" . "Pogues")
 ;; Ron Wood
 ("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
+;; Roy Bittan
+("11d2fcfe-669d-4596-8921-e07dbdae311f" . "Roy")
 ;; Soozie Tyrell
 ("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
 ;; Steven van Zandt
