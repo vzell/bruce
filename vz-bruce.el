@@ -3988,6 +3988,7 @@ Do this ALWAYS, except for the above exceptions."
 ("236fca70-1195-4842-a1a0-0e8a0aff98fc" . "Layonne Holmes")
 ("3cb25fb2-5547-4b05-adec-1a5e37830d46" . "Lionel Richie")
 ("f887110a-ddd9-4a4e-b9ea-e567523ef6e2" . "Lisa Fischer")
+("b4cadc83-7307-4196-9f2f-29ebf1650045" . "Lisa Germano")
 ("59d77428-bf32-4c9f-bc4c-7c03ec882c59" . "Lisa Lowell")
 ("9659f4dc-358c-4eb3-8a16-27fb983a9650" . "Little Steven")
 ;; לואי להב
@@ -4012,6 +4013,7 @@ Do this ALWAYS, except for the above exceptions."
 ("078e680d-6d6c-46ce-8134-0bddeb9e5e35" . "Mike Mancini")
 ("45d7e6e8-c5bf-4c59-a79e-c7bb2e9b2cc9" . "Mike Ness")
 ("3f14041e-7e12-4cbc-954f-c72b519feeba" . "Mike Riddleberger")
+("a3f9349f-d0ec-4d03-b00b-0c556e6b52d5" . "Mike Wanchic") ; Michael B. Wanchic
 ("4274bd31-7306-4aaf-8a09-4186237f6668" . "Mikey Freedom Hart")
 ("346f8e40-4be4-4dc8-9b8b-d4896324d1af" . "Mo Gilligan")
 ("0e073997-d11b-43f2-84e1-1675201e9896" . "Muddy Shews")
@@ -4110,6 +4112,7 @@ Do this ALWAYS, except for the above exceptions."
 ("850054f3-11ce-437b-a82b-5917719c78dd" . "Tony Shanahan")
 ("f6365088-96ba-441d-9524-ebd4cc5b467f" . "Treves Blues Band")
 ("c27296f1-857c-4555-9e81-2c6f1cb1baf4" . "Trevor Noah")
+("ef5064d8-2b19-4a9f-a2ef-3d92cdf1ab93" . "Troye Kinnett")
 ("a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432" . "U2")
 ("8e434ed7-69a7-489b-905c-6735870befcb" . "Victorious Gospel Choir")
 ("3e2b6ee0-6ec7-4622-b039-1cbed5f55288" . "Vini Lopez")
@@ -4262,6 +4265,8 @@ Do this ALWAYS, except for the above exceptions."
 			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
 			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
 			  ("bcbf2e57-ce31-43d3-b40c-731a100ce869" . "TW Classic")
+			  ;; Stand Up for Heroes Benefit
+			  ("a9327d10-9998-4af4-a3e8-ef95745b9423" . "Stand Up for Heroes Benefit")
 			  )
   "Musicbrainz tour series.")
 
