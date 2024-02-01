@@ -4275,6 +4275,7 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz tour series.")
 
 (defvar mb-areas '(
+		   ("10fa66f7-aa08-4823-8af8-52108f350a5a" . "Asbury Park")
 		   ("caac77d1-a5c8-3e6e-8e27-90b44dcc1446" . "Austria")
 		   ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
 		   ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
@@ -4309,6 +4310,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-places '(
 ("12a15aee-de37-48e2-b83b-3fb4b198f822" . "Ahmanson Theatre")
 ("5db3a73d-246f-41fe-8dfa-2e7bdf4fc0ea" . "Cinema City Hall")
+("7514f7fd-9379-4f8b-b867-ee4633b6a4c4" . "Convention Hall")
 ("e0875bdd-0f69-45bb-b400-f498b7774364" . "East Room")
 ("bc5d4673-bff2-4f9a-867c-38317e4dc9ed" . "Electric Lady Studios")
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
@@ -4318,6 +4320,7 @@ Do this ALWAYS, except for the above exceptions."
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "Colts Neck Home")
 ("bd2bddd6-c1a2-44a7-b4f9-ff7ce03cde94" . "Hollywood Hills Residence")
 ("362e1557-bf27-495e-982f-783a0faaf2c7" . "Max’s Kansas City")
+("e4fd123d-6ef4-4f6f-96fa-f65e10f77bbb" . "Paramount Theatre")
 ("8aedc195-5495-4dab-a876-368ab4796c8b" . "Residence")
 ("2f7a7e06-5d72-4a02-884f-58893c47f0cb" . "Studio Ferber")
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "The Ranch House")
