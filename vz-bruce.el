@@ -4245,6 +4245,8 @@ Do this ALWAYS, except for the above exceptions."
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "Castiles")
 ;; Charles Giordano
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
+;; Clarence Clemons
+("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Clarence")
 ;; Garry Tallent
 ("42b42dd1-9263-4eae-91cd-4014a5b5d39f" . "Garry")
 ;; Gordon Vinyard
@@ -4299,6 +4301,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-release-groups '(
 			    ;; Bruce Springsteen
 ("3c39a076-8e52-38f2-8076-260d0672fb23" . "Born in the U.S.A.")
+("c497fc44-ddaf-3cce-a9b4-bfec958a0f3c" . "Greetings From Asbury Park, N.J.")
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("324aee0c-36ec-35c1-9c93-b67a1d428037" . "Nebraska")
 ("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
@@ -4332,6 +4335,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("10fa66f7-aa08-4823-8af8-52108f350a5a" . "Asbury Park")
 		   ("caac77d1-a5c8-3e6e-8e27-90b44dcc1446" . "Austria")
 		   ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
+		   ("ae0110b6-13d4-4998-9116-5b926287aa23" . "California")
 		   ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
 		   ("e0e3c82a-aea8-48d3-beda-9e587db0b969" . "Copenhagen")
 		   ("4757b525-2a60-324a-b060-578765d2c993" . "Denmark")
@@ -4350,6 +4354,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 		   ("6743d351-6f37-3049-9724-5041161fff4d" . "Norway")
 		   ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
+		   ("c3d840b4-a3d2-4565-acdc-f918be73b3d9" . "San Mateo")
 		   ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
 		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spain")
 		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spanish")
@@ -4375,6 +4380,7 @@ Do this ALWAYS, except for the above exceptions."
 ("bd2bddd6-c1a2-44a7-b4f9-ff7ce03cde94" . "Hollywood Hills Residence")
 ("362e1557-bf27-495e-982f-783a0faaf2c7" . "Max’s Kansas City")
 ("e4fd123d-6ef4-4f6f-96fa-f65e10f77bbb" . "Paramount Theatre")
+("62907fbf-b967-48bc-8045-3f63e540276a" . "Point Pleasant Beach")
 ("8aedc195-5495-4dab-a876-368ab4796c8b" . "Residence")
 ("2f7a7e06-5d72-4a02-884f-58893c47f0cb" . "Studio Ferber")
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "The Ranch House")
