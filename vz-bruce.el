@@ -1671,6 +1671,35 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-the-bruce-springsteen-band ()
+  "Surround event with artists and line, The Bruce Springsteen Band."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [1607e961-c4a7-4602-ac22-d0d87833eee3|The Bruce Springsteen Band]
+# with
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+@ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
+@ [4401f986-51b8-407b-a898-500543df9dae|David Sancious]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+
+# No set details known
+# Incomplete setlist
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band-1973 ()
   "Surround event with artists and line."
   (interactive)
@@ -1904,10 +1933,11 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
-;; (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
-;; (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
-;; (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1973)
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1975)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-bruce-springsteen-band)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1973)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1975)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1984-born-in-the-usa-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
