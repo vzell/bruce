@@ -3913,6 +3913,7 @@ Do this ALWAYS, except for the above exceptions."
 ("af953ba2-283b-41ef-93bc-b4cfc5feeebc" . "Darlene Love")
 ("b5b6880b-9c35-44be-ba09-acb3df6dc8fd" . "Darryl Jones")
 ("4d5f891d-9bce-45ae-ad86-912dd27252fa" . "Dave Grohl")
+("d70c2ae1-911a-4bea-8ef4-63564a150ff2" . "Dave Mason")
 ("029c91a5-8e46-4c96-a4e8-3878417fb599" . "Dave Marsh")
 ("1ca7845a-78e8-48e7-8f1b-68ffd2159342" . "David Bryan")
 ("a3940ff8-c898-4747-b7a4-58ed3c251a14" . "Dee Holmes")
@@ -4207,6 +4208,7 @@ Do this ALWAYS, except for the above exceptions."
 ("955bc3c8-36d4-47e8-9648-f6728c613583" . "Marcus King")
 ("3862342a-43c4-4cdb-8250-bfdbfb5e1419" . "Måneskin")
 ("65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab" . "Metallica")
+("f27ec8db-af05-4f36-916e-3d57f91ecf5e" . "Michael Jackson")
 ("4aae17a7-9f0c-487b-b60e-f8eafb410b1d" . "Nick Cave")
 ("c7a99436-6da3-4190-8ce7-9cd44d62fcd4" . "Mick Taylor")
 ("64c8fe79-1f93-483f-aace-b6a6e379e7d2" . "New Riders of the Purple Sage")
@@ -4218,8 +4220,10 @@ Do this ALWAYS, except for the above exceptions."
 ("e68b06a4-d47f-432e-89d8-db43c48a2726" . "Sammy Hagar")
 ("29bec046-e58b-4b9e-9853-c0bdeb84a5c7" . "Shane MacGowan")
 ("faabb55d-3c9e-4c23-8779-732ac2ee2c0d" . "Shania Twain")
+("d325f5ea-dab8-4545-b186-5914f36d88c8" . "Starcastle")
 ("b3adc16a-abdb-4668-9b05-baabbf942db6" . "Tash Sultana")
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
+("e5257dc5-1edd-4fca-b7e6-1158e00522c8" . "The Jacksons")
 ("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legends")
 ("d41a6875-b626-4c0f-89a1-aecb643d29ff" . "The Pogues")
 ("771a76c8-ca35-46bb-a80b-0ab71a29596e" . "The Sleeping Souls")
@@ -4276,8 +4280,9 @@ Do this ALWAYS, except for the above exceptions."
 ;; Soozie Tyrell
 ("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
 ;; Steven van Zandt
-("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie Van Zandt")
+("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Miami Steve Van Zandt")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Steve")
+("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie Van Zandt")
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
