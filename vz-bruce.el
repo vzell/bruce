@@ -1701,7 +1701,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (defun musicbrainz-surround-event-band-1973 ()
-  "Surround event with artists and line."
+  "Surround event with artists and line, 1973."
   (interactive)
   (save-excursion
     (insert
@@ -1715,6 +1715,8 @@ Do this ALWAYS, except for the above exceptions."
 @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
 
 # Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
 "
 )
     (re-search-forward "^$")
@@ -1730,7 +1732,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (defun musicbrainz-surround-event-band-1975 ()
-  "Surround event with artists and line."
+  "Surround event with artists and line, 1975."
   (interactive)
   (save-excursion
     (insert
@@ -1746,6 +1748,8 @@ Do this ALWAYS, except for the above exceptions."
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
 
 # Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
 "
 )
     (re-search-forward "^$")
@@ -1783,6 +1787,8 @@ Do this ALWAYS, except for the above exceptions."
 @ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
 
 # Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
 "
 )
     (re-search-forward "^$")
@@ -1798,7 +1804,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (defun musicbrainz-surround-event-springsteen-on-broadway ()
-  "Surround event with artists and line."
+  "Surround event with artists and line, Bruce Springsteen on Broadway."
   (interactive)
   (save-excursion
     (insert
@@ -1848,7 +1854,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (defun musicbrainz-surround-event-2023-international-tour ()
-  "Surround event with artists and line."
+  "Surround event with artists and line, 2023 International Tour."
   (interactive)
   (save-excursion
     (insert
@@ -1900,7 +1906,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (defun musicbrainz-surround-event-1984-born-in-the-usa-tour ()
-  "Surround event with artists and line."
+  "Surround event with artists and line, Born in the U.S.A. Tour."
   (interactive)
   (save-excursion
     (insert
@@ -1934,7 +1940,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (defun musicbrainz-surround-event-1992/3-world-tour-band ()
-  "Surround event with artists and line."
+  "Surround event with artists and line, 1992-193 World Tour Band."
   (interactive)
   (save-excursion
     (insert
@@ -1947,9 +1953,19 @@ Do this ALWAYS, except for the above exceptions."
 @ [64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56|Zack Alford]
 @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
 @ [98459b46-1fdc-4f83-ad96-f578ca0057c9|Gia Ciambotti]
+@ [2a1d2c80-84d3-4e34-b860-498d66302e65|Carol Dennis]
+@ [345bd2f6-29aa-4457-90fe-e736b5eb47d7|Shane Fontayne]
+@ [07ddd361-0f2a-4819-970d-c8370deeac11|Cleopatra Kennedy]
+@ [dd891d52-e0f1-4671-93d6-7be3ab19f3b9|Bobby King]
+@ [7e26152e-9b87-46c5-a3ce-399cc9c4c571|Angel Rogers]
+@ [919bc11f-4fdd-41fd-8570-11acbd4cc03f|Tommy Sims]
+@ [93dce18b-13ca-4118-9fa1-af92e8e3d8ac|Crystal Taliefero]
 
 
 # Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
+# No handwritten or printed setlist available
 "
 )
     (re-search-forward "^$")
@@ -1965,6 +1981,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1992/3-world-tour-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-bruce-springsteen-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1973)
@@ -3873,6 +3890,8 @@ Do this ALWAYS, except for the above exceptions."
 ("6b064ead-91a4-4ac8-8076-b1febe4f4aac" . "Alison Krauss")
 ("a6410e63-8056-4447-837d-2fbf5c504979" . "Alliance Singers")
 ("73671c52-02f7-46b9-970b-88122367a1d8" . "Amy Tan")
+("7e26152e-9b87-46c5-a3ce-399cc9c4c571" . "Angel Rogers")
+("7e26152e-9b87-46c5-a3ce-399cc9c4c571" . "Rogers")
 ("71853da7-d1e3-4649-b9e2-a74d5700badf" . "Anna Maxwell Martin")
 ("1d483e05-2769-46f9-a614-28682d0c7ebd" . "Anna Webber")
 ("b0ab3979-4165-4e3e-b125-2d77f14080bd" . "Anthony Almonte")
@@ -3897,6 +3916,7 @@ Do this ALWAYS, except for the above exceptions."
 ("358d8fde-ad5b-4df1-bcd8-193bada6edd5" . "Bobby Bandiera")
 ("9df6e393-da6b-4e65-9f50-6e4df5624e63" . "Bobby Bandiera Band")
 ("bac9f82f-8c72-48a8-9b04-6e46ce8d4e77" . "Bobby Keys")
+("dd891d52-e0f1-4671-93d6-7be3ab19f3b9" . "Bobby King")
 ("5818ebc1-c87d-451e-92da-ee8422f6c149" . "Boccigalupe")
 ("137e3419-13b5-46d6-8e0a-a9231de584b4" . "Boccigalupe & The Badboys")
 ("5dcdb5eb-cb72-4e6e-9e63-b7bace604965" . "Bon Jovi")
@@ -3915,6 +3935,8 @@ Do this ALWAYS, except for the above exceptions."
 ("a60fa7b7-ec5c-4c0a-bec2-f1e2ae8eb4f3" . "Bruce Willis")
 ("b97b3247-9a45-45c1-be0f-c4dc3a681840" . "CBS Orchestra Horns")
 ("e737612d-3e51-4741-80d5-00a31d979413" . "CC Smugglers")
+("2a1d2c80-84d3-4e34-b860-498d66302e65" . "Carol Dennis]") ;; "Carolyn Dennis" on MB
+("2a1d2c80-84d3-4e34-b860-498d66302e65" . "Dennis")
 ("8893617e-e3c2-406c-afc3-ec390e040ed2" . "Cats on a Smooth Surface")
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charles Giordano")
 ("f581a3dc-3319-4656-8b97-66d560482f4a" . "Charlie Watts")
@@ -3927,6 +3949,8 @@ Do this ALWAYS, except for the above exceptions."
 ("c77c62d3-f025-429c-bcae-91e83dd3f516" . "Chuck Leavell")
 ("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Clarence Clemons")
 ("e070d092-5bd5-4379-ac55-b3534832e2a5" . "Clarence Clemons & The Red Bank Rockers")
+("07ddd361-0f2a-4819-970d-c8370deeac11" . "Cleopatra Kennedy")
+("07ddd361-0f2a-4819-970d-c8370deeac11" . "Kennedy")
 ("8f45e863-c2c8-4f10-b9bf-4d36774bb0b5" . "Clive Davis")
 ("cc197bad-dc9c-440d-a5b5-d52ba2e14234" . "Coldplay")
 ("210c1047-0e88-4b73-81ac-13a026cefb01" . "Conan O’Brien")
@@ -3934,6 +3958,7 @@ Do this ALWAYS, except for the above exceptions."
 ("8abedd53-89d9-4a64-929a-ecddf453ed94" . "Craig Caprioni")
 ("6a62a034-cee3-490c-a2ad-621eca2f25a4" . "Craig Finn")
 ("b36e1a45-2f2c-44a5-b8d8-9dc12159fab5" . "Craig Werner")
+("93dce18b-13ca-4118-9fa1-af92e8e3d8ac" . "Crystal Taliefero")
 ("028fd996-fe8f-41b6-a6ed-1cb4b06a23d2" . "Curt Ramm")
 ("7b18698b-33fb-4865-b158-e74f3457eeb7" . "Curtis King")
 ("cb914df3-0925-4078-bc0e-c23c864898af" . "D.J. Fontana")
@@ -3984,6 +4009,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3dfbd1e7-c9d7-4a1f-850a-87a0e594d0a0" . "George Theiss")
 ("87b1c4d4-b144-4ed2-8c55-334e3b72f23e" . "Gerard Ekdom")
 ("98459b46-1fdc-4f83-ad96-f578ca0057c9" . "Gia Ciambotti")
+("98459b46-1fdc-4f83-ad96-f578ca0057c9" . "Ciambotti")
 ("d5c51c36-ac67-4727-91ed-ee9f0df81a2d" . "Gloria Gaynor")
 ("95bc0175-e0f2-493f-a1db-bab94a405074" . "Graham Norton")
 ("a283af93-2b93-4b62-be2e-0ae6e14a2622" . "Henry Gross")
@@ -4128,6 +4154,8 @@ Do this ALWAYS, except for the above exceptions."
 ("fedf79de-ca39-47a7-bbce-b14f15e4a305" . "Sarina Bellissimo")
 ("c03b5c82-39d8-49c1-8753-902832226cee" . "Sean Hutchinson")
 ("3bcbedbf-f835-4d8a-af91-627c17c7fd39" . "Seth Meyers")
+("345bd2f6-29aa-4457-90fe-e736b5eb47d7" . "Shane Fontayne")
+("345bd2f6-29aa-4457-90fe-e736b5eb47d7" . "Fontayne")
 ("80ccfede-c258-4575-a7ad-c982e9932e0f" . "Sheryl Crow")
 ("3fa031e3-0d93-4bb1-b3b2-14e06b147a0f" . "Sienna Miller")
 ("a9100753-f539-43cf-bcc9-579566fb512e" . "Simply Red")
@@ -4152,6 +4180,7 @@ Do this ALWAYS, except for the above exceptions."
 ("059e03e3-e426-4ac0-b4df-68118cc2ac8f" . "Suga Steve")
 ("14472e26-9503-4c62-92a9-9bea28d4508c" . "Gordon Vinyard")
 ("7bef92eb-f2b1-4790-935a-6e411eff406e" . "The 1992–93 World Tour Band")
+("7bef92eb-f2b1-4790-935a-6e411eff406e" . "1992–93 Touring Band")
 ("e4d62b29-a67e-4700-ba16-35c436cc1f84" . "The Alliance Choir")
 ("1607e961-c4a7-4602-ac22-d0d87833eee3" . "The Bruce Springsteen Band")
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "The Castiles")
@@ -4184,6 +4213,8 @@ Do this ALWAYS, except for the above exceptions."
 ("59798d85-df1b-4cc5-91f8-f266eadb9ccb" . "Tom \"Bones\" Malone")
 ("979acd47-df26-4863-943d-8c44f52cddc0" . "Tom Chapin")
 ("e7d49e3f-2bc0-421f-ae55-bd710155b1ab" . "Tom Power")
+("919bc11f-4fdd-41fd-8570-11acbd4cc03f" . "Tommy Sims")
+("919bc11f-4fdd-41fd-8570-11acbd4cc03f" . "Sims")
 ("422fc30a-5343-4aad-b094-50b6d16b1484" . "Tony Orlando")
 ("850054f3-11ce-437b-a82b-5917719c78dd" . "Tony Shanahan")
 ("f6365088-96ba-441d-9524-ebd4cc5b467f" . "Treves Blues Band")
@@ -4199,6 +4230,7 @@ Do this ALWAYS, except for the above exceptions."
 ("fc6214b3-6d82-4803-be74-01ece1723e42" . "Wilson Pickett")
 ("507226f4-0842-4f43-950e-81a7017230ec" . "Zac Brown Band")
 ("64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56" . "Zack Alford") ;; "Zachary Alford" on MB
+("64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56" . "Alford")
 ("60c693ce-2121-47c5-bc20-975e43137e48" . "Zane Lowe")
 ("84212e42-f154-4dbd-becd-8ddd7549b6ee" . "Zem Audu")
 ("b9d71e60-f447-4bb5-b46c-58e89781bacb" . "Zoe Ball")
@@ -4224,7 +4256,7 @@ Do this ALWAYS, except for the above exceptions."
 ("aca5718f-4f49-4439-b8f6-209db3f11757" . "Frank Turner")
 ("5ab2cf34-517e-48eb-b3a5-34e1cbcd600a" . "George Strait")
 ("68f644b2-42ed-4d11-8bc7-633d5250721b" . "Gladys Knight")
-("e2c00c56-8365-4160-9f40-a64682917633" . "Goo Goo Dolls") ;; The Goo Goo Dolls on MB
+("e2c00c56-8365-4160-9f40-a64682917633" . "Goo Goo Dolls") ;; "The Goo Goo Dolls" on MB
 ("9d3889fb-c6b7-47a8-a325-d22ea54292e3" . "Greil Marcus")
 ("695d3270-3462-4149-b1c1-c869228e597c" . "Isla Fisher")
 ("ff6e677f-91dd-4986-a174-8db0474b1799" . "Jack Johnson")
@@ -4319,6 +4351,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; Ron Wood
 ("92ed8183-8f22-42b2-af4e-d44137610fa0" . "Ronnie Wood")
 ;; Roy Bittan
+("11d2fcfe-669d-4596-8921-e07dbdae311f" . "Bittan")
 ("11d2fcfe-669d-4596-8921-e07dbdae311f" . "Roy")
 ;; Soozie Tyrell
 ("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
@@ -4369,6 +4402,9 @@ Do this ALWAYS, except for the above exceptions."
 			  ("64f3e25f-bfac-48bc-a79d-6acd33a031af" . "The River Tour")
 			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
 			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023")
+			  ;; Bruce Springsteen and The 1992–93 World Tour Band
+			  ("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "The 1992–93 World Tour")
+			  ("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "1992–93 World Tour") ;; alias in gignotes
 			  ;; The Rolling Stones
 			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
 			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
