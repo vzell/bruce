@@ -1839,6 +1839,8 @@ Do this ALWAYS, except for the above exceptions."
 @ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 
 # Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# Complete lineup of performers is not known
+# No set details known
 "
 )
     (re-search-forward "^$")
