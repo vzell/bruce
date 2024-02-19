@@ -1933,6 +1933,37 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-1992/3-world-tour-band ()
+  "Surround event with artists and line."
+  (interactive)
+  (save-excursion
+    (insert
+"== [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# and
+@ [7bef92eb-f2b1-4790-935a-6e411eff406e|The 1992-93 World Tour Band]
+# with
+@ [64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56|Zack Alford]
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [98459b46-1fdc-4f83-ad96-f578ca0057c9|Gia Ciambotti]
+
+
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-bruce-springsteen-band)
@@ -3881,6 +3912,7 @@ Do this ALWAYS, except for the above exceptions."
 ("e60dbba7-6f55-429a-bd22-5e9c6a87ae70" . "Bruce Hornsby")
 ("ef4242fd-b938-442d-8aff-2c989a568419" . "Bruce Kapler")
 ("70248960-cb53-4ea4-943a-edb18f7d336f" . "Bruce Springsteen")
+("a60fa7b7-ec5c-4c0a-bec2-f1e2ae8eb4f3" . "Bruce Willis")
 ("b97b3247-9a45-45c1-be0f-c4dc3a681840" . "CBS Orchestra Horns")
 ("e737612d-3e51-4741-80d5-00a31d979413" . "CC Smugglers")
 ("8893617e-e3c2-406c-afc3-ec390e040ed2" . "Cats on a Smooth Surface")
@@ -3934,6 +3966,7 @@ Do this ALWAYS, except for the above exceptions."
 ("35ef61ca-43db-4772-ba27-0489e9ebcb69" . "Emmylou Harris")
 ("618b6900-0618-4f1e-b835-bccb17f84294" . "Eric Clapton")
 ("15856215-cc51-4423-879c-9ac955ccb11a" . "Eric Church")
+("2549e110-9933-4331-bd8d-a632f0cd639c" . "Ernest Carter")
 ("6e6bb7ee-2df1-4402-bcae-d26884eafd81" . "Evan Smith")
 ("a5dcab6e-0c18-4237-9f8d-1f207430237a" . "Exit 105")
 ("df64ba7e-957d-4873-b195-7e08ba039a1d" . "Felix Cavalieri")
@@ -3950,6 +3983,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ed30e048-a8fb-47f0-8ad1-3e9b3ededaaa" . "George Stroumboulopoulos")
 ("3dfbd1e7-c9d7-4a1f-850a-87a0e594d0a0" . "George Theiss")
 ("87b1c4d4-b144-4ed2-8c55-334e3b72f23e" . "Gerard Ekdom")
+("98459b46-1fdc-4f83-ad96-f578ca0057c9" . "Gia Ciambotti")
 ("d5c51c36-ac67-4727-91ed-ee9f0df81a2d" . "Gloria Gaynor")
 ("95bc0175-e0f2-493f-a1db-bab94a405074" . "Graham Norton")
 ("a283af93-2b93-4b62-be2e-0ae6e14a2622" . "Henry Gross")
@@ -3966,6 +4000,7 @@ Do this ALWAYS, except for the above exceptions."
 ("bac82cac-a752-4a4e-9ad6-fe3395e924f5" . "Jack Daley")
 ("88527d26-7496-47c5-8358-ebdb1868a90f" . "Jackson Browne")
 ("6ffcc727-833e-4afb-83b3-9b1357e30b7e" . "Jackson Smith")
+("40bccd7f-a0ec-4314-87a0-d909ecd249fe" . "Jay Weinberg")
 ("d4ec3315-ddff-422a-9efd-73eb29f1bbbb" . "Jake Blanton")
 ("5c64226c-d673-4d23-a612-2bfb704edd66" . "Jake Clemons")
 ("ebee61b4-bbdd-4087-9bcb-d5aa099088ec" . "James Blunt")
@@ -4000,6 +4035,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3e045881-56a5-4b62-8f99-cb3982cab577" . "John Eddie")
 ("db9023d4-d836-4983-befb-ebed46de8159" . "John Eddie and The Front Street Runners")
 ("c3649208-0ebe-449b-b1d7-4bd6c560f109" . "John Fogerty")
+("da567441-3ab0-4bc8-9ca6-c339600f48d8" . "John McEnroe")
 ("4530bdd0-9707-442e-b37e-578def6a0926" . "Jon Landau")
 ("75a72702-a5ef-4513-bca5-c5b944903546" . "John Legend")
 ("685ec09c-79ee-43eb-b197-aa102fca0adc" . "John Leventhal")
@@ -4108,6 +4144,7 @@ Do this ALWAYS, except for the above exceptions."
 ("59e1d123-844c-4e92-8a8f-94d4e058314e" . "Steve Earle & the Dukes")
 ("bc7ceac9-a524-42bd-996a-380d2f1eb567" . "Steve Shews")
 ("7dd40d4f-7af2-4233-8b87-785254646bbe" . "Steve Hargrave")
+("5642774a-72c0-4099-8da4-7c1ab36378a8" . "Stephen Stills")
 ("5b7c47b7-fcad-450f-bf63-48e2c43fc4e2" . "Stephen Colbert")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Steven Van Zandt")
 ("7944ed53-2a58-4035-9b93-140a71e41c34" . "Sting")
@@ -4214,6 +4251,7 @@ Do this ALWAYS, except for the above exceptions."
 ("64c8fe79-1f93-483f-aace-b6a6e379e7d2" . "New Riders of the Purple Sage")
 ("5b7e7e75-9590-4fd7-9cb0-89771c7f428f" . "Pat Monahan")
 ("8e66ea2b-b57b-47d9-8df0-df4630aeb8e5" . "Peter Gabriel")
+("01c7aec0-21f3-4ae1-a757-f32be9e365ba" . "Rebecca Weinberg")
 ("beb68abb-51b4-41d1-9645-d0c8306cf588" . "Rita Wilson")
 ("91892ad6-e645-441b-bab0-12f17f447161" . "Roger Federer")
 ("3478a5d1-bd96-4584-aa54-4d6e0a329658" . "Sam Fender")
@@ -4250,7 +4288,10 @@ Do this ALWAYS, except for the above exceptions."
 ;; Charles Giordano
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charlie")
 ;; Clarence Clemons
+("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Big Man")
 ("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Clarence")
+;; Ernest Carter
+("2549e110-9933-4331-bd8d-a632f0cd639c" . "Ernest “Boom” Carter")
 ;; Garry Tallent
 ("42b42dd1-9263-4eae-91cd-4014a5b5d39f" . "Garry")
 ;; Gordon Vinyard
@@ -4271,6 +4312,8 @@ Do this ALWAYS, except for the above exceptions."
 ("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti")
 ;; Paul McCartney
 ("ba550d0e-adac-4864-b88b-407cab5e76af" . "Sir Paul")
+;; Rebecca Weinberg
+("01c7aec0-21f3-4ae1-a757-f32be9e365ba" . "Rebecca (Becky)")
 ;; The Pogues
 ("d41a6875-b626-4c0f-89a1-aecb643d29ff" . "Pogues")
 ;; Ron Wood
@@ -4353,6 +4396,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
 		   ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
 		   ("11a44e18-a2e5-43a9-bee9-aa4f7c83f967" . "Hamburg")
+		   ("1b420c08-51a5-4bdd-9b0e-cd601703d20b" . "Hawaii")
 		   ("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
