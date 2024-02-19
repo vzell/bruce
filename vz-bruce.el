@@ -1853,6 +1853,32 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-bruce-solo-acoustic-tour ()
+  "Surround event with artists and line, Solo Acoustic Tour."
+  (interactive)
+  (save-excursion
+    (insert
+"== [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# with
+@ [9a214f8b-f606-47d7-803f-f1b96854ae14|Kevin Buell] (offstage)
+
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-2023-international-tour ()
   "Surround event with artists and line, 2023 International Tour."
   (interactive)
@@ -1981,6 +2007,7 @@ Do this ALWAYS, except for the above exceptions."
     ))
 
 (global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce-solo-acoustic-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1992/3-world-tour-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-bruce-springsteen-band)
@@ -4434,6 +4461,7 @@ Do this ALWAYS, except for the above exceptions."
 		   ("11a44e18-a2e5-43a9-bee9-aa4f7c83f967" . "Hamburg")
 		   ("1b420c08-51a5-4bdd-9b0e-cd601703d20b" . "Hawaii")
 		   ("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
+		   ("c6500277-9a3d-349b-bf30-41afdbf42add" . "Italy")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
