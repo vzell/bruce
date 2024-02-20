@@ -2064,6 +2064,8 @@ Do this ALWAYS, except for the above exceptions."
 ;; ("c323f194-6477-4746-b4e7-a2476433a267" . "I’m in Love Again") ;; [unknown]
 ;; ))
 
+;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
+
 ;; Bruce Springsteen works
 (defvar mb-bruce-works '(
 ("772a6a04-2f9f-46e1-bafb-08f47c1c0753" . "“BBC Blues”")
@@ -2940,14 +2942,12 @@ Do this ALWAYS, except for the above exceptions."
 ("d323779c-4e32-4142-a8c7-eaf8e2914dfb" . "Always a Friend")
 ("689e400b-59f1-3f1a-a2e3-7aa5305bf73b" . "Amen")
 ("6d13f2fd-69bd-3230-8dad-459df8bbac01" . "America")
-("95790479-3937-334f-a175-ecb435fea09e" . "America the Beautiful") ;; probably
+("95790479-3937-334f-a175-ecb435fea09e" . "America the Beautiful")  ;; probably
 ("acdf6bde-908e-4091-9e3e-fc336dc5bdfd" . "American Babylon")
 ("c9288b16-2220-4087-87bf-75d7868a73f0" . "American Music")
 ("a65466b2-7932-4460-82a0-43b6896855e3" . "American Slang")
-;; Little Steven version
-;;("af5094b5-ebf6-4f22-bc23-2d2f82899345" . "Angel Eyes")
-;; Frank Sinatra version
-("6c0edf2e-3df6-31c2-855d-eb0cd62e184f" . "Angel Eyes")
+;;("af5094b5-ebf6-4f22-bc23-2d2f82899345" . "Angel Eyes")  ;; Little Steven version
+("6c0edf2e-3df6-31c2-855d-eb0cd62e184f" . "Angel Eyes")  ;; Frank Sinatra version
 ("490bc8b3-2c9c-316e-8f30-a9a40cc573f0" . "Another Saturday Night")
 ("36264e2c-f574-4c8f-b94a-6af076fb2c50" . "Any Other Way")
 ("a81ccb0c-9713-3c9b-807b-94eb474633cd" . "Apache")
@@ -2967,18 +2967,14 @@ Do this ALWAYS, except for the above exceptions."
 ("5b0bc8d5-00f4-4e12-b06f-cd01406ac22d" . "Ball and Chain")
 ("cfb4648d-0143-34bf-a3bf-eed69a923879" . "Ballad of Easy Rider")
 ("29133cae-9aa8-4449-a18f-4dfd0c08ada9" . "Bama Lama Bama Loo")
-;; It's called "Get It On" on MB, has been renamed in the US
-("29ff18d1-f057-3c91-b2cd-814424903d0f" . "Bang a Gong (Get It On)")
-;; Is written as "Barbara-Ann" in MusicBrainz
-("a428fb5d-eeaf-3712-8a93-c7d9330e56d1" . "Barbara Ann")
+("29ff18d1-f057-3c91-b2cd-814424903d0f" . "Bang a Gong (Get It On)")  ;; It's called "Get It On" on MB, has been renamed in the US
+("a428fb5d-eeaf-3712-8a93-c7d9330e56d1" . "Barbara Ann")  ;; Is written as "Barbara-Ann" in MusicBrainz
 ("e0d4b068-9255-345a-be44-6416316bb8dd" . "Be My Baby")
 ("e16e4dde-5639-4ec0-8376-00867be37c1e" . "Beast of Burden")
 ("0a32b6ca-882e-3b99-8796-119ddedb090d" . "Beer Barrel Polka")
 ("85b4062b-0074-3e2c-bf1a-c03b5fc40116" . "Better Man")
-;; The Kinks
-("8d022dd1-e1c1-3c00-9c6d-f57d140e84ab" . "Better Things")
-;; Tom Donovan
-;;("81b2c81b-784a-4c46-a7a9-60ab3b10893c" . "Better Things")
+("8d022dd1-e1c1-3c00-9c6d-f57d140e84ab" . "Better Things")  ;; The Kinks
+;;("81b2c81b-784a-4c46-a7a9-60ab3b10893c" . "Better Things")  ;; Tom Donovan
 ("5be7e03f-aa3c-4d31-af43-d45eddd641a2" . "Better to Have and Not Need")
 ("d54726bc-48ef-4e01-8540-dc91595cb676" . "Big Black Heaven")
 ("808a6456-3c26-377e-b94b-e31bf3a2f402" . "Big Boss Man")
@@ -2987,7 +2983,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ff58da40-892f-3542-99d6-7ee4dede83e4" . "Birthday")
 ("0a39455b-860f-4716-8e13-e84397408247" . "Black Books")
 ("b5de027f-f79e-43b7-a828-9671c9076028" . "Black Ladder")
-("23dffad1-b4ba-3016-9760-5d4e2f7b78b6" . "Blood on Blood") ;; JUST: Jon Bon Jovi
+("23dffad1-b4ba-3016-9760-5d4e2f7b78b6" . "Blood on Blood")  ;; JUST: Jon Bon Jovi
 ("6ad9bfb0-004a-4760-b819-a58410d143b8" . "Blowin’ Down This Road")
 ("f5a12d42-00a1-3bc2-8ed1-df2506ea3db2" . "Blowin’ in the Wind")
 ("a9aa8366-e55a-3df5-a61a-050fbb189d10" . "Blue Angel")
@@ -3008,7 +3004,7 @@ Do this ALWAYS, except for the above exceptions."
 ("57a0e7e7-f1b8-3fee-853f-fcd0fff9be02" . "Bright Lights, Big City")
 ("063b951f-05b4-3cf7-a378-7fbc7faa78cb" . "Bring It on Home to Me")
 ("13923f65-80c9-46da-8ed4-2d144c8303b5" . "Bristol Stomp")
-("a31bfb5c-c247-4183-b54f-b259981f9925" . "Broke Down Piece of Man") ;; JUST: Southside Johnny and Bon Jovi
+("a31bfb5c-c247-4183-b54f-b259981f9925" . "Broke Down Piece of Man")  ;; JUST: Southside Johnny and Bon Jovi
 ("8c282f81-e545-4bf6-8ded-078b2094c391" . "Broken Radio")
 ("44d76ac0-58b3-4c70-bc1c-daf339173527" . "Brother John Is Gone")
 ("0692cc42-4f43-31f5-9d95-b4ba3fd9e179" . "Brown Eyed Girl")
@@ -3032,8 +3028,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b6417ad9-7965-331a-8a0f-18c3da2f4f74" . "Chimes of Freedom")
 ("c0445507-0c48-49e7-bf8e-c5df780e57e1" . "Christmas (Baby Please Come Home)")
 ("9aa8279b-3deb-4945-bb72-aae5c28d894a" . "Christmas Day")
-;; On MusicBrainz this is stored as "Circles"
-("32e9c74b-0003-3811-9a6a-09ec86f31446" . "Circle")
+("32e9c74b-0003-3811-9a6a-09ec86f31446" . "Circle")  ;; On MusicBrainz this is stored as "Circles"
 ("b36002b4-f493-4975-a488-a79225456e6c" . "Circus March")
 ("8a4766d6-60a1-3179-bd6b-febbc83441af" . "Clampdown")
 ("8c1bb4d2-95e7-405b-8ec0-a21989c3f9cc" . "Claudette")
@@ -3045,10 +3040,9 @@ Do this ALWAYS, except for the above exceptions."
 ("23ea782a-f361-30f4-8d43-d456d49268e8" . "Come Softly to Me")
 ("9fe980f6-f668-46e9-82ad-838cef792656" . "Comin’ Down Maria")
 ("cd5edacb-2c63-474c-ad89-f9f28c639b78" . "Could Die Young Tonight")
-;; Nils Lofgren guests with R.E.M. on the following song
-("fc59a3b0-b3f6-47ae-b8fb-fb4ce14d095d" . "Country Feedback")
+("fc59a3b0-b3f6-47ae-b8fb-fb4ce14d095d" . "Country Feedback")  ;; Nils Lofgren guests with R.E.M. on the following song
 ("8ec642c9-36cf-367b-89eb-70b3a7c4bdc1" . "Crazy Love")
-("d425aad9-b29b-3b45-a81a-580678efe16c" . "Crossroads") ;; probably ;; It's called "Cross Road Blues" on MB
+("d425aad9-b29b-3b45-a81a-580678efe16c" . "Crossroads")  ;; probably - It's called "Cross Road Blues" on MB
 ("bac1d4f9-0a5e-3475-a4c1-ebdb9b9cf893" . "Cry to Me")
 ("773af48a-e550-3885-b575-1590dcb15dfa" . "Crying")
 ("855d05a4-7146-38c3-8b95-ce6297526e34" . "Crying in the Chapel")
@@ -3064,8 +3058,7 @@ Do this ALWAYS, except for the above exceptions."
 ("fa1ba832-28bd-3b2c-ad70-4f32f0e65b21" . "Dear Mr. Fantasy")
 ("1ce352f8-147f-304b-8735-24bf7401cb14" . "Deck the Halls")
 ("143e2b7a-7ef8-4a25-aff9-10c29cf9b39c" . "Deja Vu (All Over Again)")
-;; It's called "Deportee (Plane Wreck at Los Gatos)" at MB, Bruce uses the below version
-("c33ef12f-8cf9-4a6a-a5ff-ecd17bb019bd" . "Plane Wreck at Los Gatos (Deportee)")
+("c33ef12f-8cf9-4a6a-a5ff-ecd17bb019bd" . "Plane Wreck at Los Gatos (Deportee)")  ;; It's called "Deportee (Plane Wreck at Los Gatos)" at MB, Bruce uses the below version
 ("da1f36f5-dcdd-4a56-8d92-4b3527fd1291" . "Detroit Medley")
 ("2b2b1033-27c1-4711-928a-87181ff44844" . "Devil With the Blue Dress")
 ("0f4c3430-2848-4d13-8677-643a5e7c52b9" . "Diamonds by the Yard")
@@ -3086,7 +3079,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f0e75ada-5407-3aef-b410-7862331c34ae" . "Don’t Change")
 ("9939d9e3-2a5a-4ff7-aa24-026b40a4f925" . "Don’t Hang Up")
 ("be6bc1bb-44df-3d9e-a26a-e1be5b30ea9f" . "Don’t Let Me Be Misunderstood")
-("bc18692b-e0f2-302f-9f6a-96f36821e1b8" . "Don’t Play That Song") ;; on MB called "Don’t Play That Song (You Lied)"
+("bc18692b-e0f2-302f-9f6a-96f36821e1b8" . "Don’t Play That Song")  ;; on MB called "Don’t Play That Song (You Lied)"
 ("de5fa494-814d-3b4d-b22f-ba3d52b48ef9" . "Down by the River")
 ("7a4fc2c6-9921-321a-b3b8-eb369655a8d9" . "Down in the Valley")
 ("209fd9b7-e830-3127-b5c9-8bc4a5bcb11f" . "Down the Road Apiece")
@@ -3105,8 +3098,8 @@ Do this ALWAYS, except for the above exceptions."
 ("a0a52d8f-bacc-32d8-9117-331d6c99a755" . "Fame")
 ("7d0392c9-7c33-471a-a373-bd56cb8be251" . "Farmer John")
 ("22890ccc-e4b0-4c7f-879c-cd89a89b5b92" . "Farther Up the Road")
-("11be7395-e207-4551-bcc6-0490b5d634f1" . "Fast Blues") ;; [unknown]
-("5c426c60-6af2-4341-834c-db30838b0b53" . "Fast Blues Break in G") ;; [unknown]
+("11be7395-e207-4551-bcc6-0490b5d634f1" . "Fast Blues")  ;; [unknown]
+("5c426c60-6af2-4341-834c-db30838b0b53" . "Fast Blues Break in G")  ;; [unknown]
 ("3a91bfc9-0016-40f7-a855-82e911cd6b8d" . "Faster and Louder")
 ("f26619ec-5ab2-33c6-9186-56607b3f4568" . "Fields of Gold")
 ("c259b9ae-fa8e-4ea6-aa88-a9b3e55e3902" . "Fingernails")
@@ -3114,7 +3107,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c44521c8-2fed-4802-8b0c-b00a19c625a2" . "Float Away")
 ("8bd3625e-a993-3388-bfb2-23dc1350fa4d" . "Folsom Prison Blues")
 ("17e250e5-8ff2-3efd-ae95-82de60e784a3" . "For Your Love")
-("54f65692-5b12-4d3e-a012-aa07cb0dd403" . "Forever") ;; JUST: Steven Van Zandt
+("54f65692-5b12-4d3e-a012-aa07cb0dd403" . "Forever")  ;; JUST: Steven Van Zandt
 ("f978ba1e-9678-3761-a957-fa4084c0d09f" . "Forever Young")
 ("31ec5d71-8104-350e-a27c-b58d025e8c25" . "Fortunate Son")
 ("30e368af-14bb-3472-8a69-c033583eed20" . "Foxy Lady")
@@ -3130,7 +3123,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ccee2f68-d4bf-3d39-a961-64bd942462c7" . "Get Out of My Life, Woman")
 ("3df4f8a5-9d24-353b-a658-dae5711843c9" . "Get Ready")
 ("00fdec8b-0f0b-32c7-91f7-284ea8b59042" . "Get Up, Stand Up")
-("c1799562-29b9-3105-adaf-aac56cdd56ad" . "Get Up I Feel Like Being Like a Sex Machine") ;; in BB called "Get Up I Feel Like Being Like a Sex Machine"
+("c1799562-29b9-3105-adaf-aac56cdd56ad" . "Get Up I Feel Like Being Like a Sex Machine")  ;; in BB called "Get Up I Feel Like Being Like a Sex Machine"
 ("14f3287f-4952-33df-b699-9687f7d6945f" . "Gimme Shelter")
 ("84e25335-d9e9-4eee-8767-8bcdc4044f7d" . "Gimme That Wine")
 ("d0f2c6b0-1fbf-3fdd-9057-9e8774d51641" . "Give My Love to Rose")
@@ -3161,12 +3154,10 @@ Do this ALWAYS, except for the above exceptions."
 ("c175c340-1555-3f7e-8bbd-040b47336771" . "Hang on Sloopy")
 ("a7baceed-e1ca-4468-9687-d8cfbee3086f" . "Hang Up My Rock and Roll Shoes")
 ("bba40a4a-c222-3d60-8f3a-95ad07a421fc" . "Happy Birthday to You")
-;; Is called "Hard Times Come Again No More" in MB
-("c5563993-5a7f-39b2-bd7d-bf00127c43ae" . "Hard Times (Come Again No More)")
+("c5563993-5a7f-39b2-bd7d-bf00127c43ae" . "Hard Times (Come Again No More)")  ;; Is called "Hard Times Come Again No More" in MB
 ;;("c5563993-5a7f-39b2-bd7d-bf00127c43ae" . "Hard Times Come Again No More")
 ("6b80e488-9802-4b05-9a0f-97631a5ea6af" . "Hard Times Come Easy") ;; JUST: Richie Sambora
-;; It's called "Hard Travelin’" on MB
-("a7bb436f-47aa-4ef3-8278-38eeb42727d2" . "Hard Travelin’ Hootenanny")
+("a7bb436f-47aa-4ef3-8278-38eeb42727d2" . "Hard Travelin’ Hootenanny")  ;; It's called "Hard Travelin’" on MB
 ("5b84507c-87b1-418f-83fb-7f8dde9908b1" . "Haunted House")
 ("87e0dbaa-e5ac-4849-a3fc-44a3d6671f0a" . "Hava Nagila")
 ("c6222b2f-6831-4f30-8ce7-a6fb9f0aeed7" . "Have a Good Time (but Get Out Alive)")
@@ -3175,12 +3166,12 @@ Do this ALWAYS, except for the above exceptions."
 ("450b4d94-c768-3a43-9edc-253cf300199e" . "Having a Party")
 ("c5d76a22-89a9-3713-8fe5-84b8a659f5a1" . "He’s Got the Whole World in His Hands")
 ("50def0f3-4593-4552-ad6c-a7db8a50304d" . "He’s Sure the Boy I Love")
-("92465181-5e5b-4740-aed0-99e21ffa0d06" . "He Can’t Love You") ;; JUST: Nils Lofgren
+("92465181-5e5b-4740-aed0-99e21ffa0d06" . "He Can’t Love You")  ;; JUST: Nils Lofgren
 ("135421b6-75db-306a-8082-1f133b4299ea" . "He Was a Friend of Mine")
 ("49eede36-8c47-3f2d-81d6-7afb5a5a1979" . "Heart Full of Soul")
 ("f8069a6e-1bc5-3623-b522-17dc41cbe665" . "Heartbreak Hotel")
 ("c2896dcb-74f1-41e3-a120-9b55604949b5" . "Heaven Help the Lonely")
-("265b03f1-4aad-4ae3-a6fb-8b1ba5b4ea93" . "Heavy Bertha") ;; [unknown]
+("265b03f1-4aad-4ae3-a6fb-8b1ba5b4ea93" . "Heavy Bertha")  ;; [unknown]
 ("92180ca4-4c6b-341f-8ed4-1cbd87432774" . "Heigh‐Ho")
 ("3a15b53b-8b87-4f40-946f-728dd70542e4" . "Help Me")
 ("295f4446-1cf8-3e2b-8c28-dcf2765bc78a" . "Helpless")
@@ -3189,7 +3180,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b01fca31-4bda-3783-9f67-1d3feb84acb3" . "Hey Tonight")
 ("ef9f0ca3-d45d-3452-aacb-64f9b95c211f" . "Hey, Good Lookin’")
 ("303d7a47-612a-4c1a-8760-6ffb1a1f0411" . "Hey, Porter")
-("b17cc4d0-b607-33f7-940b-56d222ffc640" . "Hey, Western Union Man") ;; in MB called "Hey Western Union Man"
+("b17cc4d0-b607-33f7-940b-56d222ffc640" . "Hey, Western Union Man")  ;; in MB called "Hey Western Union Man"
 ("17906c66-17aa-4e3a-92ae-22ed267f9330" . "Hey! Bo Diddley")
 ("cd2abace-ec92-3a74-8cc0-4131a33d1fcf" . "Hi‐Heel Sneakers")
 ("ef55332d-604f-4b7e-ac2c-bff3ec9d845d" . "High Hopes")
@@ -3202,8 +3193,7 @@ Do this ALWAYS, except for the above exceptions."
 ("2f5f6618-ec92-434a-9b3b-bf8b2305956f" . "Hold Out Hold Out")
 ("e6c8937a-6e81-3c6c-ac28-96a3bfe0ab21" . "Honky Tonk")
 ("645fd65e-9c45-3e82-99b1-dfd731da44e8" . "Honky Tonk Women")
-;; http://musicbrainz.org/work/25d54247-3890-3acb-ad70-734713579cbd/aliases ; This is called "I’m Your Hoochie Coochie Man" on MusicBrainz
-("25d54247-3890-3acb-ad70-734713579cbd" . "Hoochie Coochie Man")
+("25d54247-3890-3acb-ad70-734713579cbd" . "Hoochie Coochie Man")  ;; http://musicbrainz.org/work/25d54247-3890-3acb-ad70-734713579cbd/aliases ; This is called "I’m Your Hoochie Coochie Man" on MusicBrainz
 ("97a0c5bb-5410-35c0-92b2-927f7e458bec" . "Hound Dog")
 ("29b2d5d1-1783-40e7-a50b-71c5a0c377e8" . "Hungry")
 ("5d86ef9d-3ca8-4cdd-8d23-84e531ff29d5" . "Hymn to Him")
@@ -3211,13 +3201,11 @@ Do this ALWAYS, except for the above exceptions."
 ("ac9c9a5a-0042-430b-becd-5df92a5e806a" . "I Can Only Give You Everything")
 ("855db469-8d02-3dc3-83c5-0484441158f0" . "I Can’t Help It (If I’m Still in Love With You)")
 ("209a62bf-4d46-3465-94ea-bdb411f4fccb" . "I Can’t Help Myself (Sugar Pie, Honey Bunch)") ;; in BB called "I Can’t Help Myself (Sugar Pie Honey Bunch)"
-;; Also called "Army Life" in MusicBrainz
-("298537b3-e09c-41af-8d48-7606a12da9ac" . "I Don’t Want No More of This Army Life")
+("298537b3-e09c-41af-8d48-7606a12da9ac" . "I Don’t Want No More of This Army Life")  ;; Also called "Army Life" in MusicBrainz
 ("e5500466-274a-48cd-9c75-abff7ada71c5" . "I Don’t Want to Go Home")
 ("f4d124a8-3c74-3885-9bec-fe0be82aea98" . "I Fought the Law")
 ("01cdde8a-aef0-4caa-8e5c-9d805f0d1df8" . "I Forgot to Be Your Lover")
-;; Also called "I Found You" in MusicBrainz
-("d0dfcb16-d373-3901-81ed-20fdc87b6086" . "I Got You (I Feel Good)")
+("d0dfcb16-d373-3901-81ed-20fdc87b6086" . "I Got You (I Feel Good)")  ;; Also called "I Found You" in MusicBrainz
 ("631a840b-efdf-353c-b9a2-bd53b6e5684d" . "I Got You Babe")
 ("98bb1633-d172-3a1d-8fca-3286a5aec2a2" . "(I Heard That) Lonesome Whistle")
 ("13e8525b-3267-3490-9875-862cfcb57f6a" . "I Hung My Head")
@@ -3242,9 +3230,9 @@ Do this ALWAYS, except for the above exceptions."
 ("67d273f2-be0f-3183-933f-77b2743be3f9" . "I’m Bad, I’m Nationwide")
 ("b39b9a9d-e0f3-4176-918d-c1cee27c613b" . "I’m Not Sleeping")
 ("57fa769a-2036-3a18-905c-b423eb805894" . "I’m Ready")
-("3f39c895-3e48-4221-be8b-b237bd6fed6c" . "I’ve Got to Know") ;; in BB called "I Got to Know"
+("3f39c895-3e48-4221-be8b-b237bd6fed6c" . "I’ve Got to Know")  ;; in BB called "I Got to Know"
 ("cddd2931-ef1f-39ef-b199-68a8a5a65b2b" . "I’ve Had It")
-("ae02523c-35da-37a1-af67-084319b767ad" . "I’m a Man") ;; probably
+("ae02523c-35da-37a1-af67-084319b767ad" . "I’m a Man")  ;; probably
 ("71d751b2-8c62-49ac-9b15-79e8d7c04817" . "I’m a Thousand Miles From Home")
 ("2a6d5af1-2579-3dfe-8f23-bcbbd4893ba9" . "I’m Alive")
 ;;("c323f194-6477-4746-b4e7-a2476433a267" . "I’m in Love Again") ;; [unknown] ;; There is also a Bruce version
@@ -3290,12 +3278,10 @@ Do this ALWAYS, except for the above exceptions."
 ("429348fe-30ef-4676-b7ac-63501e4bc7da" . "Just Like Fire Would")
 ("30db4ac2-72ab-4b7d-bdcf-5fa44b7e60d5" . "Just to Be With You")
 ("6a79f7b5-771c-3897-9a28-46e139bfef90" . "Kansas City")
-;; MusicBrainz calls it "Medley: Kansas City / Hey‐Hey‐Hey‐Hey!"
-("95a395d2-a515-323e-a800-2408488d5ff5" . "Kansas City / Hey‐Hey‐Hey‐Hey!")
+("95a395d2-a515-323e-a800-2408488d5ff5" . "Kansas City / Hey‐Hey‐Hey‐Hey!")  ;; MusicBrainz calls it "Medley: Kansas City / Hey‐Hey‐Hey‐Hey!"
 ("705565fe-c0c7-472f-a98f-54b02836e873" . "Keep a Knockin’")
 ("165f5a46-0e5d-3525-9fd7-b7935e172b23" . "Keep the Car Running")
-;; Probably, according to Steve from BruceBase
-("77bcce18-a785-405d-af00-e1ed36212d9b" . "Keep the Faith") ;; JUST: Jon Bon Jovi
+("77bcce18-a785-405d-af00-e1ed36212d9b" . "Keep the Faith") ;; JUST: Jon Bon Jovi - Probably, according to Steve from BruceBase
 ("d506d1f1-a789-3b41-ab4d-ee92f2bf58b8" . "Kentucky Woman")
 ("9b8ab63e-190a-326f-a011-89bfed2dc73f" . "Key to the Highway")
 ("74c8051c-1a44-3887-9478-44d3e5c8ddd1" . "King of Pain")
@@ -3308,7 +3294,7 @@ Do this ALWAYS, except for the above exceptions."
 ("958377e9-29c0-4b49-a6a2-9b7b10840b3b" . "Let It Be Me")
 ("9b76a431-285c-3c40-8bab-a8e4d3de5bd1" . "Let It Bleed")
 ("761fc17c-b692-3c9f-b1d9-cc7105800463" . "Let the Four Winds Blow")
-("8206e800-cfca-4b51-b74c-0ab618ea2f1c" . "Let the Good Times Roll") ;; probably
+("8206e800-cfca-4b51-b74c-0ab618ea2f1c" . "Let the Good Times Roll")  ;; probably
 ("5c4b88cc-b558-30af-9776-95b1ac555a1b" . "Let’s Have a Party")
 ("b2744a5a-e81f-4ea0-a8b3-bbabd1e01ff2" . "Let’s Live for Today")
 ("856f2807-d1db-468b-b286-41dae2f43251" . "Let’s Twist Again")
@@ -3320,14 +3306,13 @@ Do this ALWAYS, except for the above exceptions."
 ("fe769284-3e8e-4038-bc41-a0a67bbc5d18" . "Little Latin Lupe Lu")
 ("3432360d-ffca-36cf-87fe-263f0b86f11b" . "Little Queenie")
 ("3f84d22c-8377-4e01-a3a3-c7586e318a46" . "Little Sister")
-("623dbe1a-9850-336c-80ac-44b3d8638e64" . "Livin’ on a Prayer") ;; JUST: Jon Bon Jovi
+("623dbe1a-9850-336c-80ac-44b3d8638e64" . "Livin’ on a Prayer")   ;; JUST: Jon Bon Jovi
 ("56cfe2e2-309c-3e1a-90bc-46180956faf4" . "Lola")
 ("55737362-0b16-31a2-8a10-b7a43a391b76" . "London Calling")
 ("b87c7ce0-2fe9-3426-8dd5-bd5db6bf22e8" . "Lonely Teardrops")
-("08de2826-6161-31ac-8e96-b18494f23b38" . "Lonesome Train (on a Lonesome Track)") ;; in BB called "Lonesome Train"
+("08de2826-6161-31ac-8e96-b18494f23b38" . "Lonesome Train (on a Lonesome Track)")  ;; in BB called "Lonesome Train"
 ("525dd33c-5aba-49ff-b4f8-19cfb1b6370c" . "Lonesome Valley")
-;; http://musicbrainz.org/work/412d3909-1f2c-30e6-b009-daba36723dbd - It's called "The Long Black Veil" on MusicBrainz
-("412d3909-1f2c-30e6-b009-daba36723dbd" . "Long Black Veil")
+("412d3909-1f2c-30e6-b009-daba36723dbd" . "Long Black Veil")  ;; http://musicbrainz.org/work/412d3909-1f2c-30e6-b009-daba36723dbd - It's called "The Long Black Veil" on MusicBrainz
 ("4679e271-b7c1-3331-882e-2a173f2001e4" . "Long Tall Sally")
 ("f8d4bf80-af18-49a9-93d6-f9ead96f44ae" . "Look Into Your Heart")
 ("a10a990b-476b-3574-ae17-9ded9ffb5825" . "Look Through Any Window")
@@ -3344,8 +3329,7 @@ Do this ALWAYS, except for the above exceptions."
 ("06a76d9b-86a1-483a-ac3d-f30910d09a2c" . "Lucky Girl")
 ("8f3df6f8-d3f6-335a-9d42-ee6a936430a4" . "Macho Man")
 ("b85bbbc9-54f2-3aab-8b27-fb1d510c6e15" . "Mack the Knife")
-;; It's called "Mama Don’t Allow It" on MusicBrainz
-("2b7e659c-5ff0-306d-a150-40116cb24fa9" . "Mama Don’t Allow No Guitar Picking")
+("2b7e659c-5ff0-306d-a150-40116cb24fa9" . "Mama Don’t Allow No Guitar Picking")  ;; It's called "Mama Don’t Allow It" on MusicBrainz
 ("cee44845-f008-4542-bb88-2d0f6717fe0d" . "Man on the Moon")
 ("25b46bac-b4e5-42b7-a167-0a5de64ba2bc" . "Manifiesto")
 ("bb13d275-a6ba-4407-b8ed-a7d3b6d710fd" . "Men Without Women")
@@ -3356,7 +3340,7 @@ Do this ALWAYS, except for the above exceptions."
 ("7f9e3429-c240-499d-9167-e21b56709b10" . "Meet Me at the End of the World")
 ("944b1865-8949-4785-a58c-7e315b80c2d6" . "Meeting in the Town Tonight")
 ("0b350225-9ddb-3c0a-aff9-26536778f85b" . "Memphis, Tennessee")
-("151aceac-3595-38e0-9341-e583279c13ae" . "Mercy, Mercy") ;; in BB called "Mercy Mercy"
+("151aceac-3595-38e0-9341-e583279c13ae" . "Mercy, Mercy")  ;; in BB called "Mercy Mercy"
 ("c76301db-6cc7-33e1-8b53-09e5ef25fe55" . "Merry Christmas Baby")
 ("28dbce3e-2bfc-42f7-a487-6e425d394566" . "Merry Christmas (I Don’t Want to Fight Tonight)")
 ("12a8bda9-7daf-4b79-a4cc-0954fb9e0f8f" . "Midnight Special")
@@ -3394,8 +3378,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ef2bc544-4701-42d7-9a4e-218b7fd4f462" . "Never Be Enough Time")
 ("40785ac7-84e9-347a-8001-e028c5c1bae7" . "Never on Sunday")
 ("6d1f6aa7-87d0-3da4-8e57-fd8cb8cef8eb" . "New Orleans")
-;; Is called "Theme From New York, New York" at MB
-("469090c0-7d0b-3caa-97d7-23f72487d920" . "New York, New York")
+("469090c0-7d0b-3caa-97d7-23f72487d920" . "New York, New York")  ;; Is called "Theme From New York, New York" at MB
 ("51c7254b-041d-490e-922b-8bb9a15243cd" . "New York Skyline")
 ("4f97bc50-6762-3cf5-97f7-4bba46e84c03" . "New York State of Mind")
 ("7c4c825e-2581-4d97-9faa-4d5ee94547ee" . "Misery Loves Company")
@@ -3416,7 +3399,7 @@ Do this ALWAYS, except for the above exceptions."
 ("73a3f4b3-29c7-389a-a778-43cccd7be945" . "Oh, Pretty Woman")
 ("61f7d80a-7e3b-459c-af2a-df471c682c01" . "Oh, What a Beautiful Mornin’")
 ("ed8f374c-de22-3f6b-a920-8e3c7ca93c63" . "Oklahoma Hills")
-("3b3bd804-95f2-3494-9c20-4980d6c117ff" . "Old Time Rock & Roll") ;; in BB called "Old Time Rock and Roll"
+("3b3bd804-95f2-3494-9c20-4980d6c117ff" . "Old Time Rock & Roll")  ;; in BB called "Old Time Rock and Roll"
 ("2635a253-6743-4c0c-bc6c-3536fff546f4" . "Omaha")
 ("c5621395-2f7d-4a3c-8609-1e52db012ef0" . "On Top of Old Smoky")
 ("2d1f1032-dd50-4b05-892a-5cbe3b0f596c" . "One by One")
@@ -3429,7 +3412,7 @@ Do this ALWAYS, except for the above exceptions."
 ("15c626d5-78d5-3fa7-8bfc-2d9e254eeec2" . "Only the Good Die Young")
 ("a7e8fc9e-f457-370c-ab68-4b9d336cdb91" . "Only the Lonely")
 ("43eb2b0a-88e9-465c-9de3-9b83bca6f684" . "Only the Strong Survive")
-("f4b5be3d-535c-4f53-b5e0-a4b55879b401" . "Only You Know and I Know") ;; probably
+("f4b5be3d-535c-4f53-b5e0-a4b55879b401" . "Only You Know and I Know")  ;; probably
 ("c4e9c110-e548-37e9-8961-8d762797edf3" . "Ooby Dooby")
 ("af7a0bcd-cbe4-4379-ab00-15a25eca64ce" . "Our Lady of the Well")
 ("005a38cd-7f7d-4cc0-8641-d30de8b45ee1" . "Out of Limits")
@@ -3458,11 +3441,9 @@ Do this ALWAYS, except for the above exceptions."
 ("a0315950-33b7-35b0-a0ca-42f1ad80b213" . "Purple Haze")
 ("beab7a01-eb43-3da1-86cf-127de38580a8" . "Purple Rain")
 ("5d6f6aa9-9f4d-4d71-904f-9980d603228e" . "Quarter to Three")
-;; It's called "Que Será, Será" at MB
-("7c34630a-869f-3572-866e-31f86fc00753" . "Que Sera, Sera")
+("7c34630a-869f-3572-866e-31f86fc00753" . "Que Sera, Sera")  ;; It's called "Que Será, Será" at MB
 ("1a5b6395-fe35-438f-8eff-89add4c43414" . "Queen of the Underworld")
-;; It's called "Radio, Radio" at MB
-("19d20c0b-e1c9-3d53-b6dd-e50b9d30929a" . "Radio Radio")
+("19d20c0b-e1c9-3d53-b6dd-e50b9d30929a" . "Radio Radio")  ;; It's called "Radio, Radio" at MB
 ("105224a2-0346-48b4-91cd-b99c24db63af" . "Radio Silence")
 ("4c29e9ca-caf6-327f-b857-2c7bfd43f16e" . "Raise Your Hand")
 ("c7b4aa82-4d81-4c7f-893f-ea8b91b437a1" . "Rainin’ in My Heart")
@@ -3482,14 +3463,13 @@ Do this ALWAYS, except for the above exceptions."
 ("287d163c-1b99-3b42-8617-98e9ae690b69" . "Rhinestone Cowboy")
 ("ce051738-51f6-4f1d-9ac0-29d82457a95f" . "Ride On, Baby")
 ("f722f074-1cac-3cb8-800a-faff575da4d4" . "Ride Your Pony")
-("5ef73295-f861-335f-9034-c563cefa7a96" . "Right Place Wrong Time") ;; in BB called "Right Place, Wrong Time"
+("5ef73295-f861-335f-9034-c563cefa7a96" . "Right Place Wrong Time")  ;; Is called "Right Place, Wrong Time" at MB
 ("b00cccfb-75f1-371b-9181-8d3ed0723114" . "Ring of Fire")
 ("36db83df-5ca8-359d-af39-03ddab0bd1bb" . "Rip It Up")
-;; Is called "River Deep, Mountain High" at MB
-("87f13b50-8e1e-354f-8716-befd81b4d437" . "River Deep – Mountain High")
+("87f13b50-8e1e-354f-8716-befd81b4d437" . "River Deep – Mountain High")  ;; Is called "River Deep, Mountain High" at MB
 ("90e72c0c-5114-430b-a10f-c78ac71b81a4" . "R.O.C.K.")
 ("dc896a9f-3844-3437-b436-fd0fd6aa8848" . "Rock and Roll Music")
-("203ebaab-f8e8-483f-8032-9ed75d0e976f" . "Rock Baby Rock") ;; I changed it at MB from "Rock, Baby, Rock"
+("203ebaab-f8e8-483f-8032-9ed75d0e976f" . "Rock Baby Rock")  ;; I changed it at MB from "Rock, Baby, Rock"
 ("2dfdba5b-380b-4179-a112-822452771017" . "Rock Ballad")
 ("373790c8-380d-3236-b591-837a40336595" . "Rock Me Baby")
 ("5b31460f-26a9-3e90-b0a9-6adcf8d1fba9" . "Rockin’ All Over the World")
@@ -3508,8 +3488,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f719cf17-53dc-3e48-a642-bd86c82c524c" . "Run Through the Jungle")
 ("60c258e4-7ed8-4628-b3bf-f1649ee3ded3" . "Running on Empty")
 ("21017d9d-584a-30b6-9ba3-d94f9e662f4b" . "Running Scared")
-;; FIX in Musicbrainz
-("89863c39-34aa-3478-a8ac-b07c17258da3" . "Samson and Delilah")
+("89863c39-34aa-3478-a8ac-b07c17258da3" . "Samson and Delilah")  ;; FIX in Musicbrainz
 ("39938bc7-7127-4d02-9385-e92fa8826007" . "San Franciscan Nights")
 ("b3e49473-899d-3f08-9f06-2afc70f85e2e" . "Santa Claus Is Comin’ to Town")
 ("fbbc3a31-711f-4b39-89f5-ee82b3ee33fc" . "Santa Claus, Santa Claus")
@@ -3529,8 +3508,7 @@ Do this ALWAYS, except for the above exceptions."
 ("2a2d2b64-fd9d-4823-b44c-865d638495ec" . "Sentimental Journey")
 ("f4ec1404-e759-45ac-ac3f-d8fdc2a5034b" . "Settle for Love")
 ("9a50dd49-3e54-34aa-a6d1-138ea3869a45" . "Seven Nights to Rock")
-;; It's called "The Seventh Son" at MB
-("d336015b-2f2a-429d-b41f-40c1e898fc36" . "Seventh Son")
+("d336015b-2f2a-429d-b41f-40c1e898fc36" . "Seventh Son")  ;; It's called "The Seventh Son" at MB
 ("511eb2eb-2b4b-4321-b021-62306879d71a" . "Sexy and I Know It")
 ("53838f9a-6d1a-3dc3-bb15-40f80c4510e7" . "Sha‐La‐La")
 ("5740e2cf-979d-32ca-8ff3-7036e0bf4cef" . "Shake")
@@ -3546,13 +3524,13 @@ Do this ALWAYS, except for the above exceptions."
 ("49cdfb88-8303-306b-94f0-693cf6537494" . "Signed, Sealed, Delivered I’m Yours")
 ("353c2166-2956-40a1-9bf5-6d699f86f127" . "Sittin’ on Top of the World")
 ("2b302edb-8a84-3079-a4b3-6b7424ff9dd8" . "Six Days on the Road")
-("7a80f45e-3fbb-42c1-82ba-21125f0821a1" . "Slow Blues") ;; [unknown]
-("82d02e2b-57e8-4a6a-ab42-5e80fa4e8796" . "Slow Blues in G") ;; [unknown]
+("7a80f45e-3fbb-42c1-82ba-21125f0821a1" . "Slow Blues")  ;; [unknown]
+("82d02e2b-57e8-4a6a-ab42-5e80fa4e8796" . "Slow Blues in G")  ;; [unknown]
 ("ff19d5ae-c512-44cf-bebc-2e0112cd7da8" . "Slow Turning")
 ("7d2ec07b-9c83-38e6-beb6-9ceea274fa0a" . "Slow Down")
 ("721e367b-0a04-42dc-90f9-4b34c6b46e8d" . "Slowly Walking Down the River")
 ("10d2a48d-1248-316e-b8a5-4d5ba80165c8" . "Smokestack Lightning")
-("ca347f00-aeac-4d30-ac5e-770a5a1742d6" . "Sock It to Me, Baby!") ;; JUST: Jon Bon Jovi and Southside Johnny
+("ca347f00-aeac-4d30-ac5e-770a5a1742d6" . "Sock It to Me, Baby!")  ;; JUST: Jon Bon Jovi and Southside Johnny
 ("efdf7ca3-b295-47f7-a8fc-0b776e6d635e" . "Sociedade alternativa")
 ("b1ce5c3b-a348-35ab-9970-efe0890da13b" . "Sólo le pido a Dios")
 ("bbefccb9-ca8d-3f31-8e1b-d097bc2bcac8" . "Someday I’ll Be Saturday Night")
@@ -3565,7 +3543,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a0165ecd-0cd2-4019-8e42-7a1d6d863d3c" . "Soul Days")
 ("8170840f-33e1-4d39-9a03-a961724ab42b" . "Soul Deep")
 ("69a1d8eb-395a-37b4-b018-aca653055ec0" . "Soul Man")
-("01434199-5e71-4c36-b17c-cd6f9f7282f1" . "South Street") ;; probably
+("01434199-5e71-4c36-b17c-cd6f9f7282f1" . "South Street")  ;; probably
 ("3695b255-f4d8-41e2-b227-451058d29c1a" . "Spanish Dancer")
 ("964e8847-41f2-3298-af96-f759b4930d71" . "Spanish Harlem")
 ("e68d22a4-ce72-49bf-96c6-a7b9a6fe378d" . "Spider Fingers")
@@ -3576,7 +3554,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b669dcf5-adcf-3d99-8807-fa1c141cf27e" . "Start Me Up")
 ("ee1138d1-eb21-3212-9839-9558e6056b95" . "Stay")
 ("6113d16a-8d2e-3e54-adc2-bacaeb0058be" . "Stayin’ Alive")
-("e6ff6efd-26f6-4390-904a-0fbdc7121017" . "Stems & Seeds") ;; in BB called "Stems and Seeds"
+("e6ff6efd-26f6-4390-904a-0fbdc7121017" . "Stems & Seeds")  ;; in BB called "Stems and Seeds"
 ("e1beb4f1-33a2-45f8-a521-71b34cb38f39" . "Ste. Genevieve")
 ("e5fff3f6-0854-3318-b5a6-0be14b99b635" . "Stranger on the Shore")
 ("92c2df3a-2c67-34ac-a727-4887e39f84cc" . "Street Fighting Man")
@@ -3584,7 +3562,7 @@ Do this ALWAYS, except for the above exceptions."
 ("26dea81f-7fef-31fa-84ef-09699f77872b" . "Substitute")
 ("f9edb627-648a-4613-a02a-2c31be05c6df" . "Sufferin’ in the Land")
 ("3818fa67-c508-3499-9d18-0fd9a2b443ce" . "Sugar, Sugar")
-("986359d8-34ff-3fe2-84fe-155b5f167975" . "Summertime") ;; probably
+("986359d8-34ff-3fe2-84fe-155b5f167975" . "Summertime")  ;; probably
 ("abf54062-a8aa-31b2-96a5-a648a37f81b6" . "Summertime Blues")
 ("28130793-61bc-4ca1-8e6f-a6ecb5a4f1ff" . "Sun City")
 ("b5bbb92f-770b-3f5c-9dde-e3f332fdaa84" . "Sunshine of Your Love")
@@ -3604,10 +3582,10 @@ Do this ALWAYS, except for the above exceptions."
 ("d5a54cf2-71b0-43b3-b321-a3e7e5b1ed43" . "Talk Show")
 ("3d04d7cd-96e6-4617-b235-09870e5efc51" . "Talking to the King")
 ("4a3abff8-4604-3c9c-88c7-55762e11eacd" . "Tallahassee Lassie")
-("d88e0e5c-51ae-4779-a20b-de00c0556b16" . "Taps") ;; probably
+("d88e0e5c-51ae-4779-a20b-de00c0556b16" . "Taps")  ;; probably
 ("ea98da58-df7c-3bbf-8b73-9240ec3272c7" . "Teach Your Children")
 ("3005488d-0d7e-3299-9a73-e2b086fbb844" . "Tell Him")
-("8e40b2ce-41d4-33a6-97ea-5d1f922f91c0" . "Tell Me") ;; probably ;; alias "Tell Me (You’re Coming Back)"
+("8e40b2ce-41d4-33a6-97ea-5d1f922f91c0" . "Tell Me")  ;; probably - alias "Tell Me (You’re Coming Back)"
 ("8423eef7-88aa-39b0-9c4f-11a2a113fdc6" . "Tell Me Why")
 ("db2198ee-8017-3f01-9faa-80f47bf84ecf" . "Tequila")
 ("fb8ec3c5-217f-4c4f-8755-bbf556b93ca1" . "Texas Blues Rocker")
@@ -3620,24 +3598,23 @@ Do this ALWAYS, except for the above exceptions."
 ("758a4781-726a-35b8-9fe6-a4ba175e07c6" . "The End")
 ("e228108e-4621-3b8b-9136-ac930dfd244b" . "The End of the Innocence")
 ("7aea1ec1-5d61-35ad-82d5-ff3b84f38bd2" . "The Harder They Come")
-("1c747133-897d-4f93-9830-8cc785c15754" . "The Monkey Time") ;; probably
+("1c747133-897d-4f93-9830-8cc785c15754" . "The Monkey Time")  ;; probably
 ("1579402b-b15f-4f08-ac4d-e1c4971159dd" . "The Morning: Another Morning")
 ("30475ee9-ac59-4c07-bc00-7e664dc752a3" . "The Night They Drove Old Dixie Down")
 ("d12cf1ae-7feb-3f04-88e9-c4d7df3ff754" . "The Last Time")
 ("ccb1d083-9111-3591-a30a-bac5eb964b28" . "The Letter")
-("a675e216-0440-32c0-9b27-1353bfdfe79e" . "The Loco‐Motion") ;; in BB called "Loco‐Motion"
+("a675e216-0440-32c0-9b27-1353bfdfe79e" . "The Loco‐Motion")  ;; in BB called "Loco‐Motion"
 ("93a50e2c-98d4-3305-9bc2-e16a6b9e09c5" . "The Patriot Game")
 ("12343b92-979c-4615-8a1b-8d4593794b0a" . "The Pretender")
-;; It's called "The Red Rooster" on MB
-("8d10fe8b-e86a-338f-944d-710b41fb017e" . "Little Red Rooster")
-("101e2771-d49f-3dfd-88a9-bf341caab8f7" . "The River of Dreams") ;; in BB called "River of Dreams"
+("8d10fe8b-e86a-338f-944d-710b41fb017e" . "Little Red Rooster")   ;; It's called "The Red Rooster" on MB
+("101e2771-d49f-3dfd-88a9-bf341caab8f7" . "The River of Dreams")  ;; in BB called "River of Dreams"
 ("d336015b-2f2a-429d-b41f-40c1e898fc36" . "The Seventh Son")
 ("92825287-3cc3-3dd4-8635-35fa457a45b8" . "The Star‐Spangled Banner")
-("a2aa22dc-be22-3192-ab88-c6c2c7b452b2" . "The Sun Ain’t Gonna Shine Anymore") ;; in MB called "The Sun Ain’t Gonna Shine (Anymore)"
+("a2aa22dc-be22-3192-ab88-c6c2c7b452b2" . "The Sun Ain’t Gonna Shine Anymore")  ;; in MB called "The Sun Ain’t Gonna Shine (Anymore)"
 ("d000a7e7-81e8-350a-96c7-ec236fe9a736" . "The Tears of a Clown")
 ("033e7672-ed79-3d76-97c6-289049c19d7d" . "The Third Man Theme")
 ("57ce97eb-cccc-348b-a096-eea199d185bb" . "The Tracks of My Tears")
-("084cdff8-1c04-4f7f-89ad-d9a6bbd4cf09" . "The Twist") ;; probably
+("084cdff8-1c04-4f7f-89ad-d9a6bbd4cf09" . "The Twist")  ;; probably
 ("19476812-4ec2-46d2-b0e9-c26a11a0d0c6" . "The Wanderer")
 ("ef334da9-4b23-3046-a321-cf93a75cd842" . "The War Drags On")
 ("44ddc0a7-a490-30b8-8282-10fb605aca9a" . "The Way You Do the Things You Do")
@@ -3646,9 +3623,8 @@ Do this ALWAYS, except for the above exceptions."
 ("69a5bf79-9a4c-3ec5-98f0-ce5529f85648" . "Them Changes")
 ("6664cc6e-d4b3-30c2-aebb-3c600f18ff6d" . "Theme From Shaft")
 ("efd6a971-c51a-398c-b294-ef23a9d5a8fd" . "Then He Kissed Me")
-;; Bruce's version of "Then He Kissed Me"
-("efd6a971-c51a-398c-b294-ef23a9d5a8fd" . "Then She Kissed Me")
-("0e456f3e-86b7-3a18-86dc-642964f8881c" . "There Goes My Baby") ;; JUST: Southside Johnny
+("efd6a971-c51a-398c-b294-ef23a9d5a8fd" . "Then She Kissed Me")  ;; Bruce's version of "Then He Kissed Me"
+("0e456f3e-86b7-3a18-86dc-642964f8881c" . "There Goes My Baby")  ;; JUST: Southside Johnny
 ("ca8235c6-1891-4d31-b55e-49f51ba3e613" . "This Land Is Your Land")
 ("0434db34-b625-3b85-b9d6-93e25e812a98" . "This Little Light of Mine")
 ("88857226-ac73-424a-a27e-c84e8b86cac8" . "This Time Baby’s Gone for Good")
@@ -3660,8 +3636,7 @@ Do this ALWAYS, except for the above exceptions."
 ("aa6a6154-dcd5-319f-814e-a95d6e4e11cc" . "To Love Somebody")
 ("e8ddc911-2219-3133-9628-d79d30b8a037" . "Toad")
 ("7dd0f211-0ae9-368b-ac1a-179a9c27fc69" . "Tobacco Road")
-;; It's called "Toccata und Fuge d-Moll, BWV 565" at MB
-("c4f0bd0a-342e-3071-ac3b-7e5e7f17f924" . "Toccata")
+("c4f0bd0a-342e-3071-ac3b-7e5e7f17f924" . "Toccata")  ;; It's called "Toccata und Fuge d-Moll, BWV 565" at MB
 ("fe4ff344-dfc7-3be1-b256-bc21d6f3ba2e" . "Tom Joad")
 ("6209d120-7966-49a9-80dd-737bb69b3464" . "Town Called Heartbreak")
 ("f34f0701-3633-46e4-93ef-5501fac6fccf" . "Tragedy")
@@ -3678,19 +3653,18 @@ Do this ALWAYS, except for the above exceptions."
 ("60f5b7d0-9014-4602-95bd-5b7d798799aa" . "Twenty-Five Miles")
 ("6d0e4a44-8b1e-386f-bef5-ad8a9d0da0ac" . "Twenty Flight Rock")
 ("7e2dedbb-5be0-32d4-8985-079d6df1e78b" . "Twist and Shout")
-("87076226-0d42-4662-ac74-03cfafca745e" . "Twist, Twist Senora") ;; in BB called "Twist, Twist, Senora"
+("87076226-0d42-4662-ac74-03cfafca745e" . "Twist, Twist Senora")  ;; in BB called "Twist, Twist, Senora"
 ("cb4b92b5-eaa7-3150-98e0-baa7984c70d9" . "Under My Thumb")
 ("334afb17-cc73-3167-83cb-1387cce1e809" . "Under the Boardwalk")
 ("32a361a4-f1db-4c4f-8676-3f4a86e2f158" . "Until the Good Is Gone")
 ("9c11abaa-2f64-386b-a702-2c263dc64173" . "Up on Cripple Creek")
 ("28a099b7-fd4c-3040-9d66-77a88cfb41c6" . "Up on the Roof")
 ("f5e8ea1f-4aa8-4b61-8e9e-4c6e300de858" . "Up to You")
-;; Is called "Up Town" on MB
-("21482f32-0d9e-45b5-9415-e49ca5ae0332" . "Uptown")
+("21482f32-0d9e-45b5-9415-e49ca5ae0332" . "Uptown")  ;; Is called "Up Town" on MB
 ("a84c2a8b-e20c-4fec-bfb9-2a19f684c583" . "Valentine")
 ("47329481-2c77-30e9-bd61-f433008fc30c" . "Valerie")
 ("5f7839e9-2781-4247-840a-d58c638a431b" . "Vigilante Man")
-("e83dd4e2-8c90-3444-b508-4c69953d55bc" . "Voodoo Child (slight return)") ;; in BB called "Voodoo Child"
+("e83dd4e2-8c90-3444-b508-4c69953d55bc" . "Voodoo Child (slight return)")  ;; in BB called "Voodoo Child"
 ("77a1daac-fd02-3fc1-aa20-9d6adb115b36" . "Wabash Cannonball")
 ("c0f78ecf-6f48-4b99-943d-c9cff9cb2257" . "Wake Me, Shake Me")
 ("1bda291c-6b32-4c80-b5cd-fdc4cea2fab7" . "Walk, Don’t Run")
@@ -3711,7 +3685,7 @@ Do this ALWAYS, except for the above exceptions."
 ("050b2993-7704-33a1-83ea-00f4bac382e4" . "We’ve Gotta Get Out of This Place")
 ("faaa9bdf-260a-3844-a85c-a03cb4bde0bd" . "Wear My Ring Around Your Neck")
 ("535c2339-2e0b-40ae-a98a-de8c6a217e73" . "Wedding Bells")
-("be06dc55-8bb6-4c6d-9bd7-c4444fbcf89c" . "Wedding March") ;; MB: "Ein Sommernachtstraum, op. 61 no. 7: Hochzeitsmarsch: Allegro vivace"
+("be06dc55-8bb6-4c6d-9bd7-c4444fbcf89c" . "Wedding March")  ;; MB: "Ein Sommernachtstraum, op. 61 no. 7: Hochzeitsmarsch: Allegro vivace"
 ("53ecf364-56f9-4fc0-9ee0-2859d9401b02" . "Welcome to the World")
 ("eeaed3b9-6fb5-42a8-a88f-446a352154b5" . "Well May the World Go")
 ("1e4d268d-de49-47e3-a82b-3902b139ceca" . "Wendy")
@@ -3770,16 +3744,16 @@ Do this ALWAYS, except for the above exceptions."
 ("78282243-c9f9-352d-a2a1-36c8567a05bc" . "96 Tears")
 ("c6b4dbfd-233c-422b-ae85-cf775cef9d89" . "A Good Life")
 ("9a55593e-1419-3aa7-8281-1ffc0bcb0ace" . "A Hard Day’s Night")
+("64542129-e9c0-4111-8aea-553775661553" . "A Matter of Trust")
 ("9ff3f54e-ea6c-3a57-a928-22f0b3087db7" . "A Teenager in Love")
 ("f57738cd-9272-4267-a44b-e473d734042f" . "A Woman’s Got the Power")
-("64542129-e9c0-4111-8aea-553775661553" . "A Matter of Trust")
-("f1055da9-a5a8-3b74-a836-ee809dc038ef" . "Ain’t That a Shame")
 ("a3624a08-6612-3bd8-bdf8-fe8a21f8f0e4" . "Ain’t That Peculiar")
+("f1055da9-a5a8-3b74-a836-ee809dc038ef" . "Ain’t That a Shame")
 ("e150c6db-6134-45be-94a4-3f8cb8cc2549" . "Baby I’m a Star")
 ("e1aa9ce8-f176-3267-9bbc-c610cab3a169" . "Baby What You Want Me to Do")
 ("bf2081f8-3714-3b4f-be55-9842f6d7a526" . "Barefootin’")
-("1ef454c8-41a6-3f53-8831-f07ae5e75184" . "Be‐Bop‐a‐Lula")
 ("80dc89b7-1c29-3d38-8f2d-8168b5189a30" . "Be True to Your School")
+("1ef454c8-41a6-3f53-8831-f07ae5e75184" . "Be‐Bop‐a‐Lula")
 ("4558d24c-6d17-39c8-ab54-6b74d754a632" . "Can’t Stand Losing You")
 ("5df81ab1-ba72-4c7c-86a3-20f9cef93566" . "Carnival Song")
 ("ea5edc10-c74a-4fa5-add4-96d120efba8e" . "Come On, Let’s Go")
@@ -3807,19 +3781,19 @@ Do this ALWAYS, except for the above exceptions."
 ("a90eacd0-9a85-33de-a48d-476198dfe777" . "In‐A‐Gadda‐Da‐Vida")
 ("5ca57b8e-6f2e-403b-99d8-d0417e394b5f" . "It Ain’t the Meat (It’s the Motion)")
 ("034c723f-a482-38d8-863a-39726e7823d0" . "It Takes Two")
-("ce4e16c2-deeb-48c6-b5a0-967e26be0183" . "It’s Too Late")
 ("79f25b2f-dd32-3f14-9b04-02bd5b3142fb" . "It’s All Over Now, Baby Blue")
 ("2f167c1f-b5ef-4923-83e6-a565abaa0b0c" . "It’s Been a Long Time")
 ("31a5e4f8-0269-3a73-8392-3ad6ea3eb6e1" . "It’s Now or Never")
+("ce4e16c2-deeb-48c6-b5a0-967e26be0183" . "It’s Too Late")
 ("d4050cab-4738-42c8-9071-986b54b80421" . "I’ll Fly Away")
 ("69555328-0ef6-4123-ade6-6e6792135cd6" . "I’ll Sleep When I’m Dead")
 ("fb1c1e7b-2def-339b-8ea3-eb64976c3dbe" . "I’m Crying")
 ("b7b81349-5684-3c4c-a9c8-847e2156dd20" . "I’m Free")
 ("7f540e4c-8f5a-4186-a48f-34dee6cfeb60" . "I’m Shipping Up to Boston")
 ("f6106643-4b35-40c4-b80f-2df220b64aa8" . "I’m Your Detail Man")
-("96ff6791-6882-4031-95ea-a8b89cb986dd" . "I’ve Got to Have You Baby")
-("3710d794-0eae-4952-84ba-309f00e1a3d8" . "I’ve Got a Feeling (Everything’s Gonna Be Alright)")
 ("95fba578-26f7-43fe-ae8c-91dd58e8da46" . "I’ve Been Working Too Hard")
+("3710d794-0eae-4952-84ba-309f00e1a3d8" . "I’ve Got a Feeling (Everything’s Gonna Be Alright)")
+("96ff6791-6882-4031-95ea-a8b89cb986dd" . "I’ve Got to Have You Baby")
 ("bc8c874c-6756-4715-8fc9-a729210001b0" . "Jeff’s Boogie")
 ("7c4c7cf8-2001-4f2d-91b6-0f70a3e6d308" . "Jennifer")
 ("98c77c85-30de-48ad-ab83-e0c29b3da0ef" . "La Bamba")
@@ -3837,12 +3811,11 @@ Do this ALWAYS, except for the above exceptions."
 ("3cb906f6-1f5d-4be8-84dc-9a6b00b25bee" . "Steve’s Song")
 ("0ace8439-6ba9-35d2-aa2f-9fb225e14bbd" . "Suffragette City")
 ("537d49de-45fd-3b74-93f3-17a852283b63" . "Surfin’ U.S.A.")
-;; Is called "Susie Q" on MB
-("ca15ad18-350c-3dd8-8c11-13d92b82d8d8" . "Suzie Q")
-("ba982afe-d4a1-4dbf-87a1-d4d543bc9b55" . "The ’59 Sound")
+("ca15ad18-350c-3dd8-8c11-13d92b82d8d8" . "Suzie Q")  ;; Is called "Susie Q" on MB
 ("a3e014ca-1ef6-4bf7-9c42-46064f3ccf25" . "The Earth Is Broken")
 ("3ef70fd1-cb7b-39a4-a0c1-74abb23928c1" . "The House Is Rockin’")
 ("59f4520e-95e1-3f77-ab62-ff9f21285bec" . "The Times They Are A‐Changin’")
+("ba982afe-d4a1-4dbf-87a1-d4d543bc9b55" . "The ’59 Sound")
 ("bd5bfa67-37ad-434b-aafa-14c6ac50b925" . "Troubadour")
 ("77d8a7cf-750b-4ca1-b2c3-43b30d0fc4fd" . "Twistin’ the Night Away")
 ("84b5bc36-bcc0-3db9-bc09-50d152384fbb" . "Uptight (Everything’s Alright)")
@@ -3878,9 +3851,9 @@ Do this ALWAYS, except for the above exceptions."
 ("ab4364fb-3b47-473d-8f3b-d17daa4f8933" . "Shanghai")
 ("3d50aaed-5364-40c3-b6f7-9f3d5b6c1a45" . "Shootout in Chinatown")
 ("2a1a8848-0597-4c47-8d40-9b5eafde1291" . "Summer")
-("7ef39ce9-9085-4395-8678-0a2e185123f9" . "The Mansion")
 ("a42bfe5c-ebed-4e1d-b36c-019bc49e0061" . "The Hard Way")
 ("a0c91b50-a315-42c3-800a-024fe9101fb8" . "The Informer")
+("7ef39ce9-9085-4395-8678-0a2e185123f9" . "The Mansion")
 ("f8230b34-0b13-4b56-b069-4cd506fcf98a" . "Time (Man Who Got Away)")
 ("adc8f354-0557-43b8-ab63-933f301c1081" . "Vigilante (Out in the Stormfield)")
 ))
@@ -3888,8 +3861,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; Brucebase studio sessions NOT written by Bruce
 (defvar mb-brucebase-studio-sessions-bruce-others-works '(
 ("9ae304e9-be3c-4d69-86f5-606bdee360fb" . "I Come and Stand at Every Door")
-;; Called "C’era una volta il west: C'era una volta il west" on MusicBrainz
-("fd958b05-8fa8-4279-b660-77cd4fb1e323" . "Once Upon a Time in the West")
+("fd958b05-8fa8-4279-b660-77cd4fb1e323" . "Once Upon a Time in the West")  ;; Called "C’era una volta il west: C'era una volta il west" on MusicBrainz
 ("4f05041d-0780-3e97-a92d-c922fa3e78c3" . "Pipeline")
 ))
 
@@ -3906,21 +3878,21 @@ Do this ALWAYS, except for the above exceptions."
 
 ;; The Bruce Springsteen Band / Steel Mill
 (defvar mb-brucebase-steelmill-works '(
-				     ("f8388fdf-389c-482a-8758-6e81b51decaa" . "Full of Love")
-				     ("8cd71cd0-af74-4578-a514-d6c1a6a06bfb" . "Gypsy Rider")
-				     ("57b3b489-edc2-4a1c-9708-d074462c141e" . "I Hope I’m True")
-				     ("a14c0e80-0d78-4261-a971-ad860b9424e7" . "If You Want to Get High")
-				     ("50d5e261-6517-4aa6-a318-18bc08dd726e" . "I’m a Big Girl Now")
-				     ("df5b9679-ba60-3988-9227-a79667524b18" . "I’m Into Something Good")
-				     ("93e70690-dc48-42aa-9de4-7ece722ede3d" . "She’s Got the Lord")
-				     ("5b71ab46-80b0-47ee-a20f-47acb0e9b1e8" . "So Much Style")
-				     ("2393ac76-d7ac-44ef-b6f3-d26f2d684ec0" . "Sometimes at Night")
-				     ("e60b4189-581c-4c4f-ad4a-5cdcc7883422" . "Spanish Dreams")
+("f8388fdf-389c-482a-8758-6e81b51decaa" . "Full of Love")
+("8cd71cd0-af74-4578-a514-d6c1a6a06bfb" . "Gypsy Rider")
+("57b3b489-edc2-4a1c-9708-d074462c141e" . "I Hope I’m True")
+("a14c0e80-0d78-4261-a971-ad860b9424e7" . "If You Want to Get High")
+("50d5e261-6517-4aa6-a318-18bc08dd726e" . "I’m a Big Girl Now")
+("df5b9679-ba60-3988-9227-a79667524b18" . "I’m Into Something Good")
+("93e70690-dc48-42aa-9de4-7ece722ede3d" . "She’s Got the Lord")
+("5b71ab46-80b0-47ee-a20f-47acb0e9b1e8" . "So Much Style")
+("2393ac76-d7ac-44ef-b6f3-d26f2d684ec0" . "Sometimes at Night")
+("e60b4189-581c-4c4f-ad4a-5cdcc7883422" . "Spanish Dreams")
 ))
 
 ;; Songs NOT performed by Bruce, but Bruce present
 (defvar mb-brucebase-songlist-other-works '(
-					  ("15875086-77a1-3e37-b125-75252d9d6bef" . "Rockin’ Around the Christmas Tree")
+("15875086-77a1-3e37-b125-75252d9d6bef" . "Rockin’ Around the Christmas Tree")
 ))
 
 (defvar mb-works (append
@@ -3937,7 +3909,7 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-artists-relation '(
 ("1ca07311-cbfe-4ae8-a518-aa76c8579802" . "Ada Dyer")
-("551bc9be-1a24-4bbb-8133-a2909a48fbf2" . "Adele Springsteen") ;; Adele Ann Springsteen on MB
+("551bc9be-1a24-4bbb-8133-a2909a48fbf2" . "Adele Springsteen")  ;; Adele Ann Springsteen on MB
 ("09381e15-32ed-447c-ad06-475baf3b4496" . "Al Chez")
 ("73bac1b2-69fc-4dff-b428-9f24ef552341" . "Albee Tellone")
 ("615e4dea-7f8e-469d-a455-dc9461c1387d" . "Alexa Ray Joel")
@@ -3990,7 +3962,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a60fa7b7-ec5c-4c0a-bec2-f1e2ae8eb4f3" . "Bruce Willis")
 ("b97b3247-9a45-45c1-be0f-c4dc3a681840" . "CBS Orchestra Horns")
 ("e737612d-3e51-4741-80d5-00a31d979413" . "CC Smugglers")
-("2a1d2c80-84d3-4e34-b860-498d66302e65" . "Carol Dennis]") ;; "Carolyn Dennis" on MB
+("2a1d2c80-84d3-4e34-b860-498d66302e65" . "Carol Dennis]")  ;; "Carolyn Dennis" on MB
 ("2a1d2c80-84d3-4e34-b860-498d66302e65" . "Dennis")
 ("8893617e-e3c2-406c-afc3-ec390e040ed2" . "Cats on a Smooth Surface")
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charles Giordano")
@@ -4143,8 +4115,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b4cadc83-7307-4196-9f2f-29ebf1650045" . "Lisa Germano")
 ("59d77428-bf32-4c9f-bc4c-7c03ec882c59" . "Lisa Lowell")
 ("9659f4dc-358c-4eb3-8a16-27fb983a9650" . "Little Steven")
-;; לואי להב
-("b81c5f3a-4659-469c-bbf4-3d2a3488d3ec" . "Louis Lahav")
+("b81c5f3a-4659-469c-bbf4-3d2a3488d3ec" . "Louis Lahav")  ;; לואי להב
 ("21685b15-3074-446e-aa1d-ff7157014f53" . "Lucinda Williams")
 ("a8950eed-e308-4588-bd76-3b74752e93c2" . "Malcolm Gladwell")
 ("ed7e8db7-749e-460b-bd28-eb1de46dccda" . "Marah")
@@ -4166,7 +4137,7 @@ Do this ALWAYS, except for the above exceptions."
 ("078e680d-6d6c-46ce-8134-0bddeb9e5e35" . "Mike Mancini")
 ("45d7e6e8-c5bf-4c59-a79e-c7bb2e9b2cc9" . "Mike Ness")
 ("3f14041e-7e12-4cbc-954f-c72b519feeba" . "Mike Riddleberger")
-("a3f9349f-d0ec-4d03-b00b-0c556e6b52d5" . "Mike Wanchic") ; Michael B. Wanchic
+("a3f9349f-d0ec-4d03-b00b-0c556e6b52d5" . "Mike Wanchic")  ;; Michael B. Wanchic
 ("4274bd31-7306-4aaf-8a09-4186237f6668" . "Mikey Freedom Hart")
 ("346f8e40-4be4-4dc8-9b8b-d4896324d1af" . "Mo Gilligan")
 ("0e073997-d11b-43f2-84e1-1675201e9896" . "Muddy Shews")
@@ -4284,7 +4255,7 @@ Do this ALWAYS, except for the above exceptions."
 ("40fb02de-afc3-441c-a6ec-21fee861d478" . "Willie Nile")
 ("fc6214b3-6d82-4803-be74-01ece1723e42" . "Wilson Pickett")
 ("507226f4-0842-4f43-950e-81a7017230ec" . "Zac Brown Band")
-("64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56" . "Zack Alford") ;; "Zachary Alford" on MB
+("64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56" . "Zack Alford")  ;; "Zachary Alford" on MB
 ("64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56" . "Alford")
 ("60c693ce-2121-47c5-bc20-975e43137e48" . "Zane Lowe")
 ("84212e42-f154-4dbd-becd-8ddd7549b6ee" . "Zem Audu")
@@ -4311,7 +4282,7 @@ Do this ALWAYS, except for the above exceptions."
 ("aca5718f-4f49-4439-b8f6-209db3f11757" . "Frank Turner")
 ("5ab2cf34-517e-48eb-b3a5-34e1cbcd600a" . "George Strait")
 ("68f644b2-42ed-4d11-8bc7-633d5250721b" . "Gladys Knight")
-("e2c00c56-8365-4160-9f40-a64682917633" . "Goo Goo Dolls") ;; "The Goo Goo Dolls" on MB
+("e2c00c56-8365-4160-9f40-a64682917633" . "Goo Goo Dolls")  ;; "The Goo Goo Dolls" on MB
 ("9d3889fb-c6b7-47a8-a325-d22ea54292e3" . "Greil Marcus")
 ("695d3270-3462-4149-b1c1-c869228e597c" . "Isla Fisher")
 ("ff6e677f-91dd-4986-a174-8db0474b1799" . "Jack Johnson")
@@ -4438,7 +4409,7 @@ Do this ALWAYS, except for the above exceptions."
    ))
 
 (defvar mb-release-groups '(
-			    ;; Bruce Springsteen
+;; Bruce Springsteen
 ("3c39a076-8e52-38f2-8076-260d0672fb23" . "Born in the U.S.A.")
 ("c497fc44-ddaf-3cce-a9b4-bfec958a0f3c" . "Greetings From Asbury Park, N.J.")
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
@@ -4455,62 +4426,62 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz release groups.")
 
 (defvar mb-series-tours '(
-			  ;; Bruce Springsteen & The E Street Band
-			  ("d83e44e6-758f-4a0c-87fe-e30a7240a47e" . "Born in the U.S.A. Tour")
-			  ("64f3e25f-bfac-48bc-a79d-6acd33a031af" . "The River Tour")
-			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
-			  ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023")
-			  ;; Bruce Springsteen and The 1992–93 World Tour Band
-			  ("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "The 1992–93 World Tour")
-			  ("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "1992–93 World Tour") ;; alias in gignotes
-			  ;; The Rolling Stones
-			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
-			  ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
-			  ("bcbf2e57-ce31-43d3-b40c-731a100ce869" . "TW Classic")
-			  ;; Stand Up for Heroes Benefit
-			  ("a9327d10-9998-4af4-a3e8-ef95745b9423" . "Stand Up for Heroes Benefit")
-			  ("e9f4d050-a77a-438e-a75b-647aa7c96be0" . "New Jersey Hall of Fame Induction Ceremony")
-			  )
+;; Bruce Springsteen & The E Street Band
+("d83e44e6-758f-4a0c-87fe-e30a7240a47e" . "Born in the U.S.A. Tour")
+("64f3e25f-bfac-48bc-a79d-6acd33a031af" . "The River Tour")
+("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023 International Tour")
+("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023")
+;; Bruce Springsteen and The 1992–93 World Tour Band
+("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "The 1992–93 World Tour")
+("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "1992–93 World Tour") ;; alias in gignotes
+;; The Rolling Stones
+("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
+("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
+("bcbf2e57-ce31-43d3-b40c-731a100ce869" . "TW Classic")
+;; Stand Up for Heroes Benefit
+("a9327d10-9998-4af4-a3e8-ef95745b9423" . "Stand Up for Heroes Benefit")
+("e9f4d050-a77a-438e-a75b-647aa7c96be0" . "New Jersey Hall of Fame Induction Ceremony")
+)
   "Musicbrainz tour series.")
 
 (defvar mb-areas '(
-		   ("10fa66f7-aa08-4823-8af8-52108f350a5a" . "Asbury Park")
-		   ("caac77d1-a5c8-3e6e-8e27-90b44dcc1446" . "Austria")
-		   ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
-		   ("ae0110b6-13d4-4998-9116-5b926287aa23" . "California")
-		   ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
-		   ("e0e3c82a-aea8-48d3-beda-9e587db0b969" . "Copenhagen")
-		   ("4757b525-2a60-324a-b060-578765d2c993" . "Denmark")
-		   ("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
-		   ("6658f787-692d-417f-852c-dcca728d5849" . "Edinburgh")
-		   ("9d5dd675-3cf4-4296-9e39-67865ebee758" . "England")
-		   ("89a675c2-3e37-3518-b83c-418bad59a85a" . "Europe")
-		   ("89a675c2-3e37-3518-b83c-418bad59a85a" . "European")
-		   ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
-		   ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
-		   ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
-		   ("11a44e18-a2e5-43a9-bee9-aa4f7c83f967" . "Hamburg")
-		   ("1b420c08-51a5-4bdd-9b0e-cd601703d20b" . "Hawaii")
-		   ("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
-		   ("c6500277-9a3d-349b-bf30-41afdbf42add" . "Italy")
-		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
-		   ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "New Jersey")
-		   ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "NJ")
-		   ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
-		   ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
-		   ("6743d351-6f37-3049-9724-5041161fff4d" . "Norway")
-		   ("7342d046-e9c4-457a-9ec3-b03d4b2eb5b1" . "Oakland")
-		   ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
-		   ("0eeb01c2-6e31-46ad-96b8-319749f731d2" . "Philadelphia")
-		   ("c3d840b4-a3d2-4565-acdc-f918be73b3d9" . "San Mateo")
-		   ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
-		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spain")
-		   ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spanish")
-		   ("23d10872-f5ae-3f0c-bf55-332788a16ecb" . "Sweden")
-		   ("1333ff06-8e3d-3c8e-9f3a-13a2a38b41df" . "Switzerland")
-		   ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
-		   ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
-		   ("afff1a94-a98b-4322-8874-3148139ab6da" . "Vienna")
+("10fa66f7-aa08-4823-8af8-52108f350a5a" . "Asbury Park")
+("caac77d1-a5c8-3e6e-8e27-90b44dcc1446" . "Austria")
+("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
+("ae0110b6-13d4-4998-9116-5b926287aa23" . "California")
+("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
+("e0e3c82a-aea8-48d3-beda-9e587db0b969" . "Copenhagen")
+("4757b525-2a60-324a-b060-578765d2c993" . "Denmark")
+("462e7952-4fa9-43cd-bc24-2c5c9cd5dd47" . "Dublin")
+("6658f787-692d-417f-852c-dcca728d5849" . "Edinburgh")
+("9d5dd675-3cf4-4296-9e39-67865ebee758" . "England")
+("89a675c2-3e37-3518-b83c-418bad59a85a" . "Europe")
+("89a675c2-3e37-3518-b83c-418bad59a85a" . "European")
+("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
+("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
+("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
+("11a44e18-a2e5-43a9-bee9-aa4f7c83f967" . "Hamburg")
+("1b420c08-51a5-4bdd-9b0e-cd601703d20b" . "Hawaii")
+("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
+("c6500277-9a3d-349b-bf30-41afdbf42add" . "Italy")
+("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
+("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "New Jersey")
+("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "NJ")
+("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
+("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
+("6743d351-6f37-3049-9724-5041161fff4d" . "Norway")
+("7342d046-e9c4-457a-9ec3-b03d4b2eb5b1" . "Oakland")
+("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
+("0eeb01c2-6e31-46ad-96b8-319749f731d2" . "Philadelphia")
+("c3d840b4-a3d2-4565-acdc-f918be73b3d9" . "San Mateo")
+("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
+("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spain")
+("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spanish")
+("23d10872-f5ae-3f0c-bf55-332788a16ecb" . "Sweden")
+("1333ff06-8e3d-3c8e-9f3a-13a2a38b41df" . "Switzerland")
+("489ce91b-6658-3307-9877-795b68554c98" . "United States")
+("489ce91b-6658-3307-9877-795b68554c98" . "USA")
+("afff1a94-a98b-4322-8874-3148139ab6da" . "Vienna")
 )
   "Musicbrainz areas.")
 
@@ -4524,8 +4495,7 @@ Do this ALWAYS, except for the above exceptions."
 ("bc5d4673-bff2-4f9a-867c-38317e4dc9ed" . "Electric Lady Studios")
 ("efcca572-206f-4ca6-b689-2031e5b4db0c" . "Little Caesars Arena")
 ("573aa838-074a-434a-870d-56b748751e97" . "Monmouth University")
-;; Springsteen Residence (Swimming River Reservoir)
-("47967a50-425b-4abf-95cf-e4746a1000d5" . "Colts Neck, NJ Farmhouse")
+("47967a50-425b-4abf-95cf-e4746a1000d5" . "Colts Neck, NJ Farmhouse")  ;; Springsteen Residence (Swimming River Reservoir)
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "Colts Neck Home")
 ("bd2bddd6-c1a2-44a7-b4f9-ff7ce03cde94" . "Hollywood Hills Residence")
 ("362e1557-bf27-495e-982f-783a0faaf2c7" . "Max’s Kansas City")
@@ -4542,10 +4512,9 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz places.")
 
 (defvar mb-labels '(
-		    ("b8d33bec-92cc-40d9-bd92-4eb089b401a9" . "CBS")
-		    ;; Israeli rights society
-		    ("1a4ef578-2416-4275-aa7f-bbce0861dc8f" . "ACUM")
-		    )
+("b8d33bec-92cc-40d9-bd92-4eb089b401a9" . "CBS")
+("1a4ef578-2416-4275-aa7f-bbce0861dc8f" . "ACUM")  ;; Israeli rights society
+)
   "Musicbrainz labels.")
 
 (defvar mb-fixworks '(
