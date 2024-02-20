@@ -3880,8 +3880,8 @@ Do this ALWAYS, except for the above exceptions."
 ("8cd71cd0-af74-4578-a514-d6c1a6a06bfb" . "Gypsy Rider")
 ("57b3b489-edc2-4a1c-9708-d074462c141e" . "I Hope I’m True")
 ("a14c0e80-0d78-4261-a971-ad860b9424e7" . "If You Want to Get High")
-("50d5e261-6517-4aa6-a318-18bc08dd726e" . "I’m a Big Girl Now")
 ("df5b9679-ba60-3988-9227-a79667524b18" . "I’m Into Something Good")
+("50d5e261-6517-4aa6-a318-18bc08dd726e" . "I’m a Big Girl Now")
 ("93e70690-dc48-42aa-9de4-7ece722ede3d" . "She’s Got the Lord")
 ("5b71ab46-80b0-47ee-a20f-47acb0e9b1e8" . "So Much Style")
 ("2393ac76-d7ac-44ef-b6f3-d26f2d684ec0" . "Sometimes at Night")
@@ -3892,13 +3892,6 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-brucebase-songlist-other-works '(
 ("15875086-77a1-3e37-b125-75252d9d6bef" . "Rockin’ Around the Christmas Tree")
 ))
-
-
-;;("af5094b5-ebf6-4f22-bc23-2d2f82899345" . "Angel Eyes")  ;; Little Steven version
-;;("6c0edf2e-3df6-31c2-855d-eb0cd62e184f" . "Angel Eyes")  ;; Frank Sinatra version
-;;("8d022dd1-e1c1-3c00-9c6d-f57d140e84ab" . "Better Things")  ;; The Kinks
-;;("81b2c81b-784a-4c46-a7a9-60ab3b10893c" . "Better Things")  ;; Tom Donovan
-
 
 (defvar mb-works (append
 		mb-bruce-works
