@@ -2811,7 +2811,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4d55bcdc-72a6-4af9-a1da-9fc24507f4e5" . "Tucson Train")
 ("4cc16c46-0a41-4ad4-a727-b055d5eed148" . "Tunnel of Love")
 ("ba3dd10f-0319-4794-9406-edb40c2d28c0" . "Turn Around...")
-("f8b31ddc-365d-4eec-ae83-067c249c99be" . "Twenty More Miles") ;; probably
+("f8b31ddc-365d-4eec-ae83-067c249c99be" . "Twenty More Miles")  ;; probably
 ("dd9b9058-1da9-419f-9caf-8b6c696c0942" . "Two Faces")
 ("44f4f110-6830-4e1a-bfc3-445e4a75e300" . "Two Hearts in True Waltz Time")
 ("fa36af81-2bd8-3436-bf94-7df8e818d99d" . "Two Hearts")
@@ -2967,7 +2967,7 @@ Do this ALWAYS, except for the above exceptions."
 ("cfb4648d-0143-34bf-a3bf-eed69a923879" . "Ballad of Easy Rider")
 ("29133cae-9aa8-4449-a18f-4dfd0c08ada9" . "Bama Lama Bama Loo")
 ("29ff18d1-f057-3c91-b2cd-814424903d0f" . "Bang a Gong (Get It On)")  ;; It's called "Get It On" on MB, has been renamed in the US
-("a428fb5d-eeaf-3712-8a93-c7d9330e56d1" . "Barbara Ann")  ;; Is written as "Barbara-Ann" in MusicBrainz
+("a428fb5d-eeaf-3712-8a93-c7d9330e56d1" . "Barbara Ann")  ;; Is written as "Barbara‐Ann" in MusicBrainz
 ("e0d4b068-9255-345a-be44-6416316bb8dd" . "Be My Baby")
 ("e16e4dde-5639-4ec0-8376-00867be37c1e" . "Beast of Burden")
 ("0a32b6ca-882e-3b99-8796-119ddedb090d" . "Beer Barrel Polka")
@@ -3152,7 +3152,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c175c340-1555-3f7e-8bbd-040b47336771" . "Hang on Sloopy")
 ("bba40a4a-c222-3d60-8f3a-95ad07a421fc" . "Happy Birthday to You")
 ("c5563993-5a7f-39b2-bd7d-bf00127c43ae" . "Hard Times (Come Again No More)")  ;; Is called "Hard Times Come Again No More" in MB
-("6b80e488-9802-4b05-9a0f-97631a5ea6af" . "Hard Times Come Easy") ;; JUST: Richie Sambora
+("6b80e488-9802-4b05-9a0f-97631a5ea6af" . "Hard Times Come Easy")  ;; JUST: Richie Sambora
 ("a7bb436f-47aa-4ef3-8278-38eeb42727d2" . "Hard Travelin’ Hootenanny")  ;; It's called "Hard Travelin’" on MB
 ("5b84507c-87b1-418f-83fb-7f8dde9908b1" . "Haunted House")
 ("87e0dbaa-e5ac-4849-a3fc-44a3d6671f0a" . "Hava Nagila")
@@ -3648,7 +3648,7 @@ Do this ALWAYS, except for the above exceptions."
 ("934300eb-61fd-38c7-bdce-64db245f4849" . "Turn! Turn! Turn! (To Everything There Is a Season)")
 ("c3fe1dc6-21aa-3d8d-9cde-df8524fbc83c" . "Tutti Frutti")
 ("6d0e4a44-8b1e-386f-bef5-ad8a9d0da0ac" . "Twenty Flight Rock")
-("60f5b7d0-9014-4602-95bd-5b7d798799aa" . "Twenty-Five Miles")
+("60f5b7d0-9014-4602-95bd-5b7d798799aa" . "Twenty‐Five Miles")
 ("7e2dedbb-5be0-32d4-8985-079d6df1e78b" . "Twist and Shout")
 ("87076226-0d42-4662-ac74-03cfafca745e" . "Twist, Twist Senora")  ;; in BB called "Twist, Twist, Senora"
 ("cb4b92b5-eaa7-3150-98e0-baa7984c70d9" . "Under My Thumb")
@@ -4431,7 +4431,7 @@ Do this ALWAYS, except for the above exceptions."
 ("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023")
 ;; Bruce Springsteen and The 1992–93 World Tour Band
 ("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "The 1992–93 World Tour")
-("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "1992–93 World Tour") ;; alias in gignotes
+("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "1992–93 World Tour")  ;; alias in gignotes
 ;; The Rolling Stones
 ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
 ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
