@@ -2744,8 +2744,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3a46267e-eb87-40b2-9c51-e369f3c930e6" . "The Street")
 ("3c423f0a-b7f5-4bd8-ab5b-26822d8274ac" . "The Hitter")
 ("3fff3842-e572-394e-a3c0-69a9dccccd50" . "The Ghost of Tom Joad")
-;; Listed as "Il buono, il brutto, il cattivo" at MB
-("cdc85e24-66a1-3fcb-8bc9-129bddbae4b2" . "The Good, the Bad and the Ugly")
+("cdc85e24-66a1-3fcb-8bc9-129bddbae4b2" . "The Good, the Bad and the Ugly")  ;; Listed as "Il buono, il brutto, il cattivo" at MB
 ("4b4ab9ab-0bb9-43bb-ae09-4993c4b90ff8" . "The Rising")
 ("4ca37c28-0a8f-4061-8a4b-9634bd1f1180" . "The Last Carnival")
 ("50ac552f-f115-4564-ae7c-ca5c5395915f" . "The War Is Over")
@@ -3155,7 +3154,6 @@ Do this ALWAYS, except for the above exceptions."
 ("a7baceed-e1ca-4468-9687-d8cfbee3086f" . "Hang Up My Rock and Roll Shoes")
 ("bba40a4a-c222-3d60-8f3a-95ad07a421fc" . "Happy Birthday to You")
 ("c5563993-5a7f-39b2-bd7d-bf00127c43ae" . "Hard Times (Come Again No More)")  ;; Is called "Hard Times Come Again No More" in MB
-;;("c5563993-5a7f-39b2-bd7d-bf00127c43ae" . "Hard Times Come Again No More")
 ("6b80e488-9802-4b05-9a0f-97631a5ea6af" . "Hard Times Come Easy") ;; JUST: Richie Sambora
 ("a7bb436f-47aa-4ef3-8278-38eeb42727d2" . "Hard Travelin’ Hootenanny")  ;; It's called "Hard Travelin’" on MB
 ("5b84507c-87b1-418f-83fb-7f8dde9908b1" . "Haunted House")
@@ -3894,6 +3892,13 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-brucebase-songlist-other-works '(
 ("15875086-77a1-3e37-b125-75252d9d6bef" . "Rockin’ Around the Christmas Tree")
 ))
+
+
+;;("af5094b5-ebf6-4f22-bc23-2d2f82899345" . "Angel Eyes")  ;; Little Steven version
+;;("6c0edf2e-3df6-31c2-855d-eb0cd62e184f" . "Angel Eyes")  ;; Frank Sinatra version
+;;("8d022dd1-e1c1-3c00-9c6d-f57d140e84ab" . "Better Things")  ;; The Kinks
+;;("81b2c81b-784a-4c46-a7a9-60ab3b10893c" . "Better Things")  ;; Tom Donovan
+
 
 (defvar mb-works (append
 		mb-bruce-works
