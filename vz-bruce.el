@@ -2907,6 +2907,8 @@ Do this ALWAYS, except for the above exceptions."
 ("772a6a04-2f9f-46e1-bafb-08f47c1c0753" . "“BBC Blues”")
 ))
 
+;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
+
 ;; Other writers
 (defvar mb-bruce-other-works '(
 ("80bdccf0-b216-40b2-8521-eee9108f0092" . "(All I Can Do Is) Dream You")
@@ -3736,6 +3738,8 @@ Do this ALWAYS, except for the above exceptions."
 ("93a80540-9011-3969-8e2f-2708c060ab5d" . "’O sole mio")
 ))
 
+;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
+
 ;; Brucebase works
 (defvar mb-brucebase-works '(
 ("10112466-be5e-4e61-b277-f40800926696" . "(Today I Met) the Boy I’m Gonna Marry")
@@ -3834,6 +3838,8 @@ Do this ALWAYS, except for the above exceptions."
 ("286d48aa-6ef1-3b30-8f4a-4287a018a9a0" . "You’ve Lost That Lovin’ Feelin’")
 ("b8a60658-bca1-3a16-975d-a40a2100d862" . "Zip‐a‐Dee‐Doo‐Dah")
 ))
+
+;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
 
 ;; Brucebase studio sessions written by Bruce
 (defvar mb-brucebase-studio-sessions-bruce-works '(
@@ -4086,6 +4092,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3e045881-56a5-4b62-8f99-cb3982cab577" . "John Eddie")
 ("db9023d4-d836-4983-befb-ebed46de8159" . "John Eddie and The Front Street Runners")
 ("c3649208-0ebe-449b-b1d7-4bd6c560f109" . "John Fogerty")
+("44f34fb6-f759-41ec-b1f4-cb5e5928a04f" . "John Stamos")
 ("da567441-3ab0-4bc8-9ca6-c339600f48d8" . "John McEnroe")
 ("4530bdd0-9707-442e-b37e-578def6a0926" . "Jon Landau")
 ("75a72702-a5ef-4513-bca5-c5b944903546" . "John Legend")
