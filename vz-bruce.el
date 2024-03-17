@@ -3771,6 +3771,7 @@ Do this ALWAYS, except for the above exceptions."
 ("fede7c1a-1fb6-3129-b8b2-e597c979c104" . "For What It’s Worth")
 ("20fd2c3f-d28d-3b00-9206-4ea43c0d9d00" . "Freddie’s Dead")
 ("084e1720-4a6a-304f-9a6d-9e3d36629e04" . "God Don’t Make Lonely Girls")
+("51b53c20-961a-3aea-8dcf-c5357d4c042e" . "Going Home (Theme From Local Hero)")  ;; Is called "Going Home: Theme of the Local Hero" on MB
 ("0c2d9eb6-1c6c-407f-98b6-61b40c7d68b5" . "Hail Hail Rock ’n’ Roll")
 ("c04fdab6-f1e2-3972-ace2-08f195ca85a4" . "Hey Joe")
 ("208766c1-4a7f-3fee-b236-660432c46783" . "He’s a Rebel")
@@ -4125,6 +4126,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a8950eed-e308-4588-bd76-3b74752e93c2" . "Malcolm Gladwell")
 ("ed7e8db7-749e-460b-bd28-eb1de46dccda" . "Marah")
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion Vinyard")
+("e49f69da-17d5-4c5c-bac0-dadcb0e588f5" . "Mark Knopfler")
 ("8e3a27d7-9ba2-4670-bb11-10550870762c" . "Mark Radcliffe")
 ("68868bf5-7b90-4367-ba5d-a26871b5c206" . "Mark Rivera")
 ("7962d3cd-83e7-46ea-8352-531a65cf2d29" . "Martin Scorsese")
