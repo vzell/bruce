@@ -3921,6 +3921,7 @@ Do this ALWAYS, except for the above exceptions."
 ("6b064ead-91a4-4ac8-8076-b1febe4f4aac" . "Alison Krauss")
 ("a6410e63-8056-4447-837d-2fbf5c504979" . "Alliance Singers")
 ("73671c52-02f7-46b9-970b-88122367a1d8" . "Amy Tan")
+("a4557bbd-f1b2-4b29-ae8f-238693d9c2e8" . "Andy York")
 ("7e26152e-9b87-46c5-a3ce-399cc9c4c571" . "Angel Rogers")
 ("7e26152e-9b87-46c5-a3ce-399cc9c4c571" . "Rogers")
 ("71853da7-d1e3-4649-b9e2-a74d5700badf" . "Anna Maxwell Martin")
@@ -4103,6 +4104,7 @@ Do this ALWAYS, except for the above exceptions."
 ("7f139e42-8426-42c2-ba7c-66e4f365f48c" . "John Scarpulla")
 ("fd4f1eb1-e8d3-4c59-a916-5470a262fb91" . "Johnny Grushecky")
 ("5ace9b0c-cc21-4d8f-8e08-a70234439f2a" . "Jon Bon Jovi")
+("e670cd1e-abea-4174-8a42-6a159bec4eba" . "Jon E. Gee")  ;; John Gunnell
 ("4530bdd0-9707-442e-b37e-578def6a0926" . "Jon Landau")
 ("3c3ebf04-68b7-4140-bef3-7ed0aeda07f0" . "Jon Stewart")
 ("c58d9270-d021-4755-b1dd-4106e6cc5ef0" . "Kate Capshaw")
@@ -4281,6 +4283,7 @@ Do this ALWAYS, except for the above exceptions."
 ("faf475a7-7db4-437c-a170-9e014c80ccf4" . "Choir of Trinity Wall Street")
 ("172805a7-6f84-4bb3-8b3b-6dc5bc33b103" . "Chris Rock")
 ("852c198a-75ee-4e2b-9aba-4453c52260b2" . "Damiano David")
+("3021c0be-208c-415d-a59e-46433950cab3" . "Dane Clark")
 ("9b29b47f-5004-4863-92c0-058b621dcea8" . "Disciples of Soul")
 ("b463a3e3-9af7-4f1b-9097-0a4e242eee0a" . "Douglas Sutphin")
 ("1c893468-37a9-4fb7-909f-929751a8ebed" . "Dr. Hook & the Medicine Show")
@@ -4311,6 +4314,7 @@ Do this ALWAYS, except for the above exceptions."
 ("10ce4bfe-0927-405d-b3f4-b0b7078ee695" . "Mammoth VWH")
 ("955bc3c8-36d4-47e8-9648-f6728c613583" . "Marcus King")
 ("c9e6c7e2-bd00-40b0-a3b7-3406b43fba87" . "Mark Pellington")
+("9a9fa20a-507f-4a60-9986-54ae5146816a" . "Maureen Van Zandt")
 ("3862342a-43c4-4cdb-8250-bfdbfb5e1419" . "Måneskin")
 ("65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab" . "Metallica")
 ("f27ec8db-af05-4f36-916e-3d57f91ecf5e" . "Michael Jackson")
@@ -4394,6 +4398,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; Steven van Zandt
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Miami Steve Van Zandt")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Steve")
+("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie Van Zandt")
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
