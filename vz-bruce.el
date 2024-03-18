@@ -770,7 +770,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar vz-mb-artistinfo-regexp (concat
 			      ;; beginning of optional title info in brackets
 			      " (\\("
-			      "Guest"
+			      "Guests?"
 			      "\\|"
 			      "acoustic start only"
 			      ;; end of optional title info in brackets (at end of line)
@@ -4144,10 +4144,12 @@ Do this ALWAYS, except for the above exceptions."
 ("c19b8adb-734e-4e2f-948b-f97e01741e79" . "Michelle Obama")
 ("b5ffc3aa-b868-4b88-905f-d73d51dbe51c" . "Mick Jagger")
 ("9dd447fe-6c6b-4f27-b2ef-6f97550d0fad" . "Mike Batlan")
+("8b8991c9-1adb-4614-a0d6-08ad0547d8bf" . "Mike Domanski")
 ("078e680d-6d6c-46ce-8134-0bddeb9e5e35" . "Mike Mancini")
 ("45d7e6e8-c5bf-4c59-a79e-c7bb2e9b2cc9" . "Mike Ness")
 ("3f14041e-7e12-4cbc-954f-c72b519feeba" . "Mike Riddleberger")
 ("a3f9349f-d0ec-4d03-b00b-0c556e6b52d5" . "Mike Wanchic")  ;; Michael B. Wanchic
+("bf083680-545a-43fc-92cf-99bc93f2a5b0" . "Mike Wilson")
 ("4274bd31-7306-4aaf-8a09-4186237f6668" . "Mikey Freedom Hart")
 ("346f8e40-4be4-4dc8-9b8b-d4896324d1af" . "Mo Gilligan")
 ("0e073997-d11b-43f2-84e1-1675201e9896" . "Muddy Shews")
@@ -4234,6 +4236,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b071f9fa-14b0-4217-8e97-eb41da73f598" . "The Rolling Stones")
 ("80b3cf5e-18fe-4c59-98c7-e5bb87210710" . "The Roots")
 ("7d5c39ac-5d48-4fdb-81df-6212e38353b3" . "The Sessions Band")
+("fae2cd4c-f847-4cb3-b311-60c8906cdb0b" . "The Smithereens")
 ("3d49e36a-cc9e-411e-93c6-d1646ba5bd3a" . "The Staple Singers")
 ("91037ad4-4ee5-4d8b-98aa-41df93ddd92e" . "The Tangiers Blues Band")
 ("15fa2639-cea9-4f13-8ed7-88ad594fdfb9" . "The Van Jets")
@@ -4340,7 +4343,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b3adc16a-abdb-4668-9b05-baabbf942db6" . "Tash Sultana")
 ("d15721d8-56b4-453d-b506-fc915b14cba2" . "The Black Keys")
 ("e5257dc5-1edd-4fca-b7e6-1158e00522c8" . "The Jacksons")
-("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legends")
+("f0c4e2c4-10f2-45d8-8189-88570e39dbe3" . "The Legend")
 ("d41a6875-b626-4c0f-89a1-aecb643d29ff" . "The Pogues")
 ("771a76c8-ca35-46bb-a80b-0ab71a29596e" . "The Sleeping Souls")
 ("7d8fb539-811e-4491-a3f7-f56d3ef35e7a" . "The Teskey Brothers")
@@ -4495,6 +4498,7 @@ Do this ALWAYS, except for the above exceptions."
 ("7342d046-e9c4-457a-9ec3-b03d4b2eb5b1" . "Oakland")
 ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
 ("0eeb01c2-6e31-46ad-96b8-319749f731d2" . "Philadelphia")
+("7f1c8f3f-69a9-454a-8633-c3d3a628858b" . "Phoenix")
 ("c3d840b4-a3d2-4565-acdc-f918be73b3d9" . "San Mateo")
 ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
 ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spain")
