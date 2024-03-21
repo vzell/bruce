@@ -2040,7 +2040,7 @@ Do this ALWAYS, except for the above exceptions."
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1973)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1975)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1984-born-in-the-usa-tour)
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
