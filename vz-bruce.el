@@ -1905,6 +1905,8 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+;@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+
 (defun musicbrainz-surround-event-2023-international-tour ()
   "Surround event with artists and line, 2023 International Tour."
   (interactive)
@@ -1918,7 +1920,6 @@ Do this ALWAYS, except for the above exceptions."
 # with
 @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
 @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
-@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
 @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
 @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
@@ -4466,6 +4467,8 @@ Do this ALWAYS, except for the above exceptions."
 ;; Stand Up for Heroes Benefit
 ("a9327d10-9998-4af4-a3e8-ef95745b9423" . "Stand Up for Heroes Benefit")
 ("e9f4d050-a77a-438e-a75b-647aa7c96be0" . "New Jersey Hall of Fame Induction Ceremony")
+;; Radio shows
+("6a0ec067-aa67-485d-accb-d59efaadca79" . "E Street Radio Show")
 )
   "Musicbrainz tour series.")
 
@@ -4489,6 +4492,7 @@ Do this ALWAYS, except for the above exceptions."
 ("1b420c08-51a5-4bdd-9b0e-cd601703d20b" . "Hawaii")
 ("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
 ("c6500277-9a3d-349b-bf30-41afdbf42add" . "Italy")
+("cd22d0ba-c79b-45b3-a8e0-617b240df5f0" . "Las Vegas")
 ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "New Jersey")
 ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "NJ")
@@ -4499,6 +4503,7 @@ Do this ALWAYS, except for the above exceptions."
 ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
 ("0eeb01c2-6e31-46ad-96b8-319749f731d2" . "Philadelphia")
 ("7f1c8f3f-69a9-454a-8633-c3d3a628858b" . "Phoenix")
+("82f3a697-ba65-404d-a1ed-360147af7d10" . "San Diego")
 ("c3d840b4-a3d2-4565-acdc-f918be73b3d9" . "San Mateo")
 ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
 ("471c46a7-afc5-31c4-923c-d0444f5053a4" . "Spain")
@@ -4528,6 +4533,8 @@ Do this ALWAYS, except for the above exceptions."
 ("e4fd123d-6ef4-4f6f-96fa-f65e10f77bbb" . "Paramount Theatre")
 ("62907fbf-b967-48bc-8045-3f63e540276a" . "Point Pleasant Beach")
 ("8aedc195-5495-4dab-a876-368ab4796c8b" . "Residence")
+("3139a534-a52f-4035-9809-eb92ad51b882" . "San Diego Sports Arena")
+("83f22bb6-4631-443c-bace-9fae8540362a" . "San Francisco")
 ("2f7a7e06-5d72-4a02-884f-58893c47f0cb" . "Studio Ferber")
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "The Ranch House")
 ("b28cdc4f-a531-480d-a6c4-3794fddd9d98" . "The Burrow")
