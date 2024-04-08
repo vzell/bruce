@@ -3253,7 +3253,7 @@ Do this ALWAYS, except for the above exceptions."
 ("25d54247-3890-3acb-ad70-734713579cbd" . "I’m Your Hoochie Coochie Man")
 ("ae02523c-35da-37a1-af67-084319b767ad" . "I’m a Man")  ;; probably
 ("71d751b2-8c62-49ac-9b15-79e8d7c04817" . "I’m a Thousand Miles From Home")
-;;("c323f194-6477-4746-b4e7-a2476433a267" . "I’m in Love Again") ;; [unknown] - There is also a Bruce version
+;;("c323f194-6477-4746-b4e7-a2476433a267" . "I’m in Love Again")  ;; [unknown] - There is also a Bruce version
 ("3f39c895-3e48-4221-be8b-b237bd6fed6c" . "I’ve Got to Know")  ;; in BB called "I Got to Know"
 ("cddd2931-ef1f-39ef-b199-68a8a5a65b2b" . "I’ve Had It")
 ("c783b0b7-cbc4-3be6-89dc-a13883fe5c51" . "Jailhouse Rock")
@@ -3267,7 +3267,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f63244ad-5b8b-4254-9e17-5ffd4e591edf" . "Joe Hill")
 ("6671bffb-f9cc-3ea9-96e4-91cdc8d746a6" . "Johnny B. Goode")
 ("33142282-10e3-4b4b-92b5-cb2575a407b0" . "Johnny Come Lately")
-("3089a18c-eb9e-479b-9e50-609d58a899b8" . "Jole Blon")
+("3089a18c-eb9e-479b-9e50-609d58a899b8" . "Jolé Blon")  ;; MusicBrainz calls it "Jole Blon"
 ("8531b357-339e-3cc7-9ed2-0d6b928ed12e" . "Joy to the World")
 ("fb0fde73-afdb-38fb-8e51-e97605f23234" . "Joy")
 ("a311fecc-3d06-3a4e-8822-4019ba82387c" . "Jump")
@@ -4261,6 +4261,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c78fe0c7-70d7-4c21-af77-ae1caa2f7af2" . "Toby Emmerich")
 ("59798d85-df1b-4cc5-91f8-f266eadb9ccb" . "Tom \"Bones\" Malone")
 ("979acd47-df26-4863-943d-8c44f52cddc0" . "Tom Chapin")
+("42a636a0-dbe4-4d0c-abe2-1590fad9531b" . "Tom Morello")
 ("e7d49e3f-2bc0-421f-ae55-bd710155b1ab" . "Tom Power")
 ("919bc11f-4fdd-41fd-8570-11acbd4cc03f" . "Tommy Sims")
 ("919bc11f-4fdd-41fd-8570-11acbd4cc03f" . "Sims")
