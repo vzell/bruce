@@ -488,6 +488,30 @@ Version 2015-05-07"
 	(forward-line)))
     ))
 
+(defun vz-mb-mbid-prepare ()
+  "Prepare line for MBID association."
+  (interactive)
+  (save-excursion
+    (while (looking-at "[;!] ")
+      (progn
+	(if (string= (string (char-after (point))) ";")
+	    (forward-line 1)
+	  (progn
+	    (forward-char 2)
+	    (let* (
+		   (beg (point))
+		   (end (line-end-position))
+		   (track (buffer-substring beg end))
+		   )
+	      (progn
+		(kill-region beg end)
+		(delete-backward-char 2)
+		(insert (concat "\(\"\" . \"" track "\"\)"))
+		(beginning-of-line)))
+	    (forward-line 1))
+	  ))))
+  (forward-char 2))
+
 (defun vz-prepend-to-region-if-not-exists (beg end)
   "Prepend string to every line in region between BEG and END.
 Prepend only if not already there and capitalize first and last
@@ -908,30 +932,6 @@ Do this ALWAYS, except for the above exceptions."
 		    (insert titleinfo))
 		(forward-line 1)
 		))))))))
-
-(defun vz-mb-mbid-prepare ()
-  "Prepare line for MBID association."
-  (interactive)
-  (save-excursion
-    (while (looking-at "[;!] ")
-      (progn
-	(if (string= (string (char-after (point))) ";")
-	    (forward-line 1)
-	  (progn
-	    (forward-char 2)
-	    (let* (
-		   (beg (point))
-		   (end (line-end-position))
-		   (track (buffer-substring beg end))
-		   )
-	      (progn
-		(kill-region beg end)
-		(delete-backward-char 2)
-		(insert (concat "\(\"\" . \"" track "\"\)"))
-		(beginning-of-line)))
-	    (forward-line 1))
-	  ))))
-  (forward-char 2))
 
 ;; "\"[^\"]*\""
 ;; "“[^”]*”"
