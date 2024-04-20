@@ -443,26 +443,6 @@ Version 2015-05-07"
                (replace-match (aref x 1) 'FIXEDCASE 'LITERAL)))
            strPairs))))))
 
-(defun vz-prepare-for-vz-bruce-el (ξstring &optional ξfrom ξto)
-  "Prepare artist list for usage in vz-bruce.el.
-ΞSTRING is the region between ΞFROM and ΞTO."
-  (interactive
-   (if (use-region-p)
-       (list nil (region-beginning) (region-end))
-     (let ((bds (bounds-of-thing-at-point 'paragraph)))
-       (list nil (car bds) (cdr bds)))))
-  (progn
-    (beginning-of-line)
-    (save-excursion
-      (while (not (looking-at "^$"))
-	(progn
-	  (beginning-of-line)
-	  (insert "(\"\" . \"")
-	  (end-of-line)
-	  (insert "\")")
-	  (forward-line))))
-    (forward-char 2)))
-
 (defun vz-prepare-for-mb-artist-search (ξstring &optional ξfrom ξto)
   "Prepare artist list for artist search on MusicBrainz.
 ΞSTRING is the region between ΞFROM and ΞTO."
@@ -485,8 +465,29 @@ Version 2015-05-07"
       (while (not (looking-at "^$"))
 	(end-of-line)
 	(eval-last-sexp nil)
-	(forward-line)))
+	(forward-line)
+	(sleep-for 1)))
     ))
+
+(defun vz-prepare-for-vz-bruce-el (ξstring &optional ξfrom ξto)
+  "Prepare artist list for usage in vz-bruce.el.
+ΞSTRING is the region between ΞFROM and ΞTO."
+  (interactive
+   (if (use-region-p)
+       (list nil (region-beginning) (region-end))
+     (let ((bds (bounds-of-thing-at-point 'paragraph)))
+       (list nil (car bds) (cdr bds)))))
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while (not (looking-at "^$"))
+	(progn
+	  (beginning-of-line)
+	  (insert "(\"\" . \"")
+	  (end-of-line)
+	  (insert "\")")
+	  (forward-line))))
+    (forward-char 2)))
 
 (defun vz-mb-mbid-prepare ()
   "Prepare line for MBID association."
@@ -3888,7 +3889,10 @@ Do this ALWAYS, except for the above exceptions."
 ("b8a60658-bca1-3a16-975d-a40a2100d862" . "Zip‐a‐Dee‐Doo‐Dah")
 ))
 
-;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
+;; Sorting:
+;; sort-regexp-fields
+;; 1st parameter '^.*$'
+;; 2nd parameter ' ".*'
 
 ;; Brucebase studio sessions written by Bruce
 (defvar mb-brucebase-studio-sessions-bruce-works '(
@@ -4432,6 +4436,30 @@ Do this ALWAYS, except for the above exceptions."
 ("a60a28e9-d4bb-4223-9e99-419f1913bd58" . "Bertha")
 ("85bc30f2-f9d2-4971-8fa4-1c194f4b9ef2" . "Sunshine Spazz")
 ("ddf327d9-1ac0-4206-b069-5c40e054934a" . "Rachel Ana Dobken")
+("6f6c13d4-080e-4967-a51e-b4c27133d97f" . "Glen Burtnik")
+("44975f73-6ce7-45f0-b4dd-27f1a7db3074" . "Al Carty")  ;; "Al “Boogie” Carty" on MB
+("3c877dcd-ac6c-452b-9b42-34534f275a59" . "Odell Davis")
+("6d0ccfcc-14b4-417f-9fff-ae0040ff639a" . "JC Maillard")  ;; "Jean‐Christophe Maillard" on MB
+("2722977e-da76-408c-ade7-779f1a36170f" . "Mark Masefield")
+("b3f95524-9db8-4deb-8a3a-5b2c35b7a94c" . "JaQuita May")
+("08e0e925-5b24-4c9a-9dae-0d025e56f97f" . "Khadijah Islah Mohammed")  ;; Khadijah Mohammed
+("2230c8d1-a8f9-470d-ad46-70781d790776" . "Marc Muller")
+("7355733a-33a5-4636-8e15-f375e1da955a" . "Reagan Richards")
+("2230c8d1-a8f9-470d-ad46-70781d790776" . "Matt Wade")
+("c757b4d4-5fb2-4e12-9e98-ec949e7b062a" . "The Maximum Horns")
+("45208d9b-2d99-4018-8f19-aca16b9c0a74" . "Nicole DeMaio")
+("d92713c3-1872-4f96-adcc-69d1efc707b0" . "Howard Freund")
+("75c75041-11d8-4b9d-b724-e64f14e57489" . "John Martin")
+("c5dd92ef-8fd6-44df-84d9-7b63ce0c9e99" . "Amanda Morden")
+("9591045d-f411-4b1b-9b3d-442465ea197c" . "Max Morden")
+("712545cc-d42f-4283-bdaf-20c282bd8778" . "The Barefoot Strings")
+("504f603c-6475-4397-b831-674425b2b03f" . "Linda Heffentrager")
+("504f603c-6475-4397-b831-674425b2b03f" . "Dana Marchioni")
+("504f603c-6475-4397-b831-674425b2b03f" . "Reenat Pinchas")
+("504f603c-6475-4397-b831-674425b2b03f" . "Jim Babjak")
+("fe0da2ff-3c09-4b03-a592-29d006b7a1d9" . "Dennis Diken")
+("3a389027-814a-4f99-8f12-44e5276595cf" . "Marshall Crenshaw")
+("bc3300c0-8c5f-4ea4-a187-eed6e1711145" . "Graham Maby")
 )
   "Brucebase artists mentioned in gignotes.")
 
