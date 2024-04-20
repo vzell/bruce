@@ -513,6 +513,22 @@ Version 2015-05-07"
 	  ))))
   (forward-char 2))
 
+(defun vz-prepare-for-copying-artist-URL-to-MB-event-page ()
+  "Prepare for copying artist URL to MB event page."
+  (interactive)
+  (save-excursion
+    (while (looking-at "[@#] ")
+      (progn
+	(if (string= (string (char-after (point))) "#")
+	    (forward-line 1)
+	  (progn
+	    (delete-char 3)
+	    (insert "https://musicbrainz.org/artist/")
+	    (search-forward "|")
+	    (backward-char 1)
+	    (kill-line)
+	    (forward-line)))))))
+
 (defun vz-prepend-to-region-if-not-exists (beg end)
   "Prepend string to every line in region between BEG and END.
 Prepend only if not already there and capitalize first and last
@@ -4443,7 +4459,7 @@ Do this ALWAYS, except for the above exceptions."
 ("2722977e-da76-408c-ade7-779f1a36170f" . "Mark Masefield")
 ("b3f95524-9db8-4deb-8a3a-5b2c35b7a94c" . "JaQuita May")
 ("08e0e925-5b24-4c9a-9dae-0d025e56f97f" . "Khadijah Islah Mohammed")  ;; Khadijah Mohammed
-("2230c8d1-a8f9-470d-ad46-70781d790776" . "Marc Muller")
+("a4c2a26d-4aa8-47cd-8f81-5e54da1f627e" . "Marc Muller")
 ("7355733a-33a5-4636-8e15-f375e1da955a" . "Reagan Richards")
 ("2230c8d1-a8f9-470d-ad46-70781d790776" . "Matt Wade")
 ("c757b4d4-5fb2-4e12-9e98-ec949e7b062a" . "The Maximum Horns")
@@ -4453,9 +4469,9 @@ Do this ALWAYS, except for the above exceptions."
 ("c5dd92ef-8fd6-44df-84d9-7b63ce0c9e99" . "Amanda Morden")
 ("9591045d-f411-4b1b-9b3d-442465ea197c" . "Max Morden")
 ("712545cc-d42f-4283-bdaf-20c282bd8778" . "The Barefoot Strings")
-("504f603c-6475-4397-b831-674425b2b03f" . "Linda Heffentrager")
-("504f603c-6475-4397-b831-674425b2b03f" . "Dana Marchioni")
-("504f603c-6475-4397-b831-674425b2b03f" . "Reenat Pinchas")
+("2ce0769b-8af4-4af7-9c23-0258e5cc2e00" . "Linda Heffentrager")
+("c96c51e8-83c1-45ec-87b0-fea0ea16b20a" . "Dana Marchioni")
+("daaa4ef9-5cb4-4d41-b8ab-55422ae5a266" . "Reenat Pinchas")
 ("504f603c-6475-4397-b831-674425b2b03f" . "Jim Babjak")
 ("fe0da2ff-3c09-4b03-a592-29d006b7a1d9" . "Dennis Diken")
 ("3a389027-814a-4f99-8f12-44e5276595cf" . "Marshall Crenshaw")
