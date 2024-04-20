@@ -527,6 +527,8 @@ Version 2015-05-07"
 	    (search-forward "|")
 	    (backward-char 1)
 	    (kill-line)
+	    (insert " - ")
+	    (yank)
 	    (forward-line)))))))
 
 (defun vz-prepend-to-region-if-not-exists (beg end)
