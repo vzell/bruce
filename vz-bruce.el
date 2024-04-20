@@ -443,6 +443,51 @@ Version 2015-05-07"
                (replace-match (aref x 1) 'FIXEDCASE 'LITERAL)))
            strPairs))))))
 
+(defun vz-prepare-for-vz-bruce-el (ξstring &optional ξfrom ξto)
+  "Prepare artist list for usage in vz-bruce.el.
+ΞSTRING is the region between ΞFROM and ΞTO."
+  (interactive
+   (if (use-region-p)
+       (list nil (region-beginning) (region-end))
+     (let ((bds (bounds-of-thing-at-point 'paragraph)))
+       (list nil (car bds) (cdr bds)))))
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while (not (looking-at "^$"))
+	(progn
+	  (beginning-of-line)
+	  (insert "(\"\" . \"")
+	  (end-of-line)
+	  (insert "\")")
+	  (forward-line))))
+    (forward-char 2)))
+
+(defun vz-prepare-for-mb-artist-search (ξstring &optional ξfrom ξto)
+  "Prepare artist list for artist search on MusicBrainz.
+ΞSTRING is the region between ΞFROM and ΞTO."
+  (interactive
+   (if (use-region-p)
+       (list nil (region-beginning) (region-end))
+     (let ((bds (bounds-of-thing-at-point 'paragraph)))
+       (list nil (car bds) (cdr bds)))))
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while (not (looking-at "^$"))
+	(progn
+	  (beginning-of-line)
+	  (insert "(browse-url \"https://musicbrainz.org/ws/2/artist?query=artist:\\\"")
+	  (end-of-line)
+	  (insert "\\\"\")")
+	  (forward-line))))
+    (progn
+      (while (not (looking-at "^$"))
+	(end-of-line)
+	(eval-last-sexp nil)
+	(forward-line)))
+    ))
+
 (defun vz-prepend-to-region-if-not-exists (beg end)
   "Prepend string to every line in region between BEG and END.
 Prepend only if not already there and capitalize first and last
@@ -4374,6 +4419,19 @@ Do this ALWAYS, except for the above exceptions."
 ("f1f82bfb-3464-44fc-b3d5-f225ace2d982" . "Warren Zanes")
 ("19857f51-ef8b-4455-9e67-a066ae340034" . "Woody Harrelson")
 ("fd1020c5-1dce-4e0e-9aba-7e728c143753" . "Yair Nitzani")
+("f208f09e-b5b3-4b06-87cd-f7230fae17e3" . "The Gaslight Anthem")
+("822b1e81-d1a0-47fb-b7f9-ef614b913603" . "Trey Anastasio Band")
+("985c709c-7771-4de3-9024-7bda29ebe3f9" . "Norah Jones")
+("2469950a-f0ca-425a-bfbc-baf55ea3afde" . "Kool & the Gang")
+("031bc934-28c9-491a-8648-c078450187dc" . "Action Bronson")
+("f47fc54d-b334-4321-8218-00c5b11d4dd1" . "Gogol Bordello")
+("a2abdca1-2041-45b9-8d01-e34fdef7922f" . "Joy Oladokun")
+("48f2694e-c226-4e01-a0d4-d7ea007ccd47" . "The Aces")
+("ba0b9dc6-bd61-42c7-a28f-5179b1c04391" . "Eggy")
+("e9177de4-27de-44b2-8aa7-c78bd5340587" . "Illiterate Light")
+("a60a28e9-d4bb-4223-9e99-419f1913bd58" . "Bertha")
+("85bc30f2-f9d2-4971-8fa4-1c194f4b9ef2" . "Sunshine Spazz")
+("ddf327d9-1ac0-4206-b069-5c40e054934a" . "Rachel Ana Dobken")
 )
   "Brucebase artists mentioned in gignotes.")
 
