@@ -444,7 +444,7 @@ Version 2015-05-07"
            strPairs))))))
 
 (defun vz-prepare-for-mb-artist-search (ξstring &optional ξfrom ξto)
-  "Prepare artist list for artist search on MusicBrainz.
+  "Prepare artist list for artist search with MusicBrainz API.
 ΞSTRING is the region between ΞFROM and ΞTO."
   (interactive
    (if (use-region-p)
@@ -4355,6 +4355,9 @@ Do this ALWAYS, except for the above exceptions."
 ("84212e42-f154-4dbd-becd-8ddd7549b6ee" . "Zem Audu")
 ("59f8cf5d-38bd-4474-b012-0df1937b0c21" . "Zephyr Avalon")
 ("b9d71e60-f447-4bb5-b46c-58e89781bacb" . "Zoe Ball")
+("345881e6-c293-43d2-bf59-c9598efad3a9" . "The Disciples of Soul")
+("7a606d62-de1f-412f-9d5b-57ab4c17b5bc" . "Stan Harrison")
+("ea772005-b24c-4368-be0f-3b44e8fa8f36" . "Marc Ribler")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
