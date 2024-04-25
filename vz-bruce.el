@@ -4031,6 +4031,7 @@ Do this ALWAYS, except for the above exceptions."
 ("df8b4131-e876-43a9-ab11-8d505bc94ebf" . "Brendan O’Connor")
 ("e2259e9d-ab86-4e5a-8054-d0e3464616eb" . "Brian Kirk & The Jirks")
 ("20d7beef-118f-493c-99f9-3931835cb658" . "Brian Fallon")
+("827cfaf3-0d59-4e0d-bd33-e4d1883ec345" . "Brian Williams")
 ("634fe78e-fc6b-4b2a-ba83-c8c66e13a8aa" . "Brian Wilson")
 ("e60dbba7-6f55-429a-bd22-5e9c6a87ae70" . "Bruce Hornsby")
 ("ef4242fd-b938-442d-8aff-2c989a568419" . "Bruce Kapler")
