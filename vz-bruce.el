@@ -1244,7 +1244,7 @@ Do this ALWAYS, except for the above exceptions."
 	  (end (point-max)))
       (progn
 	;; Add * in front of each line and change ' to ’
-	(beginning-of-buffer)
+	(goto-char (point-min))
 	(vz-split-setlist nil beg end)
 	(write-file (concat brucebase-download-folder brucebase-file-title ".split"))
 	(vz-mb-fixup-titles)
