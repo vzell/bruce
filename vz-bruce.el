@@ -650,11 +650,11 @@ Do this ALWAYS, except for the above exceptions."
     (kill-buffer brucebase-songlist-url)
     (find-file (concat brucebase-download-folder brucebase-songlist-url))
     (brucebase-extract-titles-from-songlist)
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (replace-string "&amp;" "&")
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (replace-string "&Amp;" "&")
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (let ((beg (point-min))
 	  (end (point-max)))
       (sort-lines nil beg end))
@@ -665,7 +665,7 @@ Do this ALWAYS, except for the above exceptions."
 	  )
       (progn
 	;; Add * in front of each line and change ' to ’
-	(beginning-of-buffer)
+	(goto-char (point-min))
 	(vz-split-setlist nil beg end)
 	(write-file (concat brucebase-download-folder brucebase-songlist-url ".split"))
 	(vz-mb-fixup-titles)
@@ -688,7 +688,7 @@ Do this ALWAYS, except for the above exceptions."
 	      (point)))
        )
     (progn
-      (beginning-of-buffer)
+      (goto-char (point-min))
       (delete-region beg end)))
   (progn
     (re-search-forward "Zoom Theme")
@@ -698,7 +698,7 @@ Do this ALWAYS, except for the above exceptions."
 	  (end (point-max)))
       (progn
 	(delete-region beg end)
-	(beginning-of-buffer))))
+	(goto-char (point-min)))))
   (while (not (looking-at "^$"))
     (let
       (
@@ -722,7 +722,7 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (progn
     (save-excursion
-      (beginning-of-buffer)
+      (goto-char (point-min))
       (let
 	  ((beg (point-min))
 	   (end (point-max)))
@@ -1265,7 +1265,7 @@ Do this ALWAYS, except for the above exceptions."
   "Delete wellknown titles.  All are a.k.a's except the dummy: Song Title."
   (interactive)
   (save-excursion
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (while (not (looking-at "^$"))
       (when (looking-at brucebase-well-known-titles)
 	(kill-line 1))
@@ -1274,7 +1274,7 @@ Do this ALWAYS, except for the above exceptions."
 (defun brucebase-trim-versions ()
   "Trim - Vx from end of titles and also get rid of (songwriter)."
   (interactive)
-  (beginning-of-buffer)
+  (goto-char (point-min))
   (while (re-search-forward (concat "\\("
 				    "##?#?"
 				    "\\|"
@@ -1289,7 +1289,7 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (progn
     (find-file (concat springsteenlyrics-download-folder springsteenlyrics-file-title))
-    (beginning-of-buffer)
+    (goto-char (point-min))
     ;; Get rid off header and footer stuff
     (let ((beg (point))
 	  (end (progn
@@ -1302,7 +1302,7 @@ Do this ALWAYS, except for the above exceptions."
       (let ((beg (point))
 	    (end (point-max)))
 	(delete-region beg end))
-      (beginning-of-buffer)
+      (goto-char (point-min))
       ;; Extract titles
       (save-excursion
 	(while (not (looking-at "^$"))
@@ -1316,12 +1316,12 @@ Do this ALWAYS, except for the above exceptions."
 	    (backward-char 2)
 	    (kill-line)
 	    (forward-line)))
-	(beginning-of-buffer)
+	(goto-char (point-min))
 	(replace-string "&amp;" "&")
-	(beginning-of-buffer)
+	(goto-char (point-min))
 	(replace-string "&#039;" "'")
 	(write-file (concat springsteenlyrics-download-folder springsteenlyrics-file-title ".html.titles"))
-	(beginning-of-buffer)
+	(goto-char (point-min))
 	(while (not (looking-at "^$"))
 	  (re-search-forward "<")
 	  (backward-char)
@@ -1339,7 +1339,7 @@ Do this ALWAYS, except for the above exceptions."
 	(let ((beg (point-min))
 	      (end (point-max)))
 	  (progn
-	    (beginning-of-buffer)
+	    (goto-char (point-min))
 	    (vz-split-setlist nil beg end)
 	    (write-file (concat springsteenlyrics-download-folder springsteenlyrics-file-title ".split"))
 	    (vz-mb-fixup-titles)
@@ -1358,7 +1358,6 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (progn
-      ;; (beginning-of-buffer)
       (goto-char (point-min))
       (let ((beg (point))
 	    (end (progn
@@ -1410,22 +1409,22 @@ Do this ALWAYS, except for the above exceptions."
       (re-search-forward "</")
       (backward-char 2)
       (newline))
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (while (not (looking-at "^$"))
       (when (looking-at "<")
 	(kill-line 1))
       (forward-line))
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (save-excursion
       (replace-regexp "><title>" " . "))
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (replace-string "&amp;" "&")
-    (beginning-of-buffer)
+    (goto-char (point-min))
     (replace-string "&quot;" "\\\"")
     (let ((beg (point-min))
 	  (end (point-max)))
       (delete-duplicate-lines beg end))
-    (beginning-of-buffer))
+    (goto-char (point-min)))
   (while (not (looking-at "^$"))
     (insert "(")
     (re-search-forward "\\.")
@@ -1434,17 +1433,17 @@ Do this ALWAYS, except for the above exceptions."
     (end-of-line)
     (insert "\")")
     (forward-line))
-  (beginning-of-buffer)
+  (goto-char (point-min))
   (let ((beg (point-min))
   	(end (point-max)))
     (sort-fields 1 beg end))
   (write-file (concat musicbrainz-download-folder musicbrainz-title-filename ".sort-mbid.el"))
-  (beginning-of-buffer)
+  (goto-char (point-min))
   (let ((beg (point-min))
   	(end (point-max)))
     (sort-fields 3 beg end))
   (write-file (concat musicbrainz-download-folder musicbrainz-title-filename ".sort-title.el"))
-  (beginning-of-buffer)
+  (goto-char (point-min))
   (insert "(setq works '(\n;; Bruce Springsteen\n")
   (end-of-buffer)
   (insert "))\n")
@@ -1527,7 +1526,7 @@ Do this ALWAYS, except for the above exceptions."
   (let ((beg (point))
 	(end (point-max)))
     (delete-duplicate-lines beg end))
-  (beginning-of-buffer)
+  (goto-char (point-min))
   (let ((beg (point-min))
 	(end (point-max)))
     (vz-split-setlist nil beg end)
