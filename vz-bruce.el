@@ -2990,6 +2990,7 @@ Do this ALWAYS, except for the above exceptions."
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Boy")
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Girl")
 ("9173f10c-a5f3-4217-a4f9-a673086f3a5b" . "A Life Full of Rain")
+("8727a75a-8d33-3a2c-912a-f57952773201" . "A Rainy Night in Soho")
 ("c3b181cf-34b2-333b-847c-f8076c7e5a6b" . "A Satisfied Mind")
 ("9ff3f54e-ea6c-3a57-a928-22f0b3087db7" . "A Teenager in Love")
 ("de163cdd-afaf-3442-99ba-b5cb0040c229" . "Achy Breaky Heart")
