@@ -4644,6 +4644,7 @@ Do this ALWAYS, except for the above exceptions."
 ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
 ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
 ("afff1a94-a98b-4322-8874-3148139ab6da" . "Vienna")
+("8297708c-5743-47d6-a5ac-f40a41c49ad9" . "Wales")
 )
   "Musicbrainz areas.")
 
