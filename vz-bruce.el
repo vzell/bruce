@@ -4627,6 +4627,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "New Jersey")
 ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "NJ")
+("2b30f961-ed7c-40d2-a9c5-6a905b35439a" . "Northern Ireland")
 ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
 ("85c7cd5f-6fe2-4195-a44d-69fa390bd6ec" . "Newark")
 ("6743d351-6f37-3049-9724-5041161fff4d" . "Norway")
