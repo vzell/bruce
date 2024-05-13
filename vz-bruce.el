@@ -4621,6 +4621,7 @@ Do this ALWAYS, except for the above exceptions."
 ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
 ("11a44e18-a2e5-43a9-bee9-aa4f7c83f967" . "Hamburg")
 ("1b420c08-51a5-4bdd-9b0e-cd601703d20b" . "Hawaii")
+("390b05d4-11ec-3bce-a343-703a366b34a5" . "Ireland")
 ("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
 ("c6500277-9a3d-349b-bf30-41afdbf42add" . "Italy")
 ("cd22d0ba-c79b-45b3-a8e0-617b240df5f0" . "Las Vegas")
