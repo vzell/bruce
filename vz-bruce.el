@@ -4527,6 +4527,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti")
 ;; Paul McCartney
 ("ba550d0e-adac-4864-b88b-407cab5e76af" . "Sir Paul")
+("ba550d0e-adac-4864-b88b-407cab5e76af" . "Sir Paul McCartney")
 ;; Rebecca Weinberg
 ("01c7aec0-21f3-4ae1-a757-f32be9e365ba" . "Rebecca (Becky)")
 ;; The Pogues
@@ -4644,6 +4645,7 @@ Do this ALWAYS, except for the above exceptions."
 ("439934f0-8f8e-4ba1-8505-76aa795614ce" . "Sunderland")
 ("23d10872-f5ae-3f0c-bf55-332788a16ecb" . "Sweden")
 ("1333ff06-8e3d-3c8e-9f3a-13a2a38b41df" . "Switzerland")
+("8a754a16-0027-3a29-b6d7-2b40ea0481ed" . "UK")
 ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
 ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
 ("afff1a94-a98b-4322-8874-3148139ab6da" . "Vienna")
