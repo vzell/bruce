@@ -3318,6 +3318,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ae02523c-35da-37a1-af67-084319b767ad" . "I’m a Man")  ;; probably
 ("71d751b2-8c62-49ac-9b15-79e8d7c04817" . "I’m a Thousand Miles From Home")
 ;;("c323f194-6477-4746-b4e7-a2476433a267" . "I’m in Love Again")  ;; [unknown] - There is also a Bruce version
+("cd7ae6eb-3660-4fe8-aec9-5412ec987b49" . "I’ve Been Everywhere")
 ("3f39c895-3e48-4221-be8b-b237bd6fed6c" . "I’ve Got to Know")  ;; in BB called "I Got to Know"
 ("cddd2931-ef1f-39ef-b199-68a8a5a65b2b" . "I’ve Had It")
 ("c783b0b7-cbc4-3be6-89dc-a13883fe5c51" . "Jailhouse Rock")
