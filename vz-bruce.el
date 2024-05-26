@@ -1851,6 +1851,43 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-band-1999 ()
+  "Surround event with artists and line for 1999 tour."
+  (interactive)
+  (save-excursion
+    (insert
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+
+# Scheduled: 21:00 Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band ()
   "Surround event with artists and line."
   (interactive)
@@ -2106,6 +2143,7 @@ Do this ALWAYS, except for the above exceptions."
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1984-born-in-the-usa-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1999)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
 
@@ -2361,6 +2399,7 @@ Do this ALWAYS, except for the above exceptions."
 ("37d9330e-ec71-4c12-a12d-52d20384ddcd" . "Gave It a Name")
 ("834c62a1-d89d-4dcc-8caf-f313dc2664ca" . "Georgia")
 ("131f270d-67d8-4f92-8ad8-18c3147cf1ae" . "Ghosts")
+("4a9ca298-4e3c-4b0f-90ef-8be1d663cbde" . "Girlfriend Blues")
 ("b129bcb5-dbb7-48b6-be70-74c0800505c3" . "Girls in Their Summer Clothes")
 ("bedbedef-23c7-4c49-a13b-fa8a6b7b1e41" . "Give the Girl a Kiss")
 ("15c983fe-7402-31b8-9108-30aa8c076162" . "Gloria’s Eyes")
@@ -2716,7 +2755,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3a137d0d-351b-4e20-9c09-19bb9237f449" . "Shackled and Drawn")
 ("ec9884df-fb5c-4b25-b136-9f97c949d46d" . "She Comes Unto My Room (Scene #1)")
 ("f659cb74-b4bf-448d-ad5d-c813b84a2311" . "Shenandoah")
-("753caf25-3fae-483a-99d0-fb50df1e8bff" . "Sherlock Goes Holmes")
+("753caf25-3fae-483a-99d0-fb50df1e8bff" . "Sherlock Goes Holme")
 ("6b68afb7-d508-3cdb-8b41-687de4773d72" . "Sherry Darling")
 ("c8d77c36-4873-40cf-9b98-cda7973bb3eb" . "She’s Got Nothing You Need")
 ("52f295c5-a87b-4e00-8c26-ecbd00bdd970" . "She’s Leaving")
@@ -4716,7 +4755,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Paradise by the ’’c’’" . "Paradise by the “C”")
 ("Paradise by the &Quot;C&Quot;" . "Paradise by the “C”")
 ("Peg O’ My Heart" . "Peg o’ My Heart")
-("Kt-88" . "KT-88")
+("Kt‐88" . "KT‐88")
 ("Sociedade Alternativa" . "Sociedade alternativa")
 ("Sólo Le Pido a Dios" . "Sólo le pido a Dios")
 ("Tenth Avenue Freeze-Out" . "Tenth Avenue Freeze‐Out")
