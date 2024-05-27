@@ -4443,6 +4443,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ec5436c4-c44a-47f5-a640-da8d376a3871" . "Larkin Poe")
 ("e2190b35-1181-44f6-8587-4c04123a6f30" . "Lars Ulrich")
 ("0ef3f425-9bd2-4216-9dd2-219d2fe90f1f" . "Lenny Kravitz")
+("0be2b5b0-fad6-4c46-922b-ec23841dc34b" . "Lotus")
 ("10ce4bfe-0927-405d-b3f4-b0b7078ee695" . "Mammoth VWH")
 ("955bc3c8-36d4-47e8-9648-f6728c613583" . "Marcus King")
 ("c9e6c7e2-bd00-40b0-a3b7-3406b43fba87" . "Mark Pellington")
