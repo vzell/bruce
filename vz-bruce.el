@@ -998,6 +998,31 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-artists-in-setlists ()
+  "Search for artists in setlists and URLify."
+  (interactive)
+  (save-excursion
+    (while (looking-at "[#*] ")
+      (progn
+	(beginning-of-line)
+	(save-excursion
+	  (while
+	      (re-search-forward "“[^”]*”" (point-at-eol) t)
+	    (let* (
+		   (beg (match-beginning 0))
+		   (end (match-end 0))
+		   (cased (vz-title-case-region-or-line beg end))
+		   (artist (buffer-substring (+ beg 1) (+ end -1))))
+	      (progn
+		(setq tw (rassoc artist mb-artists))
+		(if tw
+		    (progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/artist/" (car tw) "|" (cdr tw) "]"))))
+		)))))
+      (forward-line 1)
+      )))
+
 (defun vz-mb-urlify-gignote-release-groups ()
   "Search for release groups in gignote and URLify."
   (interactive)
