@@ -1083,9 +1083,17 @@ Do this ALWAYS, except for the above exceptions."
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
 	       (cased (vz-title-case-region-or-line beg end))
-	       (place (buffer-substring (+ beg 1) (+ end -1))))
+	       (instrument (buffer-substring (+ beg 1) (+ end -1))))
 	  (progn
-	    (setq tw (rassoc place mb-instruments))
+	    (setq temp-fixinstruments mb-fixinstruments)
+	    (while temp-fixinstruments
+	      (setq fixinstrument (car temp-fixinstruments))
+	      (setq temp-fixinstruments (cdr temp-fixinstruments))
+	      (setq origtitle (car fixinstrument))
+	      (if (string= instrument origtitle)
+		  (setq instrument (cdr fixinstrument)))
+	      )
+	    (setq tw (rassoc instrument mb-instruments))
 	    (if tw
 		(progn
 		  (kill-region beg end)
@@ -4941,7 +4949,8 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz labels.")
 
 (defvar mb-instruments '(
-("55a37f4f-39a4-45a7-851d-586569985519" . "Organ")
+("55a37f4f-39a4-45a7-851d-586569985519" . "organ")
+("b3eac5f9-7859-4416-ac39-7154e2e8d348" . "piano")
 )
   "Musicbrainz labels.")
 
@@ -4983,6 +4992,12 @@ Do this ALWAYS, except for the above exceptions."
 ("When the Saints Go Marching in" . "When the Saints Go Marching In")
 ("Whole Lotta Shakin’ Goin’ on" . "Whole Lotta Shakin’ Goin’ On")
 ("Zip-A-Dee-Doo-Dah" . "Zip-a-Dee-Doo-Dah")
+))
+
+(defvar mb-fixinstruments  '(
+;; instruments to fix
+("Organ" . "organ")
+("Piano" . "piano")
 ))
 
 (defvar brucebase-studio-sessions-list '(
