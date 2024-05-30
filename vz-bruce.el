@@ -961,8 +961,6 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (save-excursion
       (while
-;	  (re-search-forward "[“\"][^”\"]*”\"" (point-at-eol) nil)
-;	  (re-search-forward "\"[^\"]*\"" (point-at-eol) nil)
 	  (re-search-forward "“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
@@ -970,6 +968,14 @@ Do this ALWAYS, except for the above exceptions."
 	       (cased (vz-title-case-region-or-line beg end))
 	       (work (buffer-substring (+ beg 1) (+ end -1))))
 	  (progn
+	    (setq temp-fixworks mb-fixworks)
+	    (while temp-fixworks
+	      (setq fixwork (car temp-fixworks))
+	      (setq temp-fixworks (cdr temp-fixworks))
+	      (setq origtitle (car fixwork))
+	      (if (string= work origtitle)
+		  (setq work (cdr fixwork)))
+	      )
 	    (setq tw (rassoc work mb-works))
 	    (if tw
 		(progn
