@@ -4810,6 +4810,11 @@ Do this ALWAYS, except for the above exceptions."
 )
   "Musicbrainz labels.")
 
+(defvar mb-instruments '(
+("55a37f4f-39a4-45a7-851d-586569985519" . "Organ")
+)
+  "Musicbrainz labels.")
+
 (defvar mb-fixworks '(
 ;; special work titles to fix
 ("(What’s So Funny ’bout) Peace, Love and Understanding" . "(What’s So Funny ’Bout) Peace, Love and Understanding")
