@@ -1719,30 +1719,6 @@ Do this ALWAYS, except for the above exceptions."
 ;; @ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
 
 
-;;; 2014 High Hopes Tour (-14)
-;; # &
-;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
-;; # with
-;; @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
-;; @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
-;; @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
-;; @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
-;; @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
-;; @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
-;; @ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
-;; @ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
-;; @ [7b18698b-33fb-4865-b158-e74f3457eeb7|Curtis King]
-;; @ [0a84499b-cf33-43cd-b29d-8b2fb67ebbb3|Cindy Mizelle]
-;; @ [9b303c28-f0a0-4c76-8293-c97272f6e32c|Clark Gayton]
-;; @ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
-;; @ [092ae7a4-0ea2-407a-a200-d1ee09383537|Barry Danielian]
-;; @ [6a3394ba-6888-4dd0-93f3-06c1e35749d8|Eddie Manion]
-;; @ [5c64226c-d673-4d23-a612-2bfb704edd66|Jake Clemons]
-;; @ [8ddaf563-9a5d-4891-ad3c-b1576f4038f4|Everett Bradley]
-;; @ [e67ac344-ce0a-4a27-b4ad-9502dab57a82|Michelle Moore]
-;; @ [42a636a0-dbe4-4d0c-abe2-1590fad9531b|Tom Morello]
-
-
 ;;; 2016 The River Tour 2016 (-12)
 ;; # &
 ;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
@@ -1984,6 +1960,110 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (recenter-top-bottom)
     ))
+
+
+;; Start of the "Wrecking Ball" tour
+
+;; March 18, 2012 - September 21, 2013 (133 shows)
+
+;; THE E STREET BAND
+;; Bruce Springsteen (vocals, guitar, harmonica)
+;; Roy Bittan (piano, keyboards, accordion)
+;; Nils Lofgren (guitar, slide guitar, backing vocals)
+;; Patti Scialfa (backing vocals, acoustic guitar)
+;; Garry Tallent (bass, backing vocals)
+;; Steven Van Zandt (guitar, mandolin, backing vocals) - not for the Australian leg
+;; Max Weinberg (drums)
+
+;; with
+;; Charles Giordano (organ, accordion, keyboards)
+;; Soozie Tyrell (violin, backing vocals, percussion, acoustic guitar)
+
+;; Everett Bradley (percussion, vocals)
+;; Jake Clemons (saxophone, vocals)
+;; Barry Danielian (trumpet)
+;; Clark Gayton (trombone)
+;; Curtis King (vocals, percussion)
+;; Eddie Manion (saxophone)
+;; Cindy Mizelle (vocals)
+;; Curt Ramm (trumpet)
+
+;; Michelle Moore (vocals on 'Rocky Ground' - first leg; multiple songs - second leg; full show - rest of tour)
+;; Tom Morello (guitar, vocals) - Australian leg of tour, plus multiple guest appearances
+
+(defun musicbrainz-surround-event-band-2013-2014-wrecking-ball ()
+  "Surround event with artists and line."
+  (interactive)
+  (save-excursion
+    (insert
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+# and
+@ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
+@ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+# and
+@ [ad2232c5-2b11-4699-80c2-e5f83c56c8e4|The E Street Choir]
+# with
+@ [8ddaf563-9a5d-4891-ad3c-b1576f4038f4|Everett Bradley]
+@ [7b18698b-33fb-4865-b158-e74f3457eeb7|Curtis King]
+@ [0a84499b-cf33-43cd-b29d-8b2fb67ebbb3|Cindy Mizelle]
+@ [e67ac344-ce0a-4a27-b4ad-9502dab57a82|Michelle Moore]
+# and
+@ [61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e|The E Street Horns]
+# with
+@ [5c64226c-d673-4d23-a612-2bfb704edd66|Jake Clemons]
+@ [092ae7a4-0ea2-407a-a200-d1ee09383537|Barry Danielian]
+@ [9b303c28-f0a0-4c76-8293-c97272f6e32c|Clark Gayton]
+@ [6a3394ba-6888-4dd0-93f3-06c1e35749d8|Ed Manion]
+@ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
+
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
+;;; 2014 High Hopes Tour (-14)
+;; # &
+;; @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+;; # with
+;; @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+;; @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+;; @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+;; @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+;; @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+;; @ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+;; @ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+;; @ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
+;; @ [7b18698b-33fb-4865-b158-e74f3457eeb7|Curtis King]
+;; @ [0a84499b-cf33-43cd-b29d-8b2fb67ebbb3|Cindy Mizelle]
+;; @ [9b303c28-f0a0-4c76-8293-c97272f6e32c|Clark Gayton]
+;; @ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
+;; @ [092ae7a4-0ea2-407a-a200-d1ee09383537|Barry Danielian]
+;; @ [6a3394ba-6888-4dd0-93f3-06c1e35749d8|Eddie Manion]
+;; @ [5c64226c-d673-4d23-a612-2bfb704edd66|Jake Clemons]
+;; @ [8ddaf563-9a5d-4891-ad3c-b1576f4038f4|Everett Bradley]
+;; @ [e67ac344-ce0a-4a27-b4ad-9502dab57a82|Michelle Moore]
+;; @ [42a636a0-dbe4-4d0c-abe2-1590fad9531b|Tom Morello]
+
 
 (defun musicbrainz-surround-event-band ()
   "Surround event with artists and line."
@@ -4513,6 +4593,8 @@ Do this ALWAYS, except for the above exceptions."
 ("9af0e645-c756-4577-a775-f5c642984971" . "Abe Laboriel")
 ("f9a561c3-1472-4fc3-98ee-9e1e289cba5e" . "Brian Ray")
 ("d6a76a52-7295-4afc-9490-6b3185e4c279" . "Paul Wickens")
+("8ddaf563-9a5d-4891-ad3c-b1576f4038f4" . "Everett Bradley")
+("70ac2314-d7d8-4435-b56c-9bad9a516642" . "Eric Burdon")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -4648,6 +4730,7 @@ Do this ALWAYS, except for the above exceptions."
 ("535f0c88-70ac-4486-8aea-6e2fbb34b16c" . "Ron Tooley")
 ("7051f147-0f98-4679-a929-0ca365de9793" . "Jessie Wagner")  ;; "Jessica Wagner‐Cowan" in MB
 ("dbcc2052-7085-48ba-9c00-850b61978ada" . "Hank Ballard")
+("4d8afa16-4018-4ca8-8b5e-ede8f9314562" . "The Animals")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -4733,6 +4816,7 @@ Do this ALWAYS, except for the above exceptions."
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters XVI: Hollywood Hills Garage Tapes (Unreleased Masters, Volume I)")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters Hollywood Hills Garage Sessions")
 ("4b443e66-52a7-3cc9-a522-0dc64a6a51dc" . "The Wild, the Innocent & The E Street Shuffle")
+("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
 ("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
 ;; The Gaslight Anthem
 ("88e34862-743e-4d48-bdc0-0399c2b20f73" . "History Books")
@@ -4787,6 +4871,8 @@ Do this ALWAYS, except for the above exceptions."
 ("cd22d0ba-c79b-45b3-a8e0-617b240df5f0" . "Las Vegas")
 ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "New Jersey")
+;; New York
+("74e50e58-5deb-4b99-93a2-decbb365c07f" . "New York City")
 ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "NJ")
 ("2b30f961-ed7c-40d2-a9c5-6a905b35439a" . "Northern Ireland")
 ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "The Netherlands")
@@ -4796,7 +4882,7 @@ Do this ALWAYS, except for the above exceptions."
 ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
 ("0eeb01c2-6e31-46ad-96b8-319749f731d2" . "Philadelphia")
 ("7f1c8f3f-69a9-454a-8633-c3d3a628858b" . "Phoenix")
-					; Richmond, Virginia
+;; Richmond, Virginia
 ("afaa40c1-2e11-4a9b-9a33-ff0603e3e312" . "Richmond")
 ("82f3a697-ba65-404d-a1ed-360147af7d10" . "San Diego")
 ("c3d840b4-a3d2-4565-acdc-f918be73b3d9" . "San Mateo")
