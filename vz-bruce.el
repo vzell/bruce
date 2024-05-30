@@ -3101,6 +3101,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b4782f4b-5316-34a9-b261-60a295fb398c" . "A Change Is Gonna Come")
 ("415b61e7-d351-4348-bb72-cbb89efd9bf4" . "A Dustland Fairytale")
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Boy")
+("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Boy (Girl)")
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Girl")
 ("9173f10c-a5f3-4217-a4f9-a673086f3a5b" . "A Life Full of Rain")
 ("8727a75a-8d33-3a2c-912a-f57952773201" . "A Rainy Night in Soho")
@@ -4475,6 +4476,10 @@ Do this ALWAYS, except for the above exceptions."
 ("345881e6-c293-43d2-bf59-c9598efad3a9" . "The Disciples of Soul")
 ("7a606d62-de1f-412f-9d5b-57ab4c17b5bc" . "Stan Harrison")
 ("ea772005-b24c-4368-be0f-3b44e8fa8f36" . "Marc Ribler")
+("9b303c28-f0a0-4c76-8293-c97272f6e32c" . "Clark Gayton")
+("9afdf7a0-bc4e-4f3a-b024-0298e03ff51f" . "Ula Hedwig")
+("527312eb-17cf-433f-80d9-dba1a9205f10" . "Frank Pagano")
+("61b4bd56-32c0-4c8c-940e-cf0def53d723" . "Tommy Byrnes")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
