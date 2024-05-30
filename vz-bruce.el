@@ -1040,6 +1040,27 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/place/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-instruments ()
+  "Search for instruments in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (place (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc place mb-instruments))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/instrument/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-mb-urlify-gignote-areas ()
   "Search for areas in gignote and URLify."
   (interactive)
@@ -1114,6 +1135,7 @@ Do this ALWAYS, except for the above exceptions."
     (vz-mb-urlify-gignote-areas)
     (vz-mb-urlify-gignote-series)
     (vz-mb-urlify-gignote-labels)
+    (vz-mb-urlify-gignote-instruments)
     ))
 
 (defun vz-capitalize-first-char (&optional string)
@@ -1835,8 +1857,6 @@ Do this ALWAYS, except for the above exceptions."
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
 
 # Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
-# No set details known
-# Incomplete setlist
 "
 )
     (re-search-forward "^$")
@@ -1871,9 +1891,61 @@ Do this ALWAYS, except for the above exceptions."
 @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
 
-# Scheduled: 21:00 Local Start Time ??:?? / End Time ??:??
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
 # No set details known
 # Incomplete setlist
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
+;; August 7, 2002 - October 4, 2003 (120 shows)
+
+;; THE E STREET BAND
+;; Bruce Springsteen (vocals, guitar, harmonica, piano)
+;; Roy Bittan (piano, keyboards, accordion)
+;; Clarence Clemons (tenor and baritone saxophones, backing vocals, percussion)
+;; Danny Federici (organ, accordion, keyboards)
+;; Nils Lofgren (guitar, slide guitar, accordion, backing vocals)
+;; Patti Scialfa (backing vocals, acoustic guitar)
+;; Garry Tallent (bass)
+;; Steven Van Zandt (guitar, mandolin, backing vocals)
+;; Max Weinberg (drums)
+
+;; Soozie Tyrell (violin, backing vocals, percussion)
+
+(defun musicbrainz-surround-event-band-the-rising ()
+  "Surround event with artists and line for The Rising tour."
+  (interactive)
+  (save-excursion
+    (insert
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+# and
+@ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
 "
 )
     (re-search-forward "^$")
@@ -2144,6 +2216,8 @@ Do this ALWAYS, except for the above exceptions."
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1999)
+;; 2002-2003
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-the-rising)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
 
@@ -3062,6 +3136,7 @@ Do this ALWAYS, except for the above exceptions."
 ("31037967-3044-4022-9ee4-9bd37b4f7220" . "Baby I’ve Been Missing You")
 ("3b5dcdf2-b074-4bfe-8d59-88bd53953ffa" . "Baby Workout")
 ("5461f0e3-d640-3902-b8fe-5496922e9d2b" . "Baby, I Love You")
+("31037967-3044-4022-9ee4-9bd37b4f7220" . "Baby I’ve Been Missing You")
 ("59c21df2-f1a3-49af-98e8-30becab2a5ce" . "Baby, Please Don’t Go")
 ("4dc1b48e-4722-30a1-8743-53526e2b5621" . "Back Door Man")
 ("ca2d9839-82e6-30f7-b2f5-f1f3924e567b" . "Back in the U.S.A.")
@@ -3563,6 +3638,7 @@ Do this ALWAYS, except for the above exceptions."
 ("51a2e4ec-c9de-327a-a042-4d7f77185e7c" . "Redemption Day")
 ("20772796-ac5e-36fd-b247-7bee69aba5bc" . "Reelin’ and Rockin’")
 ("ec59051f-4a18-4da0-8b1c-65d32b4232db" . "Remember When the Music")
+("6aebc72e-c809-3c38-b3b4-70c834ae5de6" . "Rescue Me")
 ("ffd510c1-ebe5-447f-9bc1-b4731e4841df" . "Reservation Girl")
 ("62cd9af9-435f-3632-b885-f7d4685211a4" . "Respect")
 ("287d163c-1b99-3b42-8617-98e9ae690b69" . "Rhinestone Cowboy")
@@ -4296,6 +4372,7 @@ Do this ALWAYS, except for the above exceptions."
 ("07aebfa0-55d6-47e0-a284-12330e3eae0d" . "Rick Rubin")
 ("473c0979-030a-4524-8ff0-7b84aa733fd0" . "Ricky Ray Jackson")
 ("a0920ae6-2968-4f92-ac14-67448452bd18" . "Robbie Robertson")
+("4a931794-31a1-444b-bb86-3e483f84b20d" . "Robbin Thompson")
 ("5cc59119-95ca-415a-8a14-3eac45670afe" . "Robert De Niro")
 ("5613f03b-10a9-4556-b02c-27ef89be4e36" . "Robert Santelli")
 ("6b96e1da-02c0-4426-937e-3898e615455b" . "Robin Quivers")
@@ -4532,6 +4609,7 @@ Do this ALWAYS, except for the above exceptions."
 ("84761ad3-8637-4772-8d9a-b0ce15e8301f" . "Brian Mitchell")
 ("535f0c88-70ac-4486-8aea-6e2fbb34b16c" . "Ron Tooley")
 ("7051f147-0f98-4679-a929-0ca365de9793" . "Jessie Wagner")  ;; "Jessica Wagner‐Cowan" in MB
+("dbcc2052-7085-48ba-9c00-850b61978ada" . "Hank Ballard")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -4546,6 +4624,8 @@ Do this ALWAYS, except for the above exceptions."
 ;; Clarence Clemons
 ("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Big Man")
 ("7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133" . "Clarence")
+;; Danny Federici
+("94a88a40-8568-403e-86e6-8c01fd4b626a" . "Danny")
 ;; Ernest Carter
 ("2549e110-9933-4331-bd8d-a632f0cd639c" . "Ernest “Boom” Carter")
 ;; Garry Tallent
@@ -4678,6 +4758,8 @@ Do this ALWAYS, except for the above exceptions."
 ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
 ("0eeb01c2-6e31-46ad-96b8-319749f731d2" . "Philadelphia")
 ("7f1c8f3f-69a9-454a-8633-c3d3a628858b" . "Phoenix")
+					; Richmond, Virginia
+("afaa40c1-2e11-4a9b-9a33-ff0603e3e312" . "Richmond")
 ("82f3a697-ba65-404d-a1ed-360147af7d10" . "San Diego")
 ("c3d840b4-a3d2-4565-acdc-f918be73b3d9" . "San Mateo")
 ("6fa1c7da-6689-4cec-85f9-680f853e8a08" . "Scotland")
