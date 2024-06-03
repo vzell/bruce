@@ -2686,6 +2686,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b0dd8e8e-7c47-4301-a0e5-2afb36a8a2a8" . "I’ll Stand by You Always")
 ("9726937c-33f1-467c-bec5-93e3774e9212" . "I’ll Work for Your Love")
 ("eb6c37d4-86b4-4517-a526-4e8f44807f87" . "I’m Going Back")
+("a0d293af-5150-4285-b959-73a3d4f08990" . "I’m Going Back") ;; recorded in 1995
 ("a62078d1-6f5e-4034-9231-41e773321270" . "I’m Goin’ Back")
 ("0d640b42-dd07-30a4-8d7d-d6f18202fbfa" . "I’m Goin’ Down")
 ("bd5de48e-be11-4a36-977f-555cd38455f1" . "I’m Gonna Be There Tonight")
