@@ -997,6 +997,14 @@ Do this ALWAYS, except for the above exceptions."
 	       (cased (vz-title-case-region-or-line beg end))
 	       (artist (buffer-substring (+ beg 1) (+ end -1))))
 	  (progn
+	    (setq temp-fixartists mb-fixartists)
+	    (while temp-fixartists
+	      (setq fixartist (car temp-fixartists))
+	      (setq temp-fixartists (cdr temp-fixartists))
+	      (setq origartist (car fixartist))
+	      (if (string= artist origartist)
+		  (setq artist (cdr fixartist)))
+	      )
 	    (setq tw (rassoc artist mb-artists))
 	    (if tw
 		(progn
@@ -1028,6 +1036,27 @@ Do this ALWAYS, except for the above exceptions."
 		)))))
       (forward-line 1)
       )))
+
+(defun vz-mb-urlify-gignote-releases ()
+  "Search for releases in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (release (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc release mb-releases))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/release/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
 
 (defun vz-mb-urlify-gignote-release-groups ()
   "Search for release groups in gignote and URLify."
@@ -1160,22 +1189,37 @@ Do this ALWAYS, except for the above exceptions."
 	    (if tw
 		(progn
 		  (kill-region beg end)
-		  (insert (concat "[https://musicbrainz.org/labels/" (car tw) "|" (cdr tw) "]"))))
+		  (insert (concat "[https://musicbrainz.org/label/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
 (defun vz-mb-urlify-gignote ()
-  "Search for works and artists in gignote and URLify."
+  "Search for MB entities and other interesting things in gignote and URLify."
   (interactive)
-  (progn
-    (vz-mb-urlify-gignote-works)
-    (vz-mb-urlify-gignote-artists)
-    (vz-mb-urlify-gignote-release-groups)
-    (vz-mb-urlify-gignote-places)
-    (vz-mb-urlify-gignote-areas)
-    (vz-mb-urlify-gignote-series)
-    (vz-mb-urlify-gignote-labels)
-    (vz-mb-urlify-gignote-instruments)
-    ))
+  (save-excursion
+    (let ((beg (progn
+		 (beginning-of-line)
+		 (point)))
+	  (end (progn
+		 (end-of-line)
+		 (point))))
+      (replace-string-in-region "‘" "“" beg end))
+    (let ((beg (progn
+		 (beginning-of-line)
+		 (point)))
+	  (end (progn
+		 (end-of-line)
+		 (point))))
+      (replace-string-in-region "’" "”" beg end)))
+  (vz-mb-urlify-gignote-works)
+  (vz-mb-urlify-gignote-artists)
+  (vz-mb-urlify-gignote-releases)
+  (vz-mb-urlify-gignote-release-groups)
+  (vz-mb-urlify-gignote-places)
+  (vz-mb-urlify-gignote-areas)
+  (vz-mb-urlify-gignote-series)
+  (vz-mb-urlify-gignote-labels)
+  (vz-mb-urlify-gignote-instruments)
+  )
 
 (defun vz-capitalize-first-char (&optional string)
   "Capitalize only the first character of the input STRING."
@@ -4746,6 +4790,9 @@ Do this ALWAYS, except for the above exceptions."
 ("7051f147-0f98-4679-a929-0ca365de9793" . "Jessie Wagner")  ;; "Jessica Wagner‐Cowan" in MB
 ("dbcc2052-7085-48ba-9c00-850b61978ada" . "Hank Ballard")
 ("4d8afa16-4018-4ca8-8b5e-ede8f9314562" . "The Animals")
+("e7f5e782-cc1c-45c4-8326-88f793c472cf" . "Joe Spadafora")
+("85ee2f14-db0d-470c-ac62-1c35454dcc82" . "Peter Johnson & The Manic Depressives")
+("4d607ea0-91e4-4038-ae00-dd3a4a6a5251" . "Charles Cross")  ;; Charles R. Cross
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -4771,6 +4818,8 @@ Do this ALWAYS, except for the above exceptions."
 ("14472e26-9503-4c62-92a9-9bea28d4508c" . "Gordon \"Tex\" Vinyard")
 ;; Jake Clemons
 ("5c64226c-d673-4d23-a612-2bfb704edd66" . "Jake")
+;; Joe Spadafora
+("e7f5e782-cc1c-45c4-8326-88f793c472cf" . "Joe")
 ;; Marion Vinyard
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion")
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion Joy Vinyard")
@@ -4821,13 +4870,24 @@ Do this ALWAYS, except for the above exceptions."
    mb-artist-aliases
    ))
 
+(defvar mb-releases '(
+;; Bruce Springsteen
+("0b8a6600-2bbe-4a76-a88d-9143c1689efd" . "Introducing Rosie")
+("f9ff8195-2b9a-47e2-a91a-d71cd156116f" . "Live From Joe’s Place")
+("354f3b9d-21ea-4fb4-8215-c9e988d2d385" . "Second Set 1974")
+)
+  "Musicbrainz releases.")
+
 (defvar mb-release-groups '(
 ;; Bruce Springsteen
 ("3c39a076-8e52-38f2-8076-260d0672fb23" . "Born in the U.S.A.")
+("edce75c0-140b-35ed-a978-b014bebfc2df" . "Deep Down in the Vaults")
 ("c497fc44-ddaf-3cce-a9b4-bfec958a0f3c" . "Greetings From Asbury Park, N.J.")
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("324aee0c-36ec-35c1-9c93-b67a1d428037" . "Nebraska")
+("d6f929bd-871b-4a44-ace1-9d6760cd9b59" . "Odds & Sods")
 ("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
+("ac67669c-799c-4716-8d1f-861fe6274b9c" . "The Genuine Tracks: 1972–1996")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters XVI: Hollywood Hills Garage Tapes (Unreleased Masters, Volume I)")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters Hollywood Hills Garage Sessions")
 ("4b443e66-52a7-3cc9-a522-0dc64a6a51dc" . "The Wild, the Innocent & The E Street Shuffle")
@@ -4940,12 +5000,19 @@ Do this ALWAYS, except for the above exceptions."
 ("655fae6c-d5c1-42ba-926f-b81977b8f7d6" . "UBS Arena")
 ("5df4ac64-d016-4ecf-96b6-13c91aabaa00" . "White House")
 ("9bcf265f-5b31-4a2c-b31e-482c97c5e155" . "Windmill Lane Recording Studios")
+("53a7a4fe-57c1-4da0-be01-069ec8a2b14c" . "Joe’s Place")
 )
   "Musicbrainz places.")
 
 (defvar mb-labels '(
 ("b8d33bec-92cc-40d9-bd92-4eb089b401a9" . "CBS")
+("24eee387-decf-44af-94ee-0692b2b97180" . "Crystal Cat")  ;; Crystal Cat Records
 ("1a4ef578-2416-4275-aa7f-bbce0861dc8f" . "ACUM")  ;; Israeli rights society
+("d6b36275-d2b7-462f-89ae-cccee5ee49c6" . "E Street")  ;; E Street Records
+("288b79a7-1d50-4a27-8e61-a2780913b26d" . "Vintage Masters")
+("762c208c-210d-4e59-b46c-6f3558ce3a22" . "Godfather")  ;; The Godfatherecords
+("391f7e95-1812-4c9d-84c5-fb4390c115e4" . "Scorpio")
+("838bbab0-fc9b-4403-b4ca-e152f5831118" . "B Street")  ;; B Street Records
 )
   "Musicbrainz labels.")
 
@@ -4999,6 +5066,14 @@ Do this ALWAYS, except for the above exceptions."
 ;; instruments to fix
 ("Organ" . "organ")
 ("Piano" . "piano")
+))
+
+(defvar mb-fixartists  '(
+;; artists to fix
+("Band" . "band")
+("Peter Johnson & the Manic Depressives" . "Peter Johnson & The Manic Depressives")
+("The Band" . "the band")
+("Live From Joe”s Place" . "Live From Joe’s Place")
 ))
 
 (defvar brucebase-studio-sessions-list '(
