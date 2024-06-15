@@ -1192,33 +1192,63 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/label/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-other-urls ()
+  "Search for other URLs in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (other (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq temp-fixothers mb-fixothers)
+	    (while temp-fixothers
+	      (setq fixother (car temp-fixothers))
+	      (setq temp-fixothers (cdr temp-fixothers))
+	      (setq origtitle (car fixother))
+	      (if (string= other origtitle)
+		  (setq other (cdr fixother)))
+	      )
+	    (setq tw (rassoc other other-urls))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-mb-urlify-gignote ()
   "Search for MB entities and other interesting things in gignote and URLify."
   (interactive)
-  (save-excursion
-    (let ((beg (progn
-		 (beginning-of-line)
-		 (point)))
-	  (end (progn
-		 (end-of-line)
-		 (point))))
-      (replace-string-in-region "‘" "“" beg end))
-    (let ((beg (progn
-		 (beginning-of-line)
-		 (point)))
-	  (end (progn
-		 (end-of-line)
-		 (point))))
-      (replace-string-in-region "’" "”" beg end)))
+  ;; (save-excursion
+  ;;   (let ((beg (progn
+  ;; 		 (beginning-of-line)
+  ;; 		 (point)))
+  ;; 	  (end (progn
+  ;; 		 (end-of-line)
+  ;; 		 (point))))
+  ;;     (replace-string-in-region "‘" "“" beg end))
+  ;;   (let ((beg (progn
+  ;; 		 (beginning-of-line)
+  ;; 		 (point)))
+  ;; 	  (end (progn
+  ;; 		 (end-of-line)
+  ;; 		 (point))))
+  ;;     (replace-string-in-region "’" "”" beg end)))
+  (vz-mb-urlify-gignote-release-groups)  ;; must be first
   (vz-mb-urlify-gignote-works)
   (vz-mb-urlify-gignote-artists)
   (vz-mb-urlify-gignote-releases)
-  (vz-mb-urlify-gignote-release-groups)
   (vz-mb-urlify-gignote-places)
   (vz-mb-urlify-gignote-areas)
   (vz-mb-urlify-gignote-series)
   (vz-mb-urlify-gignote-labels)
   (vz-mb-urlify-gignote-instruments)
+  (vz-mb-urlify-gignote-other-urls)
   )
 
 (defun vz-capitalize-first-char (&optional string)
