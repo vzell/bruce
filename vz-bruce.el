@@ -1065,19 +1065,40 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (save-excursion
       (while
-	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	  (re-search-forward "''“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
 	       (cased (vz-title-case-region-or-line beg end))
-	       (release-group (buffer-substring (+ beg 1) (+ end -1))))
+	       (release-group (buffer-substring (+ beg 3) (+ end -1))))
 	  (progn
 	    (setq tw (rassoc release-group mb-release-groups))
 	    (if tw
 		(progn
 		  (kill-region beg end)
-		  (insert (concat "[https://musicbrainz.org/release-group/" (car tw) "|" (cdr tw) "]"))))
+		  (insert (concat "''[https://musicbrainz.org/release-group/" (car tw) "|" (cdr tw) "]"))))
             ))))))
+
+;; (defun vz-mb-urlify-gignote-release-groups ()
+;;   "Search for release groups in gignote and URLify."
+;;   (interactive)
+;;   (progn
+;;     (beginning-of-line)
+;;     (save-excursion
+;;       (while
+;; 	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+;; 	(let* (
+;; 	       (beg (match-beginning 0))
+;; 	       (end (match-end 0))
+;; 	       (cased (vz-title-case-region-or-line beg end))
+;; 	       (release-group (buffer-substring (+ beg 1) (+ end -1))))
+;; 	  (progn
+;; 	    (setq tw (rassoc release-group mb-release-groups))
+;; 	    (if tw
+;; 		(progn
+;; 		  (kill-region beg end)
+;; 		  (insert (concat "[https://musicbrainz.org/release-group/" (car tw) "|" (cdr tw) "]"))))
+;;             ))))))
 
 (defun vz-mb-urlify-gignote-places ()
   "Search for places in gignote and URLify."
