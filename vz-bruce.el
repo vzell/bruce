@@ -2380,7 +2380,7 @@ Do this ALWAYS, except for the above exceptions."
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1999)
 ;; 2002-2003
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-the-rising)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-the-rising)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
 
@@ -3819,6 +3819,7 @@ Do this ALWAYS, except for the above exceptions."
 ("373790c8-380d-3236-b591-837a40336595" . "Rock Me Baby")
 ("dc896a9f-3844-3437-b436-fd0fd6aa8848" . "Rock and Roll Music")
 ("5b31460f-26a9-3e90-b0a9-6adcf8d1fba9" . "Rockin’ All Over the World")
+("5b31460f-26a9-3e90-b0a9-6adcf8d1fba9" . "Rockin” All Over The World")  ;; workaround
 ("ef4f1a6d-2cf7-39f4-889d-7911f4e7f725" . "Rockin’ Robin")
 ("a398c48d-dfa7-32ae-9f19-04140d39fd9e" . "Rockin’ in the Free World")
 ("2c010641-988e-36cf-a03d-ed3a8c0a98e3" . "Rocky Mountain Way")
@@ -4793,6 +4794,8 @@ Do this ALWAYS, except for the above exceptions."
 ("e7f5e782-cc1c-45c4-8326-88f793c472cf" . "Joe Spadafora")
 ("85ee2f14-db0d-470c-ac62-1c35454dcc82" . "Peter Johnson & The Manic Depressives")
 ("4d607ea0-91e4-4038-ae00-dd3a4a6a5251" . "Charles Cross")  ;; Charles R. Cross
+("4dca4bb2-23ba-4103-97e6-5810311db33a" . "Curtis Mayfield")
+("d8df96ae-8fcf-4997-b3e6-e5d1aaf0f69e" . "The Temptations")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -4852,8 +4855,9 @@ Do this ALWAYS, except for the above exceptions."
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie Van Zandt")
 ;; The E Street Band
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "E Street Band")
-("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The Band")
-("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "Band")
+("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "the E Street")
+("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "the band")
+("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "band")
 ;; The E Street Horns
 ("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "Horn Section")
 ;; The Wailers
@@ -4874,25 +4878,33 @@ Do this ALWAYS, except for the above exceptions."
 ;; Bruce Springsteen
 ("0b8a6600-2bbe-4a76-a88d-9143c1689efd" . "Introducing Rosie")
 ("f9ff8195-2b9a-47e2-a91a-d71cd156116f" . "Live From Joe’s Place")
+("f9ff8195-2b9a-47e2-a91a-d71cd156116f" . "Live From Joe”s Place")   ;; workaround
 ("354f3b9d-21ea-4fb4-8215-c9e988d2d385" . "Second Set 1974")
+("9a420f3a-18a8-49f5-aafe-418c26c464dd" . "The Inner‐View")
+("7a72f22a-d92d-4b2b-abcd-747df0778edd" . "The Uber Series #21: Joe’s Place – 1/6/74")
 )
   "Musicbrainz releases.")
 
 (defvar mb-release-groups '(
-;; Bruce Springsteen
-("3c39a076-8e52-38f2-8076-260d0672fb23" . "Born in the U.S.A.")
-("edce75c0-140b-35ed-a978-b014bebfc2df" . "Deep Down in the Vaults")
+;;; Bruce Springsteen
+;; Official
 ("c497fc44-ddaf-3cce-a9b4-bfec958a0f3c" . "Greetings From Asbury Park, N.J.")
-("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
+("4b443e66-52a7-3cc9-a522-0dc64a6a51dc" . "The Wild, the Innocent & The E Street Shuffle")
+("b613123b-a234-3f48-9c45-e05bf4e6b9e7" . "Darkness on the Edge of Town")
+("39b22944-7503-3937-8bba-09b17281cc6a" . "Born to Run")
 ("324aee0c-36ec-35c1-9c93-b67a1d428037" . "Nebraska")
+("3c39a076-8e52-38f2-8076-260d0672fb23" . "Born in the U.S.A.")
+("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
+("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
+;; Compilation
+("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
+;; Bootlegs
+("edce75c0-140b-35ed-a978-b014bebfc2df" . "Deep Down in the Vaults")
 ("d6f929bd-871b-4a44-ace1-9d6760cd9b59" . "Odds & Sods")
 ("d6c1b942-edc7-4bca-bd34-6c43760272af" . "Only the Strong Survive")
 ("ac67669c-799c-4716-8d1f-861fe6274b9c" . "The Genuine Tracks: 1972–1996")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters XVI: Hollywood Hills Garage Tapes (Unreleased Masters, Volume I)")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters Hollywood Hills Garage Sessions")
-("4b443e66-52a7-3cc9-a522-0dc64a6a51dc" . "The Wild, the Innocent & The E Street Shuffle")
-("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
-("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
 ;; The Gaslight Anthem
 ("88e34862-743e-4d48-bdc0-0399c2b20f73" . "History Books")
 ;; The Rolling Stones
@@ -5001,10 +5013,13 @@ Do this ALWAYS, except for the above exceptions."
 ("5df4ac64-d016-4ecf-96b6-13c91aabaa00" . "White House")
 ("9bcf265f-5b31-4a2c-b31e-482c97c5e155" . "Windmill Lane Recording Studios")
 ("53a7a4fe-57c1-4da0-be01-069ec8a2b14c" . "Joe’s Place")
+("f23acad7-c5d9-433c-929f-46ab4efc68cc" . "Apollo Theater")
 )
   "Musicbrainz places.")
 
 (defvar mb-labels '(
+("3eb1cb63-b6b5-49a8-be3a-25ed2e38bb7c" . "Bruce Tree Service")
+("3eb1cb63-b6b5-49a8-be3a-25ed2e38bb7c" . "BTS")
 ("b8d33bec-92cc-40d9-bd92-4eb089b401a9" . "CBS")
 ("24eee387-decf-44af-94ee-0692b2b97180" . "Crystal Cat")  ;; Crystal Cat Records
 ("1a4ef578-2416-4275-aa7f-bbce0861dc8f" . "ACUM")  ;; Israeli rights society
@@ -5017,10 +5032,22 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz labels.")
 
 (defvar mb-instruments '(
+("04a21d03-535a-4ace-9098-12013867b8e5" . "fiddle")
+("63021302-86cd-4aee-80df-2270d54f4978" . "guitar")
+("63e37f1a-30b6-4746-8a49-dfb55be3cdd1" . "harmonica")
 ("55a37f4f-39a4-45a7-851d-586569985519" . "organ")
 ("b3eac5f9-7859-4416-ac39-7154e2e8d348" . "piano")
 )
-  "Musicbrainz labels.")
+  "Musicbrainz instruments.")
+
+(defvar other-urls '(
+("https://en.wikipedia.org/wiki/E_Street_Radio" . "E Street Radio")
+("https://en.wikipedia.org/wiki/Harlem" . "Harlem")
+("https://en.wikipedia.org/wiki/Sirius_XM" . "SiriusXM Radio")
+("https://en.wikipedia.org/wiki/Vocal_harmony" . "harmony vocals")
+("https://en.wikipedia.org/wiki/Rapping" . "rap vocals")
+)
+  "Other URLs.")
 
 (defvar mb-fixworks '(
 ;; special work titles to fix
@@ -5064,6 +5091,9 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-fixinstruments  '(
 ;; instruments to fix
+("Fiddle" . "fiddle")
+("Guitar" . "guitar")
+("Harmonica" . "harmonica")
 ("Organ" . "organ")
 ("Piano" . "piano")
 ))
@@ -5073,7 +5103,22 @@ Do this ALWAYS, except for the above exceptions."
 ("Band" . "band")
 ("Peter Johnson & the Manic Depressives" . "Peter Johnson & The Manic Depressives")
 ("The Band" . "the band")
+("The E Street" . "the E Street")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
+))
+
+(defvar mb-fixartists  '(
+;; artists to fix
+("Band" . "band")
+("Peter Johnson & the Manic Depressives" . "Peter Johnson & The Manic Depressives")
+("The Band" . "the band")
+("Live From Joe”s Place" . "Live From Joe’s Place")
+))
+
+(defvar mb-fixothers '(
+;; other stuff to fix
+("Harmony Vocals" . "harmony vocals")
+("Rap Vocals" . "rap vocals")
 ))
 
 (defvar brucebase-studio-sessions-list '(
