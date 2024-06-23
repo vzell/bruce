@@ -1044,18 +1044,18 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (save-excursion
       (while
-	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	  (re-search-forward "''“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
 	       (cased (vz-title-case-region-or-line beg end))
-	       (release (buffer-substring (+ beg 1) (+ end -1))))
+	       (release (buffer-substring (+ beg 3) (+ end -1))))
 	  (progn
 	    (setq tw (rassoc release mb-releases))
 	    (if tw
 		(progn
 		  (kill-region beg end)
-		  (insert (concat "[https://musicbrainz.org/release/" (car tw) "|" (cdr tw) "]"))))
+		  (insert (concat "''[https://musicbrainz.org/release/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
 (defun vz-mb-urlify-gignote-release-groups ()
@@ -1078,27 +1078,6 @@ Do this ALWAYS, except for the above exceptions."
 		  (kill-region beg end)
 		  (insert (concat "''[https://musicbrainz.org/release-group/" (car tw) "|" (cdr tw) "]"))))
             ))))))
-
-;; (defun vz-mb-urlify-gignote-release-groups ()
-;;   "Search for release groups in gignote and URLify."
-;;   (interactive)
-;;   (progn
-;;     (beginning-of-line)
-;;     (save-excursion
-;;       (while
-;; 	  (re-search-forward "“[^”]*”" (point-at-eol) t)
-;; 	(let* (
-;; 	       (beg (match-beginning 0))
-;; 	       (end (match-end 0))
-;; 	       (cased (vz-title-case-region-or-line beg end))
-;; 	       (release-group (buffer-substring (+ beg 1) (+ end -1))))
-;; 	  (progn
-;; 	    (setq tw (rassoc release-group mb-release-groups))
-;; 	    (if tw
-;; 		(progn
-;; 		  (kill-region beg end)
-;; 		  (insert (concat "[https://musicbrainz.org/release-group/" (car tw) "|" (cdr tw) "]"))))
-;;             ))))))
 
 (defun vz-mb-urlify-gignote-places ()
   "Search for places in gignote and URLify."
@@ -1261,9 +1240,9 @@ Do this ALWAYS, except for the above exceptions."
   ;; 		 (point))))
   ;;     (replace-string-in-region "’" "”" beg end)))
   (vz-mb-urlify-gignote-release-groups)  ;; must be first
+  (vz-mb-urlify-gignote-releases)  ;; must be at the beginning
   (vz-mb-urlify-gignote-works)
   (vz-mb-urlify-gignote-artists)
-  (vz-mb-urlify-gignote-releases)
   (vz-mb-urlify-gignote-places)
   (vz-mb-urlify-gignote-areas)
   (vz-mb-urlify-gignote-series)
@@ -1901,6 +1880,34 @@ Do this ALWAYS, except for the above exceptions."
 @ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
 @ [4401f986-51b8-407b-a898-500543df9dae|David Sancious]
 @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+
+# No set details known
+# Incomplete setlist
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
+(defun musicbrainz-surround-event-steel-mill-1970 ()
+  "Surround event with artists and line, Steel Mill 1970."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [cd9053ff-7870-4c7e-a03c-d7aa8f6fa9f3|Steel Mill]
+# with
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
 @ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 
 # No set details known
@@ -4706,6 +4713,10 @@ Do this ALWAYS, except for the above exceptions."
 ("d6a76a52-7295-4afc-9490-6b3185e4c279" . "Paul Wickens")
 ("8ddaf563-9a5d-4891-ad3c-b1576f4038f4" . "Everett Bradley")
 ("70ac2314-d7d8-4435-b56c-9bad9a516642" . "Eric Burdon")
+("66322fcf-bb51-4fb4-a4ba-f813ccef5c5b" . "Bystander")
+("7e6c3926-c6df-4d38-96ce-2ab4ec696e91" . "Andy Kelly")
+("e2c81c88-c9d1-4b19-80f8-9c82cc297366" . "Bucky Naughton")
+("7934b1d3-d9ef-4670-b55b-1c95f0f8489c" . "Stan Steele")  ;; Stanley Steele
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -4847,6 +4858,13 @@ Do this ALWAYS, except for the above exceptions."
 ("4d607ea0-91e4-4038-ae00-dd3a4a6a5251" . "Charles Cross")  ;; Charles R. Cross
 ("4dca4bb2-23ba-4103-97e6-5810311db33a" . "Curtis Mayfield")
 ("d8df96ae-8fcf-4997-b3e6-e5d1aaf0f69e" . "The Temptations")
+("7aa120cb-47ef-4229-8b63-c283d9143146" . "Jodi")
+("6981deb5-39b8-46a0-a81f-9549a2dc3f5f" . "Mike Weaver")
+("4e04150b-7c5e-4d4f-bb8c-c2a3695222cd" . "Thomas Kiely")
+("442c8cb8-a42f-48b4-8288-9589a598f076" . "Marlo Mays & the Stingers")
+("0601ce07-2a38-41ca-8cf2-89f4341c7d8f" . "Mercy Flight")
+("87f7be28-2dfc-4db1-af29-39fd001e11de" . "Russell Clem")
+("b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d" . "The Beatles")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5035,6 +5053,7 @@ Do this ALWAYS, except for the above exceptions."
 ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
 ("afff1a94-a98b-4322-8874-3148139ab6da" . "Vienna")
 ("8297708c-5743-47d6-a5ac-f40a41c49ad9" . "Wales")
+("12c3b82e-fcab-4219-9bd5-792089d8280e" . "Barcelona")
 )
   "Musicbrainz areas.")
 
@@ -5065,6 +5084,7 @@ Do this ALWAYS, except for the above exceptions."
 ("9bcf265f-5b31-4a2c-b31e-482c97c5e155" . "Windmill Lane Recording Studios")
 ("53a7a4fe-57c1-4da0-be01-069ec8a2b14c" . "Joe’s Place")
 ("f23acad7-c5d9-433c-929f-46ab4efc68cc" . "Apollo Theater")
+("3a6f24e1-1a97-4e91-8f30-f405dea111e1" . "Xanadu")
 )
   "Musicbrainz places.")
 
@@ -5083,6 +5103,8 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz labels.")
 
 (defvar mb-instruments '(
+("6505f98c-f698-4406-8bf4-8ca43d05c36f" . "bass")
+("12092505-6ee1-46af-a15a-b5b468b6b155" . "drums")
 ("04a21d03-535a-4ace-9098-12013867b8e5" . "fiddle")
 ("63021302-86cd-4aee-80df-2270d54f4978" . "guitar")
 ("63e37f1a-30b6-4746-8a49-dfb55be3cdd1" . "harmonica")
@@ -5096,7 +5118,12 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Harlem" . "Harlem")
 ("https://en.wikipedia.org/wiki/Sirius_XM" . "SiriusXM Radio")
 ("https://en.wikipedia.org/wiki/Vocal_harmony" . "harmony vocals")
+("https://en.wikipedia.org/wiki/Singing" . "vocals")
+("https://en.wikipedia.org/wiki/Singing" . "vocalist")
 ("https://en.wikipedia.org/wiki/Rapping" . "rap vocals")
+("https://en.wikipedia.org/wiki/Drummer" . "drummer")
+("https://en.wikipedia.org/wiki/Guitarist" . "guitarist")
+("https://en.wikipedia.org/wiki/Keyboardist" . "keyboardist")
 )
   "Other URLs.")
 
@@ -5128,6 +5155,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Paradise by the ’’c’’" . "Paradise by the “C”")
 ("Paradise by the &Quot;C&Quot;" . "Paradise by the “C”")
 ("Peg O’ My Heart" . "Peg o’ My Heart")
+("Kt-88" . "KT‐88")
 ("Kt‐88" . "KT‐88")
 ("Sociedade Alternativa" . "Sociedade alternativa")
 ("Sólo Le Pido a Dios" . "Sólo le pido a Dios")
@@ -5142,7 +5170,9 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-fixinstruments  '(
 ;; instruments to fix
-("Fiddle" . "fiddle")
+("Bass" . "bass")
+("Piano" . "piano")
+("Drums" . "drums")
 ("Guitar" . "guitar")
 ("Harmonica" . "harmonica")
 ("Organ" . "organ")
@@ -5170,6 +5200,11 @@ Do this ALWAYS, except for the above exceptions."
 ;; other stuff to fix
 ("Harmony Vocals" . "harmony vocals")
 ("Rap Vocals" . "rap vocals")
+("Vocalist" . "vocalist")
+("Vocals" . "vocals")
+("Drummer" . "drummer")
+("Guitarist" . "guitarist")
+("Keyboardist" . "keyboardist")
 ))
 
 (defvar brucebase-studio-sessions-list '(
