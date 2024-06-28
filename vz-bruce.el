@@ -1988,6 +1988,52 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+;; October 3, 1980 - September 14, 1981 (138 shows)
+
+;; THE E STREET BAND
+;; Bruce Springsteen (vocals, guitar, harmonica)
+;; Roy Bittan (piano, keyboards)
+;; Clarence Clemons (tenor and baritone saxophones, backing vocals, percussion)
+;; Danny Federici (organ, accordion, keyboards)
+;; Garry Tallent (bass, percussion)
+;; Steven Van Zandt (guitar, backing vocals)
+;; Max Weinberg (drums)
+
+(defun musicbrainz-surround-event-band-1980 ()
+  "Surround event with artists and line for 1980 tour."
+  (interactive)
+  (save-excursion
+    (insert
+"= [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band-1999 ()
   "Surround event with artists and line for 1999 tour."
   (interactive)
@@ -4211,6 +4257,7 @@ Do this ALWAYS, except for the above exceptions."
 ("99edc495-dcd3-41b4-8051-d9589673d69d" . "Loves Glory")
 ("d4bbeea9-98ed-376d-9d4e-0a33e179a5f2" . "Message in a Bottle")
 ("d440df8c-77be-360c-9661-1d00aecf318b" . "Movin’ Out (Anthony’s Song)")
+("6fd787db-6b7b-411b-ade6-4034603f7fd9" . "Pain in My Heart")
 ("499725b0-2ebb-4735-91ba-bfcdce09ccdd" . "Peg o’ My Heart")
 ("8c44720a-1bba-3009-a3e3-6bc69f88cb43" . "Rag Mama Rag")
 ("fa4eb7a5-7922-4ea0-a451-0e9a16cb6fa0" . "Revival")
