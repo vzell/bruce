@@ -4912,6 +4912,9 @@ Do this ALWAYS, except for the above exceptions."
 ("0601ce07-2a38-41ca-8cf2-89f4341c7d8f" . "Mercy Flight")
 ("87f7be28-2dfc-4db1-af29-39fd001e11de" . "Russell Clem")
 ("b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d" . "The Beatles")
+("cdaf7932-ab05-4f71-8721-104da6e6b8d0" . "Benny Sings")
+("45994334-1e7e-4fc2-a814-e069f28f59b3" . "Black Box Revelation")
+("231ff972-4e8e-4157-95e2-12f963cb478c" . "Seasick Steve")
 )
   "Brucebase artists mentioned in gignotes.")
 
