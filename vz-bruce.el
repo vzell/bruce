@@ -2034,6 +2034,47 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-1992/3-world-tour-band ()
+  "Surround event with artists and line, 1992-1993 World Tour Band."
+  (interactive)
+  (save-excursion
+    (insert
+"== [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# and
+@ [7bef92eb-f2b1-4790-935a-6e411eff406e|The 1992-93 World Tour Band]
+# with
+@ [64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56|Zack Alford]
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [98459b46-1fdc-4f83-ad96-f578ca0057c9|Gia Ciambotti]
+@ [2a1d2c80-84d3-4e34-b860-498d66302e65|Carol Dennis]
+@ [345bd2f6-29aa-4457-90fe-e736b5eb47d7|Shane Fontayne]
+@ [07ddd361-0f2a-4819-970d-c8370deeac11|Cleopatra Kennedy]
+@ [dd891d52-e0f1-4671-93d6-7be3ab19f3b9|Bobby King]
+@ [7e26152e-9b87-46c5-a3ce-399cc9c4c571|Angel Rogers]
+@ [919bc11f-4fdd-41fd-8570-11acbd4cc03f|Tommy Sims]
+@ [93dce18b-13ca-4118-9fa1-af92e8e3d8ac|Crystal Taliefero]
+
+
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+# No set details known
+# Incomplete setlist
+# No handwritten or printed setlist available
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band-1999 ()
   "Surround event with artists and line for 1999 tour."
   (interactive)
@@ -2417,47 +2458,6 @@ Do this ALWAYS, except for the above exceptions."
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
 
 # Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
-"
-)
-    (re-search-forward "^$")
-    (insert
-"
---------------------------------------------------------------------------------
-
-"
-)
-    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
-    (beginning-of-line)
-    (recenter-top-bottom)
-    ))
-
-(defun musicbrainz-surround-event-1992/3-world-tour-band ()
-  "Surround event with artists and line, 1992-193 World Tour Band."
-  (interactive)
-  (save-excursion
-    (insert
-"== [|YouTube Playlist] ==
-
-@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
-# and
-@ [7bef92eb-f2b1-4790-935a-6e411eff406e|The 1992-93 World Tour Band]
-# with
-@ [64a6d00b-f62e-4f2c-bbfe-a9b15e4cee56|Zack Alford]
-@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
-@ [98459b46-1fdc-4f83-ad96-f578ca0057c9|Gia Ciambotti]
-@ [2a1d2c80-84d3-4e34-b860-498d66302e65|Carol Dennis]
-@ [345bd2f6-29aa-4457-90fe-e736b5eb47d7|Shane Fontayne]
-@ [07ddd361-0f2a-4819-970d-c8370deeac11|Cleopatra Kennedy]
-@ [dd891d52-e0f1-4671-93d6-7be3ab19f3b9|Bobby King]
-@ [7e26152e-9b87-46c5-a3ce-399cc9c4c571|Angel Rogers]
-@ [919bc11f-4fdd-41fd-8570-11acbd4cc03f|Tommy Sims]
-@ [93dce18b-13ca-4118-9fa1-af92e8e3d8ac|Crystal Taliefero]
-
-
-# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
-# No set details known
-# Incomplete setlist
-# No handwritten or printed setlist available
 "
 )
     (re-search-forward "^$")
