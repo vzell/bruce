@@ -1258,7 +1258,7 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (save-excursion
       (while
-	  (re-search-forward "[0-9a-z()&?_-]+" (point-at-eol) t)
+	  (re-search-forward "[0-9a-zß()&?+_.-]+" (point-at-eol) t)
 	(progn
 	  (delete-char 1)
 	  (open-line 1)
@@ -1272,7 +1272,7 @@ Do this ALWAYS, except for the above exceptions."
     (beginning-of-line)
     (save-excursion
       (while
-	  (re-search-forward "[a-z0-9()&?_-]+" (point-at-eol) t)
+	  (re-search-forward "[0-9a-zß()&?+_.-]+" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
@@ -1301,7 +1301,7 @@ Do this ALWAYS, except for the above exceptions."
     (let ((bds (bounds-of-thing-at-point 'paragraph)))
       (progn
 	(sort-lines nil (car bds) (cdr bds))
-	(if (not (looking-at "^[a-z0-9()&?_-]"))
+	(if (not (looking-at "^[0-9a-zß()&?+_.-]"))
 	    (forward-line))
 	)))
 
