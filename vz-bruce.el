@@ -4338,6 +4338,11 @@ Do this ALWAYS, except for the above exceptions."
 ("0009262c-a842-4463-9ca2-1e08563193bf" . "Here Comes the Bride")
 ))
 
+;; Brucebase songs played by artists other than Bruce on Springsteen events
+(defvar mb-brucebase-songlist-non-bruce '(
+("acce2b0f-2802-4ed1-bda1-ebc6c4ca2190" . "Lady of Spain")
+))
+
 ;; The Bruce Springsteen Band / Steel Mill
 (defvar mb-brucebase-steelmill-works '(
 ("f8388fdf-389c-482a-8758-6e81b51decaa" . "Full of Love")
@@ -4367,6 +4372,7 @@ Do this ALWAYS, except for the above exceptions."
 		mb-brucebase-songlist-missing-works
 		mb-brucebase-steelmill-works
 		mb-brucebase-songlist-other-works
+		mb-brucebase-songlist-non-bruce
 		))
 
 (defvar mb-artists-relation '(
@@ -4764,6 +4770,15 @@ Do this ALWAYS, except for the above exceptions."
 ("7e6c3926-c6df-4d38-96ce-2ab4ec696e91" . "Andy Kelly")
 ("e2c81c88-c9d1-4b19-80f8-9c82cc297366" . "Bucky Naughton")
 ("7934b1d3-d9ef-4670-b55b-1c95f0f8489c" . "Stan Steele")  ;; Stanley Steele
+("de5262ae-cc3d-4845-98a0-710a68c15553" . "Daniël")
+("75167b8b-44e4-407b-9d35-effe87b223cf" . "Neil Young")
+("51b8affc-7b64-4155-b01f-ced9b5e2d012" . "Pegi Young")
+("46a782ea-4308-476b-abd1-a91b197f3037" . "Crosby, Stills, Nash & Young")
+("e90f9815-221d-4e10-8675-e75c07988113" . "David Crosby")
+("2ed8ecda-5bb9-4d9f-8c99-0bf9b85b3624" . "Graham Nash")
+("b2c2d4fe-8c1e-44ec-8be6-ff500e105a90" . "Don Henley")
+("81e2f4b1-4b48-4bdb-9717-4180e0f1ebc2" . "J.D. Souther")
+("5ca3f318-d028-4151-ac73-78e2b2d6cdcc" . "Tom Petty")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -4915,6 +4930,7 @@ Do this ALWAYS, except for the above exceptions."
 ("cdaf7932-ab05-4f71-8721-104da6e6b8d0" . "Benny Sings")
 ("45994334-1e7e-4fc2-a814-e069f28f59b3" . "Black Box Revelation")
 ("231ff972-4e8e-4157-95e2-12f963cb478c" . "Seasick Steve")
+("13dc1600-baca-4aaf-beee-fb000b66ae24" . "Donald Trump")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -4942,6 +4958,9 @@ Do this ALWAYS, except for the above exceptions."
 ("5c64226c-d673-4d23-a612-2bfb704edd66" . "Jake")
 ;; Joe Spadafora
 ("e7f5e782-cc1c-45c4-8326-88f793c472cf" . "Joe")
+;; Neil Young
+("75167b8b-44e4-407b-9d35-effe87b223cf" . "Neil")
+("75167b8b-44e4-407b-9d35-effe87b223cf" . "Young")
 ;; Marion Vinyard
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion")
 ("d0d37e37-fcc5-425b-ae08-200f6a537e59" . "Marion Joy Vinyard")
@@ -4949,6 +4968,7 @@ Do this ALWAYS, except for the above exceptions."
 ("9dd447fe-6c6b-4f27-b2ef-6f97550d0fad" . "Michael Mike Rasta Batlan")
 ;; Nils Lofgren
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Nils")
+("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Lofgren")
 ;; Pamela Springsteen
 ("23a3f71a-d1ce-424d-80c1-27598585f9fd" . "Pamela")
 ;; Patti Scialfa
@@ -5057,6 +5077,7 @@ Do this ALWAYS, except for the above exceptions."
 ("10fa66f7-aa08-4823-8af8-52108f350a5a" . "Asbury Park")
 ("caac77d1-a5c8-3e6e-8e27-90b44dcc1446" . "Austria")
 ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
+("34268a86-54ec-487d-afa3-1afe3266a382" . "Bergen")
 ("ae0110b6-13d4-4998-9116-5b926287aa23" . "California")
 ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
 ("e0e3c82a-aea8-48d3-beda-9e587db0b969" . "Copenhagen")
@@ -5066,6 +5087,7 @@ Do this ALWAYS, except for the above exceptions."
 ("9d5dd675-3cf4-4296-9e39-67865ebee758" . "England")
 ("89a675c2-3e37-3518-b83c-418bad59a85a" . "Europe")
 ("89a675c2-3e37-3518-b83c-418bad59a85a" . "European")
+("6a264f94-6ff1-30b1-9a81-41f7bfabd616" . "Finland")
 ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
 ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
@@ -5174,6 +5196,8 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Drummer" . "drummer")
 ("https://en.wikipedia.org/wiki/Guitarist" . "guitarist")
 ("https://en.wikipedia.org/wiki/Keyboardist" . "keyboardist")
+("https://en.wikipedia.org/wiki/Bridge_School" . "Bridge School")
+("https://en.wikipedia.org/wiki/Bridge_School_Benefit" . "Bridge School Benefit")
 )
   "Other URLs.")
 
