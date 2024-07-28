@@ -1251,6 +1251,60 @@ Do this ALWAYS, except for the above exceptions."
   (vz-mb-urlify-gignote-other-urls)
   )
 
+(defun vz-bb-tags-unflatten ()
+  "Unflatten tag list."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "[0-9a-z()&?_-]+" (point-at-eol) t)
+	(progn
+	  (delete-char 1)
+	  (open-line 1)
+	  (forward-line)
+          )))))
+
+(defun vz-bb-tags-expand ()
+  "Expand tag list and make the abbreviated tags consistent with the long song names."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "[a-z0-9()&?_-]+" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (tag (buffer-substring beg end)))
+	  (progn
+	    (setq temp-abbrevs bb-abbrevs)
+	    (while temp-abbrevs
+	      (setq abbrev (car temp-abbrevs))
+	      (setq temp-abbrevs (cdr temp-abbrevs))
+	      (setq origtag (car abbrev))
+	      (if (string= tag origtag)
+		  (setq tag (cdr abbrev)))
+	      )
+	    (setq tw (rassoc tag bb-abbrevs))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (cdr tw))))
+            ))))))
+
+(defun vz-bb-tags-expand-and-unflatten ()
+  "Unflatten tag list and make the abbreviated tags consistent with the long song names."
+  (interactive)
+    (vz-bb-tags-expand)
+    (vz-bb-tags-unflatten)
+    (let ((bds (bounds-of-thing-at-point 'paragraph)))
+      (progn
+	(sort-lines nil (car bds) (cdr bds))
+	(if (not (looking-at "^[a-z0-9()&?_-]"))
+	    (forward-line))
+	)))
+
 (defun vz-capitalize-first-char (&optional string)
   "Capitalize only the first character of the input STRING."
   (if (and string (> (length string) 0))
@@ -5279,6 +5333,15 @@ Do this ALWAYS, except for the above exceptions."
 ("Drummer" . "drummer")
 ("Guitarist" . "guitarist")
 ("Keyboardist" . "keyboardist")
+))
+
+(defvar bb-abbrevs  '(
+;; song title abbreviations to expand to their full equivalent
+("10th" . "tenthavenuefreezeout")
+("arac" . "adamraisedacain")
+("btn" . "becausethenight")
+("btr" . "borntorun")
+("ditd" . "dancinginthedark")
 ))
 
 (defvar brucebase-studio-sessions-list '(
