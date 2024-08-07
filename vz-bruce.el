@@ -2011,6 +2011,83 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+;; September 28, 1973 - March 9, 1975
+
+;; THE E STREET BAND
+;; Bruce Springsteen (vocals, guitar, harmonica)
+;; Clarence Clemons (tenor, baritone, and soprano saxophones, backing vocals, percussion)
+;; Danny Federici (organ, accordion, glockenspiel, piano)
+;; Garry Tallent (bass, percussion)
+;; Vini Lopez (drums) (to February 12, 1974)
+;; David Sancious (piano, organ) (to August 14, 1974)
+;; Ernest "Boom" Carter (drums) (from February 23, 1974 - August 14, 1974)
+;; Roy Bittan (piano, keyboards) (from September 19, 1974)
+;; Max Weinberg (drums) (from September 19, 1974)
+;; Suki Lahav (violin, backing vocals) (from October 4, 1974)
+
+(defun musicbrainz-surround-event-e-street-band-1973 ()
+  "Surround event with artists and line, 1973 with The E Street Band."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
+@ [4401f986-51b8-407b-a898-500543df9dae|David Sancious]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
+
+(defun musicbrainz-surround-event-e-street-band-1975-1 ()
+  "Surround event with artists and line, 1973 with The E Street Band."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+# and
+@ [0a5bc8be-edcf-499a-9490-f43b3ce68f30|Suki Lahav]
+
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band-1975 ()
   "Surround event with artists and line, 1975."
   (interactive)
