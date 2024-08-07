@@ -2088,6 +2088,17 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+;; July 20, 1975 - May 28, 1976 (116 shows)
+
+;; THE E STREET BAND
+;; Bruce Springsteen (vocals, guitar, harmonica)
+;; Roy Bittan (piano, keyboards)
+;; Clarence Clemons (tenor, baritone, and soprano saxophones, backing vocals, percussion)
+;; Danny Federici (organ, accordion, glockenspiel, piano)
+;; Garry Tallent (bass, percussion)
+;; Steven Van Zandt (guitar, backing vocals)
+;; Max Weinberg (drums)
+
 (defun musicbrainz-surround-event-band-1975 ()
   "Surround event with artists and line, 1975."
   (interactive)
