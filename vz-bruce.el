@@ -4921,6 +4921,10 @@ Do this ALWAYS, except for the above exceptions."
 ("b2c2d4fe-8c1e-44ec-8be6-ff500e105a90" . "Don Henley")
 ("81e2f4b1-4b48-4bdb-9717-4180e0f1ebc2" . "J.D. Souther")
 ("5ca3f318-d028-4151-ac73-78e2b2d6cdcc" . "Tom Petty")
+("8ee379d7-d299-4182-8b37-17226025c1b1" . "Lucas Ruge-Jones")
+("bfcb6630-9b31-4e63-b11f-7b0363be72b5" . "The Lumineers")
+("3e987711-87be-4730-90f8-936b367f7cbe" . "Wesley Schultz")
+("f6e00c34-27fd-470b-bb9c-1068852b1b13" . "Jeremiah Fraites")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5073,6 +5077,8 @@ Do this ALWAYS, except for the above exceptions."
 ("45994334-1e7e-4fc2-a814-e069f28f59b3" . "Black Box Revelation")
 ("231ff972-4e8e-4157-95e2-12f963cb478c" . "Seasick Steve")
 ("13dc1600-baca-4aaf-beee-fb000b66ae24" . "Donald Trump")
+("4d607ea0-91e4-4038-ae00-dd3a4a6a5251" . "Charles R. Cross")
+("763853d6-f148-4643-a6cb-b07b8d238522" . "Justin Hardy")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5340,6 +5346,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Keyboardist" . "keyboardist")
 ("https://en.wikipedia.org/wiki/Bridge_School" . "Bridge School")
 ("https://en.wikipedia.org/wiki/Bridge_School_Benefit" . "Bridge School Benefit")
+("https://backstreets.com/" . "Backstreets Magazine")
 )
   "Other URLs.")
 
@@ -5373,6 +5380,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Peg O’ My Heart" . "Peg o’ My Heart")
 ("Kt-88" . "KT‐88")
 ("Kt‐88" . "KT‐88")
+("Sha-La-La" . "Sha‐La‐La")
 ("Sociedade Alternativa" . "Sociedade alternativa")
 ("Sólo Le Pido a Dios" . "Sólo le pido a Dios")
 ("Tenth Avenue Freeze-Out" . "Tenth Avenue Freeze‐Out")
