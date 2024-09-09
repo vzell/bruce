@@ -5079,6 +5079,7 @@ Do this ALWAYS, except for the above exceptions."
 ("13dc1600-baca-4aaf-beee-fb000b66ae24" . "Donald Trump")
 ("4d607ea0-91e4-4038-ae00-dd3a4a6a5251" . "Charles R. Cross")
 ("763853d6-f148-4643-a6cb-b07b8d238522" . "Justin Hardy")
+("c87ca6ad-8177-486c-b3c5-712b72cfe831" . "Rob DeMartin")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5119,6 +5120,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a1ef6bc8-2644-4b6d-aa21-27b630acf751" . "Lofgren")
 ;; Pamela Springsteen
 ("23a3f71a-d1ce-424d-80c1-27598585f9fd" . "Pamela")
+("23a3f71a-d1ce-424d-80c1-27598585f9fd" . "Pam Springsteen")
 ;; Patti Scialfa
 ("f09aa40c-b613-4ea2-a8cf-6056c2657a9a" . "Patti")
 ;; Paul McCartney
