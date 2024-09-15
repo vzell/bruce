@@ -4925,6 +4925,7 @@ Do this ALWAYS, except for the above exceptions."
 ("bfcb6630-9b31-4e63-b11f-7b0363be72b5" . "The Lumineers")
 ("3e987711-87be-4730-90f8-936b367f7cbe" . "Wesley Schultz")
 ("f6e00c34-27fd-470b-bb9c-1068852b1b13" . "Jeremiah Fraites")
+("1bfae567-61d5-4dbc-b368-198e547fe729" . "Robert Randolph")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5149,6 +5150,8 @@ Do this ALWAYS, except for the above exceptions."
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "band")
 ;; The E Street Horns
 ("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "Horn Section")
+;; The Tangiers Blues Band
+("91037ad4-4ee5-4d8b-98aa-41df93ddd92e" . "Tangiers Blues Band")
 ;; The Wailers
 ("c9e99d40-4a2c-4ca7-ac5b-e842264ee271" . "Wailers")
 ;; Virginia Springsteen
