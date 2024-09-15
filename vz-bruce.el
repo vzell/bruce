@@ -1171,6 +1171,27 @@ Do this ALWAYS, except for the above exceptions."
 		  (insert (concat "[https://musicbrainz.org/series/" (car tw) "|" (cdr tw) "]"))))
             ))))))
 
+(defun vz-mb-urlify-gignote-events ()
+  "Search for events in gignote and URLify."
+  (interactive)
+  (progn
+    (beginning-of-line)
+    (save-excursion
+      (while
+	  (re-search-forward "“[^”]*”" (point-at-eol) t)
+	(let* (
+	       (beg (match-beginning 0))
+	       (end (match-end 0))
+	       (cased (vz-title-case-region-or-line beg end))
+	       (event (buffer-substring (+ beg 1) (+ end -1))))
+	  (progn
+	    (setq tw (rassoc event mb-events))
+	    (if tw
+		(progn
+		  (kill-region beg end)
+		  (insert (concat "[https://musicbrainz.org/event/" (car tw) "|" (cdr tw) "]"))))
+            ))))))
+
 (defun vz-mb-urlify-gignote-labels ()
   "Search for labels in gignote and URLify."
   (interactive)
@@ -1246,6 +1267,7 @@ Do this ALWAYS, except for the above exceptions."
   (vz-mb-urlify-gignote-places)
   (vz-mb-urlify-gignote-areas)
   (vz-mb-urlify-gignote-series)
+  (vz-mb-urlify-gignote-events)
   (vz-mb-urlify-gignote-labels)
   (vz-mb-urlify-gignote-instruments)
   (vz-mb-urlify-gignote-other-urls)
@@ -4926,6 +4948,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3e987711-87be-4730-90f8-936b367f7cbe" . "Wesley Schultz")
 ("f6e00c34-27fd-470b-bb9c-1068852b1b13" . "Jeremiah Fraites")
 ("1bfae567-61d5-4dbc-b368-198e547fe729" . "Robert Randolph")
+("f86aa456-179b-418f-b43e-b43e83cc2824" . "Ed Norton")  ;; "Edward Norton" on MB
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5326,6 +5349,11 @@ Do this ALWAYS, except for the above exceptions."
 ("838bbab0-fc9b-4403-b4ca-e152f5831118" . "B Street")  ;; B Street Records
 )
   "Musicbrainz labels.")
+
+(defvar mb-events '(
+("9365859c-b713-44ec-a3d4-8c26ec0cda8a" . "2010 Toronto International Film Festival")
+)
+  "Musicbrainz events.")
 
 (defvar mb-instruments '(
 ("6505f98c-f698-4406-8bf4-8ca43d05c36f" . "bass")
