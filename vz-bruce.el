@@ -1059,7 +1059,7 @@ Do this ALWAYS, except for the above exceptions."
             ))))))
 
 (defun vz-mb-urlify-gignote-release-groups ()
-  "Search for release groups in gignote and URLify."
+  "Search for release groups in gignote and URLify.  It's assumed the titles are in italic, enclosed with '' on both sides"
   (interactive)
   (progn
     (beginning-of-line)
@@ -4949,6 +4949,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f6e00c34-27fd-470b-bb9c-1068852b1b13" . "Jeremiah Fraites")
 ("1bfae567-61d5-4dbc-b368-198e547fe729" . "Robert Randolph")
 ("f86aa456-179b-418f-b43e-b43e83cc2824" . "Ed Norton")  ;; "Edward Norton" on MB
+("45546b7f-e58c-4cf3-ac56-f5b174906304" . "The Ocean Avenue Stompers Horn Section")  ;; "Ocean Avenue Stompers Horn Section" on MB
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5211,6 +5212,8 @@ Do this ALWAYS, except for the above exceptions."
 ("3c39a076-8e52-38f2-8076-260d0672fb23" . "Born in the U.S.A.")
 ("d875c2f0-27d5-4946-81f9-3ebaf6636ccd" . "Wrecking Ball")
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
+("2cdcbdc4-b5b1-4afa-853f-f84faae2a0e0" . "The Promise: The Darkness on the Edge of Town Story")
+("963303c0-96a6-4879-b126-eeda4d71d39f" . "The Promise: The Making of Darkness on the Edge of Town")
 ;; Compilation
 ("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
 ;; Bootlegs
@@ -5302,6 +5305,7 @@ Do this ALWAYS, except for the above exceptions."
 ("afff1a94-a98b-4322-8874-3148139ab6da" . "Vienna")
 ("8297708c-5743-47d6-a5ac-f40a41c49ad9" . "Wales")
 ("12c3b82e-fcab-4219-9bd5-792089d8280e" . "Barcelona")
+("83f22bb6-4631-443c-bace-9fae8540362a" . "San Francisco")
 )
   "Musicbrainz areas.")
 
@@ -5323,7 +5327,6 @@ Do this ALWAYS, except for the above exceptions."
 ("62907fbf-b967-48bc-8045-3f63e540276a" . "Point Pleasant Beach")
 ("8aedc195-5495-4dab-a876-368ab4796c8b" . "Residence")
 ("3139a534-a52f-4035-9809-eb92ad51b882" . "San Diego Sports Arena")
-("83f22bb6-4631-443c-bace-9fae8540362a" . "San Francisco")
 ("2f7a7e06-5d72-4a02-884f-58893c47f0cb" . "Studio Ferber")
 ("47967a50-425b-4abf-95cf-e4746a1000d5" . "The Ranch House")
 ("b28cdc4f-a531-480d-a6c4-3794fddd9d98" . "The Burrow")
@@ -5333,6 +5336,7 @@ Do this ALWAYS, except for the above exceptions."
 ("53a7a4fe-57c1-4da0-be01-069ec8a2b14c" . "Joe’s Place")
 ("f23acad7-c5d9-433c-929f-46ab4efc68cc" . "Apollo Theater")
 ("3a6f24e1-1a97-4e91-8f30-f405dea111e1" . "Xanadu")
+("eddcb73e-3a63-4d75-b905-d4d1c3fd68d1" . "Roy Thomson Hall")
 )
   "Musicbrainz places.")
 
