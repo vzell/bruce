@@ -5114,6 +5114,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4d607ea0-91e4-4038-ae00-dd3a4a6a5251" . "Charles R. Cross")
 ("763853d6-f148-4643-a6cb-b07b8d238522" . "Justin Hardy")
 ("c87ca6ad-8177-486c-b3c5-712b72cfe831" . "Rob DeMartin")
+("a4e19819-0867-404d-a0f1-d8c6f2912267" . "Wilderado")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5351,6 +5352,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f23acad7-c5d9-433c-929f-46ab4efc68cc" . "Apollo Theater")
 ("3a6f24e1-1a97-4e91-8f30-f405dea111e1" . "Xanadu")
 ("eddcb73e-3a63-4d75-b905-d4d1c3fd68d1" . "Roy Thomson Hall")
+("4057effd-d746-4d9e-bcf0-b2f579921e94" . "Surf Stage")
 )
   "Musicbrainz places.")
 
@@ -5370,6 +5372,7 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-events '(
 ("9365859c-b713-44ec-a3d4-8c26ec0cda8a" . "2010 Toronto International Film Festival")
+("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now Festival")
 )
   "Musicbrainz events.")
 
