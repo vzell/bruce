@@ -4359,6 +4359,7 @@ Do this ALWAYS, except for the above exceptions."
 ("07a0f679-d35a-4400-99e3-e655c1f1fe27" . "Yum Yum Yum (I Want Some)")
 ("30ff5576-d0c3-4d5b-83c5-8f5e344fb7d9" . "chinatown")
 ("93a80540-9011-3969-8e2f-2708c060ab5d" . "’O sole mio")
+("73ed3e5d-c120-4fcb-9b80-935bdcbfa319" . "History Books")
 ))
 
 ;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
