@@ -972,8 +972,8 @@ Do this ALWAYS, except for the above exceptions."
 	    (while temp-fixworks
 	      (setq fixwork (car temp-fixworks))
 	      (setq temp-fixworks (cdr temp-fixworks))
-	      (setq origtitle (car fixwork))
-	      (if (string= work origtitle)
+	      (setq origwork (car fixwork))
+	      (if (string= work origwork)
 		  (setq work (cdr fixwork)))
 	      )
 	    (setq tw (rassoc work mb-works))
@@ -1059,19 +1059,27 @@ Do this ALWAYS, except for the above exceptions."
             ))))))
 
 (defun vz-mb-urlify-gignote-release-groups ()
-  "Search for release groups in gignote and URLify.  It's assumed the titles are in italic, enclosed with '' on both sides"
+  "Search for release groups in gignote and URLify.  It's assumed the titles are in italic, enclosed with '' on both sides."
   (interactive)
   (progn
     (beginning-of-line)
     (save-excursion
       (while
-	  (re-search-forward "''“[^”]*”" (point-at-eol) t)
+	  (re-search-forward "’’“[^”]*”" (point-at-eol) t)
 	(let* (
 	       (beg (match-beginning 0))
 	       (end (match-end 0))
 	       (cased (vz-title-case-region-or-line beg end))
 	       (release-group (buffer-substring (+ beg 3) (+ end -1))))
 	  (progn
+	    (setq temp-fixrelease-groups mb-fixrelease-groups)
+	    (while temp-fixrelease-groups
+	      (setq fixrelease-group (car temp-fixrelease-groups))
+	      (setq temp-fixrelease-groups (cdr temp-fixrelease-groups))
+	      (setq orig-release-group (car fixrelease-group))
+	      (if (string= release-group orig-release-group)
+		  (setq release-group (cdr fixrelease-group)))
+	      )
 	    (setq tw (rassoc release-group mb-release-groups))
 	    (if tw
 		(progn
@@ -1118,8 +1126,8 @@ Do this ALWAYS, except for the above exceptions."
 	    (while temp-fixinstruments
 	      (setq fixinstrument (car temp-fixinstruments))
 	      (setq temp-fixinstruments (cdr temp-fixinstruments))
-	      (setq origtitle (car fixinstrument))
-	      (if (string= instrument origtitle)
+	      (setq originstrument (car fixinstrument))
+	      (if (string= instrument originstrument)
 		  (setq instrument (cdr fixinstrument)))
 	      )
 	    (setq tw (rassoc instrument mb-instruments))
@@ -5252,6 +5260,8 @@ Do this ALWAYS, except for the above exceptions."
 ;; Light of Day Benefit for the Parkinson’s Disease Foundation
 ("3a5d4b60-1a96-41a9-8f10-776f5710384a" . "Light of Day Benefit for the Parkinson’s Disease Foundation")
 ("3a5d4b60-1a96-41a9-8f10-776f5710384a" . "Light of Day Benefit")
+;; Toronto International Film Festival
+("45ceea0f-f2d0-4ac0-8028-f27f3c060f8b" . "Toronto International Film Festival")
 )
   "Musicbrainz tour series.")
 
@@ -5434,6 +5444,7 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-fixinstruments  '(
 ;; instruments to fix
+;; ("wrong name" . "right name")
 ("Bass" . "bass")
 ("Piano" . "piano")
 ("Drums" . "drums")
@@ -5445,25 +5456,25 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-fixartists  '(
 ;; artists to fix
+;; ("wrong name" . "right name")
 ("Band" . "band")
 ("Peter Johnson & the Manic Depressives" . "Peter Johnson & The Manic Depressives")
 ("The Band" . "the band")
 ("The E Street" . "the E Street")
+("Joe Grushecky & the Houserockers" . "Joe Grushecky & The Houserockers")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
 ))
 
-(defvar mb-fixartists  '(
-;; artists to fix
-;; ("right name" . "wrong name")
-("Band" . "band")
-("Peter Johnson & the Manic Depressives" . "Peter Johnson & The Manic Depressives")
-("The Band" . "the band")
+(defvar mb-fixrelease-groups  '(
+;; release groups to fix
+;; ("wrong name" . "right name")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
-("Joe Grushecky & the Houserockers" . "Joe Grushecky & The Houserockers")
+("The Promise: the Making of Darkness on the Edge of Town" . "The Promise: The Making of Darkness on the Edge of Town")
 ))
 
 (defvar mb-fixothers '(
 ;; other stuff to fix
+;; ("wrong name" . "right name")
 ("Harmony Vocals" . "harmony vocals")
 ("Rap Vocals" . "rap vocals")
 ("Vocalist" . "vocalist")
