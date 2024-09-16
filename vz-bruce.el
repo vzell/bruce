@@ -5249,6 +5249,9 @@ Do this ALWAYS, except for the above exceptions."
 ("e9f4d050-a77a-438e-a75b-647aa7c96be0" . "New Jersey Hall of Fame Induction Ceremony")
 ;; Radio shows
 ("6a0ec067-aa67-485d-accb-d59efaadca79" . "E Street Radio Show")
+;; Light of Day Benefit for the Parkinson’s Disease Foundation
+("3a5d4b60-1a96-41a9-8f10-776f5710384a" . "Light of Day Benefit for the Parkinson’s Disease Foundation")
+("3a5d4b60-1a96-41a9-8f10-776f5710384a" . "Light of Day Benefit")
 )
   "Musicbrainz tour series.")
 
@@ -5451,10 +5454,12 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-fixartists  '(
 ;; artists to fix
+;; ("right name" . "wrong name")
 ("Band" . "band")
 ("Peter Johnson & the Manic Depressives" . "Peter Johnson & The Manic Depressives")
 ("The Band" . "the band")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
+("Joe Grushecky & the Houserockers" . "Joe Grushecky & The Houserockers")
 ))
 
 (defvar mb-fixothers '(
