@@ -5276,6 +5276,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3a5d4b60-1a96-41a9-8f10-776f5710384a" . "Light of Day Benefit")
 ;; Toronto International Film Festival
 ("45ceea0f-f2d0-4ac0-8028-f27f3c060f8b" . "Toronto International Film Festival")
+("f4818e95-a515-4821-ad6d-270703f72dcf" . "From My Home to Yours")
 )
   "Musicbrainz tour series.")
 
