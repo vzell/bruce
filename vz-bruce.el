@@ -4360,6 +4360,8 @@ Do this ALWAYS, except for the above exceptions."
 ("30ff5576-d0c3-4d5b-83c5-8f5e344fb7d9" . "chinatown")
 ("93a80540-9011-3969-8e2f-2708c060ab5d" . "’O sole mio")
 ("73ed3e5d-c120-4fcb-9b80-935bdcbfa319" . "History Books")
+("4f748092-dfae-4647-a0f0-e3bc6cd5f2cc" . "Like Any Woman Would")
+("d2710bfa-11a6-4a9b-82c6-5e891de75c97" . "You’re a Big Girl Now")
 ))
 
 ;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
@@ -5400,6 +5402,7 @@ Do this ALWAYS, except for the above exceptions."
 (defvar other-urls '(
 ("https://en.wikipedia.org/wiki/E_Street_Radio" . "E Street Radio")
 ("https://en.wikipedia.org/wiki/Harlem" . "Harlem")
+("https://en.wikipedia.org/wiki/Sirius_XM" . "Sirius XM")
 ("https://en.wikipedia.org/wiki/Sirius_XM" . "SiriusXM Radio")
 ("https://en.wikipedia.org/wiki/Vocal_harmony" . "harmony vocals")
 ("https://en.wikipedia.org/wiki/Singing" . "vocals")
