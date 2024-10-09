@@ -4959,6 +4959,12 @@ Do this ALWAYS, except for the above exceptions."
 ("1bfae567-61d5-4dbc-b368-198e547fe729" . "Robert Randolph")
 ("f86aa456-179b-418f-b43e-b43e83cc2824" . "Ed Norton")  ;; "Edward Norton" on MB
 ("45546b7f-e58c-4cf3-ac56-f5b174906304" . "The Ocean Avenue Stompers Horn Section")  ;; "Ocean Avenue Stompers Horn Section" on MB
+("de581eef-e27c-43c0-88b1-4864835acc8f" . "Benny Horowitz")
+("cc47b5da-691a-44d1-ba16-98b1e0d57269" . "Alex Levine")
+("f6992cc2-1bc7-46f3-83f6-ae0e8f9c9491" . "Alex Rosamilia")
+("ca1367f6-508e-41c7-955d-a4fdb6261480" . "Bryan Haring")
+("2279a80b-6156-4f78-a90f-77804f6219d4" . "Ian Perkins")
+("2bae4331-2b74-473b-9b07-c156d2b475a8" . "Jessica Rae Springsteen")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5115,6 +5121,8 @@ Do this ALWAYS, except for the above exceptions."
 ("763853d6-f148-4643-a6cb-b07b8d238522" . "Justin Hardy")
 ("c87ca6ad-8177-486c-b3c5-712b72cfe831" . "Rob DeMartin")
 ("a4e19819-0867-404d-a0f1-d8c6f2912267" . "Wilderado")
+("dd51245e-528b-4829-9bf2-7df9ec8d01be" . "Kamala Harris")
+("4d41868f-8901-4e77-bbd9-ead5bb7831ee" . "Amy Allen")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5190,6 +5198,8 @@ Do this ALWAYS, except for the above exceptions."
 ("c9e99d40-4a2c-4ca7-ac5b-e842264ee271" . "Wailers")
 ;; Virginia Springsteen
 ("06fc0de7-1647-4c0d-94bf-a6580ad0643b" . "Virginia")
+;; Jessica Springsteen
+("2bae4331-2b74-473b-9b07-c156d2b475a8" . "Jessica")
 )
   "Brucebase artist aliases.")
 
@@ -5444,6 +5454,7 @@ Do this ALWAYS, except for the above exceptions."
 ("When the Saints Go Marching in" . "When the Saints Go Marching In")
 ("Whole Lotta Shakin’ Goin’ on" . "Whole Lotta Shakin’ Goin’ On")
 ("Zip-A-Dee-Doo-Dah" . "Zip-a-Dee-Doo-Dah")
+("Chinatown" . "chinatown")
 ))
 
 (defvar mb-fixinstruments  '(
