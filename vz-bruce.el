@@ -5372,7 +5372,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3a6f24e1-1a97-4e91-8f30-f405dea111e1" . "Xanadu")
 ("eddcb73e-3a63-4d75-b905-d4d1c3fd68d1" . "Roy Thomson Hall")
 ("4057effd-d746-4d9e-bcf0-b2f579921e94" . "Surf Stage")
-("a60a2450-ed70-436c-bc2e-af05f11d0c76" . "Rock & Roll Hall of Fame")  ;; 
+("a60a2450-ed70-436c-bc2e-af05f11d0c76" . "Rock & Roll Hall of Fame")
 )
   "Musicbrainz places.")
 
