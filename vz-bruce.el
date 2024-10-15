@@ -5125,6 +5125,11 @@ Do this ALWAYS, except for the above exceptions."
 ("a4e19819-0867-404d-a0f1-d8c6f2912267" . "Wilderado")
 ("dd51245e-528b-4829-9bf2-7df9ec8d01be" . "Kamala Harris")
 ("4d41868f-8901-4e77-bbd9-ead5bb7831ee" . "Amy Allen")
+("eb8b0a8a-dc7d-480c-b83a-70a069150d05" . "Meryl Streep")
+("b3721f66-4379-44d1-947a-79d1c95b6b9f" . "Steven Spielberg")
+("de0e8b7e-02f0-4824-a35a-b3d1eea9d91e" . "Whoopi Goldberg")
+("00e1bc64-21b0-4ab4-ba13-8e87e6da9b23" . "Drew Barrymore")
+("ea6e5191-b277-47bc-b518-31d3fc36e709" . "John Sykes")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5236,6 +5241,7 @@ Do this ALWAYS, except for the above exceptions."
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("2cdcbdc4-b5b1-4afa-853f-f84faae2a0e0" . "The Promise: The Darkness on the Edge of Town Story")
 ("963303c0-96a6-4879-b126-eeda4d71d39f" . "The Promise: The Making of Darkness on the Edge of Town")
+("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary: Bruce Springsteen and the E Street Band")
 ;; Compilation
 ("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
 ;; Bootlegs
@@ -5366,6 +5372,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3a6f24e1-1a97-4e91-8f30-f405dea111e1" . "Xanadu")
 ("eddcb73e-3a63-4d75-b905-d4d1c3fd68d1" . "Roy Thomson Hall")
 ("4057effd-d746-4d9e-bcf0-b2f579921e94" . "Surf Stage")
+("a60a2450-ed70-436c-bc2e-af05f11d0c76" . "Rock & Roll Hall of Fame")  ;; 
 )
   "Musicbrainz places.")
 
@@ -5414,6 +5421,13 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Keyboardist" . "keyboardist")
 ("https://en.wikipedia.org/wiki/Bridge_School" . "Bridge School")
 ("https://en.wikipedia.org/wiki/Bridge_School_Benefit" . "Bridge School Benefit")
+("https://en.wikipedia.org/wiki/USC_Shoah_Foundation" . "USC Shoah Foundation")
+("https://en.wikipedia.org/wiki/Schindler%27s_List" . "Schindler’s List")
+("https://en.wikipedia.org/wiki/The_Holocaust" . "Holocaust")
+("https://en.wikipedia.org/wiki/Genocide" ."genocides")
+("https://en.wikipedia.org/wiki/Hulu" . "Hulu")
+("https://en.wikipedia.org/wiki/Disney%2B" . "Disney+")
+("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
 )
   "Other URLs.")
@@ -5501,6 +5515,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Drummer" . "drummer")
 ("Guitarist" . "guitarist")
 ("Keyboardist" . "keyboardist")
+("Genocides" . "genocides")
 ))
 
 (defvar bb-abbrevs  '(
