@@ -4535,6 +4535,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; Songs NOT performed by Bruce, but Bruce present
 (defvar mb-brucebase-songlist-other-works '(
 ("15875086-77a1-3e37-b125-75252d9d6bef" . "Rockin’ Around the Christmas Tree")
+("8182a1fa-9e2f-4d42-9a49-e2850b9171db" . "Big Time Nothing")
 ))
 
 (defvar mb-works (append
@@ -5130,6 +5131,10 @@ Do this ALWAYS, except for the above exceptions."
 ("de0e8b7e-02f0-4824-a35a-b3d1eea9d91e" . "Whoopi Goldberg")
 ("00e1bc64-21b0-4ab4-ba13-8e87e6da9b23" . "Drew Barrymore")
 ("ea6e5191-b277-47bc-b518-31d3fc36e709" . "John Sykes")
+("5334edc0-5faf-4ca5-b1df-000de3e1f752" . "St. Vincent")
+("70ec1658-ffee-4c3c-9e76-3c32b034b513" . "Bill Bailey")
+("fa295ceb-f727-4387-ac01-0ebacb47090a" . "Amy Adams")
+("7cce3b8e-623c-4078-b079-837cbcf638c4" . "Vanessa Williams")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5251,6 +5256,8 @@ Do this ALWAYS, except for the above exceptions."
 ("ac67669c-799c-4716-8d1f-861fe6274b9c" . "The Genuine Tracks: 1972–1996")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters XVI: Hollywood Hills Garage Tapes (Unreleased Masters, Volume I)")
 ("02c32e8c-4748-3961-b026-8ba5943d840e" . "The Lost Masters Hollywood Hills Garage Sessions")
+;; St. Vincent
+("9eae5bc4-4c1c-4a6c-9aeb-145eb02f2a03" . "All Born Screaming")
 ;; The Gaslight Anthem
 ("88e34862-743e-4d48-bdc0-0399c2b20f73" . "History Books")
 ;; The Rolling Stones
@@ -5427,6 +5434,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Genocide" ."genocides")
 ("https://en.wikipedia.org/wiki/Hulu" . "Hulu")
 ("https://en.wikipedia.org/wiki/Disney%2B" . "Disney+")
+("https://en.wikipedia.org/wiki/The_Graham_Norton_Show" . "The Graham Norton Show")
 ("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
 )
