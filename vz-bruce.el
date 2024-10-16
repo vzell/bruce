@@ -4961,7 +4961,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f6e00c34-27fd-470b-bb9c-1068852b1b13" . "Jeremiah Fraites")
 ("1bfae567-61d5-4dbc-b368-198e547fe729" . "Robert Randolph")
 ("f86aa456-179b-418f-b43e-b43e83cc2824" . "Ed Norton")  ;; "Edward Norton" on MB
-("45546b7f-e58c-4cf3-ac56-f5b174906304" . "The Ocean Avenue Stompers Horn Section")  ;; "Ocean Avenue Stompers Horn Section" on MB
+("45546b7f-e58c-4cf3-ac56-f5b174906304" . "The Ocean Avenue Stompers")  ;; "Ocean Avenue Stompers" on MB
 ("de581eef-e27c-43c0-88b1-4864835acc8f" . "Benny Horowitz")
 ("cc47b5da-691a-44d1-ba16-98b1e0d57269" . "Alex Levine")
 ("f6992cc2-1bc7-46f3-83f6-ae0e8f9c9491" . "Alex Rosamilia")
@@ -5135,6 +5135,8 @@ Do this ALWAYS, except for the above exceptions."
 ("70ec1658-ffee-4c3c-9e76-3c32b034b513" . "Bill Bailey")
 ("fa295ceb-f727-4387-ac01-0ebacb47090a" . "Amy Adams")
 ("7cce3b8e-623c-4078-b079-837cbcf638c4" . "Vanessa Williams")
+("b1103b87-3b91-4ec5-9d7b-15c2d1e486af" . "Grace Potter")
+("a2a3f910-b188-43e7-81d0-f1ac2a2f3e12" . "Noah Kahan")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5247,6 +5249,7 @@ Do this ALWAYS, except for the above exceptions."
 ("2cdcbdc4-b5b1-4afa-853f-f84faae2a0e0" . "The Promise: The Darkness on the Edge of Town Story")
 ("963303c0-96a6-4879-b126-eeda4d71d39f" . "The Promise: The Making of Darkness on the Edge of Town")
 ("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary: Bruce Springsteen and the E Street Band")
+("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary")
 ;; Compilation
 ("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
 ;; Bootlegs
@@ -5290,6 +5293,9 @@ Do this ALWAYS, except for the above exceptions."
 ;; Toronto International Film Festival
 ("45ceea0f-f2d0-4ac0-8028-f27f3c060f8b" . "Toronto International Film Festival")
 ("f4818e95-a515-4821-ad6d-270703f72dcf" . "From My Home to Yours")
+;; Sea.Hear.Now Festival
+("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now Festival")
+("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now")
 )
   "Musicbrainz tour series.")
 
@@ -5380,6 +5386,7 @@ Do this ALWAYS, except for the above exceptions."
 ("eddcb73e-3a63-4d75-b905-d4d1c3fd68d1" . "Roy Thomson Hall")
 ("4057effd-d746-4d9e-bcf0-b2f579921e94" . "Surf Stage")
 ("a60a2450-ed70-436c-bc2e-af05f11d0c76" . "Rock & Roll Hall of Fame")
+("4230fb6e-1a97-454a-ba4a-993cc0826048" . "Oriole Park at Camden Yards")
 )
   "Musicbrainz places.")
 
@@ -5399,7 +5406,6 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-events '(
 ("9365859c-b713-44ec-a3d4-8c26ec0cda8a" . "2010 Toronto International Film Festival")
-("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now Festival")
 )
   "Musicbrainz events.")
 
@@ -5435,6 +5441,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Hulu" . "Hulu")
 ("https://en.wikipedia.org/wiki/Disney%2B" . "Disney+")
 ("https://en.wikipedia.org/wiki/The_Graham_Norton_Show" . "The Graham Norton Show")
+("https://en.wikipedia.org/wiki/Peptic_ulcer_disease" . "peptic ulcer disease")
 ("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
 )
@@ -5524,6 +5531,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Guitarist" . "guitarist")
 ("Keyboardist" . "keyboardist")
 ("Genocides" . "genocides")
+("Peptic Ulcer Disease" . "peptic ulcer disease")
 ))
 
 (defvar bb-abbrevs  '(
