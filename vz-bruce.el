@@ -5323,6 +5323,7 @@ Do this ALWAYS, except for the above exceptions."
 ("03691455-bb46-37e3-91d2-cb064a35ffcc" . "Israel")
 ("c6500277-9a3d-349b-bf30-41afdbf42add" . "Italy")
 ("cd22d0ba-c79b-45b3-a8e0-617b240df5f0" . "Las Vegas")
+("f03d09b3-39dc-4083-afd6-159e3f0d462f" . "London")
 ("ef1b7cc0-cd26-36f4-8ea0-04d9623786c7" . "Netherlands")
 ("a36544c1-cb40-4f44-9e0e-7a5a69e403a8" . "New Jersey")
 ;; New York
