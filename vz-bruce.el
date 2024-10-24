@@ -4968,6 +4968,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ca1367f6-508e-41c7-955d-a4fdb6261480" . "Bryan Haring")
 ("2279a80b-6156-4f78-a90f-77804f6219d4" . "Ian Perkins")
 ("2bae4331-2b74-473b-9b07-c156d2b475a8" . "Jessica Rae Springsteen")
+("d517b86e-e1ee-4c56-95af-7343a2848f1e" . "Simon Mayo")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5205,6 +5206,8 @@ Do this ALWAYS, except for the above exceptions."
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "the band")
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "band")
 ;; The E Street Horns
+("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "The E Street Horns")
+("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "E Street Horns")
 ("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "Horn Section")
 ;; The Tangiers Blues Band
 ("91037ad4-4ee5-4d8b-98aa-41df93ddd92e" . "Tangiers Blues Band")
@@ -5248,7 +5251,7 @@ Do this ALWAYS, except for the above exceptions."
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("2cdcbdc4-b5b1-4afa-853f-f84faae2a0e0" . "The Promise: The Darkness on the Edge of Town Story")
 ("963303c0-96a6-4879-b126-eeda4d71d39f" . "The Promise: The Making of Darkness on the Edge of Town")
-("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary: Bruce Springsteen and the E Street Band")
+("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary: Bruce Springsteen and The E Street Band")
 ("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary")
 ;; Compilation
 ("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
@@ -5425,6 +5428,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/E_Street_Radio" . "E Street Radio")
 ("https://en.wikipedia.org/wiki/Harlem" . "Harlem")
 ("https://en.wikipedia.org/wiki/Sirius_XM" . "Sirius XM")
+("https://en.wikipedia.org/wiki/Sirius_XM" . "SiriusXM")
 ("https://en.wikipedia.org/wiki/Sirius_XM" . "SiriusXM Radio")
 ("https://en.wikipedia.org/wiki/Vocal_harmony" . "harmony vocals")
 ("https://en.wikipedia.org/wiki/Singing" . "vocals")
@@ -5442,7 +5446,10 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Hulu" . "Hulu")
 ("https://en.wikipedia.org/wiki/Disney%2B" . "Disney+")
 ("https://en.wikipedia.org/wiki/The_Graham_Norton_Show" . "The Graham Norton Show")
+("https://en.wikipedia.org/wiki/The_Howard_Stern_Show" . "Howard Stern Show")
+("https://en.wikipedia.org/wiki/The_Howard_Stern_Show" . "The Howard Stern Show")
 ("https://en.wikipedia.org/wiki/Peptic_ulcer_disease" . "peptic ulcer disease")
+("https://en.wikipedia.org/wiki/Springsteen_on_Broadway" . "Springsteen on Broadway")
 ("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
 )
@@ -5519,6 +5526,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; ("wrong name" . "right name")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
 ("The Promise: the Making of Darkness on the Edge of Town" . "The Promise: The Making of Darkness on the Edge of Town")
+("Road Diary: Bruce Springsteen and the E Street Band" . "Road Diary: Bruce Springsteen and The E Street Band")
 ))
 
 (defvar mb-fixothers '(
