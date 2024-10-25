@@ -5138,6 +5138,10 @@ Do this ALWAYS, except for the above exceptions."
 ("7cce3b8e-623c-4078-b079-837cbcf638c4" . "Vanessa Williams")
 ("b1103b87-3b91-4ec5-9d7b-15c2d1e486af" . "Grace Potter")
 ("a2a3f910-b188-43e7-81d0-f1ac2a2f3e12" . "Noah Kahan")
+("48127a8d-e677-4196-900b-df0d1e3a9ab5" . "Spike Lee")
+("a1c82f09-cc3a-4c94-a518-cba50d9bfab1" . "Samuel L. Jackson")
+("68d58242-32f3-4fc6-8681-9f6d6aba85ae" . "Tyler Perry")
+("d26495ee-edd1-4bbb-95ce-3ba9a24a9337" . "Mix Master David")
 )
   "Brucebase artists mentioned in gignotes.")
 
