@@ -5342,6 +5342,7 @@ Do this ALWAYS, except for the above exceptions."
 ("6743d351-6f37-3049-9724-5041161fff4d" . "Norway")
 ("7342d046-e9c4-457a-9ec3-b03d4b2eb5b1" . "Oakland")
 ("dc10c22b-e510-4006-8b7f-fecb4f36436e" . "Paris")
+("75d8fdcf-03e9-43d9-9399-131b8e118b0b" . "Pennsylvania")
 ("0eeb01c2-6e31-46ad-96b8-319749f731d2" . "Philadelphia")
 ("7f1c8f3f-69a9-454a-8633-c3d3a628858b" . "Phoenix")
 ;; Richmond, Virginia
