@@ -5285,6 +5285,9 @@ Do this ALWAYS, except for the above exceptions."
 ;; Bruce Springsteen and The 1992–93 World Tour Band
 ("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "The 1992–93 World Tour")
 ("31acf44d-e5e7-4147-8c0c-cb559743ddd6" . "1992–93 World Tour")  ;; alias in gignotes
+;; Bruce Springsteen solo
+("89f2b939-dc45-4944-971f-b05b433ec7ef" . "When We Vote We Win Rally")
+("89f2b939-dc45-4944-971f-b05b433ec7ef" . "When We Vote We Win")
 ;; The Rolling Stones
 ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50 & Counting")
 ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
