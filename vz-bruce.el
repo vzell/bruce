@@ -4362,6 +4362,7 @@ Do this ALWAYS, except for the above exceptions."
 ("73ed3e5d-c120-4fcb-9b80-935bdcbfa319" . "History Books")
 ("4f748092-dfae-4647-a0f0-e3bc6cd5f2cc" . "Like Any Woman Would")
 ("d2710bfa-11a6-4a9b-82c6-5e891de75c97" . "You’re a Big Girl Now")
+("0dc490da-fc4f-3e49-b7ec-bd1c39828b45" . "Ghostbusters")
 ))
 
 ;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
@@ -5221,6 +5222,8 @@ Do this ALWAYS, except for the above exceptions."
 ("06fc0de7-1647-4c0d-94bf-a6580ad0643b" . "Virginia")
 ;; Jessica Springsteen
 ("2bae4331-2b74-473b-9b07-c156d2b475a8" . "Jessica")
+;; Mark Pender
+("6ae5508c-cec6-4d23-a3df-92e8b1e988b2" . "Mark Love Man Pender")
 )
   "Brucebase artist aliases.")
 
@@ -5315,6 +5318,7 @@ Do this ALWAYS, except for the above exceptions."
 ("5b8a5ee5-0bb3-34cf-9a75-c27c44e341fc" . "Belgium")
 ("34268a86-54ec-487d-afa3-1afe3266a382" . "Bergen")
 ("ae0110b6-13d4-4998-9116-5b926287aa23" . "California")
+("71bbafaa-e825-3e15-8ca9-017dcad1748b" . "Canada")
 ("b8a2776a-eedf-48ea-a6f3-1a9070f0b823" . "Cologne")
 ("e0e3c82a-aea8-48d3-beda-9e587db0b969" . "Copenhagen")
 ("4757b525-2a60-324a-b060-578765d2c993" . "Denmark")
@@ -5429,6 +5433,7 @@ Do this ALWAYS, except for the above exceptions."
 ("63e37f1a-30b6-4746-8a49-dfb55be3cdd1" . "harmonica")
 ("55a37f4f-39a4-45a7-851d-586569985519" . "organ")
 ("b3eac5f9-7859-4416-ac39-7154e2e8d348" . "piano")
+("1c8f9780-2f16-4891-b66d-bb7aa0820dbd" . "trumpet")
 )
   "Musicbrainz instruments.")
 
@@ -5458,6 +5463,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/The_Howard_Stern_Show" . "The Howard Stern Show")
 ("https://en.wikipedia.org/wiki/Peptic_ulcer_disease" . "peptic ulcer disease")
 ("https://en.wikipedia.org/wiki/Springsteen_on_Broadway" . "Springsteen on Broadway")
+("https://en.wikipedia.org/wiki/Halloween" . "Halloween")
 ("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
 )
@@ -5516,6 +5522,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Harmonica" . "harmonica")
 ("Organ" . "organ")
 ("Piano" . "piano")
+("Trumpet" . "trumpet")
 ))
 
 (defvar mb-fixartists  '(
