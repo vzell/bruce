@@ -4653,6 +4653,7 @@ Do this ALWAYS, except for the above exceptions."
 ("89efeadd-8080-4cf9-af33-2e68a173df02" . "Dion")
 ("b60527cc-54f3-4bbe-a01b-dcf34c95ae14" . "Donna Summer")
 ("33d2abad-fd92-4374-929c-886c884d2ee5" . "Donnie Powell")
+("593c8de6-872c-4759-bf14-07d80496e53a" . "Douglas Frederick Springsteen")
 ("e8374874-4178-4869-b92e-fef6bf30dc04" . "Dropkick Murphys")
 ("fe0e1895-aa84-47d9-8e5b-7930fc20709b" . "Dr. John")
 ("b66771cc-45fa-4a32-b14f-5337d7223d7a" . "D’Angelo")
@@ -5143,6 +5144,10 @@ Do this ALWAYS, except for the above exceptions."
 ("a1c82f09-cc3a-4c94-a518-cba50d9bfab1" . "Samuel L. Jackson")
 ("68d58242-32f3-4fc6-8681-9f6d6aba85ae" . "Tyler Perry")
 ("d26495ee-edd1-4bbb-95ce-3ba9a24a9337" . "Mix Master David")
+("2cc9e6c3-9772-4af8-bf5d-1f29d9f8a61e" . "Stephen Graham")
+("93c2acdd-b35b-4d62-973f-247750106ca7" . "Jeremy Allen White")
+("c0d74f0e-4799-48b1-be96-acf7ee50cb7b" . "Scott Cooper")
+("98725535-cda3-4627-b030-06894af7a231" . "Matthew Anthony Pellicano")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5222,6 +5227,8 @@ Do this ALWAYS, except for the above exceptions."
 ("06fc0de7-1647-4c0d-94bf-a6580ad0643b" . "Virginia")
 ;; Jessica Springsteen
 ("2bae4331-2b74-473b-9b07-c156d2b475a8" . "Jessica")
+;; Douglas Frederick Springsteen
+("593c8de6-872c-4759-bf14-07d80496e53a" . "Douglas")
 ;; Mark Pender
 ("6ae5508c-cec6-4d23-a3df-92e8b1e988b2" . "Mark Love Man Pender")
 )
@@ -5464,8 +5471,10 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Peptic_ulcer_disease" . "peptic ulcer disease")
 ("https://en.wikipedia.org/wiki/Springsteen_on_Broadway" . "Springsteen on Broadway")
 ("https://en.wikipedia.org/wiki/Halloween" . "Halloween")
+("https://en.wikipedia.org/wiki/2024_United_States_presidential_election" . "American Election")
 ("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
+("https://www.imdb.com/title/tt31923069/?ref_=nv_sr_srsg_2_tt_8_nm_0_in_0_q_deliver%2520me%2520" . "Deliver Me From Nowhere")
 )
   "Other URLs.")
 
@@ -5556,6 +5565,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Keyboardist" . "keyboardist")
 ("Genocides" . "genocides")
 ("Peptic Ulcer Disease" . "peptic ulcer disease")
+("American Election" . "American election")
 ))
 
 (defvar bb-abbrevs  '(
