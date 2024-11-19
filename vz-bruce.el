@@ -5156,6 +5156,7 @@ Do this ALWAYS, except for the above exceptions."
 ("8907e6f1-6e59-4689-802f-9509d0453d9c" . "Pete Kennedy")
 ("58dd390d-4ee6-430b-b563-634a9f74cd6b" . "Mike Mays")
 ("2103be96-13ab-4a86-af35-2078351538b0" . "Tom Cool Yolton")
+("24c21ddf-2c0a-48b8-ada9-e0f79059d17c" . "Mark Romanski")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5457,7 +5458,7 @@ Do this ALWAYS, except for the above exceptions."
 )
   "Musicbrainz events.")
 
-(defvar mb-instruments '(
+(defvar mb-instruments-actual '(
 ("6505f98c-f698-4406-8bf4-8ca43d05c36f" . "bass")
 ("12092505-6ee1-46af-a15a-b5b468b6b155" . "drums")
 ("04a21d03-535a-4ace-9098-12013867b8e5" . "fiddle")
@@ -5468,6 +5469,17 @@ Do this ALWAYS, except for the above exceptions."
 ("1c8f9780-2f16-4891-b66d-bb7aa0820dbd" . "trumpet")
 )
   "Musicbrainz instruments.")
+
+(defvar mb-instruments-aliases '(
+("63e37f1a-30b6-4746-8a49-dfb55be3cdd1" . "harp")
+)
+  "Musicbrainz aliases for instruments.")
+
+(defvar mb-instruments
+  (append
+   mb-instruments-actual
+   mb-instruments-aliases
+   ))
 
 (defvar other-urls '(
 ("https://en.wikipedia.org/wiki/E_Street_Radio" . "E Street Radio")
@@ -5555,6 +5567,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Drums" . "drums")
 ("Guitar" . "guitar")
 ("Harmonica" . "harmonica")
+("Harp" . "harp")
 ("Organ" . "organ")
 ("Piano" . "piano")
 ("Trumpet" . "trumpet")
