@@ -2010,6 +2010,35 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-steel-mill-1971 ()
+  "Surround event with artists and line, Steel Mill 1971."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [cd9053ff-7870-4c7e-a03c-d7aa8f6fa9f3|Steel Mill]
+# with
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
+@ [4a931794-31a1-444b-bb86-3e483f84b20d|Robbin Thompson]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
+
+# No set details known
+# Incomplete setlist
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-band-1973 ()
   "Surround event with artists and line, 1973."
   (interactive)
@@ -2648,6 +2677,8 @@ Do this ALWAYS, except for the above exceptions."
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce-solo-acoustic-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1992/3-world-tour-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-steel-mill-1970)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-steel-mill-1971)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-bruce-springsteen-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1973)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1975)
@@ -5157,6 +5188,7 @@ Do this ALWAYS, except for the above exceptions."
 ("58dd390d-4ee6-430b-b563-634a9f74cd6b" . "Mike Mays")
 ("2103be96-13ab-4a86-af35-2078351538b0" . "Tom Cool Yolton")
 ("24c21ddf-2c0a-48b8-ada9-e0f79059d17c" . "Mark Romanski")
+("e6c7351d-ebdf-40c5-8d9b-81974cd49f9f" ."National Debt")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5425,6 +5457,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a60a2450-ed70-436c-bc2e-af05f11d0c76" . "Rock & Roll Hall of Fame")
 ("4230fb6e-1a97-454a-ba4a-993cc0826048" . "Oriole Park at Camden Yards")
 ("7c0e5bb2-9a14-4732-a87e-796c1acba1c6" . "Student Prince")
+("ca14ad35-9665-46ad-a245-befaa6d461f4" . "D’Scene")
 )
   "Musicbrainz places.")
 
