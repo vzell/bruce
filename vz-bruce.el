@@ -2855,6 +2855,7 @@ Do this ALWAYS, except for the above exceptions."
 ("37d70bdc-7a30-4352-8230-942564b58b77" . "Don’t Let Your Heart Grow Cold")
 ("a7fbd960-234e-4ab9-be4f-8f4bd1d2a9b5" . "Don’t Look Back")
 ("a3d5faba-70b5-4393-bbfc-748b4ee261e2" . "Don’t Say No")
+("783a5602-1a93-4b7c-8b19-ab6282a368d3" . "Don’t You Touch That Thing")
 ("b6c7597e-b513-46ee-b21c-2671160680cf" . "Down at the Club")
 ("09e9ccd9-c6bb-4b1f-9083-2fada0728157" . "Down in the Hole")
 ("285c29dd-0144-4960-9927-e6175b030de1" . "Down to Mexico")
@@ -3139,7 +3140,6 @@ Do this ALWAYS, except for the above exceptions."
 ("ea9f5a8a-8d34-4da8-b5a6-dd217169b4ba" . "Michael, Row Your Boat Ashore")
 ("bc22ea16-2169-4535-9fbc-0d95667d28d0" . "Missie")
 ("455920de-a92b-4123-94b5-7eb74a5a6872" . "Missing")
-("5789ea04-9d9a-4f0b-91d1-0ebd906ed5c5" . "Mistress Annie")
 ("fabd6d42-3a66-47c1-845e-2993fc71b014" . "Moon Beams")
 ("687034b9-ab9c-4814-bc96-1325e13401e8" . "Moonlight Motel")
 ("1c1ab6dd-1829-459e-af59-de4b3a5c686f" . "Mother")
@@ -3335,6 +3335,7 @@ Do this ALWAYS, except for the above exceptions."
 ("ca31e3c1-5871-4130-a1ab-ddb3ef297f40" . "Surrender at the Citadel")
 ("6d59c063-3e4d-46a2-9424-c34b691d1c75" . "Swallowed Up (In the Belly of the Whale)")
 ("4e1576c9-a957-451f-af31-b5545d35b202" . "Sweet Melinda")
+("5789ea04-9d9a-4f0b-91d1-0ebd906ed5c5" . "Sweet Miss Sally")
 ("54c9c394-993d-4d02-a123-e6e271eda3f0" . "Swoop Man")
 ("da394d8c-b0c8-413b-aea2-94ae776e0771" . "TV Movie")
 ("a8cc3293-5317-41c4-bb9a-5447e7aa38ae" . "Take Me Down")
@@ -4819,7 +4820,7 @@ Do this ALWAYS, except for the above exceptions."
 ("136986bb-6e39-4e79-9945-cf9aa37a4a0b" . "Phonte")
 ("3599a39e-4e10-4cb5-90d4-c8a015ebc73b" . "Portugal. The Man")
 ("f5f40219-8929-485a-aeb1-1f8093ee1c24" . "Purpul Dyneste")
-("9436fbf8-5498-43e9-9a8d-eccbe53df6ad" . "Questlove")
+("9436fbf8-5498-43e9-9a8d-eccbe53df6ad" . "Questlove")  ;; "?uestlove" on MB
 ("1c09b9e6-a12a-4cea-b80b-97415d19381b" . "Raina Douris")
 ("2e59d801-d364-4ef6-9f8d-02d069251247" . "Ralph Lauren")
 ("14440b07-0e02-49b1-9b0f-feb730d9c070" . "Randy Moore")
@@ -5148,6 +5149,13 @@ Do this ALWAYS, except for the above exceptions."
 ("93c2acdd-b35b-4d62-973f-247750106ca7" . "Jeremy Allen White")
 ("c0d74f0e-4799-48b1-be96-acf7ee50cb7b" . "Scott Cooper")
 ("98725535-cda3-4627-b030-06894af7a231" . "Matthew Anthony Pellicano")
+("2319a9c9-0464-4647-b156-b3288fe1d317" . "Mark Normand")
+("27cd1225-3fa2-4ec6-bba9-ef5c1f09cbcc" . "Jerry Seinfeld")
+("57c97870-1c7e-4975-9859-42739d644f8a" . "Felita LaRock")
+("01e08b51-b994-4c88-a3af-2c0bc1dc8482" . "Marlo Mays")
+("8907e6f1-6e59-4689-802f-9509d0453d9c" . "Pete Kennedy")
+("58dd390d-4ee6-430b-b563-634a9f74cd6b" . "Mike Mays")
+("2103be96-13ab-4a86-af35-2078351538b0" . "Tom Cool Yolton")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5231,6 +5239,8 @@ Do this ALWAYS, except for the above exceptions."
 ("593c8de6-872c-4759-bf14-07d80496e53a" . "Douglas")
 ;; Mark Pender
 ("6ae5508c-cec6-4d23-a3df-92e8b1e988b2" . "Mark Love Man Pender")
+;; ?uestlove
+("9436fbf8-5498-43e9-9a8d-eccbe53df6ad" . "DJ Questlove")
 )
   "Brucebase artist aliases.")
 
@@ -5335,6 +5345,7 @@ Do this ALWAYS, except for the above exceptions."
 ("89a675c2-3e37-3518-b83c-418bad59a85a" . "Europe")
 ("89a675c2-3e37-3518-b83c-418bad59a85a" . "European")
 ("6a264f94-6ff1-30b1-9a81-41f7bfabd616" . "Finland")
+("d2918f1a-c51e-4a4a-ad7f-cdd88877b25f" . "Florida")
 ("42f86940-0f68-4ce0-8876-d070d424d91c" . "Freehold")
 ("85752fda-13c4-31a3-bee5-0e5cb1f51dad" . "Germany")
 ("8f6c316e-9924-48ea-967b-16757dd82399" . "Gothenburg")
@@ -5369,6 +5380,7 @@ Do this ALWAYS, except for the above exceptions."
 ("439934f0-8f8e-4ba1-8505-76aa795614ce" . "Sunderland")
 ("23d10872-f5ae-3f0c-bf55-332788a16ecb" . "Sweden")
 ("1333ff06-8e3d-3c8e-9f3a-13a2a38b41df" . "Switzerland")
+("ff21865c-ce46-4417-967c-a3d2d02d29bf" . "Tampa")
 ("8a754a16-0027-3a29-b6d7-2b40ea0481ed" . "UK")
 ("489ce91b-6658-3307-9877-795b68554c98" . "United States")
 ("489ce91b-6658-3307-9877-795b68554c98" . "USA")
@@ -5376,10 +5388,11 @@ Do this ALWAYS, except for the above exceptions."
 ("8297708c-5743-47d6-a5ac-f40a41c49ad9" . "Wales")
 ("12c3b82e-fcab-4219-9bd5-792089d8280e" . "Barcelona")
 ("83f22bb6-4631-443c-bace-9fae8540362a" . "San Francisco")
+("8af30521-c317-48f2-b18d-536e248521e1" . "Manitoba")
 )
   "Musicbrainz areas.")
 
-(defvar mb-places '(
+(defvar mb-places-actual '(
 ("12a15aee-de37-48e2-b83b-3fb4b198f822" . "Ahmanson Theatre")
 ("a570085a-9ae2-4fe4-9141-eccfc189cb02" . "The Boardwalk")
 ("a570085a-9ae2-4fe4-9141-eccfc189cb02" . "Asbury Park Boardwalk")
@@ -5410,8 +5423,20 @@ Do this ALWAYS, except for the above exceptions."
 ("4057effd-d746-4d9e-bcf0-b2f579921e94" . "Surf Stage")
 ("a60a2450-ed70-436c-bc2e-af05f11d0c76" . "Rock & Roll Hall of Fame")
 ("4230fb6e-1a97-454a-ba4a-993cc0826048" . "Oriole Park at Camden Yards")
+("7c0e5bb2-9a14-4732-a87e-796c1acba1c6" . "Student Prince")
 )
   "Musicbrainz places.")
+
+(defvar mb-places-aliases '(
+("7c0e5bb2-9a14-4732-a87e-796c1acba1c6" . "The Student Prince")
+)
+  "Musicbrainz aliases for places.")
+
+(defvar mb-places
+  (append
+   mb-places-actual
+   mb-places-aliases
+   ))
 
 (defvar mb-labels '(
 ("3eb1cb63-b6b5-49a8-be3a-25ed2e38bb7c" . "Bruce Tree Service")
@@ -5472,6 +5497,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Springsteen_on_Broadway" . "Springsteen on Broadway")
 ("https://en.wikipedia.org/wiki/Halloween" . "Halloween")
 ("https://en.wikipedia.org/wiki/2024_United_States_presidential_election" . "American Election")
+("https://en.wikipedia.org/wiki/Let_It_Be_(1970_film)" . "Let It Be")
 ("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
 ("https://www.imdb.com/title/tt31923069/?ref_=nv_sr_srsg_2_tt_8_nm_0_in_0_q_deliver%2520me%2520" . "Deliver Me From Nowhere")
