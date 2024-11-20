@@ -1953,6 +1953,34 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-child ()
+  "Surround event with artists and line, Child."
+  (interactive)
+  (save-excursion
+    (insert
+"@ [ad746c78-1a82-4dfc-879c-f9d2bd9247ce|Child]
+# with
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [3e2b6ee0-6ec7-4622-b039-1cbed5f55288|Vini Lopez]
+@ [1555514b-4dca-4693-8c0c-fee25d372079|Vinnie Roslin]
+
+# No set details known
+# Incomplete setlist
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-the-bruce-springsteen-band ()
   "Surround event with artists and line, The Bruce Springsteen Band."
   (interactive)
@@ -2677,6 +2705,7 @@ Do this ALWAYS, except for the above exceptions."
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce-solo-acoustic-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1992/3-world-tour-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-child)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-steel-mill-1970)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-steel-mill-1971)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-bruce-springsteen-band)
@@ -4647,6 +4676,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4382fa5d-03de-4ebf-baf3-df6a1d1922f0" . "Charles Giordano")
 ("f581a3dc-3319-4656-8b97-66d560482f4a" . "Charlie Watts")
 ("bb5e019b-a9e6-4ee7-96c3-226c40a0627e" . "Charlotte Ryan")
+("ad746c78-1a82-4dfc-879c-f9d2bd9247ce" . "Child")
 ("a5ab77f2-da3b-454c-aa5f-239f5c8ea096" . "Chris Anderson")
 ("479497d4-e7c2-4e78-972e-56e78fac3995" . "Chris Isaak")
 ("fde0d322-1493-4087-a6cb-73e5d8d4461b" . "Chris Jordan")
@@ -4921,6 +4951,7 @@ Do this ALWAYS, except for the above exceptions."
 ("7d5c39ac-5d48-4fdb-81df-6212e38353b3" . "The Sessions Band")
 ("fae2cd4c-f847-4cb3-b311-60c8906cdb0b" . "The Smithereens")
 ("3d49e36a-cc9e-411e-93c6-d1646ba5bd3a" . "The Staple Singers")
+("178406b3-e1a1-463b-aa3a-b6494c48ab74" . "The Sundance Blues Band")
 ("91037ad4-4ee5-4d8b-98aa-41df93ddd92e" . "The Tangiers Blues Band")
 ("15fa2639-cea9-4f13-8ed7-88ad594fdfb9" . "The Van Jets")
 ("3cf1bde9-1191-4220-9ce0-15413361e89f" . "Thom Powers")
@@ -5003,6 +5034,9 @@ Do this ALWAYS, except for the above exceptions."
 ("2279a80b-6156-4f78-a90f-77804f6219d4" . "Ian Perkins")
 ("2bae4331-2b74-473b-9b07-c156d2b475a8" . "Jessica Rae Springsteen")
 ("d517b86e-e1ee-4c56-95af-7343a2848f1e" . "Simon Mayo")
+("1555514b-4dca-4693-8c0c-fee25d372079" . "Vinnie Roslin")
+("435ccd03-20f6-42aa-97e3-275b82dc2f6f" . "The Knack")
+("bb858628-5b54-4d02-81b0-bc73f2b9ffda" . "Bruce Gary")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5188,7 +5222,13 @@ Do this ALWAYS, except for the above exceptions."
 ("58dd390d-4ee6-430b-b563-634a9f74cd6b" . "Mike Mays")
 ("2103be96-13ab-4a86-af35-2078351538b0" . "Tom Cool Yolton")
 ("24c21ddf-2c0a-48b8-ada9-e0f79059d17c" . "Mark Romanski")
-("e6c7351d-ebdf-40c5-8d9b-81974cd49f9f" ."National Debt")
+("e6c7351d-ebdf-40c5-8d9b-81974cd49f9f" . "National Debt")
+("af2eb30c-de8b-4ec5-aa05-94072102e73e" . "Inferno")
+("b9d6e253-c4bd-47a8-831a-92bff0af50e0" . "Ruby Falls & The Rock City Band")
+("679a4fa1-f7f3-44ca-b440-ad6fb163b10d" . "Gregg Allman")
+("ff4c8d42-4871-4778-885b-d41b01245133" . "Willie Dixon")
+("40ee7c92-f44a-4d14-9aee-f87244465ee4" . "Otis Rush")
+("5980fbb4-3591-4308-bfdc-048d38be402e" . "Walter Brown")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5458,11 +5498,20 @@ Do this ALWAYS, except for the above exceptions."
 ("4230fb6e-1a97-454a-ba4a-993cc0826048" . "Oriole Park at Camden Yards")
 ("7c0e5bb2-9a14-4732-a87e-796c1acba1c6" . "Student Prince")
 ("ca14ad35-9665-46ad-a245-befaa6d461f4" . "D’Scene")
+("580b15d9-3187-4e3c-a798-811e0642859d" . "The Center")
+("eea15fe6-ba39-42bb-9571-635abbdb14ee" . "The Troubadour")
+("23da4817-d532-4c67-a8df-0c7ff9186b14" . "Sunset Marquis Hotel")
 )
   "Musicbrainz places.")
 
 (defvar mb-places-aliases '(
+;; The Center
+("580b15d9-3187-4e3c-a798-811e0642859d" . "Center")
+("580b15d9-3187-4e3c-a798-811e0642859d" . "The String Factory")
+;; Student Prince
 ("7c0e5bb2-9a14-4732-a87e-796c1acba1c6" . "The Student Prince")
+;; Sunset Marquis Hotel
+("23da4817-d532-4c67-a8df-0c7ff9186b14" . "The Sunset Marquis")
 )
   "Musicbrainz aliases for places.")
 
@@ -5505,6 +5554,7 @@ Do this ALWAYS, except for the above exceptions."
 
 (defvar mb-instruments-aliases '(
 ("63e37f1a-30b6-4746-8a49-dfb55be3cdd1" . "harp")
+("63021302-86cd-4aee-80df-2270d54f4978" . "rhythm guitar")
 )
   "Musicbrainz aliases for instruments.")
 
@@ -5521,7 +5571,10 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Sirius_XM" . "SiriusXM")
 ("https://en.wikipedia.org/wiki/Sirius_XM" . "SiriusXM Radio")
 ("https://en.wikipedia.org/wiki/Vocal_harmony" . "harmony vocals")
+("https://en.wikipedia.org/wiki/Singing" . "vocal")
 ("https://en.wikipedia.org/wiki/Singing" . "vocals")
+("https://en.wikipedia.org/wiki/Singing" . "lead vocal")
+("https://en.wikipedia.org/wiki/Singing" . "background vocals")
 ("https://en.wikipedia.org/wiki/Singing" . "vocalist")
 ("https://en.wikipedia.org/wiki/Rapping" . "rap vocals")
 ("https://en.wikipedia.org/wiki/Drummer" . "drummer")
@@ -5615,6 +5668,7 @@ Do this ALWAYS, except for the above exceptions."
 ("The E Street" . "the E Street")
 ("Joe Grushecky & the Houserockers" . "Joe Grushecky & The Houserockers")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
+("Ruby Falls & the Rock City Band" . "Ruby Falls & The Rock City Band")
 ))
 
 (defvar mb-fixrelease-groups  '(
@@ -5628,9 +5682,13 @@ Do this ALWAYS, except for the above exceptions."
 (defvar mb-fixothers '(
 ;; other stuff to fix
 ;; ("wrong name" . "right name")
+("Background Vocals" . "background vocals")
+("Lead Vocal" . "lead vocal")
 ("Harmony Vocals" . "harmony vocals")
 ("Rap Vocals" . "rap vocals")
+("Rhythm Guitar" . "rhythm guitar")
 ("Vocalist" . "vocalist")
+("Vocal" . "vocal")
 ("Vocals" . "vocals")
 ("Drummer" . "drummer")
 ("Guitarist" . "guitarist")
