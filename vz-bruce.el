@@ -5037,6 +5037,13 @@ Do this ALWAYS, except for the above exceptions."
 ("1555514b-4dca-4693-8c0c-fee25d372079" . "Vinnie Roslin")
 ("435ccd03-20f6-42aa-97e3-275b82dc2f6f" . "The Knack")
 ("bb858628-5b54-4d02-81b0-bc73f2b9ffda" . "Bruce Gary")
+("d1f1c5dc-fc4e-440c-b71e-000dadcf7a24" . "Jason Crosby")
+("a6af2329-7d3b-4a2a-83d4-0e9096b4f9da" . "Mark Diomede")
+("92fbb4d1-a84c-4e68-9e66-04001620ef50" . "Tom Donovan")
+("d4df68dd-f60d-4ea2-84de-cccadbeaff75" . "Brad Hall")
+("5f1281d9-2a12-481d-8f21-eee2b54c13e2" . "Kevin Kopack")
+("600514f2-ce0c-4313-9697-04b141364bc4" . "Charles Mitchell")
+("27028f69-97e4-4038-ad05-1942baf4907a" . "Solar Circus")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
