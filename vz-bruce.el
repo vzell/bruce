@@ -5236,6 +5236,10 @@ Do this ALWAYS, except for the above exceptions."
 ("ff4c8d42-4871-4778-885b-d41b01245133" . "Willie Dixon")
 ("40ee7c92-f44a-4d14-9aee-f87244465ee4" . "Otis Rush")
 ("5980fbb4-3591-4308-bfdc-048d38be402e" . "Walter Brown")
+("1ecff755-607d-4130-9a8a-8873f27e5de5" . "Jerry Garcia")
+("d1e54659-9e67-4347-8430-4834fc580ca0" . "Scott Stuber")
+("756cf342-cfbe-4459-adf5-60735fdb41b9" . "Ellen Goldsmith‐Vein")
+("3bed5bbf-e328-47cc-bc01-cd658ba815f0" . "Eric Robinson")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5508,6 +5512,7 @@ Do this ALWAYS, except for the above exceptions."
 ("580b15d9-3187-4e3c-a798-811e0642859d" . "The Center")
 ("eea15fe6-ba39-42bb-9571-635abbdb14ee" . "The Troubadour")
 ("23da4817-d532-4c67-a8df-0c7ff9186b14" . "Sunset Marquis Hotel")
+("491bbebe-a18a-47ed-83b7-45437ae84fc1" . "Frank’s Deli & Restaurant")
 )
   "Musicbrainz places.")
 
@@ -5519,6 +5524,8 @@ Do this ALWAYS, except for the above exceptions."
 ("7c0e5bb2-9a14-4732-a87e-796c1acba1c6" . "The Student Prince")
 ;; Sunset Marquis Hotel
 ("23da4817-d532-4c67-a8df-0c7ff9186b14" . "The Sunset Marquis")
+;; Frank’s Deli & Restaurant
+("491bbebe-a18a-47ed-83b7-45437ae84fc1" . "Frank’s")
 )
   "Musicbrainz aliases for places.")
 
