@@ -4424,6 +4424,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4f748092-dfae-4647-a0f0-e3bc6cd5f2cc" . "Like Any Woman Would")
 ("d2710bfa-11a6-4a9b-82c6-5e891de75c97" . "You’re a Big Girl Now")
 ("0dc490da-fc4f-3e49-b7ec-bd1c39828b45" . "Ghostbusters")
+("98cc574c-d737-48c7-a9f4-bfc771607ab7" . "Girlfriend")
 ))
 
 ;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
@@ -5240,6 +5241,7 @@ Do this ALWAYS, except for the above exceptions."
 ("d1e54659-9e67-4347-8430-4834fc580ca0" . "Scott Stuber")
 ("756cf342-cfbe-4459-adf5-60735fdb41b9" . "Ellen Goldsmith‐Vein")
 ("3bed5bbf-e328-47cc-bc01-cd658ba815f0" . "Eric Robinson")
+("0e10e22b-2a2f-48f8-b54f-cc1523312dce" . "Slim Dunlap")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5517,6 +5519,8 @@ Do this ALWAYS, except for the above exceptions."
   "Musicbrainz places.")
 
 (defvar mb-places-aliases '(
+;; The Boardwalk
+("a570085a-9ae2-4fe4-9141-eccfc189cb02" . "Boardwalk")
 ;; The Center
 ("580b15d9-3187-4e3c-a798-811e0642859d" . "Center")
 ("580b15d9-3187-4e3c-a798-811e0642859d" . "The String Factory")
