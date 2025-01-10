@@ -5242,6 +5242,7 @@ Do this ALWAYS, except for the above exceptions."
 ("756cf342-cfbe-4459-adf5-60735fdb41b9" . "Ellen Goldsmith‐Vein")
 ("3bed5bbf-e328-47cc-bc01-cd658ba815f0" . "Eric Robinson")
 ("0e10e22b-2a2f-48f8-b54f-cc1523312dce" . "Slim Dunlap")
+("a843c8eb-f121-4159-8b0f-b1a11eb6bb67" . "Brian J. Monaco")  ;; "Brian Monaco" in MB
 )
   "Brucebase artists mentioned in gignotes.")
 
