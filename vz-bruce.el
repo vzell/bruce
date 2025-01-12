@@ -5516,6 +5516,9 @@ Do this ALWAYS, except for the above exceptions."
 ("eea15fe6-ba39-42bb-9571-635abbdb14ee" . "The Troubadour")
 ("23da4817-d532-4c67-a8df-0c7ff9186b14" . "Sunset Marquis Hotel")
 ("491bbebe-a18a-47ed-83b7-45437ae84fc1" . "Frank’s Deli & Restaurant")
+("6a59a67c-fcc5-491f-949c-bfc45bc97463" . "The Stone Pony")
+("58739f36-56f4-44f6-94aa-721621054ef8" . "Beach")  ;; "Beach (Asbury Park, NJ)" in MB
+("e02b53e5-6f21-487a-bdea-7b68daa18566" . "Carousel House")
 )
   "Musicbrainz places.")
 
