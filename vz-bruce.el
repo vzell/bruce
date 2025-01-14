@@ -5519,6 +5519,11 @@ Do this ALWAYS, except for the above exceptions."
 ("6a59a67c-fcc5-491f-949c-bfc45bc97463" . "The Stone Pony")
 ("58739f36-56f4-44f6-94aa-721621054ef8" . "Beach")  ;; "Beach (Asbury Park, NJ)" in MB
 ("e02b53e5-6f21-487a-bdea-7b68daa18566" . "Carousel House")
+("3a90cba1-4b2c-4418-897e-002bfe12dd75" . "Seneca College")
+("a0d53a91-53b3-4491-98ea-3df3e6d25788" . "Minkler Auditorium")
+("8cc20c9a-fe8a-4ce1-bab1-c2d428d4d91e" . "University of Toronto")
+("c8d2b775-bbbf-411b-b373-41adf44e14b2" . "Convocation Hall")
+("beaef0b9-1e75-4ae6-bd20-60c3a4341e9f" . "Seneca Field House")
 )
   "Musicbrainz places.")
 
@@ -5534,6 +5539,8 @@ Do this ALWAYS, except for the above exceptions."
 ("23da4817-d532-4c67-a8df-0c7ff9186b14" . "The Sunset Marquis")
 ;; Frank’s Deli & Restaurant
 ("491bbebe-a18a-47ed-83b7-45437ae84fc1" . "Frank’s")
+;; Seneca Field House
+("beaef0b9-1e75-4ae6-bd20-60c3a4341e9f" . "Field House")
 )
   "Musicbrainz aliases for places.")
 
