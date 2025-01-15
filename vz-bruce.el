@@ -4530,6 +4530,8 @@ Do this ALWAYS, except for the above exceptions."
 ("8c241bbe-150b-4412-b81b-1e35e71165af" . "You’re a Friend of Mine")
 ("286d48aa-6ef1-3b30-8f4a-4287a018a9a0" . "You’ve Lost That Lovin’ Feelin’")
 ("b8a60658-bca1-3a16-975d-a40a2100d862" . "Zip‐a‐Dee‐Doo‐Dah")
+("5353d8c4-0d1a-49f9-a727-32269e56c6c0" . "The New York Shuffle")
+("9bf4b7a9-44d5-3b55-9a8f-7b10584bcacd" . "Unchained Melody")
 ))
 
 ;; Sorting:
@@ -5045,6 +5047,11 @@ Do this ALWAYS, except for the above exceptions."
 ("5f1281d9-2a12-481d-8f21-eee2b54c13e2" . "Kevin Kopack")
 ("600514f2-ce0c-4313-9697-04b141364bc4" . "Charles Mitchell")
 ("27028f69-97e4-4038-ad05-1942baf4907a" . "Solar Circus")
+("24eaae76-804b-4b8e-b63c-1cc40ae8eb18" . "Louie Appel")
+("a69e4e44-1195-426c-af41-1f782fe75d7e" . "Jeff Kazee")
+("6ae5508c-cec6-4d23-a3df-92e8b1e988b2" . "Mark Pender")
+("bc7ceac9-a524-42bd-996a-380d2f1eb567" . "Steve Shews")
+("f9227504-4fa5-44ee-b205-5301a1f86936" . "Graham Parker")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5328,6 +5335,10 @@ Do this ALWAYS, except for the above exceptions."
 ("6ae5508c-cec6-4d23-a3df-92e8b1e988b2" . "Mark Love Man Pender")
 ;; ?uestlove
 ("9436fbf8-5498-43e9-9a8d-eccbe53df6ad" . "DJ Questlove")
+;; Steve Shews
+("bc7ceac9-a524-42bd-996a-380d2f1eb567" . "Steve “Muddy” Shews")
+;; Southside Johnny
+("f826b4d1-2dc3-4c4f-ba70-69b472320338" . "Southside")
 )
   "Brucebase artist aliases.")
 
@@ -5541,6 +5552,8 @@ Do this ALWAYS, except for the above exceptions."
 ("491bbebe-a18a-47ed-83b7-45437ae84fc1" . "Frank’s")
 ;; Seneca Field House
 ("beaef0b9-1e75-4ae6-bd20-60c3a4341e9f" . "Field House")
+;; The Stone Pony
+("6a59a67c-fcc5-491f-949c-bfc45bc97463" . "Stone Pony")
 )
   "Musicbrainz aliases for places.")
 
@@ -5698,6 +5711,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Joe Grushecky & the Houserockers" . "Joe Grushecky & The Houserockers")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
 ("Ruby Falls & the Rock City Band" . "Ruby Falls & The Rock City Band")
+("Southside Johnny & the Asbury Jukes" . "Southside Johnny & The Asbury Jukes")
 ))
 
 (defvar mb-fixrelease-groups  '(
