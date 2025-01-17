@@ -2233,7 +2233,7 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-"= [|YouTube Playlist] ==
+"== [|YouTube Playlist] ==
 
 @ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
@@ -2309,7 +2309,7 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-"= [|YouTube Playlist] ==
+"== [|YouTube Playlist] ==
 
 @ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
@@ -2361,7 +2361,7 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-"= [|YouTube Playlist] ==
+"== [|YouTube Playlist] ==
 
 @ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
@@ -2428,7 +2428,7 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-"= [|YouTube Playlist] ==
+"== [|YouTube Playlist] ==
 
 @ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
@@ -2502,7 +2502,7 @@ Do this ALWAYS, except for the above exceptions."
   (interactive)
   (save-excursion
     (insert
-"= [|YouTube Playlist] ==
+"== [|YouTube Playlist] ==
 
 @ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
 # &
