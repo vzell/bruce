@@ -2393,6 +2393,75 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+;; April 30, 2006 - November 21, 2006 (56 shows)
+
+;; THE SESSIONS BAND
+;; Bruce Springsteen (vocals, acoustic guitar, harmonica)
+;; Marc Anthony Thompson (acoustic guitar, backing vocals)
+;; Patti Scialfa (backing vocals, acoustic guitar)
+;; Frank Bruno (acoustic guitar, backing vocals, washboard)
+;; Soozie Tyrell (violin, backing vocals)
+;; Sam Bardfeld (violin)
+;; Greg Liszt (banjo)
+;; Marty Rifkin (pedal steel guitar)
+;; Charles Giordano (piano, organ, accordion)
+;; Jeremy Chatzky (upright bass, electric bass)
+;; Larry Eagle (drums)
+;; Lisa Lowell (backing vocals)
+;; Curtis King Jr. (backing vocals)
+;; Cindy Mizelle (backing vocals)
+;; Art Baron (tuba, trombone)
+;; Eddie Manion (saxophones)
+;; Mark Pender (trumpet) (some shows)
+;; Curt Ramm (trumpet) (some shows)
+;; Richie "La Bamba" Rosenberg (trombone) (some shows)
+;; Clark Gayton (trombone) (some shows)
+
+(defun musicbrainz-surround-event-seeger-sessions-2006 ()
+  "Surround event with artists and line for the Seeger Session tour in 2006."
+  (interactive)
+  (save-excursion
+    (insert
+"== [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# and
+@ [7d5c39ac-5d48-4fdb-81df-6212e38353b3|The Sessions Band]
+# with
+@ [292c8a8a-4258-4f13-995d-a8e1267277f9|Sam Bardfeld]
+@ [198090a7-fb18-4e7a-9390-912afdccfeb0|Art Baron]
+@ [596abd9c-1d81-4777-bb3e-19a81b7c6e24|Frank Bruno]
+@ [11776de0-04bb-4b98-befb-6fe4ab56eba5|Jeremy Chatzky]
+@ [687d34b2-6d05-4183-83ad-b8c66079d6ef|Larry Eagle]
+@ [9b303c28-f0a0-4c76-8293-c97272f6e32c|Clark Gayton]
+@ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
+@ [7b18698b-33fb-4865-b158-e74f3457eeb7|Curtis King]
+@ [949e6ff1-5b51-40c1-8ea0-b4ef66f8c968|Greg Liszt]
+@ [59d77428-bf32-4c9f-bc4c-7c03ec882c59|Lisa Lowell]
+@ [6a3394ba-6888-4dd0-93f3-06c1e35749d8|Ed Manion]
+@ [0a84499b-cf33-43cd-b29d-8b2fb67ebbb3|Cindy Mizelle]
+@ [6ae5508c-cec6-4d23-a3df-92e8b1e988b2|Mark Pender]
+@ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
+@ [19ddafef-2335-41b0-a092-9d825c3d4fa7|Marty Rifkin]
+@ [0c59859b-9de2-43d1-aaf7-4c54cef5f14a|Richie “La Bamba” Rosenberg]
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+@ [64a3f3a8-afbf-4658-84f4-5c5136732c76|Marc Anthony Thompson]
+@ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+
+# Scheduled: ??:?? Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
 
 ;; Start of the "Wrecking Ball" tour
 
@@ -2717,6 +2786,7 @@ Do this ALWAYS, except for the above exceptions."
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-1999)
 ;; 2002-2003
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band-the-rising)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-seeger-sessions-2006)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-springsteen-on-broadway)
 
@@ -5052,6 +5122,16 @@ Do this ALWAYS, except for the above exceptions."
 ("6ae5508c-cec6-4d23-a3df-92e8b1e988b2" . "Mark Pender")
 ("bc7ceac9-a524-42bd-996a-380d2f1eb567" . "Steve Shews")
 ("f9227504-4fa5-44ee-b205-5301a1f86936" . "Graham Parker")
+("292c8a8a-4258-4f13-995d-a8e1267277f9" . "Sam Bardfeld")
+("198090a7-fb18-4e7a-9390-912afdccfeb0" . "Art Baron")
+("596abd9c-1d81-4777-bb3e-19a81b7c6e24" . "Frank Bruno")
+("11776de0-04bb-4b98-befb-6fe4ab56eba5" . "Jeremy Chatzky")
+("687d34b2-6d05-4183-83ad-b8c66079d6ef" . "Larry Eagle")
+("949e6ff1-5b51-40c1-8ea0-b4ef66f8c968" . "Greg Liszt")
+("0a84499b-cf33-43cd-b29d-8b2fb67ebbb3" . "Cindy Mizelle")
+("19ddafef-2335-41b0-a092-9d825c3d4fa7" . "Marty Rifkin")
+("0c59859b-9de2-43d1-aaf7-4c54cef5f14a" . "Richie “La Bamba” Rosenberg")
+("64a3f3a8-afbf-4658-84f4-5c5136732c76" . "Marc Anthony Thompson")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5339,6 +5419,18 @@ Do this ALWAYS, except for the above exceptions."
 ("bc7ceac9-a524-42bd-996a-380d2f1eb567" . "Steve “Muddy” Shews")
 ;; Southside Johnny
 ("f826b4d1-2dc3-4c4f-ba70-69b472320338" . "Southside")
+;; Art Baron
+("198090a7-fb18-4e7a-9390-912afdccfeb0" . "Baron")
+;; Ed Manion
+("6a3394ba-6888-4dd0-93f3-06c1e35749d8" . "Manion")
+;; Mark Pender
+("6ae5508c-cec6-4d23-a3df-92e8b1e988b2" . "Pender")
+;; Curt Ramm
+("028fd996-fe8f-41b6-a6ed-1cb4b06a23d2" . "Ramm")
+;; Richie “La Bamba” Rosenberg
+("0c59859b-9de2-43d1-aaf7-4c54cef5f14a" . "Rosenberg")
+;; Clark Gayton
+("9b303c28-f0a0-4c76-8293-c97272f6e32c" . "Gayton")
 )
   "Brucebase artist aliases.")
 
