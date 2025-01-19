@@ -4602,6 +4602,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b8a60658-bca1-3a16-975d-a40a2100d862" . "Zip‐a‐Dee‐Doo‐Dah")
 ("5353d8c4-0d1a-49f9-a727-32269e56c6c0" . "The New York Shuffle")
 ("9bf4b7a9-44d5-3b55-9a8f-7b10584bcacd" . "Unchained Melody")
+("aa5dc755-7095-4c6f-9e6b-3509c365201b" . "Church of the Poison Mind")
 ))
 
 ;; Sorting:
@@ -5132,6 +5133,10 @@ Do this ALWAYS, except for the above exceptions."
 ("19ddafef-2335-41b0-a092-9d825c3d4fa7" . "Marty Rifkin")
 ("0c59859b-9de2-43d1-aaf7-4c54cef5f14a" . "Richie “La Bamba” Rosenberg")
 ("64a3f3a8-afbf-4658-84f4-5c5136732c76" . "Marc Anthony Thompson")
+("2baae9d5-dae7-45d2-be16-56214cb7a98f" . "Gary Gold")
+("b32adcc9-3645-4341-b64c-a225b5df77da" . "David Lee Shamlian")
+("8beaf916-052f-414f-8813-dc98c54c9849" . "Joe Sweeney")
+("ad662f0f-1e67-4c4b-8cc0-c501ad695965" . "Michael Vogelmann")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5330,6 +5335,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3bed5bbf-e328-47cc-bc01-cd658ba815f0" . "Eric Robinson")
 ("0e10e22b-2a2f-48f8-b54f-cc1523312dce" . "Slim Dunlap")
 ("a843c8eb-f121-4159-8b0f-b1a11eb6bb67" . "Brian J. Monaco")  ;; "Brian Monaco" in MB
+("81435053-e1a2-48a4-adfd-e89f310c7b38" . "Culture Club")
 )
   "Brucebase artists mentioned in gignotes.")
 
