@@ -4874,7 +4874,7 @@ Do this ALWAYS, except for the above exceptions."
 ("3644f94c-f682-4fcc-a7fc-b64a4f9cb096" . "Joey Stann")
 ("dca91a6a-65d5-4eec-a9cc-80bc53b6ea9d" . "Joffo Simmons")
 ("3e045881-56a5-4b62-8f99-cb3982cab577" . "John Eddie")
-("db9023d4-d836-4983-befb-ebed46de8159" . "John Eddie and The Front Street Runners")
+;; ("db9023d4-d836-4983-befb-ebed46de8159" . "John Eddie and The Front Street Runners")   ;; removed from MB
 ("c3649208-0ebe-449b-b1d7-4bd6c560f109" . "John Fogerty")
 ("44f34fb6-f759-41ec-b1f4-cb5e5928a04f" . "John Stamos")
 ("da567441-3ab0-4bc8-9ca6-c339600f48d8" . "John McEnroe")
@@ -5007,6 +5007,7 @@ Do this ALWAYS, except for the above exceptions."
 ("7bef92eb-f2b1-4790-935a-6e411eff406e" . "The 1992–93 World Tour Band")
 ("7bef92eb-f2b1-4790-935a-6e411eff406e" . "1992–93 Touring Band")
 ("e4d62b29-a67e-4700-ba16-35c436cc1f84" . "The Alliance Choir")
+("9df6e393-da6b-4e65-9f50-6e4df5624e63" . "The Bobby Bandiera Band")
 ("1607e961-c4a7-4602-ac22-d0d87833eee3" . "The Bruce Springsteen Band")
 ("3d6009da-fb0d-4b63-8bde-47cde79dd7f5" . "The Castiles")
 ("3248ed2d-bada-41b5-a7b6-ac88faa1f1ac" . "The Chicks")
@@ -5015,7 +5016,7 @@ Do this ALWAYS, except for the above exceptions."
 ("d6652e7b-33fe-49ef-8336-4c863b4f996f" . "The E Street Band")
 ("ad2232c5-2b11-4699-80c2-e5f83c56c8e4" . "The E Street Choir")
 ("61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e" . "The E Street Horns")
-("9df6e393-da6b-4e65-9f50-6e4df5624e63" . "The Bobby Bandiera Band")
+("db9023d4-d836-4983-befb-ebed46de8159" . "The Front Street Runners")
 ("a94e530f-4e9f-40e6-b44b-ebec06f7900e" . "The Edge")
 ("1adfbbca-340a-46dd-a47a-8ba0b879cb68" . "The Max Weinberg 7")
 ("c7589842-71c8-460a-a0ae-7833b8a76fe0" . "The Miami Horns")
@@ -5437,6 +5438,8 @@ Do this ALWAYS, except for the above exceptions."
 ("0c59859b-9de2-43d1-aaf7-4c54cef5f14a" . "Rosenberg")
 ;; Clark Gayton
 ("9b303c28-f0a0-4c76-8293-c97272f6e32c" . "Gayton")
+;; Joe Grushecky
+("ce48dd78-903e-4737-aee7-5e70bba7e15d" . "Grushecky")
 )
   "Brucebase artist aliases.")
 
@@ -5689,6 +5692,8 @@ Do this ALWAYS, except for the above exceptions."
 ("55a37f4f-39a4-45a7-851d-586569985519" . "organ")
 ("b3eac5f9-7859-4416-ac39-7154e2e8d348" . "piano")
 ("1c8f9780-2f16-4891-b66d-bb7aa0820dbd" . "trumpet")
+("95b0c3d2-9606-4ef5-a019-9b7437f3adda" . "keyboard")
+("a9ed16cd-b8cb-4256-9c41-93f5f0458c49" . "saxophone")
 )
   "Musicbrainz instruments.")
 
@@ -5797,6 +5802,8 @@ Do this ALWAYS, except for the above exceptions."
 ("Organ" . "organ")
 ("Piano" . "piano")
 ("Trumpet" . "trumpet")
+("Keys" . "keyboard")
+("Saxophone" . "saxophone")
 ))
 
 (defvar mb-fixartists  '(
