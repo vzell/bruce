@@ -5353,6 +5353,7 @@ Do this ALWAYS, except for the above exceptions."
 ("0e10e22b-2a2f-48f8-b54f-cc1523312dce" . "Slim Dunlap")
 ("a843c8eb-f121-4159-8b0f-b1a11eb6bb67" . "Brian J. Monaco")  ;; "Brian Monaco" in MB
 ("81435053-e1a2-48a4-adfd-e89f310c7b38" . "Culture Club")
+("43d26cb2-3aaa-4cb0-96f9-f60f1684f796" . "James Maddock")
 )
   "Brucebase artists mentioned in gignotes.")
 
