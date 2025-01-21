@@ -5153,6 +5153,7 @@ Do this ALWAYS, except for the above exceptions."
 ("522a625e-5f67-4b5e-afaf-ecae44287a6d" . "Remember Jones")
 ("9dfe0867-cae3-4345-93b2-0f92b615505b" . "Tony Pallagrosi")
 ("6c9daa2c-ede5-4c06-a547-bf6fc7112c86" . "Jake Thistle")
+("b94e6738-b358-4a0a-83c7-1856252360fa" . "Danny Sage")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
