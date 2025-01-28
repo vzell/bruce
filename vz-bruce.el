@@ -8,6 +8,20 @@
 
 ;;; Code:
 
+(defun bl-create-event-directory (event-directory)
+  "Create EVENT-DIRECTORY on NFS share."
+  (interactive "sEvent directory: ")
+  (make-directory (concat "/mnt/share/scans/BL/" event-directory) :parents)
+  )
+
+(defun bl-create-new-entries (event-name)
+  "Create entities for event EVENT-NAME."
+  (interactive "sEvent name: ")
+  (let ((event-directory (replace-regexp-in-string ":" "" event-name)))
+    (insert (concat "* " event-name))
+    (bl-create-event-directory event-directory))
+  )
+
 (defun vz-surround-with-quotes (ξstring &optional ξfrom ξto)
   "Surround ΞSTRING region between ΞFROM and ΞTO with quotes."
   (interactive
