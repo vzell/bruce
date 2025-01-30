@@ -5169,6 +5169,7 @@ Do this ALWAYS, except for the above exceptions."
 ("6c9daa2c-ede5-4c06-a547-bf6fc7112c86" . "Jake Thistle")
 ("b94e6738-b358-4a0a-83c7-1856252360fa" . "Danny Sage")
 ("0f182bc4-558d-4ab1-8209-07a222188403" . "Rob Dye")
+("c19ff12b-058f-44a8-b245-b0efb4752925" . "Smokey Robinson")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5776,6 +5777,8 @@ Do this ALWAYS, except for the above exceptions."
 ("https://sfi.usc.edu/ambassadors" . "30th Anniversary Ambassadors for Humanity Gala")
 ("https://backstreets.com/" . "Backstreets Magazine")
 ("https://www.imdb.com/title/tt31923069/?ref_=nv_sr_srsg_2_tt_8_nm_0_in_0_q_deliver%2520me%2520" . "Deliver Me From Nowhere")
+("https://springsteenarchives.org/" . "Bruce Springsteen Archives & Center for American Music")
+("https://springsteenarchives.org/american-music-honors/" . "American Music Honors")
 )
   "Other URLs.")
 
