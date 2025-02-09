@@ -3685,6 +3685,7 @@ Do this ALWAYS, except for the above exceptions."
 ("d3e5f2dd-dc91-35bf-9367-a53130b756fa" . "7 Rooms of Gloom")
 ("b4782f4b-5316-34a9-b261-60a295fb398c" . "A Change Is Gonna Come")
 ("415b61e7-d351-4348-bb72-cbb89efd9bf4" . "A Dustland Fairytale")
+("415b61e7-d351-4348-bb72-cbb89efd9bf4" . "Dustland")
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Boy")
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Boy (Girl)")
 ("15dfe095-3186-4173-ab25-5f2be9c3fcc3" . "A Fine Fine Girl")
@@ -5174,6 +5175,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4dce0430-7fff-4898-a287-df8c31e2c626" . "Erica Canales")
 ("9c6730ea-3893-4994-a771-401c31a38d7e" . "Robbie Connolly")
 ("0e641c47-a135-496c-962c-81a94bd48f13" . "Melissa McMillan")
+("95e1ead9-4d31-4808-a7ac-32c3614c116b" . "The Killers")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5791,6 +5793,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Jersey_Shore" . "New Jersey Shore")
 ("https://en.wikipedia.org/wiki/Jersey_Shore" . "Jersey Shore")
 ("https://en.wikipedia.org/wiki/Jersey_Shore" . "Shore")
+("https://en.wikipedia.org/wiki/Imploding_the_Mirage_Tour" . "https://en.wikipedia.org/wiki/Imploding_the_Mirage_Tour")
 )
   "Other URLs.")
 
