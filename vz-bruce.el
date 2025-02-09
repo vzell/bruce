@@ -5170,6 +5170,10 @@ Do this ALWAYS, except for the above exceptions."
 ("b94e6738-b358-4a0a-83c7-1856252360fa" . "Danny Sage")
 ("0f182bc4-558d-4ab1-8209-07a222188403" . "Rob Dye")
 ("c19ff12b-058f-44a8-b245-b0efb4752925" . "Smokey Robinson")
+("df8796bb-9052-4322-a08a-c082b4dd89ed" . "Ted Sablay")
+("4dce0430-7fff-4898-a287-df8c31e2c626" . "Erica Canales")
+("9c6730ea-3893-4994-a771-401c31a38d7e" . "Robbie Connolly")
+("0e641c47-a135-496c-962c-81a94bd48f13" . "Melissa McMillan")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
