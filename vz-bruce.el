@@ -5176,6 +5176,7 @@ Do this ALWAYS, except for the above exceptions."
 ("9c6730ea-3893-4994-a771-401c31a38d7e" . "Robbie Connolly")
 ("0e641c47-a135-496c-962c-81a94bd48f13" . "Melissa McMillan")
 ("95e1ead9-4d31-4808-a7ac-32c3614c116b" . "The Killers")
+("eda4b070-ab02-42e5-8578-9c39fa2a7f22" . "Steve Paraczky")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5376,6 +5377,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a843c8eb-f121-4159-8b0f-b1a11eb6bb67" . "Brian J. Monaco")  ;; "Brian Monaco" in MB
 ("81435053-e1a2-48a4-adfd-e89f310c7b38" . "Culture Club")
 ("43d26cb2-3aaa-4cb0-96f9-f60f1684f796" . "James Maddock")
+("c75760ed-f0d1-4a6a-b170-e84df8ed6e8c" . "Mike Saunders")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5435,6 +5437,7 @@ Do this ALWAYS, except for the above exceptions."
 ("065af1a2-2fa9-4864-852e-08c00c9c67d8" . "Soozie")
 ;; Steven van Zandt
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Miami Steve Van Zandt")
+("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Miami Steve")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Steve")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie")
 ("de53495e-ad5a-4c30-82ab-05e7e3ec7b4d" . "Stevie Van Zandt")
@@ -5479,6 +5482,8 @@ Do this ALWAYS, except for the above exceptions."
 ("9b303c28-f0a0-4c76-8293-c97272f6e32c" . "Gayton")
 ;; Joe Grushecky
 ("ce48dd78-903e-4737-aee7-5e70bba7e15d" . "Grushecky")
+;; The Miami Horns
+("c7589842-71c8-460a-a0ae-7833b8a76fe0" . "Miami Horns")
 )
   "Brucebase artist aliases.")
 
@@ -5628,6 +5633,7 @@ Do this ALWAYS, except for the above exceptions."
 ("12c3b82e-fcab-4219-9bd5-792089d8280e" . "Barcelona")
 ("83f22bb6-4631-443c-bace-9fae8540362a" . "San Francisco")
 ("8af30521-c317-48f2-b18d-536e248521e1" . "Manitoba")
+("729541ef-ff20-452b-ba8e-dc6748a7d026" . "South Bend")
 )
   "Musicbrainz areas.")
 
@@ -5676,6 +5682,7 @@ Do this ALWAYS, except for the above exceptions."
 ("8cc20c9a-fe8a-4ce1-bab1-c2d428d4d91e" . "University of Toronto")
 ("c8d2b775-bbbf-411b-b373-41adf44e14b2" . "Convocation Hall")
 ("beaef0b9-1e75-4ae6-bd20-60c3a4341e9f" . "Seneca Field House")
+("9fec8e29-1766-41f5-8339-dc1511120dd9" . "Vegetable Buddies")
 )
   "Musicbrainz places.")
 
