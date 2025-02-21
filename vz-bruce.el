@@ -5535,6 +5535,8 @@ Do this ALWAYS, except for the above exceptions."
 ("88e34862-743e-4d48-bdc0-0399c2b20f73" . "History Books")
 ;; The Rolling Stones
 ("4838a3c9-fd2b-30a5-83eb-e32545b5d7fc" . "Exile on Main St.")
+; I Don’t Want to Go Home: Southside Johnny & The Asbury Jukes
+;("a371727c-0cb9-3340-b89a-ced7ea8e64d2" . "I Don’t Want to Go Home")
 )
   "Musicbrainz release groups.")
 
