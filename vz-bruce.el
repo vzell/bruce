@@ -4546,6 +4546,7 @@ Do this ALWAYS, except for the above exceptions."
 ("20fd2c3f-d28d-3b00-9206-4ea43c0d9d00" . "Freddie’s Dead")
 ("084e1720-4a6a-304f-9a6d-9e3d36629e04" . "God Don’t Make Lonely Girls")
 ("51b53c20-961a-3aea-8dcf-c5357d4c042e" . "Going Home (Theme From Local Hero)")  ;; Is called "Going Home: Theme of the Local Hero" on MB
+("c7be6da2-8c2c-46c2-b746-2567313ca5cc" . "Going to a Go‐Go")
 ("0c2d9eb6-1c6c-407f-98b6-61b40c7d68b5" . "Hail Hail Rock ’n’ Roll")
 ("c04fdab6-f1e2-3972-ace2-08f195ca85a4" . "Hey Joe")
 ("208766c1-4a7f-3fee-b236-660432c46783" . "He’s a Rebel")
@@ -5177,6 +5178,7 @@ Do this ALWAYS, except for the above exceptions."
 ("0e641c47-a135-496c-962c-81a94bd48f13" . "Melissa McMillan")
 ("95e1ead9-4d31-4808-a7ac-32c3614c116b" . "The Killers")
 ("eda4b070-ab02-42e5-8578-9c39fa2a7f22" . "Steve Paraczky")
+("432fcd84-7594-468e-92ec-ea080adb477f" . "Andy Burton")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5876,6 +5878,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Live From Joe”s Place" . "Live From Joe’s Place")
 ("Ruby Falls & the Rock City Band" . "Ruby Falls & The Rock City Band")
 ("Southside Johnny & the Asbury Jukes" . "Southside Johnny & The Asbury Jukes")
+("The Disciples Of Soul" . "The Disciples of Soul")
 ))
 
 (defvar mb-fixrelease-groups  '(
