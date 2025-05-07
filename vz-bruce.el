@@ -5209,6 +5209,9 @@ Do this ALWAYS, except for the above exceptions."
 ("d135874d-9cae-4fef-97e3-36acbd9f5a26" . "Patti Smith")
 ("905a8f9b-03dc-4f47-b9bb-ecce7ea13ab1" . "Michael Stipe")
 ("5a2e9cd3-010a-4aae-9f83-629253284202" . "Sharon Van Etten")
+("e0272dd5-9056-4ca2-a327-78deaf4437b8" . "Lynn Lockamy")
+("25796215-9ec7-4d7b-ab48-8cd39adc08b2" . "Ravi Best")
+("" . "Anthony Breznican")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5560,7 +5563,7 @@ Do this ALWAYS, except for the above exceptions."
 ("48e335f3-8e4a-4e38-b2df-e1514b9f9126" . "Letter to You")
 ("2cdcbdc4-b5b1-4afa-853f-f84faae2a0e0" . "The Promise: The Darkness on the Edge of Town Story")
 ("963303c0-96a6-4879-b126-eeda4d71d39f" . "The Promise: The Making of Darkness on the Edge of Town")
-("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary: Bruce Springsteen and The E Street Band")
+("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary: Bruce Springsteen & The E Street Band")
 ("09205013-ee8b-4a48-be3b-212f3e90df47" . "Road Diary")
 ;; Compilation
 ("60ba10e0-9f77-3237-8b0a-967b31679a1b" . "Tracks")
@@ -5931,7 +5934,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; ("wrong name" . "right name")
 ("Live From Joe”s Place" . "Live From Joe’s Place")
 ("The Promise: the Making of Darkness on the Edge of Town" . "The Promise: The Making of Darkness on the Edge of Town")
-("Road Diary: Bruce Springsteen and the E Street Band" . "Road Diary: Bruce Springsteen and The E Street Band")
+("Road Diary: Bruce Springsteen & the E Street Band" . "Road Diary: Bruce Springsteen & The E Street Band")
 ))
 
 (defvar mb-fixothers '(
