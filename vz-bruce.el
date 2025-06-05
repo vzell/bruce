@@ -5616,6 +5616,7 @@ Do this ALWAYS, except for the above exceptions."
 ;; Sea.Hear.Now Festival
 ("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now Festival")
 ("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now")
+("9988f8a9-d006-42a6-ae17-516d5fbb8b1d" . "Land of Hope and Dreams Tour")
 )
   "Musicbrainz tour series.")
 
@@ -5681,6 +5682,10 @@ Do this ALWAYS, except for the above exceptions."
 ("83f22bb6-4631-443c-bace-9fae8540362a" . "San Francisco")
 ("8af30521-c317-48f2-b18d-536e248521e1" . "Manitoba")
 ("729541ef-ff20-452b-ba8e-dc6748a7d026" . "South Bend")
+("852531bf-3410-401f-b432-9c3157a386b9" . "Manchester")
+("0abacf96-801b-4720-9ad0-6a3c7a90ba1a" . "Lille")
+("08310658-51eb-3801-80de-5a0739207115" . "France")
+("c249c30e-88ab-4b2f-a745-96a25bd7afee" . "Liverpool")
 )
   "Musicbrainz areas.")
 
@@ -5731,6 +5736,7 @@ Do this ALWAYS, except for the above exceptions."
 ("beaef0b9-1e75-4ae6-bd20-60c3a4341e9f" . "Seneca Field House")
 ("9fec8e29-1766-41f5-8339-dc1511120dd9" . "Vegetable Buddies")
 ("b136e75e-d791-4396-ab58-0543953bee38" . "Federici’s Family Restaurant")
+("b3021e11-9066-40ff-8560-37e7416cf438" . "Co‐op Live")
 )
   "Musicbrainz places.")
 
