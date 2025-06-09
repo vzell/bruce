@@ -5423,6 +5423,7 @@ Do this ALWAYS, except for the above exceptions."
 ("2c629b8c-d751-4131-b785-5690bb5e0fd7" . "The Kills")
 ("664c3e0e-42d8-48c1-b209-1efca19c0325" . "The National")
 ("b23e8a63-8f47-4882-b55b-df2c92ef400e" . "Interpol")
+("fdbf4fbb-c994-46a2-a6a4-5027318cb7aa" . "Mike Appel")
 )
   "Brucebase artists mentioned in gignotes.")
 
