@@ -4510,6 +4510,7 @@ Do this ALWAYS, except for the above exceptions."
 ("d2710bfa-11a6-4a9b-82c6-5e891de75c97" . "You’re a Big Girl Now")
 ("0dc490da-fc4f-3e49-b7ec-bd1c39828b45" . "Ghostbusters")
 ("98cc574c-d737-48c7-a9f4-bfc771607ab7" . "Girlfriend")
+("62c39e8e-18e2-326b-9a2f-615f8e2b547d" . "Can’t Buy Me Love")
 ))
 
 ;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
