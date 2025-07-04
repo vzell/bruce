@@ -5425,6 +5425,7 @@ Do this ALWAYS, except for the above exceptions."
 ("664c3e0e-42d8-48c1-b209-1efca19c0325" . "The National")
 ("b23e8a63-8f47-4882-b55b-df2c92ef400e" . "Interpol")
 ("fdbf4fbb-c994-46a2-a6a4-5027318cb7aa" . "Mike Appel")
+("39ee919c-ac03-4241-80f0-6934cc784bd5" . "Will Hodgkinson")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5584,6 +5585,7 @@ Do this ALWAYS, except for the above exceptions."
 ("4838a3c9-fd2b-30a5-83eb-e32545b5d7fc" . "Exile on Main St.")
 ; I Don’t Want to Go Home: Southside Johnny & The Asbury Jukes
 ;("a371727c-0cb9-3340-b89a-ced7ea8e64d2" . "I Don’t Want to Go Home")
+("f731060c-05d4-439d-8351-59e5e5eb91a0" . "Tracks II: The Lost Albums")
 )
   "Musicbrainz release groups.")
 
@@ -5619,6 +5621,7 @@ Do this ALWAYS, except for the above exceptions."
 ("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now Festival")
 ("aedcdabc-22eb-46fc-91de-de410781da5a" . "Sea.Hear.Now")
 ("9988f8a9-d006-42a6-ae17-516d5fbb8b1d" . "Land of Hope and Dreams Tour")
+("db03e180-5b76-4fae-8ca8-52ec6ac9de1f" . "2023–25 International Tour")
 )
   "Musicbrainz tour series.")
 
@@ -5688,6 +5691,8 @@ Do this ALWAYS, except for the above exceptions."
 ("0abacf96-801b-4720-9ad0-6a3c7a90ba1a" . "Lille")
 ("08310658-51eb-3801-80de-5a0739207115" . "France")
 ("c249c30e-88ab-4b2f-a745-96a25bd7afee" . "Liverpool")
+("5a2f83bb-e033-4d4b-9fea-9ca6f27cf751" . "Colts Neck Township")
+("5a2f83bb-e033-4d4b-9fea-9ca6f27cf751" . "Colts Neck")
 )
   "Musicbrainz areas.")
 
@@ -5739,6 +5744,8 @@ Do this ALWAYS, except for the above exceptions."
 ("9fec8e29-1766-41f5-8339-dc1511120dd9" . "Vegetable Buddies")
 ("b136e75e-d791-4396-ab58-0543953bee38" . "Federici’s Family Restaurant")
 ("b3021e11-9066-40ff-8560-37e7416cf438" . "Co‐op Live")
+("f15517b8-c565-49cf-8fad-61d52666fe92" . "Eve Studios")
+("a3ed30dc-6e11-4813-b63c-c7220ffa7d88" . "San Sebastián")
 )
   "Musicbrainz places.")
 
@@ -5860,6 +5867,10 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Jersey_Shore" . "Shore")
 ("https://en.wikipedia.org/wiki/Imploding_the_Mirage_Tour" . "https://en.wikipedia.org/wiki/Imploding_the_Mirage_Tour")
 ("https://www.bbc.com" . "BBC")
+("https://de.wikipedia.org/wiki/Appendizitis" . "appendicitis")
+("https://en.wikipedia.org/wiki/Manchester_Evening_News" . "Manchester Evening News")
+("https://en.wikipedia.org/wiki/Instagram" . "Instagram")
+("https://en.wikipedia.org/wiki/Facebook" . "Facebook")
 )
   "Other URLs.")
 
@@ -5943,6 +5954,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Live From Joe”s Place" . "Live From Joe’s Place")
 ("The Promise: the Making of Darkness on the Edge of Town" . "The Promise: The Making of Darkness on the Edge of Town")
 ("Road Diary: Bruce Springsteen & the E Street Band" . "Road Diary: Bruce Springsteen & The E Street Band")
+("Tracks II: the Lost Albums" . "Tracks II: The Lost Albums")
 ))
 
 (defvar mb-fixothers '(
@@ -5962,6 +5974,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Genocides" . "genocides")
 ("Peptic Ulcer Disease" . "peptic ulcer disease")
 ("American Election" . "American election")
+("Appendicitis" . "appendicitis")
 ))
 
 (defvar bb-abbrevs  '(
