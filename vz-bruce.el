@@ -5440,6 +5440,7 @@ Do this ALWAYS, except for the above exceptions."
 ("1d89d17d-7224-4ae2-bd74-87cececc164f" . "Penélope Cruz")
 ("3e632998-c0fa-42d4-b32a-c62727b68966" . "Walter Salles")
 ("de5c2106-c607-49a3-a967-e5673b603070" . "Bowen Yang")
+("7397fcf9-e76e-42ae-b48a-453f886176cd" . "Odessa Young")
 )
   "Brucebase artists mentioned in gignotes.")
 
