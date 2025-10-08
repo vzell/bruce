@@ -5224,6 +5224,7 @@ Do this ALWAYS, except for the above exceptions."
 ("6dfe6b96-1f4c-4eac-87bd-97c82a1c405a" . "Samantha Uzbay")
 ("b298fec5-5997-4ba9-a2d5-651caed95d82" . "Isaac Washam")
 ("2d0b432c-d5fd-43e7-aa7f-4640d835c71b" . "Caleb Followill")
+("d92a2f4d-adae-424c-aab2-3d089e569da6" . "Larry Campbell")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5602,6 +5603,7 @@ Do this ALWAYS, except for the above exceptions."
 ; I Don’t Want to Go Home: Southside Johnny & The Asbury Jukes
 ;("a371727c-0cb9-3340-b89a-ced7ea8e64d2" . "I Don’t Want to Go Home")
 ("f731060c-05d4-439d-8351-59e5e5eb91a0" . "Tracks II: The Lost Albums")
+("324aee0c-36ec-35c1-9c93-b67a1d428037" . "Nebraska ’82: Expanded Edition")
 )
   "Musicbrainz release groups.")
 
