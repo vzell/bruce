@@ -5225,6 +5225,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b298fec5-5997-4ba9-a2d5-651caed95d82" . "Isaac Washam")
 ("2d0b432c-d5fd-43e7-aa7f-4640d835c71b" . "Caleb Followill")
 ("d92a2f4d-adae-424c-aab2-3d089e569da6" . "Larry Campbell")
+("69786fca-fdf2-492d-9750-c8a5af6225df" . "Jeremy Strong")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5889,6 +5890,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Manchester_Evening_News" . "Manchester Evening News")
 ("https://en.wikipedia.org/wiki/Instagram" . "Instagram")
 ("https://en.wikipedia.org/wiki/Facebook" . "Facebook")
+("https://en.wikipedia.org/wiki/Spotify" . "Spotify")
 )
   "Other URLs.")
 
