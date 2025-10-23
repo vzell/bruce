@@ -5226,6 +5226,7 @@ Do this ALWAYS, except for the above exceptions."
 ("2d0b432c-d5fd-43e7-aa7f-4640d835c71b" . "Caleb Followill")
 ("d92a2f4d-adae-424c-aab2-3d089e569da6" . "Larry Campbell")
 ("69786fca-fdf2-492d-9750-c8a5af6225df" . "Jeremy Strong")
+("b9af8c12-952e-4895-ad24-3171aba3c2d4" . "Fabio Fazio")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
