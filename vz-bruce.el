@@ -5227,6 +5227,9 @@ Do this ALWAYS, except for the above exceptions."
 ("d92a2f4d-adae-424c-aab2-3d089e569da6" . "Larry Campbell")
 ("69786fca-fdf2-492d-9750-c8a5af6225df" . "Jeremy Strong")
 ("b9af8c12-952e-4895-ad24-3171aba3c2d4" . "Fabio Fazio")
+("d2d2baa6-f386-4136-acbd-4717e54dfb96" . "Jennifer Lawrence")
+("95eb895a-c482-41c5-9bd6-3d53e78c168c" . "Tessa Thompson")
+("a5028674-e1a7-4170-9882-8e7a57d99d2a" . "Scott Mills")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
