@@ -5230,6 +5230,7 @@ Do this ALWAYS, except for the above exceptions."
 ("d2d2baa6-f386-4136-acbd-4717e54dfb96" . "Jennifer Lawrence")
 ("95eb895a-c482-41c5-9bd6-3d53e78c168c" . "Tessa Thompson")
 ("a5028674-e1a7-4170-9882-8e7a57d99d2a" . "Scott Mills")
+("8e2a9ce4-dd99-456c-8f44-036bf7cc1e94" . "George Stephanopoulos")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5448,6 +5449,7 @@ Do this ALWAYS, except for the above exceptions."
 ("de5c2106-c607-49a3-a967-e5673b603070" . "Bowen Yang")
 ("7397fcf9-e76e-42ae-b48a-453f886176cd" . "Odessa Young")
 ("13c83d70-9e54-47b2-878f-5d02a9e95bfe" . "J.J. Jackson")
+("5fee3020-513b-48c2-b1f7-4681b01db0c6" . "Florence + the Machine")
 )
   "Brucebase artists mentioned in gignotes.")
 
