@@ -5231,6 +5231,7 @@ Do this ALWAYS, except for the above exceptions."
 ("95eb895a-c482-41c5-9bd6-3d53e78c168c" . "Tessa Thompson")
 ("a5028674-e1a7-4170-9882-8e7a57d99d2a" . "Scott Mills")
 ("8e2a9ce4-dd99-456c-8f44-036bf7cc1e94" . "George Stephanopoulos")
+("b29ba300-5891-4fc8-a50d-65b63b961355" . "Daniel Wall")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
