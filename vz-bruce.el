@@ -5557,6 +5557,10 @@ Do this ALWAYS, except for the above exceptions."
 ("ce48dd78-903e-4737-aee7-5e70bba7e15d" . "Grushecky")
 ;; The Miami Horns
 ("c7589842-71c8-460a-a0ae-7833b8a76fe0" . "Miami Horns")
+;; Curtis King
+("7b18698b-33fb-4865-b158-e74f3457eeb7" . "Curtis King Jr.")
+;; Gary “U.S.” Bonds
+("0f1083d8-fca9-40e3-b7bb-6cca7f15eff0" . "Gary U.S. Bonds")
 )
   "Brucebase artist aliases.")
 
@@ -5791,6 +5795,7 @@ Do this ALWAYS, except for the above exceptions."
 ("beaef0b9-1e75-4ae6-bd20-60c3a4341e9f" . "Field House")
 ;; The Stone Pony
 ("6a59a67c-fcc5-491f-949c-bfc45bc97463" . "Stone Pony")
+("6a59a67c-fcc5-491f-949c-bfc45bc97463" . "The Pony")
 ;; Federici’s Family Restaurant
 ("b136e75e-d791-4396-ab58-0543953bee38" . "Federici’s")
 )
@@ -5898,6 +5903,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Instagram" . "Instagram")
 ("https://en.wikipedia.org/wiki/Facebook" . "Facebook")
 ("https://en.wikipedia.org/wiki/Spotify" . "Spotify")
+("https://en.wikipedia.org/wiki/TeachRock" . "TeachRock")
 )
   "Other URLs.")
 
@@ -5972,6 +5978,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Ruby Falls & the Rock City Band" . "Ruby Falls & The Rock City Band")
 ("Southside Johnny & the Asbury Jukes" . "Southside Johnny & The Asbury Jukes")
 ("The Disciples Of Soul" . "The Disciples of Soul")
+("Little Steven & The Disciples Of Soul" . "Little Steven & The Disciples of Soul")
 ("Music Will Academy Of Lower Manhattan Public Middle School" . "Music Will Academy of Lower Manhattan Public Middle School")
 ))
 
