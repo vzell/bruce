@@ -4077,6 +4077,7 @@ Do this ALWAYS, except for the above exceptions."
 ("55737362-0b16-31a2-8a10-b7a43a391b76" . "London Calling")
 ("b87c7ce0-2fe9-3426-8dd5-bd5db6bf22e8" . "Lonely Teardrops")
 ("08de2826-6161-31ac-8e96-b18494f23b38" . "Lonesome Train (on a Lonesome Track)")  ;; in BB called "Lonesome Train"
+("08de2826-6161-31ac-8e96-b18494f23b38" . "Lonesome Train")                        ;; in BB called "Lonesome Train"
 ("525dd33c-5aba-49ff-b4f8-19cfb1b6370c" . "Lonesome Valley")
 ("412d3909-1f2c-30e6-b009-daba36723dbd" . "Long Black Veil")  ;; http://musicbrainz.org/work/412d3909-1f2c-30e6-b009-daba36723dbd - It's called "The Long Black Veil" on MusicBrainz
 ("4679e271-b7c1-3331-882e-2a173f2001e4" . "Long Tall Sally")
@@ -5451,6 +5452,8 @@ Do this ALWAYS, except for the above exceptions."
 ("7397fcf9-e76e-42ae-b48a-453f886176cd" . "Odessa Young")
 ("13c83d70-9e54-47b2-878f-5d02a9e95bfe" . "J.J. Jackson")
 ("5fee3020-513b-48c2-b1f7-4681b01db0c6" . "Florence + the Machine")
+("d047ee24-6fac-401a-8769-34edbda52113" . "Lloyd Price")
+("920febb2-ea05-4339-8a08-17294e60c736" . "Chubby Checker")
 )
   "Brucebase artists mentioned in gignotes.")
 
