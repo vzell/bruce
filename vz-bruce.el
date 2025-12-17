@@ -5233,6 +5233,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a5028674-e1a7-4170-9882-8e7a57d99d2a" . "Scott Mills")
 ("8e2a9ce4-dd99-456c-8f44-036bf7cc1e94" . "George Stephanopoulos")
 ("b29ba300-5891-4fc8-a50d-65b63b961355" . "Daniel Wall")
+("733dd37c-eaff-4fe5-9055-95b2d76b2bd0" . "Audrey Martells")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5454,6 +5455,17 @@ Do this ALWAYS, except for the above exceptions."
 ("5fee3020-513b-48c2-b1f7-4681b01db0c6" . "Florence + the Machine")
 ("d047ee24-6fac-401a-8769-34edbda52113" . "Lloyd Price")
 ("920febb2-ea05-4339-8a08-17294e60c736" . "Chubby Checker")
+("ae4e3542-7838-4a6f-b753-08216be5a6bb" . "Harry Chapin")
+("2cd9944a-a5d6-4a49-a8e0-7d585992b48b" . "Jen Chapin")
+("ccd10fbc-390c-4bad-a03e-a2b45c5d6119" . "Randy C. Moore")
+("2b21e557-b521-47cf-b680-87dff0712683" . "Sameer Gadhia")
+("5c8ff2c0-3658-4e75-85d7-f084a86f1dbe" . "Eric Cannata")
+("7fe96b15-5608-430e-ad25-77a01353c5d9" . "Young the Giant")
+("a690d479-091c-4c4c-aa5c-7d1d512316c6" . "Yola")
+("34a977be-ef17-4ab9-b34d-959a89e7e534" ."Amy Helm")
+("9978a09b-4467-4790-9bde-424f004b7312" . "Dixie Dregs")
+("f7722ace-66ad-4d6e-b989-82a92ae56831" . "Steve Chapin")
+("dbad7abd-a25a-40ad-b77f-901678dd9dbb" . "Mark Barden")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5840,6 +5852,7 @@ Do this ALWAYS, except for the above exceptions."
 ("1c8f9780-2f16-4891-b66d-bb7aa0820dbd" . "trumpet")
 ("95b0c3d2-9606-4ef5-a019-9b7437f3adda" . "keyboard")
 ("a9ed16cd-b8cb-4256-9c41-93f5f0458c49" . "saxophone")
+("f3bd3292-1a33-4259-974d-b7375158d95d" . "congas")
 )
   "Musicbrainz instruments.")
 
@@ -5967,6 +5980,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Trumpet" . "trumpet")
 ("Keys" . "keyboard")
 ("Saxophone" . "saxophone")
+("Congas" . "congas")
 ))
 
 (defvar mb-fixartists  '(
