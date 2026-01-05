@@ -5738,6 +5738,7 @@ Do this ALWAYS, except for the above exceptions."
 ("c249c30e-88ab-4b2f-a745-96a25bd7afee" . "Liverpool")
 ("5a2f83bb-e033-4d4b-9fea-9ca6f27cf751" . "Colts Neck Township")
 ("5a2f83bb-e033-4d4b-9fea-9ca6f27cf751" . "Colts Neck")
+("261962ea-d8c2-4eaf-a80c-f14376ffadb0" . "Manhattan")
 )
   "Musicbrainz areas.")
 
@@ -5791,6 +5792,7 @@ Do this ALWAYS, except for the above exceptions."
 ("b3021e11-9066-40ff-8560-37e7416cf438" . "Co‐op Live")
 ("f15517b8-c565-49cf-8fad-61d52666fe92" . "Eve Studios")
 ("a3ed30dc-6e11-4813-b63c-c7220ffa7d88" . "San Sebastián")
+("8ab4429c-7039-4388-9558-ee1591f6b9f4" . "New York Public Library")
 )
   "Musicbrainz places.")
 
