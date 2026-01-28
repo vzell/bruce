@@ -3667,6 +3667,7 @@ Do this ALWAYS, except for the above exceptions."
 ("69c09dfa-d23c-436e-975d-26bc7fe8bcd0" . "[instrumental intro]")
 ("b558db16-5d0c-4eba-8a99-be1da7e48de5" . "[untitled riff]")
 ("772a6a04-2f9f-46e1-bafb-08f47c1c0753" . "“BBC Blues”")
+("9998a044-f877-4435-928f-c63ce302ae0f" . "Streets of Minneapolis")
 ))
 
 ;; Sorting:  sort-regexp-fields  '^.*$' ' ".*'
