@@ -3920,6 +3920,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a7baceed-e1ca-4468-9687-d8cfbee3086f" . "Hang Up My Rock and Roll Shoes")
 ("c175c340-1555-3f7e-8bbd-040b47336771" . "Hang on Sloopy")
 ("bba40a4a-c222-3d60-8f3a-95ad07a421fc" . "Happy Birthday to You")
+("bba40a4a-c222-3d60-8f3a-95ad07a421fc" . "Happy Birthday")
 ("c5563993-5a7f-39b2-bd7d-bf00127c43ae" . "Hard Times (Come Again No More)")  ;; Is called "Hard Times Come Again No More" in MB
 ("6b80e488-9802-4b05-9a0f-97631a5ea6af" . "Hard Times Come Easy")  ;; JUST: Richie Sambora
 ("a7bb436f-47aa-4ef3-8278-38eeb42727d2" . "Hard Travelin’ Hootenanny")  ;; It's called "Hard Travelin’" on MB
@@ -5740,6 +5741,8 @@ Do this ALWAYS, except for the above exceptions."
 ("5a2f83bb-e033-4d4b-9fea-9ca6f27cf751" . "Colts Neck Township")
 ("5a2f83bb-e033-4d4b-9fea-9ca6f27cf751" . "Colts Neck")
 ("261962ea-d8c2-4eaf-a80c-f14376ffadb0" . "Manhattan")
+("3e80aaa7-9b71-450f-8147-0ecf101d8f1a" . "Minneapolis")
+("f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5" . "MN")
 )
   "Musicbrainz areas.")
 
@@ -5923,6 +5926,8 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/Facebook" . "Facebook")
 ("https://en.wikipedia.org/wiki/Spotify" . "Spotify")
 ("https://en.wikipedia.org/wiki/TeachRock" . "TeachRock")
+("https://en.wikipedia.org/wiki/United_States_Immigration_and_Customs_Enforcement" . "ICE")
+("https://en.wikipedia.org/wiki/Killing_of_Ren%C3%A9e_Good" . "Renee Good")
 )
   "Other URLs.")
 
