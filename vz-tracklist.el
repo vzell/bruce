@@ -139,4 +139,4 @@ block to the corresponding line in the first block."
               (insert (mapconcat 'identity (nreverse merged-lines) "\n"))
               (message "Merged %d track pairs." (length merged-lines)))
         
-        (error "Could not find a blank line separating the two blocks in the selected region.")))))
+        (error "Could not find a blank line separating the two blocks in the selected region."))))))
