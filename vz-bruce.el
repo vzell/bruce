@@ -4623,6 +4623,7 @@ Do this ALWAYS, except for the above exceptions."
 ("5353d8c4-0d1a-49f9-a727-32269e56c6c0" . "The New York Shuffle")
 ("9bf4b7a9-44d5-3b55-9a8f-7b10584bcacd" . "Unchained Melody")
 ("aa5dc755-7095-4c6f-9e6b-3509c365201b" . "Church of the Poison Mind")
+("31cecf32-5b8b-389a-b51b-e854ce96a4da" . "Power to the People")
 ))
 
 ;; Sorting:
