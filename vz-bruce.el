@@ -2277,6 +2277,40 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
+(defun musicbrainz-surround-event-1984-born-in-the-usa-tour ()
+  "Surround event with artists and line, Born in the U.S.A. Tour."
+  (interactive)
+  (save-excursion
+    (insert
+"== [|YouTube Playlist] ==
+
+@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]
+# &
+@ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
+# with
+@ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
+@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
+@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
+@ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
+@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
+@ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+
+# Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
+"
+)
+    (re-search-forward "^$")
+    (insert
+"
+--------------------------------------------------------------------------------
+
+"
+)
+    (re-search-backward "^@ [70248960-cb53-4ea4-943a-edb18f7d336f|Bruce Springsteen]")
+    (beginning-of-line)
+    (recenter-top-bottom)
+    ))
+
 (defun musicbrainz-surround-event-1992/3-world-tour-band ()
   "Surround event with artists and line, 1992-1993 World Tour Band."
   (interactive)
@@ -2750,8 +2784,8 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
-(defun musicbrainz-surround-event-1984-born-in-the-usa-tour ()
-  "Surround event with artists and line, Born in the U.S.A. Tour."
+(defun musicbrainz-surround-event-2026-no-kings-tour ()
+  "Surround event with artists and line, 2026 No Kings Tour."
   (interactive)
   (save-excursion
     (insert
@@ -2762,12 +2796,31 @@ Do this ALWAYS, except for the above exceptions."
 @ [d6652e7b-33fe-49ef-8336-4c863b4f996f|The E Street Band]
 # with
 @ [11d2fcfe-669d-4596-8921-e07dbdae311f|Roy Bittan]
-@ [7e4bfa5f-a8b8-4fb0-81b5-f74f6ac72133|Clarence Clemons]
-@ [94a88a40-8568-403e-86e6-8c01fd4b626a|Danny Federici]
 @ [a1ef6bc8-2644-4b6d-aa21-27b630acf751|Nils Lofgren]
-@ [f09aa40c-b613-4ea2-a8cf-6056c2657a9a|Patti Scialfa]
 @ [42b42dd1-9263-4eae-91cd-4014a5b5d39f|Garry Tallent]
+@ [de53495e-ad5a-4c30-82ab-05e7e3ec7b4d|Steven Van Zandt]
 @ [2566ca73-1dfd-49e7-ab20-dfa5697b360e|Max Weinberg]
+# and
+@ [4382fa5d-03de-4ebf-baf3-df6a1d1922f0|Charles Giordano]
+@ [065af1a2-2fa9-4864-852e-08c00c9c67d8|Soozie Tyrell]
+# and
+@ [61c0a8b8-e3f1-4e7f-9f42-7b21a7bf9e4e|The E Street Horns]
+# with
+@ [5c64226c-d673-4d23-a612-2bfb704edd66|Jake Clemons]
+@ [092ae7a4-0ea2-407a-a200-d1ee09383537|Barry Danielian]
+@ [6a3394ba-6888-4dd0-93f3-06c1e35749d8|Ed Manion]
+@ [ef011392-7eee-4090-ad83-660c48e9b1c1|Ozzie Melendez]
+@ [028fd996-fe8f-41b6-a6ed-1cb4b06a23d2|Curt Ramm]
+# and
+@ [ad2232c5-2b11-4699-80c2-e5f83c56c8e4|The E Street Choir]
+# with
+@ [b0ab3979-4165-4e3e-b125-2d77f14080bd|Anthony Almonte]
+@ [1ca07311-cbfe-4ae8-a518-aa76c8579802|Ada Dyer]
+@ [7b18698b-33fb-4865-b158-e74f3457eeb7|Curtis King]
+@ [59d77428-bf32-4c9f-bc4c-7c03ec882c59|Lisa Lowell]
+@ [e67ac344-ce0a-4a27-b4ad-9502dab57a82|Michelle Moore]
+
+@ [42a636a0-dbe4-4d0c-abe2-1590fad9531b|Tom Morello] (guest)
 
 # Scheduled: 19:30 Local Start Time ??:?? / End Time ??:??
 "
@@ -2784,7 +2837,8 @@ Do this ALWAYS, except for the above exceptions."
     (recenter-top-bottom)
     ))
 
-(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
+(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2026-no-kings-tour)
+;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-2023-international-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-bruce-solo-acoustic-tour)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-1992/3-world-tour-band)
 ;(global-set-key (kbd "<f9>") 'musicbrainz-surround-event-the-rogues)
