@@ -4678,6 +4678,8 @@ Do this ALWAYS, except for the above exceptions."
 ("9bf4b7a9-44d5-3b55-9a8f-7b10584bcacd" . "Unchained Melody")
 ("aa5dc755-7095-4c6f-9e6b-3509c365201b" . "Church of the Poison Mind")
 ("31cecf32-5b8b-389a-b51b-e854ce96a4da" . "Power to the People")
+("848800af-3111-3771-aa13-ef91d43b4879" . "Light My Fire")
+("11e69472-060c-31ab-9f13-c5f4d4d0a805" . "Roadhouse Blues")
 ))
 
 ;; Sorting:
@@ -5291,6 +5293,14 @@ Do this ALWAYS, except for the above exceptions."
 ("8e2a9ce4-dd99-456c-8f44-036bf7cc1e94" . "George Stephanopoulos")
 ("b29ba300-5891-4fc8-a50d-65b63b961355" . "Daniel Wall")
 ("733dd37c-eaff-4fe5-9055-95b2d76b2bd0" . "Audrey Martells")
+("5f6ab597-f57a-40da-be9e-adad48708203" . "Dr. Dre")
+("83d3cc07-60e7-4139-b5f0-3cda9f5aa99b" . "John Densmore")
+("6215a971-255b-4e99-b380-5bd43aff9a06" . "Neal Pawley")
+("bf2e15d0-4b77-469e-bfb4-f8414415baca" . "Public Enemy")
+("88633ac3-c8e2-420f-8415-77ac56b3105f" . "Chuck D")
+("813c1586-f7d5-42d1-94bb-cd2abb42f507" . "Flavor Flav")
+("fab22b59-8ac4-44d1-92eb-ceecd7c897e0" . "Mickey Raphael")
+("6784ee31-6d79-4a37-9e1f-01d6ef31940e" . "Dionne Warwick")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
