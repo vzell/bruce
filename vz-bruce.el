@@ -5301,6 +5301,7 @@ Do this ALWAYS, except for the above exceptions."
 ("813c1586-f7d5-42d1-94bb-cd2abb42f507" . "Flavor Flav")
 ("fab22b59-8ac4-44d1-92eb-ceecd7c897e0" . "Mickey Raphael")
 ("6784ee31-6d79-4a37-9e1f-01d6ef31940e" . "Dionne Warwick")
+("1e3536d0-5596-4d1b-8992-97195aa4d270" . "Dan Levine")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5533,6 +5534,8 @@ Do this ALWAYS, except for the above exceptions."
 ("9978a09b-4467-4790-9bde-424f004b7312" . "Dixie Dregs")
 ("f7722ace-66ad-4d6e-b989-82a92ae56831" . "Steve Chapin")
 ("dbad7abd-a25a-40ad-b77f-901678dd9dbb" . "Mark Barden")
+("9efff43b-3b29-4082-824e-bc82f646f93d" . "The Doors")
+("1349b5ac-9e50-4804-b1e2-4245e169ad04" . "Jason Federici")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5924,6 +5927,7 @@ Do this ALWAYS, except for the above exceptions."
 ("95b0c3d2-9606-4ef5-a019-9b7437f3adda" . "keyboard")
 ("a9ed16cd-b8cb-4256-9c41-93f5f0458c49" . "saxophone")
 ("f3bd3292-1a33-4259-974d-b7375158d95d" . "congas")
+("f6100277-c7b8-4c8d-aa26-d8cd014b6761" . "trombone")
 )
   "Musicbrainz instruments.")
 
@@ -6054,6 +6058,7 @@ Do this ALWAYS, except for the above exceptions."
 ("Keys" . "keyboard")
 ("Saxophone" . "saxophone")
 ("Congas" . "congas")
+("Trombone" . "trombone")
 ))
 
 (defvar mb-fixartists  '(
