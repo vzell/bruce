@@ -5811,6 +5811,7 @@ Do this ALWAYS, except for the above exceptions."
 ("261962ea-d8c2-4eaf-a80c-f14376ffadb0" . "Manhattan")
 ("3e80aaa7-9b71-450f-8147-0ecf101d8f1a" . "Minneapolis")
 ("f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5" . "MN")
+("58d2816b-daf9-4fc5-962c-06967f14a5e5" . "Austin")
 )
   "Musicbrainz areas.")
 
