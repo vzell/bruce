@@ -5866,6 +5866,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f15517b8-c565-49cf-8fad-61d52666fe92" . "Eve Studios")
 ("a3ed30dc-6e11-4813-b63c-c7220ffa7d88" . "San Sebastián")
 ("8ab4429c-7039-4388-9558-ee1591f6b9f4" . "New York Public Library")
+("a6fe4c79-7949-45c7-87c8-f487c2380b8a" . "Bruce Springsteen Center for American Music")
 )
   "Musicbrainz places.")
 
