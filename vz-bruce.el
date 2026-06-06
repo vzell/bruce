@@ -5302,6 +5302,13 @@ Do this ALWAYS, except for the above exceptions."
 ("fab22b59-8ac4-44d1-92eb-ceecd7c897e0" . "Mickey Raphael")
 ("6784ee31-6d79-4a37-9e1f-01d6ef31940e" . "Dionne Warwick")
 ("1e3536d0-5596-4d1b-8992-97195aa4d270" . "Dan Levine")
+("9059a286-a584-4440-a9bb-a48517836c0e" . "David Mansfield")
+("5dca4d22-d6c8-4e70-8ca1-4543e43353c7" . "Kenny Chesney")
+("6a3ae3af-c1e5-44e9-9cac-38590f5dd0d7" . "Tim Brennan")
+("622083a6-a011-4354-af39-5fdbbfccd585" . "Ken Casey")
+("afbffbd3-c4fb-4f6e-ae87-607a3fa8916e" . "Teresa Williams")
+("c733c4e6-22a2-499d-ace7-17b832356aff" . "Gary Clark Jr.")
+("dac15690-cbad-4692-a6bf-3bb0ae05cfe1" ."Jimmie Vaughan")
 )
   "Brucebase artists with a relation to Bruce Springsteen.")
 
@@ -5812,6 +5819,8 @@ Do this ALWAYS, except for the above exceptions."
 ("3e80aaa7-9b71-450f-8147-0ecf101d8f1a" . "Minneapolis")
 ("f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5" . "MN")
 ("58d2816b-daf9-4fc5-962c-06967f14a5e5" . "Austin")
+("af59135f-38b5-4ea4-b4e2-dd28c5f0bad7" . "Washington, D.C.")
+("af59135f-38b5-4ea4-b4e2-dd28c5f0bad7" . "Washington")
 )
   "Musicbrainz areas.")
 
