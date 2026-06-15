@@ -6024,6 +6024,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/TeachRock" . "TeachRock")
 ("https://en.wikipedia.org/wiki/United_States_Immigration_and_Customs_Enforcement" . "ICE")
 ("https://en.wikipedia.org/wiki/Killing_of_Ren%C3%A9e_Good" . "Renee Good")
+("https://de.wikipedia.org/wiki/Tribeca_Film_Festival" . "Tribeca Festival")
 )
   "Other URLs.")
 
