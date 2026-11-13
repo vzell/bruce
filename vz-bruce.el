@@ -5551,14 +5551,18 @@ Do this ALWAYS, except for the above exceptions."
 ("5c8ff2c0-3658-4e75-85d7-f084a86f1dbe" . "Eric Cannata")
 ("7fe96b15-5608-430e-ad25-77a01353c5d9" . "Young the Giant")
 ("a690d479-091c-4c4c-aa5c-7d1d512316c6" . "Yola")
-("34a977be-ef17-4ab9-b34d-959a89e7e534" ."Amy Helm")
+("34a977be-ef17-4ab9-b34d-959a89e7e534" . "Amy Helm")
 ("9978a09b-4467-4790-9bde-424f004b7312" . "Dixie Dregs")
 ("f7722ace-66ad-4d6e-b989-82a92ae56831" . "Steve Chapin")
 ("dbad7abd-a25a-40ad-b77f-901678dd9dbb" . "Mark Barden")
 ("9efff43b-3b29-4082-824e-bc82f646f93d" . "The Doors")
 ("1349b5ac-9e50-4804-b1e2-4245e169ad04" . "Jason Federici")
-("25a09a9b-7aff-4766-a357-4cd2898d0599" ."Will Calhoun")
+("25a09a9b-7aff-4766-a357-4cd2898d0599" . "Will Calhoun")
 ("3feb2bb3-cb9f-4778-b91b-db77ae2f5ed2" . "Indigenous Enterprise")
+("53fd3beb-af5b-4c11-bf59-93a7ae37318c" . "Billy Starr")
+("0a0c763f-d4db-49e2-b8c5-23dfa40d5220" . "The Resilient")
+("609a2ea3-f446-4e31-8eef-9f7591afb55a" . "Alex Warren")
+("9bc24c7b-ec5d-4463-9fec-3b6f8c0d75ea" . "Hasan Minhaj")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -5745,7 +5749,7 @@ Do this ALWAYS, except for the above exceptions."
 ("f25cee65-8067-48aa-ad24-4b457c1344b4" . "50th Anniversary Tour")
 ("bcbf2e57-ce31-43d3-b40c-731a100ce869" . "TW Classic")
 ;; Stand Up for Heroes Benefit
-("a9327d10-9998-4af4-a3e8-ef95745b9423" . "Stand Up for Heroes Benefit")
+("a9327d10-9998-4af4-a3e8-ef95745b9423" . "Stand Up for Heroes")
 ("e9f4d050-a77a-438e-a75b-647aa7c96be0" . "New Jersey Hall of Fame Induction Ceremony")
 ;; Radio shows
 ("6a0ec067-aa67-485d-accb-d59efaadca79" . "E Street Radio Show")
@@ -5837,6 +5841,9 @@ Do this ALWAYS, except for the above exceptions."
 ("58d2816b-daf9-4fc5-962c-06967f14a5e5" . "Austin")
 ("af59135f-38b5-4ea4-b4e2-dd28c5f0bad7" . "Washington, D.C.")
 ("af59135f-38b5-4ea4-b4e2-dd28c5f0bad7" . "Washington")
+("e331bfdf-b908-429c-a79b-710cf9c06abb" . "Boston")
+("947f837e-6dd5-4b36-bcd3-a3a32c6beb12" . "Worcester")
+("05f68b4c-10f3-49b5-b28c-260a1b707043" . "MA")
 )
   "Musicbrainz areas.")
 
@@ -5892,6 +5899,7 @@ Do this ALWAYS, except for the above exceptions."
 ("a3ed30dc-6e11-4813-b63c-c7220ffa7d88" . "San Sebastián")
 ("8ab4429c-7039-4388-9558-ee1591f6b9f4" . "New York Public Library")
 ("a6fe4c79-7949-45c7-87c8-f487c2380b8a" . "Bruce Springsteen Center for American Music")
+("5249c96e-dbf7-42dd-b93f-2b7173f64a3e" . "College of the Holy Cross")
 )
   "Musicbrainz places.")
 
@@ -6025,6 +6033,8 @@ Do this ALWAYS, except for the above exceptions."
 ("https://en.wikipedia.org/wiki/United_States_Immigration_and_Customs_Enforcement" . "ICE")
 ("https://en.wikipedia.org/wiki/Killing_of_Ren%C3%A9e_Good" . "Renee Good")
 ("https://de.wikipedia.org/wiki/Tribeca_Film_Festival" . "Tribeca Festival")
+("https://en.wikipedia.org/wiki/Pan-Mass_Challenge" . "Pan‐Mass Challenge")
+("https://en.wikipedia.org/wiki/Dana%E2%80%93Farber_Cancer_Institute" . "Dana‐Farber Institute")
 )
   "Other URLs.")
 
