@@ -5563,6 +5563,8 @@ Do this ALWAYS, except for the above exceptions."
 ("0a0c763f-d4db-49e2-b8c5-23dfa40d5220" . "The Resilient")
 ("609a2ea3-f446-4e31-8eef-9f7591afb55a" . "Alex Warren")
 ("9bc24c7b-ec5d-4463-9fec-3b6f8c0d75ea" . "Hasan Minhaj")
+("593c8de6-872c-4759-bf14-07d80496e53a" . "Douglas Springsteen")
+("593c8de6-872c-4759-bf14-07d80496e53a" . "Douglas Frederick Springsteen")
 )
   "Brucebase artists mentioned in gignotes.")
 
@@ -6035,6 +6037,7 @@ Do this ALWAYS, except for the above exceptions."
 ("https://de.wikipedia.org/wiki/Tribeca_Film_Festival" . "Tribeca Festival")
 ("https://en.wikipedia.org/wiki/Pan-Mass_Challenge" . "Pan‐Mass Challenge")
 ("https://en.wikipedia.org/wiki/Dana%E2%80%93Farber_Cancer_Institute" . "Dana‐Farber Institute")
+("https://www.wikidata.org/wiki/Q691237" . "Freehold Borough")
 )
   "Other URLs.")
 
