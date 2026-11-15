@@ -5565,6 +5565,7 @@ Do this ALWAYS, except for the above exceptions."
 ("9bc24c7b-ec5d-4463-9fec-3b6f8c0d75ea" . "Hasan Minhaj")
 ("593c8de6-872c-4759-bf14-07d80496e53a" . "Douglas Springsteen")
 ("593c8de6-872c-4759-bf14-07d80496e53a" . "Douglas Frederick Springsteen")
+("f0cc8eb7-d333-4a06-b5cb-3a23538f9743" . "Josh Johnson")
 )
   "Brucebase artists mentioned in gignotes.")
 
